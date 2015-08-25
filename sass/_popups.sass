@@ -1,0 +1,59 @@
+.modal-dialog
+	width: 600px
+	margin: 30px auto 
+
+.feedback
+	background: #f2f2ea
+	+border-radius(20px)
+	padding: 20px 70px 40px  
+	text-align: center
+	position: relative
+	&__logo
+		font-size: 24px
+		color: #C0BCB7
+		+as
+		display: block
+		line-height: 38px
+	&__title
+		color: #2D2C2B
+		font-size: 48px
+		+asblack
+		line-height: 1
+		display: block
+		margin-bottom: 18px
+	&__schedule
+		color: #596947
+		font-size: 14px
+		+semi
+		background-color: #E3EECF
+		display: inline-block
+		padding: 15px 20px 
+		+border-radius(7px)
+		margin-bottom: 18px
+	&__icon
+		+s(feedback)
+		position: absolute
+		top: 15px
+		left: -70px
+		
+.popup-close
+	font-size: 16px
+	background: none
+	position: absolute
+	top: 29px
+	right: 27px
+	color: #360000
+	&:hover
+		color: #C0BCB7
+		
+.success
+	text-align: center
+	&__icon
+		+s(success)
+		display: block
+		margin: 0 auto 35px
+	&__title
+		color: #fdfefa
+		font-size: 48px
+		line-height: 1
+		+asblack 

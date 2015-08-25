@@ -1,0 +1,975 @@
+// # SHORT HOWTO
+// ## Sprites
+//     .whatever
+//          +sized-sprite($icons, coderiver) //or
+// 			+s(codedby) //gets default value for spritemap as $icons
+// ### animation example
+//     +include keyframes(rotate)
+//        from
+//           +rotate(0)
+//        to
+//           +rotate(360)
+// ## animation usage
+//     body:hover
+// 	    +animation(rotate 200s linear infinite)
+// ## animations easing, see easings.net for full list and examples, tnx @ai
+//     transition: all 1.2s ceaser($ease-in)
+// ## gradient example
+//     +background-image(linear-gradient(#232323, #5c5c5c));
+//     +g(#232323, #5c5c5c);
+//	   horizontal
+//     +gh(#232323, #5c5c5c);
+// ## making bw-images
+//     img
+//			@extend %gray
+// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
+//     +min-screen(320)
+//			display: none
+// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
+//
+// ## use cycles
+//     @for $i from 1 through 3
+//       .item-#{$i}
+//			width: 2em * $i;
+//     @each $s in a,b,c
+// 	    	#{$s}
+//				display: none
+// ## fonts 
+// Save fonts to /css/fonts, after that write (eot, woff, ttf):
+// +font(book, cytiapro-black-webfont)  
+// =book
+// 	font-family: "book", Arial, sans-serif 
+// insert pics into css
+// div
+// 	+pic("blabla.png")
+// span
+// 	+png(blabla)
+// p
+// 	+jpg(bla)
+
+//fonts
+
+@font-face
+	font-family: 'icomoon'
+	src: url('fonts/icomoon.eot?-lolm18')
+	src: url('fonts/icomoon.eot?#iefix-lolm18') format("embedded-opentype"), url('fonts/icomoon.ttf?-lolm18') format("truetype"), url('fonts/icomoon.woff?-lolm18') format("woff"), url('fonts/icomoon.svg?-lolm18#icomoon') format("svg")
+	font-weight: normal
+	font-style: normal
+
++font("ProximaNova Regular", proxima_nova_regular)
++font("ProximaNova Semibold", proxima_nova_semibold)
++font("ProximaNova Bold", proxima_nova_bold)
++font("ALSSchlangesans Black", als_schlange_sans_blk)
++font("ALSSchlangesans bold", als_schlange_sans_bold)
++font("ALSSchlangesans Light", alsschlangesans-light)
++font("ALSSchlangesans Thin", alsschlangesans-thin)
++font("ALSSchlangesans", alsschlangesans)
++font("Vagroundedtl Regular", vagroundedtl-regular)
++font("Vagroundedtl", vagroundedtl)
++font("Vagroundedtl", vagroundedtl)
+
+=reg
+	font-family: "ProximaNova Regular", Arial, sans-serif
+=semi
+	font-family: "ProximaNova Semibold", Arial, sans-serif
+=bold
+	font-family: "ProximaNova Bold", Arial, sans-serif
+	
+
+=asblack
+	font-family: "ALSSchlangesans Black", Arial, sans-serif
+=asbold
+	font-family: "ALSSchlangesans Bold", Arial, sans-serif
+=aslight
+	font-family: "ALSSchlangesans Light", Arial, sans-serif
+=asthin
+	font-family: "ALSSchlangesans Thin", Arial, sans-serif
+=as
+	font-family: "ALSSchlangesans", Arial, sans-serif
+	
+=var
+	font-family: "Vagroundedtl Regular", Arial, sans-serif
+=va
+	font-family: "Vagroundedtl", Arial, sans-serif
+
+html, body
+	height: 100%
+	
+body
+	font-family: Arial, sans-serif 
+	font-size: 12px 
+	line-height: 1.4
+	background: #ecece4 
+	min-width: 1280px
+	
+//res
+h1, h2, h3, h4, h5, h6, b, strong, label
+	font-weight: normal
+i
+	font-style: normal
+*
+	outline: none !important
+.text
+	h1, h2, h3, h4, h5, h6, .title-h1, .title-h2, .title-h3, .title-h4, .title-h5, .title-h6, p
+		margin: 20px 0 
+	h1, .title-h1
+		font-size: 48px
+		+asblack
+		line-height: 1
+		&.is-pink
+			color: #eb778f 
+		&.is-gray
+			color: #4a495b
+		&.is-black
+			color: #312b26 
+		&.is-red
+			color: #f57676 
+			
+	h2, .title-h1
+		font-size: 44px
+		line-height: 1
+		+asblack
+		color: #595b48 
+		
+	h3, .title-h1
+		font-size: 35px
+		color: #595b48
+		+asblack
+		line-height: 38px
+
+	h4, .title-h1
+		font-size: 34px
+		color: #75726e
+		+asbold
+		line-height: 38px
+		
+	h5, .title-h1
+		font-size: 30px
+		color: #4a485b
+		+asblack
+		line-height: 1
+
+	h6, .title-h1
+		font-size: 26px
+		color: #4a485b
+		+asblack
+		line-height: 1.2
+		&.h6-small
+			font-size: 16px
+			color: #b8b8b0
+			+asbold 
+			line-height: 1.2 
+	p	
+		line-height: 20px
+		
+	p, ul, ol
+		&.arial-14
+			font-size: 14px
+			color: #000
+			font-family: Arial, sans-serif  
+		&.semi-14
+			+semi
+			font-size: 14px
+			color: #716d6d 
+		&.reg-13
+			+reg
+			font-size: 13px
+			color: #595b48 
+			&.is-light
+				color: #858490 
+			&.is-lighter
+				color: #b3b3b2 
+			&.is-gray
+				color: #4a485b 
+			&.is-slash
+				color: #716d6d 
+		&.reg-14
+			+reg
+			font-size: 14px
+			color: #595b48 
+		&.asbold-18
+			font-size: 18px
+			line-height: 24px
+			color: #727272
+			&.is-lighter
+				color: #7c7c75  
+		&.asbold-14
+			+asbold
+			font-size: 14px
+			color: #4a485b 
+			a
+				&:visited
+					color: #b54bec 	
+		a
+			color: #7dc5ea
+			text-decoration: underline
+			&:hover
+				color: #1a83cd
+				text-decoration: none
+			&:visited
+				color: #1a44cd 
+				text-decoration: none
+	ul, ol
+		line-height: 25px
+
+	ul
+		list-style-type: disc 
+		text-indent: -5px
+		padding: 0 20px 
+		&.is-link
+			color: #7dc5ea 
+		ul
+			list-style-type: none
+
+	ol
+		list-style-type: decimal
+		text-indent: -5px
+		padding: 0 20px 
+		ol
+			list-style-type: none
+	
+// mod
+
+.link-dotted
+	border-bottom: 1px dotted #91A0B7
+	text-decoration: none
+	&:hover, &:focus
+		text-decoration: none
+	
+.btn
+	font-size: 12px
+	color: #fff 
+	+semi
+	line-height: 1
+	padding: 5px 11px 4px
+	+border-radius(4px)
+	&:hover, &:active, &:focus, &:visited
+		color: #fff
+	&:active
+		+box-shadow(none)
+	&_blue
+		background-color: #46D7F6
+		&:hover, &:active
+			background-color: #2D99A6
+	&_green
+		background-color: #87CA62
+		&:hover, &:active
+			background-color: #58911B
+
+.btn-comment
+	font-size: 24px
+	+asblack
+	color: #f49460
+	text-decoration: none
+	line-height: 1
+	padding: 16px 0 13px 77px
+	position: relative 
+	display: inline-block
+	vertical-align: top
+	&:hover
+		text-decoration: none
+		color: #f49460 
+	&:before
+		content: "" 
+		position: absolute
+		top: 0
+		left: 0
+		+s(btn-comment)
+
+.b-btn
+	color: #FFF
+	font-size: 28px
+	+asblack
+	background-color: #87CA62
+	padding: 16px 50px 15px
+	+border-radius(5px) 
+	text-align: center
+	line-height: 1
+	&_green
+		width: 320px
+		&:hover
+			background-color: #C9E4BA
+		&:active
+			background-color: #58911B
+	&_blue
+		background-color: #46D7F6
+		min-width: 280px 
+		&:hover, &:active
+			background-color: #2D99A6
+
+.btn-new
+	+s(btn-new)
+	display: inline-block
+	vertical-align: top
+	
+.btn-check
+	+s(btn-check)
+	font-size: 18px
+	color: #fff
+	+asblack
+	line-height: 45px
+	text-align: center
+	padding: 0 10px 0 0
+	display: inline-block
+	&:hover, &:active
+		+s(btn-check-hover)
+
+.button
+	font-size: 24px
+	line-height: 1
+	color: #FFF
+	+asblack
+	padding: 9px 17px 8px
+	+border-radius(4px)
+	position: relative
+	display: inline-block
+	vertical-align: top
+	&:hover
+		color: #fff
+		background-color: #DEDEDB
+	&:active
+		+box-shadow(none)
+	&_check
+		background-color: #87CA62
+		padding-right: 44px
+		&:hover
+			background-color: #C9E4BA
+		&:active
+			background-color: #58911B
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			right: 12px
+			+svg(arr-right, 20, 14)
+			margin-top: -7px
+
+.btn-med
+	font-size: 18px
+	color: #fff
+	+asblack
+	width: 231px
+	line-height: 1
+	text-align: center
+	padding: 14px 15px 13px
+	display: inline-block
+	vertical-align: top
+	+border-radius(7px)
+	position: relative
+	background-color: #FB6468
+	&_red
+		background-color: #FB6468
+		&:hover
+			background-color: #C7C7C7
+		&:active
+			background-color: #D24E52
+	&_gray
+		background-color: #C7C7C7
+		&:hover
+			background-color: #FB6468
+		&:active
+			background-color: #D24E52
+	&_blue
+		background-color: #31D4E7
+		&:hover, &:active
+			background-color: #2D99A6		
+		
+.btn-blue
+	color: #42B0EF
+	font-size: 18px
+	+asbold
+	background-color: #F2F2ED
+	padding: 10px 16px 9px
+	line-height: 1
+	+border-radius(7px)
+	display: inline-block
+	vertical-align: top
+	&:hover, &:active
+		color: #fff
+		background-color: #42B0EF 
+		
+.btn-back
+	width: 130px
+	line-height: 34px
+	font-size: 14px
+	+semi
+	color: #fff
+	display: inline-block
+	vertical-align: top
+	text-decoration: none
+	text-align: center
+	position: relative
+	padding: 0 0 0 10px 
+	&_gray
+		+s(btn-back-gray)
+		&:hover
+			+s(btn-back-green)
+	&_green
+		+s(btn-back-green)
+		&:hover
+			+s(btn-back-hover)
+	&:hover, &:active, &:focus
+		text-decoration: none
+		color: #fff
+		
+.btn-play
+	color: #FFF
+	font-size: 18px
+	+asbold
+	text-align: center
+	+border-radius(4px)
+	width: 83px
+	padding: 13px 10px 3px
+	display: inline-block
+	vertical-align: top 
+	&:hover
+		+opacity(0.8)
+	&:before
+		content: "" 
+		margin: 0 auto 6px
+	&_video
+		background: #f5636f
+		&:before
+			+s(video)
+			display: block
+	&_model
+		background: #9145ee 
+		&:before
+			+s(model)
+			display: block
+
+.btn-up
+	background: rgba(255, 255, 255, 0.95)
+	+border-radius(4px)
+	width: 73px
+	height: 62px
+	position: relative
+	display: inline-block
+	vertical-align: top
+	&:hover, &:active
+		background-color: rgba(216, 216, 206, 0.95)
+	&:before
+		position: absolute
+		top: 22px
+		left: 31px
+		+s(up)
+		content: "" 
+
+.btn-like
+	+s(btn-like)
+	+border-radius(4px)
+	display: inline-block
+	vertical-align: top
+	&:hover
+		+s(btn-like-hover)
+	
+.btn-order
+	font-size: 26px
+	color: #FFF
+	+asblack
+	background-color: #87CA62
+	padding: 13px 20px 12px 
+	+border-radius(4px)
+	display: inline-block
+	vertical-align: top
+	line-height: 24px
+	text-align: center
+	width: 240px	
+	&:hover
+		background-color: #C9E4BA
+	&:active
+		background-color: #58911B
+	&_big
+		padding: 10px 20px 10px
+	
+.btn-basket
+	display: inline-block
+	vertical-align: top
+	position: relative
+	font-size: 30px
+	color: #FFF
+	+asblack
+	width: 240px
+	padding: 10px 0 9px 65px
+	text-align: left 
+	background-color: #87CA62
+	line-height: 1
+	+border-radius(4px)
+	&:hover, &:active
+		background-color: #58911B
+	&:before
+		content: "" 
+		position: absolute
+		top: 8px
+		left: 16px
+		+s(btn-basket)
+	&_more
+		&:before
+			+s(btn-basket-buy)
+
+.btn-gender
+	font-size: 18px
+	color: #FFF
+	+asbold
+	line-height: 1
+	background-color: #383C49
+	padding: 11px 17px 9px
+	+border-radius(7px) 
+	display: inline-block
+	vertical-align: top
+	&:hover, &:visited, &:active, &:focus
+		color: #fff
+		text-decoration: none 
+		background-color: #4C98CF
+		
+.btn-all
+	+asbold
+	font-size: 16px
+	color: #42B0EF
+	line-height: 1
+	padding: 11px 12px 10px
+	background: #f7f7f4
+	display: inline-block
+	vertical-align: top
+	+border-radius(7px)
+	text-decoration: none
+	&:hover, &:focus, &:visited, &:active
+		text-decoration: none
+		color: #42B0EF
+		background: #fff 
+	&_pink
+		color: #E09BAA
+		&:hover, &:focus, &:visited, &:active
+			color: #E09BAA
+	&_dark
+		color: #2D2C62
+		&:hover, &:focus, &:visited, &:active
+			color: #2D2C62
+	
+.btn-registration
+	color: #FFF
+	font-size: 14px
+	line-height: 1
+	+asbold
+	background-color: #87CA62
+	padding: 8px 15px 7px
+	+border-radius(4px)
+	display: inline-block
+	vertical-align: top 
+	&:hover, &:hover
+		background-color: #58911B
+
+.btn-close
+	display: inline-block
+	vertical-align: top
+	+s(b-close)
+	cursor: pointer
+	&:hover
+		+s(b-close-active)
+	&_big
+		+s(close-big)
+		&:hover
+			+s(close-big-active)
+
+//badge
+.badge-mod
+	display: inline-block
+	vertical-align: middle
+	text-decoration: none
+	&_hot
+		+s(badge-hot)
+	&_sale
+		+s(badge-sale)
+	&_day
+		+s(badge-day)
+	&_new
+		+s(badge-new)
+	&_novelties
+		+s(badge-novelties)
+	&_wow
+		+s(badge-wow)
+	&_reason
+		+s(badge-reason)
+	&_best
+		+s(badge-best)
+	&_faq
+		+s(badge-faq)
+
+//input
+.input
+	font-size: 30px
+	+var
+	border: 4px solid #000
+	padding: 9px 20px 5px
+	+border-radius(2px)
+	width: 100%
+	text-align: center
+	&_gray
+		color: #D3D1CA
+		+placeholder-color(#D3D1CA)
+		border-color: #d6d4ce
+		background: #f7f7f0  
+
+//number
+.d-number
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	height: 26px
+	box-sizing: border-box
+	padding: 0 8px 
+	+user-select(none)
+	min-width: 60px
+	text-align: center
+	.d-number__amount, .d-number__title
+		color: #afafaf
+		font-size: 12px
+		line-height: 16px
+		+semi 
+		padding: 0 1px
+		display: inline-block 
+	&__input
+		display: none
+		&[disabled]
+			background: none
+	&__plus,
+	&__minus
+		width: 8px
+		height: 16px
+		font-size: 0
+		background: none	
+		position: absolute
+		top: 0	
+		+opacity(0.3)
+		&:hover
+			+opacity(1)	
+		&:before, &:after
+			content: "" 
+			position: absolute
+			background: #afafaf 
+			top: 50%
+			left: 50%
+		&:after
+			width: 8px
+			height: 2px
+			margin-top: -1px
+			margin-left: -4px
+	&__minus
+		left: 0
+	&__plus
+		right: 0
+		&:before
+			height: 8px
+			width: 2px
+			margin-top: -4px
+			margin-left: -1px
+			
+//icomoon		
+
+
+[class^="icon-"], [class*=" icon-"]
+	font-family: 'icomoon'
+	speak: none
+	font-style: normal
+	font-weight: normal
+	font-variant: normal
+	text-transform: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon-money:before
+	content: "\e603"
+
+.icon-cards:before
+	content: "\e604"
+
+.icon-comp:before
+	content: "\e605"
+
+.icon-bank:before
+	content: "\e606"
+
+.icon-heart-small:before
+	content: "\e607"
+
+.icon-time:before
+	content: "\e608"
+
+.icon-prize:before
+	content: "\e609"
+
+.icon-star:before
+	content: "\e60a"
+
+.icon-home:before
+	content: "\e60b"
+
+.icon-settings:before
+	content: "\e60c"
+
+.icon-refresh:before
+	content: "\e60d"
+
+.icon-deer:before
+	content: "\e60e"
+
+.icon-pie:before
+	content: "\e60f"
+
+.icon-close:before
+	content: "\e602"
+
+.icon-basket:before
+	content: "\e600"
+
+.icon-marker:before
+	content: "\e601"
+
+//icon-text
+.icon-text
+	display: inline-block
+	vertical-align: top
+	font-size: 16px
+	+asbold
+	position: relative
+	padding: 5px 0 5px 50px
+	.i
+		position: absolute
+		top: 50%
+		left: 0
+		+translateY(-50%)
+	&.is-business
+		color: #413939
+	&.is-flower
+		color: #615735
+	&.is-fun
+		color: #E474A4
+	&.is-ball
+		color: #748055
+	&.is-unusual
+		color: #7C6CB3
+	&.is-ruble
+		color: #7A858C
+	&.is-love
+		color: #FA7292
+	&.is-diamond
+		color: #7F649A
+	&.is-umbrella
+		color: #794E1B
+	&.is-symbol
+		color: #87BBD3
+	&.is-car
+		color: #EE9897
+	&.is-dumbbell
+		color: #7A858C
+//ICONS
+.i
+	display: inline-block
+	vertical-align: top
+	&.i-pie, &.i-deer, 
+	&.i-marker-big, 
+	&.i-marker-small, 
+	&.i-marker-med, 
+	&.i-refresh-blue, 
+	&.i-refresh-pink,
+	&.i-settings,
+	&.i-close,
+	&.i-star,
+	&.i-basket-big,
+	&.i-basket-small,
+	&.i-home
+		font-family: 'icomoon'
+		speak: none
+		font-style: normal
+		font-weight: normal
+		font-variant: normal
+		text-transform: none
+		line-height: 1
+		-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+	&.i-pie, &.i-deer
+		color: #EB778F
+	&.i-pie
+		font-size: 58px
+		&:before
+			content: "\e60f"
+	&.i-deer
+		font-size: 52px
+		&:before
+			content: "\e60e"
+	&.i-flag
+		+s(flag)
+	&.i-marker-big, &.i-clock-big, &.i-user, &.i-rub-big
+		+opacity(0.6)
+	&.i-marker-big
+		font-size: 32px
+		color: #595B48
+		&:before
+			content: "\e601"
+	&.i-clock-big
+		+svg(clock, 30, 30)
+	&.i-user
+		+svg(user, 30, 31)
+	&.i-rub-big
+		+s(rub)
+	&.i-clock-small
+		+svg(clock-small, 12, 12)
+	&.i-rub-small
+		+s(rub-small)
+	&.i-marker-small
+		font-size: 15px
+		color: #42B0EF
+		&:before
+			content: "\e601"
+	&.i-marker-med
+		font-size: 17px
+		color: #7989A2
+		&:before
+			content: "\e601"
+	&.i-add
+		+s(add)
+	&.i-refresh-blue, &.i-refresh-pink
+		font-size: 13px
+		&:before
+			content: "\e60d"
+	&.i-refresh-blue
+		color: #42B0EF
+	&.i-refresh-pink
+		color: #F08795
+	&.i-settings
+		font-size: 17px
+		color: #42B0EF
+		&:before
+			content: "\e60c"
+	&.i-right
+		+s(i-right)
+	&.i-home
+		font-size: 14px
+		color: #8A8DA5
+		&:before
+			content: "\e60b"
+	&.i-close
+		font-size: 16px
+		color: #C0BCB7
+		&:hover
+			color: #360000
+		&:before
+			content: "\e602"
+	&.i-left
+		+s(m-left)
+	&.i-right
+		+s(m-right)
+	&.i-check-azure
+		+s(check-small)
+	&.i-check-gray
+		+s(check-gray)
+	&.i-check-green
+		+s(check-green)
+	&.i-check-blue
+		+s(check-blue)
+	&.i-check-small
+		+svg(check, 10, 9)
+	&.i-star
+		font-size: 18px
+		color: #D7D7CD
+		&:before
+			content: "\e60a"
+	&.i-profile-small
+		+s(profile)
+	&.i-question
+		+s(question)
+	&.i-print
+		+s(print)
+	&.i-basket-big,
+	&.i-basket-small
+		color: #7DBE37
+		&:before
+			content: "\e600"
+	&.i-basket-big
+		font-size: 33px
+	&.i-basket-small
+		font-size: 24px
+	&.i-arr-left
+		+s(arr-left)
+	&.i-search
+		+s(search-icon)
+	&.i-view-white
+		+s(view-icon)
+	&.i-basket-white
+		+s(basket-icon)
+	&.i-heart-white
+		+s(heart-icon)
+	&.i-round-check
+		+s(round-check)
+	&.i-round-check-small
+		+s(round-check-small)
+	&.i-round-room
+		+s(round-room)
+	&.i-round-delivery
+		+s(round-car)
+	&.i-business
+		+svg(business, 36, 36)
+		+opacity(0.6)
+	&.i-flower
+		+svg(flower, 23, 37)
+	&.i-fun
+		+svg(fun, 36, 36)
+	&.i-ball
+		+svg(ball, 38, 38)
+	&.i-unusual
+		+svg(unusual, 44, 33)
+	&.i-ruble
+		+svg(ruble, 36, 36)
+	&.i-love
+		+svg(love, 35, 32)
+	&.i-diamond
+		+svg(diamond, 35, 35)
+	&.i-umbrella
+		+svg(umbrella, 37, 37)
+	&.i-symbol
+		+svg(symbol, 36, 36)
+	&.i-car
+		+svg(car, 36, 33)
+	&.i-dumbbell
+		+svg(dumbbell, 33, 33)
+	&.i-tooth
+		+svg(tooth, 27, 27)
+	&.i-house
+		+s(house-small)
+	&.i-house-big
+		+s(house-big)
+	&.i-smile
+		+s(smile-small)
+	&.i-smile-big
+		+s(smile-big)
+	&.i-labyrinth
+		+s(labyrinth-small)
+	&.i-labyrinth-big
+		+s(labyrinth-big)
+	&.i-cup-small
+		+s(cup-small)
+	&.i-cup-big
+		+s(cup-big)
+	&.i-gift
+		+s(gift)
+	&.i-prize
+		+svg(prize, 42, 34)
+	&.i-time
+		+svg(time, 45, 25)
+	&.i-add-gray
+		+svg(add-gray, 15, 16)
+	&.i-basket-empty
+		+svg(basket-empty, 20, 17)
+	&.i-basket-check
+		+s(basket-check)
+	&.i-heart
+		+svg(heart-small, 17, 14)
+	&.i-heart-check
+		+s(heart-check)
+	&.i-heart-check-big
+		+s(heart-check-big)
+	&.i-check-mod
+		+s(check-mod)
+	&.i-check-mod-active
+		+s(check-mod-green)
