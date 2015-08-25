@@ -59,8 +59,8 @@
 +font("ProximaNova Regular", proxima_nova_regular)
 +font("ProximaNova Semibold", proxima_nova_semibold)
 +font("ProximaNova Bold", proxima_nova_bold)
-+font("ALSSchlangesans Black", alsschlangesans-black)
-+font("ALSSchlangesans bold", alsschlangesans-bold)
++font("ALSSchlangesans Black", als_schlange_sans_blk)
++font("ALSSchlangesans bold", als_schlange_sans_bold)
 +font("ALSSchlangesans Light", alsschlangesans-light)
 +font("ALSSchlangesans Thin", alsschlangesans-thin)
 +font("ALSSchlangesans", alsschlangesans)
@@ -243,14 +243,18 @@ i
 	line-height: 1
 	padding: 5px 11px 4px
 	+border-radius(4px)
-	&:hover
+	&:hover, &:active, &:focus, &:visited
 		color: #fff
 	&:active
 		+box-shadow(none)
 	&_blue
 		background-color: #46D7F6
+		&:hover, &:active
+			background-color: #2D99A6
 	&_green
 		background-color: #87CA62
+		&:hover, &:active
+			background-color: #58911B
 
 .btn-comment
 	font-size: 24px
@@ -277,23 +281,39 @@ i
 	font-size: 28px
 	+asblack
 	background-color: #87CA62
-	padding: 16px 60px 15px
+	padding: 16px 50px 15px
 	+border-radius(5px) 
 	text-align: center
 	line-height: 1
-	&:hover
-		background-color: #BEBEB8
+	&_green
+		width: 320px
+		&:hover
+			background-color: #C9E4BA
+		&:active
+			background-color: #58911B
 	&_blue
 		background-color: #46D7F6
 		min-width: 280px 
-		&:hover
-			background-color: #BEBEB8
+		&:hover, &:active
+			background-color: #2D99A6
 
 .btn-new
 	+s(btn-new)
 	display: inline-block
 	vertical-align: top
 	
+.btn-check
+	+s(btn-check)
+	font-size: 18px
+	color: #fff
+	+asblack
+	line-height: 45px
+	text-align: center
+	padding: 0 10px 0 0
+	display: inline-block
+	&:hover, &:active
+		+s(btn-check-hover)
+
 .button
 	font-size: 24px
 	line-height: 1
@@ -313,7 +333,9 @@ i
 		background-color: #87CA62
 		padding-right: 44px
 		&:hover
-			background-color: #DEDEDB
+			background-color: #C9E4BA
+		&:active
+			background-color: #58911B
 		&:before
 			content: ""
 			position: absolute
@@ -335,8 +357,22 @@ i
 	+border-radius(7px)
 	position: relative
 	background-color: #FB6468
-	&:hover, &:active
+	&_red
+		background-color: #FB6468
+		&:hover
+			background-color: #C7C7C7
+		&:active
+			background-color: #D24E52
+	&_gray
 		background-color: #C7C7C7
+		&:hover
+			background-color: #FB6468
+		&:active
+			background-color: #D24E52
+	&_blue
+		background-color: #31D4E7
+		&:hover, &:active
+			background-color: #2D99A6		
 		
 .btn-blue
 	color: #42B0EF
@@ -354,6 +390,8 @@ i
 		
 .btn-back
 	width: 130px
+	line-height: 34px
+	font-size: 14px
 	+semi
 	color: #fff
 	display: inline-block
@@ -361,27 +399,18 @@ i
 	text-decoration: none
 	text-align: center
 	position: relative
+	padding: 0 0 0 10px 
+	&_gray
+		+s(btn-back-gray)
+		&:hover
+			+s(btn-back-green)
+	&_green
+		+s(btn-back-green)
+		&:hover
+			+s(btn-back-hover)
 	&:hover, &:active, &:focus
 		text-decoration: none
 		color: #fff
-		span
-			background-color: #BEBEB8
-		&:before
-			+s(btn-back-gray)
-	&:before
-		position: absolute
-		top: 0
-		left: 0
-		content: "" 
-		+s(btn-back-green)
-	span
-		background-color: #7DBE37
-		+border-radius(0 7px 7px 0)
-		line-height: 34px
-		font-size: 14px
-		display: block
-		margin: 0 0 0 17px 
-		padding: 0 17px 0 0 
 		
 .btn-play
 	color: #FFF
@@ -393,6 +422,8 @@ i
 	padding: 13px 10px 3px
 	display: inline-block
 	vertical-align: top 
+	&:hover
+		+opacity(0.8)
 	&:before
 		content: "" 
 		margin: 0 auto 6px
@@ -415,6 +446,8 @@ i
 	position: relative
 	display: inline-block
 	vertical-align: top
+	&:hover, &:active
+		background-color: rgba(216, 216, 206, 0.95)
 	&:before
 		position: absolute
 		top: 22px
@@ -427,21 +460,26 @@ i
 	+border-radius(4px)
 	display: inline-block
 	vertical-align: top
+	&:hover
+		+s(btn-like-hover)
 	
 .btn-order
 	font-size: 26px
 	color: #FFF
 	+asblack
-	background-color: #DEDEDB
+	background-color: #87CA62
 	padding: 13px 20px 12px 
 	+border-radius(4px)
 	display: inline-block
 	vertical-align: top
 	line-height: 24px
 	text-align: center
-	width: 240px
-	&_green
-		background-color: #87CA62
+	width: 240px	
+	&:hover
+		background-color: #C9E4BA
+	&:active
+		background-color: #58911B
+	&_big
 		padding: 10px 20px 10px
 	
 .btn-basket
@@ -457,6 +495,8 @@ i
 	background-color: #87CA62
 	line-height: 1
 	+border-radius(4px)
+	&:hover, &:active
+		background-color: #58911B
 	&:before
 		content: "" 
 		position: absolute
@@ -495,10 +535,16 @@ i
 	text-decoration: none
 	&:hover, &:focus, &:visited, &:active
 		text-decoration: none
+		color: #42B0EF
+		background: #fff 
 	&_pink
 		color: #E09BAA
+		&:hover, &:focus, &:visited, &:active
+			color: #E09BAA
 	&_dark
 		color: #2D2C62
+		&:hover, &:focus, &:visited, &:active
+			color: #2D2C62
 	
 .btn-registration
 	color: #FFF
@@ -510,6 +556,8 @@ i
 	+border-radius(4px)
 	display: inline-block
 	vertical-align: top 
+	&:hover, &:hover
+		background-color: #58911B
 
 .btn-close
 	display: inline-block
@@ -677,7 +725,44 @@ i
 
 .icon-marker:before
 	content: "\e601"
-	
+
+//icon-text
+.icon-text
+	display: inline-block
+	vertical-align: top
+	font-size: 16px
+	+asbold
+	position: relative
+	padding: 5px 0 5px 50px
+	.i
+		position: absolute
+		top: 50%
+		left: 0
+		+translateY(-50%)
+	&.is-business
+		color: #413939
+	&.is-flower
+		color: #615735
+	&.is-fun
+		color: #E474A4
+	&.is-ball
+		color: #748055
+	&.is-unusual
+		color: #7C6CB3
+	&.is-ruble
+		color: #7A858C
+	&.is-love
+		color: #FA7292
+	&.is-diamond
+		color: #7F649A
+	&.is-umbrella
+		color: #794E1B
+	&.is-symbol
+		color: #87BBD3
+	&.is-car
+		color: #EE9897
+	&.is-dumbbell
+		color: #7A858C
 //ICONS
 .i
 	display: inline-block
@@ -848,3 +933,27 @@ i
 		+svg(car, 36, 33)
 	&.i-dumbbell
 		+svg(dumbbell, 33, 33)
+	&.i-tooth
+		+svg(tooth, 27, 27)
+	&.i-house
+		+s(house-small)
+	&.i-house-big
+		+s(house-big)
+	&.i-smile
+		+s(smile-small)
+	&.i-smile-big
+		+s(smile-big)
+	&.i-labyrinth
+		+s(labyrinth-small)
+	&.i-labyrinth-big
+		+s(labyrinth-big)
+	&.i-cup-small
+		+s(cup-small)
+	&.i-cup-big
+		+s(cup-big)
+	&.i-gift
+		+s(gift)
+	&.i-prize
+		+svg(prize, 42, 34)
+	&.i-time
+		+svg(time, 45, 25)

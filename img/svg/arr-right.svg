@@ -11,9 +11,9 @@
 		<use xlink:href="#SVGID_1_"  overflow="visible"/>
 	</clipPath>
 	
-		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#BEBEB8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" x1="2" y1="8.2" x2="19.3" y2="8.2"/>
+		<line clip-path="url(#SVGID_2_)" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" x1="2" y1="8.2" x2="19.3" y2="8.2"/>
 	
-		<polyline clip-path="url(#SVGID_2_)" fill="none" stroke="#BEBEB8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="
+		<polyline clip-path="url(#SVGID_2_)" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" points="
 		12,1.5 19.3,8.2 12,14.9 	"/>
 </g>
 </svg>
