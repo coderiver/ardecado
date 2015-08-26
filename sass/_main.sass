@@ -1378,4 +1378,181 @@
 	&__next
 		+s(drop-arr)
 		right: 13px
+
+.items
+	.banner
+		margin: 15px 0 
 		
+.item
+	padding: 10px 0 
+	&:hover
+		.item__btns
+			left: 7px
+			ul
+				display: block
+	&__img
+		position: relative
+		font-size: 0
+		border-radius: 10px
+		overflow: hidden
+		margin-bottom: 15px
+		img
+			max-width: 100%
+	&__btns
+		position: absolute
+		right: 7px
+		bottom: 7px
+		background-color: #FFF
+		border-radius: 4px
+		+clr
+		padding: 0 7px 0 10px 
+		&.is-orange
+			background-color: #FF995C
+			.item__price
+				color: #fff 
+		ul
+			float: left
+			padding: 5px 0 
+			display: none
+		li
+			display: inline-block
+			vertical-align: bottom
+			margin: 0 9px 0 0 
+	&__price
+		float: right
+		font-size: 15px
+		color: #6C6161
+		+var
+		line-height: 25px
+		padding: 2px 0 0 
+	&__text
+		color: #716D6D
+		font-size: 14px
+		+semi
+		line-height: 1.2
+		display: block
+		text-align: center
+		
+		
+//icons
+.i-right-big
+	+s(i-right)
+.i-rb-delivery
+	+s(round-delivery-gray)
+.i-rb-room
+	+s(r-room-gray)
+.i-rb-money
+	+s(money-back)
+.i-rb-mouse
+	+s(r-mouse)
+
+//steps
+.steps
+	font-size: 0
+	width: 1180px
+	margin: 0 auto 10px
+	position: relative
+	padding: 20px 0 19px
+	border-bottom: 1px dashed #d8d8d2 
+	.btn-close
+		position: absolute
+		top: 33px
+		right: 22px
+	&__text
+		width: 260px
+		display: inline-block
+		vertical-align: middle
+		color: #72726B
+		font-size: 15px
+		+asbold
+		line-height: 19px
+		padding: 0 50px 0 0
+		position: relative
+		margin: 0 45px 0 0 
+		span
+			background-color: #FFF09F
+			padding: 0 2px 
+		.i
+			position: absolute
+			top: 50%
+			right: 0
+			margin-top: -7px
+	&__list
+		display: inline-block
+		vertical-align: middle
+		li
+			display: inline-block
+			vertical-align: top
+			width: 200px
+			a
+				display: block
+				position: relative
+				color: #72726B
+				font-size: 14px
+				+asbold
+				line-height: 19px
+				&:hover
+					text-decoration: none
+				.i
+					float: left
+					margin: 0 10px 0 0
+				span
+					display: block
+					overflow: hidden
+					padding: 2px 0 2px 0 
+
+//product
+.product
+	padding: 10px 0 
+	&:hover
+		.product__btns
+			left: 11px
+			ul
+				display: block
+	.badge-mod
+		position: absolute
+		top: 8px
+		left: 10px
+		z-index: 5
+	&__img
+		position: relative
+		font-size: 0
+		border-radius: 10px
+		overflow: hidden
+		margin-bottom: 15px
+		img
+			max-width: 100%
+	&__btns
+		position: absolute
+		right: 11px
+		bottom: 45px
+		background-color: #FFF
+		border-radius: 4px
+		+clr
+		padding: 0 7px 0 10px 
+		&.is-orange
+			background-color: #FF995C
+			.item__price
+				color: #fff 
+		ul
+			float: left
+			padding: 5px 0 
+			display: none
+		li
+			display: inline-block
+			vertical-align: bottom
+			margin: 0 9px 0 0 
+	&__price
+		float: right
+		font-size: 15px
+		color: #6C6161
+		+var
+		line-height: 25px
+		padding: 2px 0 0 
+	&__text
+		color: #716D6D
+		font-size: 14px
+		+semi
+		line-height: 1.2
+		display: block
+		text-align: center

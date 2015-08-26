@@ -753,3 +753,56 @@ i { font-style: normal; }
 .pages-mod__prev, .pages-mod__next { position: absolute; top: 50%; margin-top: -5px; }
 .pages-mod__prev { background: url('img/icons-s949600fa4f.png') 0 -2619px no-repeat; width: 6px; height: 9px; left: 13px; }
 .pages-mod__next { background: url('img/icons-s949600fa4f.png') 0 -2638px no-repeat; width: 6px; height: 9px; right: 13px; }
+
+.items .banner { margin: 15px 0; }
+
+.item { padding: 10px 0; }
+.item:hover .item__btns { left: 7px; }
+.item:hover .item__btns ul { display: block; }
+.item__img { position: relative; font-size: 0; border-radius: 10px; overflow: hidden; margin-bottom: 15px; }
+.item__img img { max-width: 100%; }
+.item__btns { position: absolute; right: 7px; bottom: 7px; background-color: white; border-radius: 4px; *zoom: 1; padding: 0 7px 0 10px; }
+.item__btns:after { content: " "; display: table; clear: both; }
+.item__btns.is-orange { background-color: #ff995c; }
+.item__btns.is-orange .item__price { color: white; }
+.item__btns ul { float: left; padding: 5px 0; display: none; }
+.item__btns li { display: inline-block; vertical-align: bottom; margin: 0 9px 0 0; }
+.item__price { float: right; font-size: 15px; color: #6c6161; font-family: "Vagroundedtl Regular", Arial, sans-serif; line-height: 25px; padding: 2px 0 0; }
+.item__text { color: #716d6d; font-size: 14px; font-family: "ProximaNova Semibold", Arial, sans-serif; line-height: 1.2; display: block; text-align: center; }
+
+.i-right-big { background: url('img/icons-s949600fa4f.png') 0 -3508px no-repeat; width: 28px; height: 14px; }
+
+.i-rb-delivery { background: url('img/icons-s949600fa4f.png') 0 -6460px no-repeat; width: 61px; height: 58px; }
+
+.i-rb-room { background: url('img/icons-s949600fa4f.png') 0 -6107px no-repeat; width: 56px; height: 56px; }
+
+.i-rb-money { background: url('img/icons-s949600fa4f.png') 0 -4381px no-repeat; width: 61px; height: 58px; }
+
+.i-rb-mouse { background: url('img/icons-s949600fa4f.png') 0 -5973px no-repeat; width: 59px; height: 57px; }
+
+.steps { font-size: 0; width: 1180px; margin: 0 auto 10px; position: relative; padding: 20px 0 19px; border-bottom: 1px dashed #d8d8d2; }
+.steps .btn-close { position: absolute; top: 33px; right: 22px; }
+.steps__text { width: 260px; display: inline-block; vertical-align: middle; color: #72726b; font-size: 15px; font-family: "ALSSchlangesans Bold", Arial, sans-serif; line-height: 19px; padding: 0 50px 0 0; position: relative; margin: 0 45px 0 0; }
+.steps__text span { background-color: #fff09f; padding: 0 2px; }
+.steps__text .i { position: absolute; top: 50%; right: 0; margin-top: -7px; }
+.steps__list { display: inline-block; vertical-align: middle; }
+.steps__list li { display: inline-block; vertical-align: top; width: 200px; }
+.steps__list li a { display: block; position: relative; color: #72726b; font-size: 14px; font-family: "ALSSchlangesans Bold", Arial, sans-serif; line-height: 19px; }
+.steps__list li a:hover { text-decoration: none; }
+.steps__list li a .i { float: left; margin: 0 10px 0 0; }
+.steps__list li a span { display: block; overflow: hidden; padding: 2px 0 2px 0; }
+
+.product { padding: 10px 0; }
+.product:hover .product__btns { left: 11px; }
+.product:hover .product__btns ul { display: block; }
+.product .badge-mod { position: absolute; top: 8px; left: 10px; z-index: 5; }
+.product__img { position: relative; font-size: 0; border-radius: 10px; overflow: hidden; margin-bottom: 15px; }
+.product__img img { max-width: 100%; }
+.product__btns { position: absolute; right: 11px; bottom: 45px; background-color: white; border-radius: 4px; *zoom: 1; padding: 0 7px 0 10px; }
+.product__btns:after { content: " "; display: table; clear: both; }
+.product__btns.is-orange { background-color: #ff995c; }
+.product__btns.is-orange .item__price { color: white; }
+.product__btns ul { float: left; padding: 5px 0; display: none; }
+.product__btns li { display: inline-block; vertical-align: bottom; margin: 0 9px 0 0; }
+.product__price { float: right; font-size: 15px; color: #6c6161; font-family: "Vagroundedtl Regular", Arial, sans-serif; line-height: 25px; padding: 2px 0 0; }
+.product__text { color: #716d6d; font-size: 14px; font-family: "ProximaNova Semibold", Arial, sans-serif; line-height: 1.2; display: block; text-align: center; }
