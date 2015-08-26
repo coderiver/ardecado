@@ -1390,6 +1390,10 @@
 			left: 7px
 			ul
 				display: block
+			&.is-orange
+				background: #fff
+				.item__price
+					color: #6C6161 
 	&__img
 		position: relative
 		font-size: 0
@@ -1450,7 +1454,7 @@
 .steps
 	font-size: 0
 	width: 1180px
-	margin: 0 auto 10px
+	margin: 0 auto 
 	position: relative
 	padding: 20px 0 19px
 	border-bottom: 1px dashed #d8d8d2 
@@ -1504,6 +1508,8 @@
 //product
 .product
 	padding: 10px 0 
+	margin: 37px 0 0
+	position: relative 
 	&:hover
 		.product__btns
 			left: 11px
@@ -1511,7 +1517,7 @@
 				display: block
 	.badge-mod
 		position: absolute
-		top: 8px
+		top: 18px
 		left: 10px
 		z-index: 5
 	&__img
@@ -1556,3 +1562,285 @@
 		line-height: 1.2
 		display: block
 		text-align: center
+
+//remind
+.remind
+	text-align: center
+	background: #f9f9f6 
+	padding: 15px 14px 20px 15px 
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
+	position: relative
+	margin: 52px 0 0 
+	&:after
+		position: absolute
+		top: -52px
+		left: 50%
+		margin-left: -17px
+		content: ""
+		+s(remind-deco)
+	&__text
+		+s(remind-text)
+		color: #282828
+		font-size: 16px
+		+asbold
+		line-height: 19px
+		margin-left: -7px
+		margin-bottom: 2px
+	&__days
+		background: url(../img/icons/remind-day.png) no-repeat center top 
+		padding: 20px 20px 10px
+		span, small
+			display: block
+			color: #413939
+		span
+			font-size: 48px
+			+var
+			line-height: 40px
+		small
+			font-size: 24px
+			+asblack
+			line-height: 1
+	&__field
+		margin-bottom: 10px
+		label
+			display: block
+			position: relative
+			&:after
+				position: absolute
+				top: 50%
+				right: 10px
+				+s(remind-arr)
+				margin-top: -6px
+				content: "" 
+		span
+			font-size: 12px
+			+asbold
+			color: #636363
+			display: block
+			text-align: center
+			margin-bottom: 10px
+	&__input
+		width: 100%
+		font-size: 14px
+		+semi
+		color: #C8C8C8
+		padding: 6px 20px 5px 10px
+		background-color: #F9F9F6
+		border: 2px solid #DDDDD5
+		border-radius: 2px
+	&__link
+		color: #25C7EA
+		text-decoration: underline
+		font-size: 24px
+		+asbold
+	&__for, p
+		font-size: 14px
+		+asbold
+		color: #676760
+		line-height: 1.2
+		margin-bottom: 5px
+		position: relative
+		p
+			padding: 0 2px 
+		span
+			color: #25C7EA
+			border-color: #25C7EA 
+			cursor: pointer
+		ul
+			position: absolute
+			background-color: #FFF
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.14)
+			text-align: center
+			padding: 0 12px 
+			border-radius: 5px
+			visibility: hidden
+			opacity: 0
+			+transition(opacity 0.3s, visibility 0.3s)
+			&.is-active
+				opacity: 1
+				visibility: visible
+			li
+				color: #676760
+				cursor: pointer
+				width: 60px
+				border-top: 1px solid #f5f5f3 
+				position: relative
+				line-height: 31px
+				&:hover				
+					color: #25C7EA
+					&:before
+						display: none
+				&:first-child
+					border-top: none
+				&:before
+					opacity: 0.4
+					width: 5px
+					height: 5px
+					background-color: #90908A
+					content: "" 
+					border-radius: 50%
+					content: "" 
+					position: absolute
+					top: 50%
+					left: -4px
+					margin-top: -3px
+			
+			
+//m-slider
+.m-slider
+	position: relative 
+	padding: 32px 0 0 
+	&__inner		
+		height: 349px
+		position: relative
+		background: url(../img/m-slider.png) no-repeat center center
+		overflow: hidden
+	&__btns
+		font-size: 0
+		text-align: center
+		padding: 7px 0 34px 
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		li
+			display: inline-block
+			vertical-align: top
+			padding: 5px 
+			a
+				color: #fff
+				font-size: 16px
+				+asblack
+				line-height: 41px
+				padding: 0 20px
+				display: inline-block
+				border-radius: 10px  
+				position: relative
+				&:hover, &.is-active					
+					background: rgba(255, 255, 255, 0.3)
+					text-decoration: none 
+	.slick-dots
+		left: auto
+		right: 60px
+		width: 200px
+		bottom: 90px
+		li
+			padding: 0
+			margin: 0 2px  
+		button
+			+box-shadow(none)
+			background-color: #FBD7C1
+			width: 7px
+			height: 7px
+		.slick-active
+			button
+				background-color: #C8692D
+	.slick-next, .slick-prev
+		margin-top: -23px
+		border-radius: 50%
+		background: #fff 
+		width: 46px
+		height: 46px
+		&:before
+			content: "" 
+			line-height: 1
+			font-size: 0
+			height: auto
+	.slick-next
+		&:before
+			+s(m-next)
+			margin: 2px 0 0 2px
+	.slick-prev
+		&:before
+			+s(m-prev)
+			margin: 2px 2px 0 0
+
+.m-slide
+	padding: 27px 60px 0 69px
+	+clr
+	background: url(../img/m-slider.png) no-repeat top center
+	&__big
+		float: left
+		width: 450px
+		+clr
+		position: relative
+	&__small
+		width: 200px
+		float: right
+		+clr
+		padding: 18px 0 0 
+	&__item
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 0
+		visibility: hidden
+		+transition(all 0.3s)
+		&.is-active
+			position: relative
+			visibility: visible
+			opacity: 1
+	&__img
+		width: 153px
+		float: left
+		margin: 0 10px 0 0 
+		img
+			max-width: 100%
+	&__text
+		overflow: hidden
+		padding: 25px 0 0
+	&__title
+		color: #FFF
+		font-size: 37px
+		+asblack
+		line-height: 1.1
+		display: inline-block
+		margin-bottom: 10px
+		&:hover
+			color: #fff 
+	p
+		color: #F3E8D4
+		font-size: 16px
+		+asbold
+		line-height: 18px
+		padding: 0 0 5px 
+	&__price
+		color: #721107
+		+var
+		font-size: 30px
+		padding: 2px 12px 3px
+		z-index: 2
+		position: relative
+		margin: 10px 2px 15px
+		display: inline-block
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+			background: #ffe6ab
+			+rotate(-2) 
+			content: "" 
+			-webkit-transform-origin: left center 
+			-moz-transform-origin: left center 
+			-ms-transform-origin: left center 
+			-o-transform-origin: left center 
+			transform-origin: left center 
+			+border-radius(5px)
+		b
+			position: relative
+			z-index: 2
+	&__photo
+		float: left
+		padding: 8px
+		cursor: pointer
+		&.is-active
+			background: url(../img/icons/m-slide-active.png) no-repeat center center
+		img
+			width: 50px
+			height: 50px
+			display: block
+
+.top
+	margin-bottom: 30px 
