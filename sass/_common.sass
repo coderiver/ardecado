@@ -105,60 +105,59 @@ body
 //res
 h1, h2, h3, h4, h5, h6, b, strong, label
 	font-weight: normal
+h1, h2, h3, h4, h5, h6, .title-h1, .title-h2, .title-h3, .title-h4, .title-h5, .title-h6, p
+	margin: 20px 0 
+h1, .title-h1
+	font-size: 48px
+	+asblack
+	line-height: 1
+	&.is-pink
+		color: #eb778f 
+	&.is-gray
+		color: #4a495b
+	&.is-black
+		color: #312b26 
+	&.is-red
+		color: #f57676 
+		
+h2, .title-h2
+	font-size: 44px
+	line-height: 1
+	+asblack
+	color: #595b48 
+	
+h3, .title-h3
+	font-size: 35px
+	color: #595b48
+	+asblack
+	line-height: 38px
+h4, .title-h4
+	font-size: 34px
+	color: #75726e
+	+asbold
+	line-height: 38px
+	
+h5, .title-h5
+	font-size: 30px
+	color: #4a485b
+	+asblack
+	line-height: 1
+h6, .title-h6
+	font-size: 26px
+	color: #4a485b
+	+asblack
+	line-height: 1.2
+	&.h6-small
+		font-size: 16px
+		color: #b8b8b0
+		+asbold 
+		line-height: 1.2	
 i
 	font-style: normal
 *
 	outline: none !important
 .text
-	h1, h2, h3, h4, h5, h6, .title-h1, .title-h2, .title-h3, .title-h4, .title-h5, .title-h6, p
-		margin: 20px 0 
-	h1, .title-h1
-		font-size: 48px
-		+asblack
-		line-height: 1
-		&.is-pink
-			color: #eb778f 
-		&.is-gray
-			color: #4a495b
-		&.is-black
-			color: #312b26 
-		&.is-red
-			color: #f57676 
-			
-	h2, .title-h1
-		font-size: 44px
-		line-height: 1
-		+asblack
-		color: #595b48 
-		
-	h3, .title-h1
-		font-size: 35px
-		color: #595b48
-		+asblack
-		line-height: 38px
-
-	h4, .title-h1
-		font-size: 34px
-		color: #75726e
-		+asbold
-		line-height: 38px
-		
-	h5, .title-h1
-		font-size: 30px
-		color: #4a485b
-		+asblack
-		line-height: 1
-
-	h6, .title-h1
-		font-size: 26px
-		color: #4a485b
-		+asblack
-		line-height: 1.2
-		&.h6-small
-			font-size: 16px
-			color: #b8b8b0
-			+asbold 
-			line-height: 1.2 
+	 
 	p	
 		line-height: 20px
 		
@@ -842,8 +841,6 @@ i
 		color: #42B0EF
 		&:before
 			content: "\e60c"
-	&.i-right
-		+s(i-right)
 	&.i-home
 		font-size: 14px
 		color: #8A8DA5

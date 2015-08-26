@@ -1,0 +1,68 @@
+// styles for order pages
+.i
+	&.i-r-basket-gray
+		+s(r-basket-gray)
+	&.i-r-basket-green
+		+s(r-basket-green)
+	&.i-r-money
+		+s(r-money)
+	&.i-r-money-green
+		+s(r-money-green)
+	&.i-r-check-gray
+		+s(r-check-gray)
+	&.i-r-check-green		
+		+s(r-check-green)
+.ordering
+	position: relative
+	text-align: center
+	margin-bottom: 35px
+	.ordering__in
+		padding-top: 10px
+		font-size: 0
+		& > .i
+			vertical-align: middle
+			margin: 0 15px
+	.ordering__step
+		display: inline-block
+		vertical-align: middle
+		font-size: 0
+		.i, span
+			display: inline-block
+			vertical-align: middle
+		.i
+			margin-right: 10px
+			&.i-r-basket-green, &.i-r-money-green, &.i-r-check-green
+				display: none 
+		span
+			+asbold
+			font-size: 20px
+			color: #888681
+		&.is-active
+			.i
+				&.i-r-basket-green, &.i-r-money-green, &.i-r-check-green
+					display: inline-block
+				&.i-r-basket-gray, &.i-r-money, &.i-r-check-gray
+					display: none
+			span
+				+asblack
+				color: #4a485b			
+.order-wrap
+	max-width: 1280px
+	margin: 0 auto 68px
+	border-radius: 8px
+	background: #e4ebcc
+	border: 16px solid #fbfbfa
+	box-shadow: 0 5px 49px rgba(0, 0, 0, 0.17)
+.order
+	background: #e4ebcc
+	padding: 32px  
+.bill
+	position: relative
+	background: #fff
+	padding: 5px
+	.bill__in
+		+g(#fff, #f0f0f0)
+
+
+
+				
