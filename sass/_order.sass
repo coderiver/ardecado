@@ -12,6 +12,8 @@
 		+s(r-check-gray)
 	&.i-r-check-green		
 		+s(r-check-green)
+	&.i-remind-deco
+		+s(remind-deco)	
 .ordering
 	position: relative
 	text-align: center
@@ -60,8 +62,108 @@
 	position: relative
 	background: #fff
 	padding: 5px
+	&:before
+		content: ""
+		position: absolute
+		top: -24px
+		left: -4px
+		+s(remind-deco)
+		+rotate(15)
+		z-index: 2
 	.bill__in
-		+g(#fff, #f0f0f0)
+		+g(#fff, #fbfafa)
+		p
+			font-size: 12px
+			color: #858490
+	.bill__topper
+		text-align: center
+		padding-top: 25px
+		padding-bottom: 12px
+		margin-bottom: 10px 
+		border-bottom: 1px dashed #eee 
+		.title-h6
+			margin: 0
+	.bill__content
+		text-align: center
+		p
+			margin-bottom: 5px
+	.bill__item
+		margin-bottom: 20px		
+	.bill__price, .bill__deliver
+		+var
+		font-size: 18px
+		color: #18171d 
+		margin-bottom: 10px
+	.bill__text
+		margin-bottom: 10px
+		font-size: 14px
+		+asbold
+		color: #4a485b	
+	.bill__cards
+		font-size: 0
+		li
+			display: inline-block
+			vertical-align: middle
+			margin: 0 4px 
+	.bill__pay
+		display: inline-block
+		margin-bottom: 5px
+		padding: 5px 10px 15px 
+		background: url(../img/total-price.png) 0 0 no-repeat
+		-webkit-background-size: 100% 100% 
+		-o-background-size: 100% 100% 
+		background-size: 100% 100% 
+		p
+			margin-bottom: 0			
+	.bill__total
+		font-size: 28px
+		+var
+		color: #18171d 	
+	.bill__agreement
+		padding: 0 20px 	
+	.bill__checkbox
+		position: relative
+		display: block
+		padding-left: 20px
+		input
+			position: absolute
+			opacity: 0
+		span
+			position: relative
+			+semi
+			font-size: 12px
+			color: #858490
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				left: 0
+				width: 12px
+				height: 12px
+				border-radius: 2px
+				border: 1px solid #ceced4
+			&:after
+				content: ""
+				position: absolute
+				top: 3px
+				left: 3px
+				+s(checkbox-small)
+				display: none
+		input:checked + span
+			&:after
+				display: block		
+				 
+			
+
+				
+	
+
+
+
+
+
+
+
 
 
 
