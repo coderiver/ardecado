@@ -256,6 +256,11 @@ head.ready(function() {
 		});
 	};
 
-	
+	$('.js-carousel').slick({
+		dots: false,
+		arrows: false,
+		slidesToShow: 6,
+		slidesToScroll: 1
+	});
 
 });

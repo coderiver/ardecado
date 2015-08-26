@@ -1380,9 +1380,45 @@
 		right: 13px
 
 .items
+	&__top
+		margin-bottom: 30px
 	.banner
 		margin: 15px 0 
-		
+	.btn-all
+		margin: 35px 0 0 
+	&__pages
+		float: right
+		padding: 0 50px
+		position: relative
+		font-size: 0
+		margin: 34px 0 0 
+		span
+			color: #F57676
+			font-size: 30px
+			+var
+			padding: 8px 4px 0 
+			line-height: 1
+			display: inline-block
+			vertical-align: top
+	&__left, &__right
+		position: absolute
+		top: 50%
+		margin-top: -19px
+		cursor: pointer
+	&__left
+		+s(item-left)
+		left: 0
+		&:hover
+			+s(item-left-hover)
+	&__right
+		+s(item-right)
+		right: 0
+		&:hover
+			+s(item-right-hover)
+	&__total
+		&:before
+			content: "/"
+			padding: 0 8px 0 0 
 .item
 	padding: 10px 0 
 	&:hover
@@ -1843,4 +1879,31 @@
 			display: block
 
 .top
-	margin-bottom: 30px 
+	margin-bottom: 40px 
+	
+//holiday-title
+.holiday-title
+	text-align: center
+	small
+		color: #B4B4AA
+		font-size: 16px
+		+asbold
+		line-height: 18px
+		display: block
+	span
+		position: relative
+		color: #F57676
+		font-size: 48px
+		+asblack
+		padding: 0 35px 0 60px
+		display: inline-block
+		.i
+			position: absolute
+		.i-deer, .i-pie
+			top: 0
+			left: 0
+		.i-star
+			top: 5px
+			right: 0
+			cursor: pointer
+			
