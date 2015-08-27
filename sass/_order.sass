@@ -217,7 +217,7 @@
 		margin: 0 auto
 		.selectfix-container
 			font-size: 22px		
-	.delivery__kind
+	.delivery__kind, .delivery__info
 		padding: 30px 0 25px
 		border-bottom: 1px dashed #cad6b3				 
 		
@@ -255,8 +255,92 @@
 		+var
 		font-size: 18px 			 			
 
-				
-	
+// tabs
+.tabs-wrap
+	position: relative				
+.tabs
+	text-align: center
+	margin-bottom: 18px
+.btn-tab
+	display: inline-block
+	vertical-align: middle
+	margin: 0 10px
+	padding: 0 15px
+	border-radius: 3px
+	color: #42b0ef
+	+asblack
+	font-size: 20px
+	span
+		display: inline-block
+		line-height: 1
+		border-bottom: 1px dotted
+	&:hover
+		color: #42b0ef
+		span
+			border-color: transparent 	
+	&.is-active
+		background: #f4fbdc
+		color: #595b48
+		span
+			border-bottom: none 	
+// form grid
+.form
+	.form__row
+		+clr
+		margin: 0 -10px 20px
+	.form__col
+		float: left
+		position: relative
+		min-height: 1px
+		padding: 0 10px 
+	.form__col-1		
+		width: 12.5%
+	.form__col-2
+		width: 25% 	 
+	.form__col-3
+		width: 37.5%
+	.form__col-4
+		width: 50%
+	.form__col-5
+		width: 62.5%
+	.form__col-6
+		width: 75%	
+	.form__col-7
+		width: 87.5%				
+	.form__col-8
+		width: 100%
+
+.required-field
+	color: #f04040
+	+semi
+	font-size: 18px
+
+.text-field
+	p
+		+semi
+		font-size: 18px
+		color: #8c917b
+		margin-bottom: 8px
+	.text-field__block
+		display: block
+		padding: 2px 
+		border-radius: 2px
+		+g(#cad4aa, #dde6bf)
+		input
+			width: 100%
+			height: 42px
+			padding: 0 10px
+			color: #4a485b
+			+asbold
+			font-size: 18px
+			+placeholder
+
+
+
+
+
+
+
 
 
 
