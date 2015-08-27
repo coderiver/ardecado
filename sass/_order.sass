@@ -76,11 +76,11 @@
 	&:after
 		content: ""
 		position: absolute
-		top: 0
+		top: -2px
 		right: 0
 		width: 69px
 		height: 67px
-		background: url(../img/paper.png) 0 0 no-repeat	
+		background: url(img/paper.png) 0 0 no-repeat	
 	.bill__in
 		position: relative
 		+g(#fff, #fbfafa)
@@ -195,10 +195,14 @@
 	.delivery__step
 		position: relative
 		margin-bottom: 20px
+		text-align: center
+		.i
+			position: relative
+			top: 2px
 		.delivery__indicator
 			position: absolute
-			top: 9px
-			right: 0
+			top: 13px
+			right: 22px
 			&:before
 				content: ""
 				position: absolute
@@ -209,9 +213,47 @@
 				&:before
 					+s(check-mod-green)
 	.delivery__center
-		text-align: center
-						 
-			
+		width: 280px
+		margin: 0 auto
+		.selectfix-container
+			font-size: 22px		
+	.delivery__kind
+		padding: 30px 0 25px
+		border-bottom: 1px dashed #cad6b3				 
+		
+.faraway
+	text-align: center
+	p
+		margin-bottom: 12px
+		+asbold
+		font-size: 14px
+		color: #595b48
+		strong
+			font-size: 16px
+			+asblack 
+	.faraway__type
+		display: inline-block
+		margin-bottom: 40px
+		padding: 0 15px
+		border-radius: 3px
+		background: #f4fbdc
+		+asblack
+		font-size: 20px
+		color: #595b48 
+	.faraway__icon
+		height: 31px
+		width: 31px
+		margin: 0 auto 10px 
+		border-radius: 3px
+		background: #a3a795
+		padding-top: 7px
+		text-align: center  
+		span
+			display: inline-block
+			+s(check-delivery)
+	.faraway__price
+		+var
+		font-size: 18px 			 			
 
 				
 	
