@@ -883,7 +883,7 @@
 	img
 		width: 100%
 		
-.form
+.m-form
 	&__label, p
 		color: #716D6D
 		font-size: 18px
@@ -1209,71 +1209,13 @@
 	font-size: 0
 	+border-radius(13px)
 	overflow: hidden
-	margin: 10px 0 
+	padding: 10px 0 
 	&_tree
-		margin-top: -3px
+		margin-top: -13px
 	&_item
-		min-height: 228px
+		min-height: 248px
 	img
 		width: 100%
-	
-
-.action
-	position: relative
-	display: block
-	padding: 0 50px 0 0 
-	&__info, &__percent
-		background: #c5e7e9 
-		+border-radius(13px)
-	&__info
-		padding: 20px 10px 19px 18px
-		position: relative
-		&:after
-			position: absolute
-			right: -3px
-			top: 7px
-			bottom: 7px
-			border-right: 3px dotted #c3e6e8
-			content: ""  
-	&__percent
-		position: absolute
-		top: 121px
-		bottom: 0
-		right: 0
-		+rotate(90)
-		width: 121px
-		height: 50px
-		-webkit-transform-origin: top right 
-		-moz-transform-origin: top right 
-		-ms-transform-origin: top right 
-		-o-transform-origin: top right 
-		transform-origin: top right 
-		text-align: center
-		span
-			color: #4B94BD
-			font-size: 34px
-			+var
-			display: block
-			padding: 3px 0 0 
-	&__title
-		color: #4B95BE
-		font-size: 21px
-		+asblack
-		margin-bottom: 7px
-		display: block
-	small
-		font-size: 17px
-		color: #FFF
-		+asblack
-		display: inline-block
-		line-height: 23px
-		b
-			padding: 0 10px 0 7px
-			background: url(img/action-price.png) no-repeat top center
-			-webkit-background-size: contain 
-			-o-background-size: contain 
-			background-size: contain 
-			display: inline-block
 			
 .panel
 	background: rgba(255, 255, 255, 0.95)
@@ -1396,6 +1338,7 @@
 		right: 13px
 
 .items
+	padding: 20px 0 0 
 	&__top
 		margin-bottom: 10px
 	.banner
@@ -1438,7 +1381,6 @@
 .item
 	padding: 10px 0 
 	height: 248px
-	overflow: hidden
 	&:hover
 		.item__btns
 			left: 7px
@@ -1448,6 +1390,11 @@
 				background: #fff
 				.item__price
 					color: #6C6161 
+	.badge-mod
+		position: absolute
+		right: 0
+		top: -15px
+		z-index: 10 
 	&__img
 		position: relative
 		font-size: 0
@@ -1902,7 +1849,7 @@
 			display: block
 
 .top
-	margin-bottom: 40px 
+	margin-bottom: 20px 
 	
 //holiday-title
 .holiday-title
@@ -1935,7 +1882,8 @@
 	opacity: 0
 	visibility: hidden
 	+tr(opacity 300ms)
-	padding: 20px 0 
+	.slick-list
+		padding: 20px 0
 	&.is-loaded
 		visibility: visible
 		opacity: 1 
@@ -2180,3 +2128,87 @@
 			right: 89px
 			top: -43px
 			+s(calendar-deco-right)
+
+.focus
+	max-width: 362px
+	float: right
+	padding: 10px 0 
+	position: relative
+	&__bird, &__title, &__sheet
+		position: absolute
+		z-index: 20
+	&__bird
+		top: 53px
+		left: 19px
+		+s(focus-bird)
+	&__title
+		top: 44px
+		left: 50%
+		margin-left: -91px
+		+s(focus-title)
+	&__sheet
+		right: 4px
+		bottom: 91px 
+		+s(focus-sheet)
+	&__slide
+		padding: 88px 86px 32px 96px 
+		background: url(img/focus-bg.png) no-repeat center center
+		text-align: center
+		height: 362px
+	&__img
+		display: block
+		margin: 0 auto
+		width: 180px
+		height: 180px
+		border-radius: 50%
+		overflow: hidden
+		background: #fff
+		margin-bottom: 6px 
+		img
+			width: 100%
+			height: 100%
+			border-radius: 50%
+	&__text
+		color: #1F1F22
+		font-size: 14px
+		+semi
+		-ms-text-overflow: ellipsis
+		text-overflow: ellipsis
+		overflow: hidden
+		white-space: nowrap
+		display: block
+		margin-bottom: 10px
+	&__price
+		color: #6C6161
+		font-size: 14px
+		+var
+		padding: 8px 7px 5px
+		line-height: 1 
+		background: #fff
+		border-radius: 4px 
+		display: inline-block
+	.slick-next, .slick-prev
+		margin-top: -27px
+		top: 50%
+		background: #fff
+		border-radius: 50%
+		width: 54px
+		height: 54px
+		+scale(0.7)
+		+transition(all 0.2s)
+		&:hover
+			+scale(1)
+		&:before
+			content: "" 
+			position: absolute
+			top: 50%
+			left: 50%
+			+translate(-50%, -50%)
+	.slick-next
+		right: 19px
+		&:before
+			+s(focus-right)
+	.slick-prev
+		left: 19px
+		&:before
+			+s(focus-left)
