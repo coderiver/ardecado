@@ -256,11 +256,54 @@ head.ready(function() {
 		});
 	};
 
-	$('.js-carousel').slick({
-		dots: false,
-		arrows: false,
-		slidesToShow: 6,
-		slidesToScroll: 1
+	
+
+	$('.js-carousel-parent').each(function() {
+		var slider = $(this).find('.js-carousel'),
+			index = 6,
+			counter = $(this).find('.js-carousel-current'),
+			totalBox = $(this).find('.js-carousel-total'),
+			prev = $(this).find('.js-carousel-prev'),
+			next = $(this).find('.js-carousel-next');
+
+		slider.on('init', function(event, slick) {
+			$(this).addClass('is-loaded');
+		})
+
+		slider.slick({
+			dots: false,
+			arrows: false,
+			slidesToShow: 6,
+			slidesToScroll: 6
+		});	
+
+		var slide = slider.find('.slick-slide').length,
+			cloneSlide = slider.find('.slick-cloned').length;
+
+		total = slide -	cloneSlide;
+
+		totalBox.text(total);
+		counter.text(index);
+			
+		// slide change event	
+		slider.on('afterChange', function(event, slick, currentSlide) {
+			index = currentSlide;
+
+			index = index + 6;
+			
+			counter.text(index);
+		});
+
+		// navigation
+		prev.on('click', function() {
+			slider.slick('slickPrev');
+		});
+
+		next.on('click', function() {
+			slider.slick('slickNext');
+		});
+
+
 	});
 
 });
