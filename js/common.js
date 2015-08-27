@@ -312,4 +312,9 @@ head.ready(function() {
 		'search': true
 	});
 
+	$('.js-slider').slick({
+		fade: true,
+		dots: false
+	});
+
 });
