@@ -317,4 +317,27 @@ head.ready(function() {
 		dots: false
 	});
 
+	$('.js-calendar-parent').each(function() {
+		var slider = $(this).find('.js-calendar-slider'),
+			prev = $(this).find('.js-calendar-prev'),
+			next = $(this).find('.js-calendar-next');
+
+		$('.js-calendar-slider').slick({
+			dots: false,
+			slidesToShow: 5,
+			slidesToScroll: 5,
+			arrows: false
+		});
+
+		prev.on('click', function() {
+			slider.slick('slickPrev');
+		});
+
+		next.on('click', function() {
+			slider.slick('slickNext');
+		});
+	});
+
+	
+
 });

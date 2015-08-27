@@ -1436,10 +1436,9 @@
 			content: "/"
 			padding: 0 8px 0 0 
 .item
-	margin: 10px 0 
-	height: 228px
+	padding: 10px 0 
+	height: 248px
 	overflow: hidden
-	float: left
 	&:hover
 		.item__btns
 			left: 7px
@@ -1494,6 +1493,8 @@
 		line-height: 1.2
 		display: block
 		text-align: center
+		max-height: 32px
+		overflow: hidden 
 		
 		
 //icons
@@ -2034,3 +2035,148 @@
 			width: 100%
 	li
 		display: inline-block
+		
+.calendar
+	padding: 20px 0 
+	&__body
+		+g(#f9f9f6, #f8f8f5)
+		position: relative
+		+clr
+		padding: 20px 0 25px 
+		&:before
+			+s(calendar-corner)
+			background-color: #ecece4
+			position: absolute
+			top: 0
+			right: 0 
+			content: "" 
+	&__all
+		float: right
+		width: 20%
+		padding: 10px 36px 0
+		position: relative
+		height: 105px
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			width: 4px
+			background: url(img/icons/calendar-border.png) repeat-y top center
+		a
+			font-size: 16px
+			color: #343434
+			+asblack
+			display: inline-block
+			+s(calendar-all)
+			padding: 15px 0 0 37px 
+			line-height: 1.2
+			&:hover, &:focus, &:active
+				text-decoration: none
+	&__slider
+		width: 80%
+		float: left
+	&__slide
+		width: 20%
+		text-align: center
+		float: left
+		position: relative
+		&:before
+			position: absolute
+			top: 4px
+			bottom: 4px
+			left: -1px
+			border-left: 1px solid #eeeeeb
+			content: "" 
+		span
+			display: block
+	&__link
+		color: #535353
+		display: block
+		padding: 0 20px 
+		height: 112px
+		overflow: hidden
+		&:hover, &:active, &:focus
+			color: #F96868
+			text-decoration: none
+			.calendar__month
+				color: #F96868
+	&__number
+		font-size: 30px
+		+var
+		line-height: 1
+	&__month
+		color: #9A9898
+		font-size: 11px
+		+semi
+		text-transform: uppercase
+		line-height: 1
+		margin-bottom: 13px
+	&__holiday
+		line-height: 18px
+		font-size: 16px
+		+asbold
+		margin-bottom: 10px
+	&__gifts
+		color: #A7A7A7
+		font-size: 12px
+		+reg
+		line-height: 1
+	&__top
+		text-align: center
+		padding: 0 80px
+		position: relative 
+		margin-bottom: 35px
+	&__title
+		padding: 0 32px 
+		display: inline-block
+		position: relative
+		color: #75726E
+		font-size: 34px
+		+asbold
+		line-height: 1
+		.i
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -18px
+	&__arrows
+		position: absolute
+		top: 50%
+		right: 0
+		margin-top: -16px
+		width: 80px
+		text-align: right
+		font-size: 0
+	&__prev, &__next
+		width: 32px
+		height: 32px
+		border-radius: 50%
+		background-repeat: no-repeat
+		background-position: center center 
+		background-size: contain
+		display: inline-block
+		vertical-align: top
+		cursor: pointer
+		margin-left: 7px
+	&__prev
+		background-image: url(img/icons/item-left.png)
+		&:hover
+			background-image: url(img/icons/item-left-hover.png) 
+	&__next
+		background-image: url(img/icons/item-right.png)
+		&:hover
+			background-image: url(img/icons/item-right-hover.png) 
+	&__deco
+		&:before, &:after
+			content: "" 
+			position: absolute
+		&:before
+			left: 25px
+			top: -48px
+			+s(calendar-deco-left)
+		&:after
+			right: 89px
+			top: -43px
+			+s(calendar-deco-right)
