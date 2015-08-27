@@ -303,7 +303,13 @@ head.ready(function() {
 			slider.slick('slickNext');
 		});
 
+	});
 
+	// select
+	$('select').selectFix({
+		'container-max-height': 200,
+		'arrow': true,
+		'search': true
 	});
 
 });
