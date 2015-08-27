@@ -961,12 +961,16 @@
 		line-height: 18px
 		
 //slider
+.sliders
+	padding: 10px 0 
 .slider-banner
 	position: relative
 	max-width: 480px
 
 .slider-big
 	position: relative
+	background: #e9deb5 
+	+border-radius(13px) 
 
 .slide-big
 	// position: relative
@@ -1052,12 +1056,18 @@
 		b
 			position: relative
 			z-index: 2
+
+.slider-med
+	background: #98deeb
+	+border-radius(13px)  
 	
 .slide-med
 	position: relative
-	background: url(../img/slide-med-bg.png) no-repeat center center #98deeb 
+	background: url(img/slide-med-bg.png) no-repeat center center #98deeb 
 	+border-radius(13px) 
-	padding: 25px 23px 102px
+	padding: 25px 23px 85px
+	height: 343px
+	overflow: hidden
 	+clr
 	position: absolute
 	top: 0
@@ -1194,13 +1204,19 @@
 	
 //banners
 .banner
-	display: inline-block
+	display: block
 	max-width: 100%
 	font-size: 0
 	+border-radius(13px)
 	overflow: hidden
+	margin: 10px 0 
+	&_tree
+		margin-top: -3px
+	&_item
+		min-height: 228px
 	img
 		width: 100%
+	
 
 .action
 	position: relative
@@ -1253,7 +1269,7 @@
 		line-height: 23px
 		b
 			padding: 0 10px 0 7px
-			background: url(../img/action-price.png) no-repeat top center
+			background: url(img/action-price.png) no-repeat top center
 			-webkit-background-size: contain 
 			-o-background-size: contain 
 			background-size: contain 
@@ -1381,7 +1397,7 @@
 
 .items
 	&__top
-		margin-bottom: 30px
+		margin-bottom: 10px
 	.banner
 		margin: 15px 0 
 	.btn-all
@@ -1420,7 +1436,10 @@
 			content: "/"
 			padding: 0 8px 0 0 
 .item
-	padding: 10px 0 
+	margin: 10px 0 
+	height: 228px
+	overflow: hidden
+	float: left
 	&:hover
 		.item__btns
 			left: 7px
@@ -1436,8 +1455,11 @@
 		border-radius: 10px
 		overflow: hidden
 		margin-bottom: 15px
+		width: 180px
+		height: 181px
 		img
 			max-width: 100%
+			max-height: 100% 
 	&__btns
 		position: absolute
 		right: 7px
@@ -1623,7 +1645,7 @@
 		margin-left: -7px
 		margin-bottom: 2px
 	&__days
-		background: url(../img/icons/remind-day.png) no-repeat center top 
+		background: url(img/icons/remind-day.png) no-repeat center top 
 		padding: 20px 20px 10px
 		span, small
 			display: block
@@ -1729,7 +1751,7 @@
 	&__inner		
 		height: 349px
 		position: relative
-		background: url(../img/m-slider.png) no-repeat center center
+		background: url(img/m-slider.png) no-repeat center center
 		overflow: hidden
 	&__btns
 		font-size: 0
@@ -1794,7 +1816,7 @@
 .m-slide
 	padding: 27px 60px 0 69px
 	+clr
-	background: url(../img/m-slider.png) no-repeat top center
+	background: url(img/m-slider.png) no-repeat top center
 	&__big
 		float: left
 		width: 450px
@@ -1872,7 +1894,7 @@
 		padding: 8px
 		cursor: pointer
 		&.is-active
-			background: url(../img/icons/m-slide-active.png) no-repeat center center
+			background: url(img/icons/m-slide-active.png) no-repeat center center
 		img
 			width: 50px
 			height: 50px
@@ -1912,13 +1934,103 @@
 	opacity: 0
 	visibility: hidden
 	+tr(opacity 300ms)
+	padding: 20px 0 
 	&.is-loaded
 		visibility: visible
 		opacity: 1 
 
+//hot
+.hot
+	background: #fae6d2
+	border-radius: 13px
+	position: relative
+	padding: 25px 40px 20px 
+	height: 343px
+	margin: 10px 0 
+	.badge-mod
+		position: absolute
+		left: -28px
+		top: 52px
+		z-index: 20
+	&__title
+		color: #865959
+		font-size: 32px
+		+asblack
+		line-height: 28px
+		display: block
+		text-align: center
+		margin-bottom: 22px
+	&__slide
+		text-align: center
+		background: #fae6d2
+		height: 216px
+		overflow: hidden
+	&__img
+		display: block
+		text-decoration: none
+		width: 167px
+		height: 167px
+		+vertical
+		position: relative
+		margin: 0 auto 17px
+		background-color: #F6F5F1
+		border-radius: 13px
+		&:hover
+			text-decoration: none
+		img
+			display: inline-block
+			vertical-align: middle
+			max-width: 100%
+			max-height: 100% 
+	&__price
+		color: #6C6161
+		font-size: 13px
+		+var
+		line-height: 1
+		padding: 9px 11px 6px 12px  
+		background: #fff
+		border-radius: 5px 
+		position: absolute
+		bottom: 11px
+		right: 6px
+	&__text
+		color: #744E4E
+		font-size: 13px
+		+semi
+		line-height: 1.2
+	.slick-next, .slick-prev
+		margin: 0
+		top: 67px
+		&:before
+			display: none
+	.slick-next
+		right: -30px
+		+s(hot-right)
+	.slick-prev
+		left: -30px
+		+s(hot-left)
 
+.line
+	padding: 20px 0 
 
-
-
-
-			
+.gifts
+	padding: 0 0 30px 
+	&__title
+		font-size: 32px
+		color: #75726E
+		+asbold
+		line-height: 1
+		text-align: center
+		padding: 10px 0 30px 
+	&__list
+		text-align: justify
+		font-size: 0.1px
+		padding: 14px 20px
+		border-radius: 6px
+		background-color: #FAF9F1
+		&:after
+			display: inline-block
+			content: "" 
+			width: 100%
+	li
+		display: inline-block

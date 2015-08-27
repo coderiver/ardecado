@@ -306,4 +306,9 @@ head.ready(function() {
 
 	});
 
+	$('.js-slider').slick({
+		fade: true,
+		dots: false
+	});
+
 });
