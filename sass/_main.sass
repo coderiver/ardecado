@@ -1961,6 +1961,9 @@
 
 .line
 	padding: 20px 0 
+	&_big-banner
+		.item, .banner
+			margin-bottom: 20px
 
 .gifts
 	padding: 0 0 30px 
@@ -1970,13 +1973,14 @@
 		+asbold
 		line-height: 1
 		text-align: center
-		padding: 10px 0 30px 
+		padding: 10px 0  
 	&__list
 		text-align: justify
 		font-size: 0.1px
 		padding: 14px 20px
 		border-radius: 6px
 		background-color: #FAF9F1
+		margin: 20px 0 0 
 		&:after
 			display: inline-block
 			content: "" 
@@ -2212,3 +2216,23 @@
 		left: 19px
 		&:before
 			+s(focus-left)
+
+.items-carousel
+	.slick-list
+		padding: 20px 0 40px
+	.slick-dots
+		text-align: right
+		font-size: 0
+		right: 7px
+		li
+			padding: 0
+			margin: 0 3px 
+			&.slick-active
+				button
+					background-color: #D3D3C6
+					+opacity(1)
+		button
+			background-color: #F8F8F5
+			width: 9px
+			height: 9px
+			+box-shadow(none)
