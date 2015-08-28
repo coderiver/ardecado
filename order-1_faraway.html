@@ -1244,6 +1244,7 @@
 															<label class="text-field__block">
 																<input type="text">
 															</label>
+															<span class="error__message">ошибка ввода</span>
 														</div>
 													</div>
 													<div class="form__col form__col-3">
@@ -1252,6 +1253,7 @@
 															<label class="text-field__block">
 																<input type="text">
 															</label>
+															<span class="error__message">ошибка ввода</span>
 														</div>
 													</div>
 													<div class="form__col form__col-3">
@@ -1265,16 +1267,194 @@
 																	<input type="text" placeholder="799 - 48 - 72">
 																</label>
 															</div>
+															<span class="error__message">ошибка ввода</span>
 														</div>
 													</div>
 													<button type="button" class="add-row"><i class="i i-add"></i></button>
 												</div>
-												<div></div>
+												<div class="form__row">
+													<div class="form__col form__col-2">
+														<p>Выбрать шаблон адреса</p>
+														<select class="select">
+															<option value="Комсомольск на Амуре">Комсомольск на Амуре</option>
+															<option value="Москва">Москва</option>
+															<option value="Казань">Казань</option>
+															<option value="Санкт-Петербург">Санкт-Петербург</option>
+															<option value="Рязань">Рязань</option>
+															<option value="Махачкала">Махачкала</option>
+															<option value="Тюмень">Тюмень</option>
+															<option value="Омск">Омск</option>
+															<option value="Самара">Самара</option>
+															<option value="Челябинск">Челябинск</option>
+														</select>
+													</div>
+													<div class="form__col form__col-3">
+														<div class="text-field error">
+															<p>Улица <span class="required-field">*</span></p>
+															<label class="text-field__block">
+																<input type="text">
+															</label>
+															<span class="error__message">ошибка ввода</span>
+														</div>
+													</div>
+												</div>
+												<div class="form__row">
+													<div class="form__col form__col-1">
+														<div class="text-field">
+															<p>Дом <span class="required-field">*</span></p>
+															<label class="text-field__block">
+																<input type="text">
+															</label>
+															<span class="error__message">ошибка ввода</span>
+														</div>
+													</div>
+													<div class="form__col form__col-1">
+														<div class="text-field">
+															<p>Корпус</p>
+															<label class="text-field__block">
+																<input type="text">
+															</label>
+															<span class="error__message">ошибка ввода</span>
+														</div>
+													</div>
+													<div class="form__col form__col-1">
+														<div class="text-field">
+															<p>Домофон</p>
+															<label class="text-field__block">
+																<input type="text">
+															</label>
+															<span class="error__message">ошибка ввода</span>
+														</div>
+													</div>
+													<div class="form__col form__col-1">
+														<div class="text-field">
+															<p>Этаж</p>
+															<label class="text-field__block">
+																<input type="text">
+															</label>
+															<span class="error__message">ошибка ввода</span>
+														</div>
+													</div>
+													<div class="form__col form__col-1">
+														<div class="text-field">
+															<p>Подьезд</p>
+															<label class="text-field__block">
+																<input type="text">
+															</label>
+															<span class="error__message">ошибка ввода</span>
+														</div>
+													</div>
+													<div class="form__col form__col-1">
+														<div class="text-field">
+															<p>Квартира/офис <span class="required-field">*</span></p>
+															<label class="text-field__block">
+																<input type="text">
+															</label>
+															<span class="error__message">ошибка ввода</span>
+														</div>
+													</div>
+													<div class="form__col form__col-2">
+														<div class="checkbox-wrapper">
+															<label class="save-checkbox">
+																<input type="checkbox">
+																<span>Сохранить в шаблоны</span>
+															</label>
+														</div>
+														
+													</div>
+												</div>
+												<div class="form__row">
+													<div class="form__col form__col-8">
+														<a href="#" class="form__link">Добавить комментарий по доставке</a>
+													</div>
+												</div>
 											</div>
 										</div>
 										<!-- tab content 2 -->
 										<div class="js-tab-cont js-tab-2">
 											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nostrum numquam saepe quidem consectetur, officiis eum illo incidunt error excepturi nulla minima. Distinctio nihil, excepturi assumenda voluptatem laboriosam modi quibusdam.
+										</div>
+									</div>
+								</div>
+								<div class="delivery__payment">
+									<div class="delivery__step">
+										<div class="title-h3"><i class="i i-rub-big"></i> Способы оплаты</div>
+										<div class="delivery__indicator"></div>
+									</div>
+									<div class="payment row">
+										<div class="payment__row">
+											<label class="checkbox">
+												<input type="checkbox">
+												<span>Со счета (На счету: 1 480 руб.)</span>
+											</label>
+										</div>
+										<div class="payment__col">
+											<ul>
+												<li>
+													<label class="radio">
+														<input type="radio" name="payment">
+														<span>Наличные <i class="i i-1000"></i></span>
+													</label>
+												</li>
+												<li>
+													<label class="radio">
+														<input type="radio" name="payment">
+														<span>Банковские карты <img src="img/visa.png" width="38" alt=""> <img src="img/mc.png" width="30" alt=""></span>
+													</label>
+												</li>
+												<li>
+													<label class="radio">
+														<input type="radio" name="payment">
+														<span>Яндекс.Деньги <i class="i i-yandex-text"></i></span>
+													</label>
+												</li>
+												<li>
+													<label class="radio">
+														<input type="radio" name="payment">
+														<span>Webmoney <i class="i i-webmoney-small"></i></span>
+													</label>
+												</li>
+												<li>
+													<label class="radio">
+														<input type="radio" name="payment">
+														<span>Банковским переводом <i class="i i-bank"></i></span>
+													</label>
+												</li>
+											</ul>
+										</div>
+										<div class="payment__col">
+											<ul>
+												<li>
+													<label class="radio">
+														<input type="radio" name="payment">
+														<span>QIWI-кошелек <i class="i i-qiwi-small"></i></span>
+													</label>
+												</li>
+												<li>
+													<label class="radio">
+														<input type="radio" name="payment">
+														<span>Альфа-клик <i class="i i-alpha"></i></span>
+													</label>
+												</li>
+												<li>
+													<label class="radio">
+														<input type="radio" name="payment">
+														<span>Связной <i class="i i-svijznoy"></i></span>
+													</label>
+												</li>
+												<li>
+													<label class="radio">
+														<input type="radio" name="payment">
+														<span>Евросеть <i class="i i-euroset"></i></span>
+													</label>
+												</li>
+												<li>
+													<label class="radio">
+														<input type="radio" name="payment">
+														<span>Выписать счет на юр. лицо</span>
+													</label>
+												</li>
+											</ul>
 										</div>
 									</div>
 								</div>
