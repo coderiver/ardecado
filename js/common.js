@@ -268,7 +268,7 @@ head.ready(function() {
 
 		slider.on('init', function(event, slick) {
 			$(this).addClass('is-loaded');
-		})
+		});
 
 		slider.slick({
 			dots: false,
@@ -290,6 +290,53 @@ head.ready(function() {
 			index = currentSlide;
 
 			index = index + 6;
+			
+			counter.text(index);
+		});
+
+		// navigation
+		prev.on('click', function() {
+			slider.slick('slickPrev');
+		});
+
+		next.on('click', function() {
+			slider.slick('slickNext');
+		});
+
+	});
+
+	$('.js-big-parent').each(function() {
+		var slider = $(this).find('.js-big'),
+			index = 3,
+			counter = $(this).find('.js-big-current'),
+			totalBox = $(this).find('.js-big-total'),
+			prev = $(this).find('.js-big-prev'),
+			next = $(this).find('.js-big-next');
+
+		slider.on('init', function(event, slick) {
+			$(this).addClass('is-loaded');
+		});
+
+		slider.slick({
+			dots: false,
+			arrows: false,
+			slidesToShow: 3,
+			slidesToScroll: 3
+		});	
+
+		var slide = slider.find('.slick-slide').length,
+			cloneSlide = slider.find('.slick-cloned').length;
+
+		total = slide -	cloneSlide;
+
+		totalBox.text(total);
+		counter.text(index);
+			
+		// slide change event	
+		slider.on('afterChange', function(event, slick, currentSlide) {
+			index = currentSlide;
+
+			index = index + 3;
 			
 			counter.text(index);
 		});
@@ -344,6 +391,28 @@ head.ready(function() {
 		slidesToScroll: 6
 	});
 
+	$('.js-review-parent').each(function() {
+		var slider = $(this).find('.js-review-slider'),
+			prev = $(this).find('.js-review-prev'),
+			next = $(this).find('.js-review-next');
+
+		$('.js-review-slider').slick({
+			dots: false,
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			arrows: false
+		});
+
+		prev.on('click', function() {
+			slider.slick('slickPrev');
+		});
+
+		next.on('click', function() {
+			slider.slick('slickNext');
+		});
+	});
+
+
 	// tabs
 
 	function tab() {
@@ -366,6 +435,36 @@ head.ready(function() {
 		});
   	}
   	tab();
-	
+
+	//spinner
+
+	$(window).load(function() {
+		$('.js-spinner').each(function() {
+			if ($(this).val() >= 0) {
+				$(this).removeClass('is-red');
+				$(this).addClass('is-green');
+			}
+			else {
+				$(this).removeClass('is-green');
+				$(this).addClass('is-red');
+			};
+		});
+	});
+
+	$('.js-spinner').spinner({
+
+		stop: function( event, ui ) {
+			if ($(this).val() >= 0) {
+				$(this).removeClass('is-red');
+				$(this).addClass('is-green');
+			}
+			else {
+				$(this).removeClass('is-green');
+				$(this).addClass('is-red');
+			};
+		}
+
+	});
+
 
 });

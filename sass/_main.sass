@@ -1205,17 +1205,21 @@
 //banners
 .banner
 	display: block
-	max-width: 100%
+	width: 100%
 	font-size: 0
-	+border-radius(13px)
 	overflow: hidden
 	padding: 10px 0 
+	text-align: center
 	&_tree
 		margin-top: -13px
 	&_item
 		min-height: 248px
+	a
+		display: inline-block
+		max-width: 100%
 	img
-		width: 100%
+		max-width: 100%
+		+border-radius(13px)
 			
 .panel
 	background: rgba(255, 255, 255, 0.95)
@@ -1341,8 +1345,6 @@
 	padding: 20px 0 0 
 	&__top
 		margin-bottom: 10px
-	.banner
-		margin: 15px 0 
 	.btn-all
 		margin: 35px 0 0 
 	&__pages
@@ -1351,6 +1353,9 @@
 		position: relative
 		font-size: 0
 		margin: 34px 0 0 
+		&.is-dark
+			span
+				color: #2D2C62
 		span
 			color: #F57676
 			font-size: 30px
@@ -1854,6 +1859,12 @@
 //holiday-title
 .holiday-title
 	text-align: center
+	&.is-dark
+		span
+			color: #2D2C62
+			padding: 0 0 0 78px
+			display: block
+			text-align: left
 	small
 		color: #B4B4AA
 		font-size: 16px
@@ -1869,6 +1880,9 @@
 		display: inline-block
 		.i
 			position: absolute
+		.i-diamond-big
+			top: -10px
+			left: 0
 		.i-deer, .i-pie
 			top: 0
 			left: 0
@@ -1963,7 +1977,7 @@
 	padding: 20px 0 
 	&_big-banner
 		.item, .banner
-			margin-bottom: 20px
+			margin-bottom: 15px
 
 .gifts
 	padding: 0 0 30px 
@@ -2236,3 +2250,352 @@
 			width: 9px
 			height: 9px
 			+box-shadow(none)
+
+//review
+.review
+	margin-bottom: 40px
+	&__top
+		padding: 10px 0 20px 
+	&__title
+		padding: 0 32px 
+		display: inline-block
+		position: relative
+		color: #75726E
+		font-size: 34px
+		+asbold
+		line-height: 1
+		.i
+			position: absolute
+			left: 0
+			top: 50%
+			margin-top: -18px
+	&__arrows
+		text-align: right
+		font-size: 0
+	&__prev, &__next
+		width: 32px
+		height: 32px
+		border-radius: 50%
+		background-repeat: no-repeat
+		background-position: center center 
+		background-size: contain
+		display: inline-block
+		vertical-align: top
+		cursor: pointer
+		margin-left: 7px
+	&__prev
+		background-image: url(img/icons/item-left.png)
+		&:hover
+			background-image: url(img/icons/item-left-hover.png) 
+	&__next
+		background-image: url(img/icons/item-right.png)
+		&:hover
+			background-image: url(img/icons/item-right-hover.png) 
+	.slick-list
+		padding: 20px 0 
+
+.review-post
+	padding: 15px 4px 12px 16px 
+	background-color: #FCFCFA
+	border-radius: 13px
+	height: 207px
+	&__top
+		height: 43px
+		+vertical
+		text-align: left
+		margin: 0 0 11px 
+		&.is-woman
+			.review-post__name
+				color: #EF8FA6 
+		&.is-man
+			.review-post__name
+				color: #87C3E5
+	&__img
+		width: 43px
+		height: 43px
+		overflow: hidden
+		margin-right: 13px
+		img
+			width: 100%
+			height: 100%
+			border-radius: 50%
+	&__img, &__info
+		display: inline-block
+		vertical-align: middle
+	&__info
+		width: 200px
+		padding: 3px 0 0 
+		small
+			font-size: 12px
+			+reg
+			color: #B1ADAD
+			line-height: 1.2
+			display: block
+	&__name
+		font-size: 18px
+		+asbold
+		line-height: 1
+		display: block
+		white-space: nowrap
+		overflow: hidden
+		position: relative
+		&:after	
+			content: "" 
+			position: absolute
+			top: 0
+			bottom: 0
+			right: 0
+			width: 1px
+			background: #FCFCFA
+			+box-shadow(0 0 20px 10px #fcfcfa) 
+	&__body
+		padding: 13px 0 12px
+		border-top: 3px dotted #f2f2f0  
+		p
+			font-size: 13px
+			color: #716D6D
+			+reg
+			line-height: 1.2
+			max-height: 75px
+			overflow: hidden 
+	&__bottom
+		font-size: 0	
+	&__label
+		color: #59595C
+		font-size: 12px
+		+semi
+		margin-right: 10px
+	&__label, .small-spinner
+		display: inline-block
+		vertical-align: middle		
+//spinner
+.small-spinner
+	width: 80px
+	position: relative
+	padding: 0 22px 
+	input
+		color: #71824D
+		font-size: 14px
+		+bold
+		background: #e7edce 
+		text-align: center
+		width: 36px
+		padding: 2px 2px
+		border-radius: 2px
+		&.is-green
+			color: #71824D
+			background: #e7edce 
+		&.is-red
+			color: #B64F4F
+			background: #fae1e1 
+	.ui-spinner-button
+		background-color: #ECECE4
+		border-radius: 50%
+		position: absolute
+		top: 50%
+		margin-top: -7px
+		width: 14px
+		height: 14px
+		font-size: 0
+		&:before, &:after
+			content: "" 
+			position: absolute
+			background: #797979 
+		&:before
+			left: 3px
+			right: 3px
+			height: 2px
+			margin-top: -1px
+			top: 50%
+	.ui-spinner-up
+		right: 0
+		&:after
+			width: 2px
+			top: 3px
+			bottom: 3px
+			margin-left: -1px
+			left: 50%
+	.ui-spinner-down
+		left: 0
+		
+//item big
+.item-big
+	&__img
+		overflow: hidden
+		position: relative
+		margin-bottom: 15px
+		a
+			display: block
+			font-size: 0
+			img
+				width: 100%
+				border-radius: 13px
+	&__price
+		font-size: 16px
+		color: #6C6161
+		+var
+		background-color: #FFF
+		line-height: 1
+		padding: 7px 10px 5px 
+		position: absolute
+		bottom: 17px
+		right: 11px
+		border-radius: 4px
+		&.is-orange
+			background: #ff995c 
+			color: #fff 
+		span
+			display: block
+			&.is-discount
+				color: #FFDCD0
+				font-size: 14px
+				text-decoration: line-through
+	&__text
+		color: #716D6D
+		font-size: 16px
+		+semi
+		text-align: center
+		display: block
+		
+//social
+.social
+	font-size: 0.1px
+	text-align: justify
+	padding: 20px 0 10px
+	border-top: 1px dashed #d8d8d2 
+	border-bottom: 1px dashed #d8d8d2 
+	margin-bottom: 20px
+	&:after
+		display: inline-block
+		content: "" 
+		width: 100%
+	&__box, &__web, &__number
+		display: inline-block
+		vertical-align: top
+	&__box
+		padding: 20px 0 
+		small
+			opacity: 0.6
+			font-size: 12px
+			+semi
+			display: block
+			text-align: center
+		&.is-fb
+			.social__number
+				color: #7277CF
+			small
+				color: #7277CF
+		&.is-vk
+			.social__number
+				color: #42A9F5
+			small
+				color: #72A4CF
+		&.is-tw
+			.social__number
+				color: #6DDCF6
+			small
+				color: #72BACF
+		&.is-od
+			.social__number
+				color: #FBA21D
+			small
+				color: #CFA272
+		&.is-mail
+			small
+				color: #91A469
+
+	&__btn
+		font-size: 21px
+		color: #fff
+		+asblack 
+		padding: 13px 0 0 0
+		line-height: 1 
+		display: inline-block
+		position: relative
+		margin-bottom: 6px
+		&:hover, &:active, &:focus, &visited
+			color: #fff
+			text-decoration: none 
+		&:hover
+			opacity: 0.9
+		&:active
+			opacity: 1
+		&:before
+			position: absolute
+			content: "" 
+		&.is-fb
+			+svg(soc-fb, 128, 46)
+			padding-left: 54px
+			&:before
+				+s(fb)
+				left: 13px
+				top: 7px
+		&.is-vk
+			+s(soc-vk)
+			padding-left: 52px
+			&:before
+				+s(vk)
+				left: 14px
+				top: 13px
+		&.is-tw
+			+s(soc-tw)
+			padding-left: 45px
+			&:before
+				+s(tw)
+				left: 12px
+				top: 13px
+		&.is-od
+			+svg(soc-od, 128, 46)
+			padding-left: 44px
+			&:before
+				+s(od)
+				left: 16px
+				top: 11px
+		&.is-mail
+			+s(soc-mail)
+			padding-left: 53px
+			&:before
+				+s(mail)
+				left: 15px
+				top: 11px
+	&__number
+		display: inline-block
+		vertical-align: top
+		+s(soc-number)
+		margin-left: 11px
+		font-size: 21px
+		+asblack
+		padding: 10px 0 
+		text-align: center
+
+.holidays
+	padding: 10px 0 20px 
+	&__box
+		position: relative
+		padding: 0 0 15px 
+		a
+			display: block
+			+clr
+			.i
+				float: left
+				margin-right: 20px
+				&.i-gift-cards
+					margin-top: 3px
+	&__text
+		overflow: hidden
+		padding: 15px 0 
+		&.is-gift
+			p
+				color: #7F5171
+		&.is-march
+			p
+				color: #766772
+		&.is-soon
+			p
+				color: #304842
+		p
+			font-size: 16px
+			+asbold
+			line-height: 1.2
+			
+				
