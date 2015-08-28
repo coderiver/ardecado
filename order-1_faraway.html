@@ -1196,7 +1196,7 @@
 										<div class="delivery__indicator is-passed"></div>
 									</div>
 									<div class="delivery__center">
-										<select name="" id="">
+										<select class="select">
 											<option value="Комсомольск на Амуре">Комсомольск на Амуре</option>
 											<option value="Москва">Москва</option>
 											<option value="Казань">Казань</option>
@@ -1257,11 +1257,17 @@
 													<div class="form__col form__col-3">
 														<div class="text-field">
 															<p>Ваш телефон <span class="required-field">*</span></p>
-															<label class="text-field__block">
-																<input type="text">
-															</label>
+															<div class="phone-field">
+																<label class="text-field__block">
+																	<input type="text" placeholder="903">
+																</label>
+																<label class="text-field__block">
+																	<input type="text" placeholder="799 - 48 - 72">
+																</label>
+															</div>
 														</div>
 													</div>
+													<button type="button" class="add-row"></button>
 												</div>
 												<div></div>
 											</div>

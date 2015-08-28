@@ -318,7 +318,7 @@
 .text-field
 	p
 		+semi
-		font-size: 18px
+		font-size: 13px
 		color: #8c917b
 		margin-bottom: 8px
 	.text-field__block
@@ -334,8 +334,18 @@
 			+asbold
 			font-size: 18px
 			+placeholder
-
-
+				line-height: 1.2
+				color: rgba(#4a485b, 0.4)
+				font-size: 24px
+				+asbold
+.phone-field
+	+clr
+	.text-field__block	
+		float: right
+		width: 62%
+		&:first-child
+			float: left
+			width: 31%			 
 
 
 
