@@ -337,6 +337,13 @@ head.ready(function() {
 		});
 	});
 
+	$('.js-items-carousel').slick({
+		dots: true,
+		arrows: false,
+		slidesToShow: 6,
+		slidesToScroll: 6
+	});
+
 	// tabs
 
 	function tab() {
