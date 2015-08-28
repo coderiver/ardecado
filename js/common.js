@@ -306,7 +306,7 @@ head.ready(function() {
 	});
 
 	// select
-	$('select').selectFix({
+	$('.select').selectFix({
 		'container-max-height': 200,
 		'arrow': true
 	});
