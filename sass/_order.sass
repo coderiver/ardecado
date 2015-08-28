@@ -286,8 +286,13 @@
 // form grid
 .form
 	.form__row
+		position: relative
 		+clr
 		margin: 0 -10px 20px
+		.add-row
+			position: absolute
+			top: 46px
+			right: -34px
 	.form__col
 		float: left
 		position: relative
@@ -309,7 +314,8 @@
 		width: 87.5%				
 	.form__col-8
 		width: 100%
-
+.add-row
+	background: transparent 
 .required-field
 	color: #f04040
 	+semi

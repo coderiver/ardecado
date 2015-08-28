@@ -604,8 +604,9 @@ i { font-style: normal; }
 .btn-tab.is-active { background: #f4fbdc; color: #595b48; }
 .btn-tab.is-active span { border-bottom: none; }
 
-.form .form__row { *zoom: 1; margin: 0 -10px 20px; }
+.form .form__row { position: relative; *zoom: 1; margin: 0 -10px 20px; }
 .form .form__row:after { content: " "; display: table; clear: both; }
+.form .form__row .add-row { position: absolute; top: 46px; right: -34px; }
 .form .form__col { float: left; position: relative; min-height: 1px; padding: 0 10px; }
 .form .form__col-1 { width: 12.5%; }
 .form .form__col-2 { width: 25%; }
@@ -615,6 +616,8 @@ i { font-style: normal; }
 .form .form__col-6 { width: 75%; }
 .form .form__col-7 { width: 87.5%; }
 .form .form__col-8 { width: 100%; }
+
+.add-row { background: transparent; }
 
 .required-field { color: #f04040; font-family: "ProximaNova Semibold", Arial, sans-serif; font-size: 18px; }
 
