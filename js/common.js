@@ -353,10 +353,10 @@ head.ready(function() {
 	});
 
 	// select
-	$('.select').selectFix({
-		'container-max-height': 200,
-		'arrow': true
-	});
+	// $('.select').selectFix({
+	// 	'container-max-height': 200,
+	// 	'arrow': true
+	// });
 
 	$('.js-slider').slick({
 		fade: true,
@@ -466,5 +466,8 @@ head.ready(function() {
 
 	});
 
+	$('.js-steps-close').click(function() {
+		$(this).parent('.js-steps').slideUp('fast')
+	});
 
 });

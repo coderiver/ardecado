@@ -1,5 +1,6 @@
 head.load("js/lib/jquery.js", 
 					"js/lib/jquery-ui.min.js",
+					"js/lib/jquery.ui.touch-punch.min.js",
 					"js/lib/slick.min.js",
 					"js/lib/jquery.custom-scrollbar.js",
 					"js/lib/bootstrap.min.js",
