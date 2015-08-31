@@ -467,23 +467,28 @@ head.ready(function() {
 	});
 	//menu fixed
 	$(window).scroll(function() {
-		menu = $('.js-menu').offset().top;
-		scrollTop = $(window).scrollTop();
-		if (scrollTop > menu + 15) {
-			$('.js-menu-in').addClass('is-active');
-		}
-		else {
-			$('.js-menu-in').removeClass('is-active');
+		if ($('.js-menu').length) {
+			menu = $('.js-menu').offset().top;
+			scrollTop = $(window).scrollTop();
+			if (scrollTop > menu + 15) {
+				$('.js-menu-in').addClass('is-active');
+			}
+			else {
+				$('.js-menu-in').removeClass('is-active');
+			};
 		};
+		
 	});
 	$(window).load(function() {
-		menu = $('.js-menu').offset().top;
-		scrollTop = $(window).scrollTop();
-		if (scrollTop > menu + 15) {
-			$('.js-menu-in').addClass('is-active');
-		}
-		else {
-			$('.js-menu-in').removeClass('is-active');
+		if ($('.js-menu').length) {
+			menu = $('.js-menu').offset().top;
+			scrollTop = $(window).scrollTop();
+			if (scrollTop > menu + 15) {
+				$('.js-menu-in').addClass('is-active');
+			}
+			else {
+				$('.js-menu-in').removeClass('is-active');
+			};
 		};
 	});
 
