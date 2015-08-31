@@ -1,0 +1,179 @@
+.ms-parent
+    display: inline-block
+    position: relative
+    width: 100%
+    vertical-align: middle
+    text-align: left
+
+.ms-choice
+    display: block
+    width: 100%
+    height: 46px
+    padding: 0
+    overflow: hidden
+    cursor: pointer
+    text-align: left
+    white-space: nowrap
+    line-height: 46px
+    color: #444
+    text-decoration: none
+    border-radius: 4px
+    background-color: #fff
+    &.disabled
+        background-color: #f4f4f4
+        background-image: none
+        border: 1px solid #ddd
+        cursor: default
+    >
+        span
+            position: absolute
+            top: 0
+            left: 0
+            right: 30px
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+            display: block
+            padding-left: 18px
+            +asbold
+            font-size: 22px
+            color: #382f2f
+            &.placeholder
+                color: rgba(#382f2f, 0.5)
+        div
+            position: absolute
+            top: 50%
+            right: 10px
+            margin-top: -5px   
+            +s(checkbox)
+            &.open
+                +rotate(180)
+
+.ms-drop
+    width: 100%
+    overflow: hidden
+    display: none
+    margin-top: 5px
+    padding: 0
+    position: absolute
+    max-height: 250px
+    z-index: 1000
+    background: #fff
+    color: #000
+    border-radius: 4px
+    &.bottom
+        top: 100%
+    &.top
+        bottom: 100%
+        box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.15)
+.select, .select-placeholder        
+    .scrollable .scroll-bar.vertical
+        right: 5px
+        width: 7px
+        z-index: 2
+    .overview
+        width: 100%     
+    .scrollable .scroll-bar.vertical .thumb
+        &:before
+            content: ""
+            position: absolute
+            top: 5px
+            bottom: 5px
+            left: 0
+            right: 0
+            background: rgba(#000, 0.33)
+            border-radius: 7px 
+            cursor: pointer    
+
+.ms-search
+    display: inline-block
+    margin: 0
+    min-height: 26px
+    padding: 4px
+    position: relative
+    white-space: nowrap
+    width: 100%
+    z-index: 10000
+    input
+        width: 100%
+        height: auto !important
+        min-height: 24px
+        padding: 0 20px 0 5px
+        margin: 0
+        outline: 0
+        font-family: sans-serif
+        font-size: 1em
+        border: 1px solid #aaa
+        border-radius: 0
+        box-shadow: none
+        background: #fff url('multiple-select.png') no-repeat 100% -22px
+        background: url('multiple-select.png') no-repeat 100% -22px, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #eeeeee))
+        background: url('multiple-select.png') no-repeat 100% -22px, -webkit-linear-gradient(center bottom, white 85%, #eeeeee 99%)
+        background: url('multiple-select.png') no-repeat 100% -22px, -moz-linear-gradient(center bottom, white 85%, #eeeeee 99%)
+        background: url('multiple-select.png') no-repeat 100% -22px, -o-linear-gradient(bottom, white 85%, #eeeeee 99%)
+        background: url('multiple-select.png') no-repeat 100% -22px, -ms-linear-gradient(top, #ffffff 85%, #eeeeee 99%)
+        background: url('multiple-select.png') no-repeat 100% -22px, linear-gradient(top, #ffffff 85%, #eeeeee 99%)
+
+.ms-drop
+    ul
+        overflow: hidden
+        margin: 0       
+        width: 100% 
+        > li
+            list-style: none
+            display: list-item
+            background-image: none
+            position: static
+            height: 45px
+            +vertical
+            color: #56544f
+            cursor: pointer
+            &:hover
+                background: #46d7f6
+                color: #fff 
+            .disabled
+                opacity: .35
+            &.multiple
+                display: block
+                float: left
+            &.group
+                clear: both
+            &.multiple label
+                width: 100%
+                display: block
+                height: 45px
+                line-height: 45px 
+                white-space: nowrap
+                overflow: hidden
+                text-overflow: ellipsis
+            label
+                position: relative
+                font-weight: normal
+                display: inline-block
+                width: 100%
+                height: 45px
+                text-align: left
+                white-space: nowrap
+                padding: 11px 0 11px 42px
+                font-size: 14px 
+                cursor: pointer
+                +text-overflow
+                &.optgroup
+                    font-weight: bold
+                input[type="radio"]
+                    position: absolute
+                    opacity: 0
+            &.selected
+                label
+                    font-weight: bold
+                    &:before
+                        content: ""
+                        position: absolute
+                        top: 50%
+                        left: 15px
+                        margin-top: -7px 
+                        +svg(check, 10, 9)
+    input[type="checkbox"]
+        vertical-align: middle
+.ms-no-results
+    display: none
