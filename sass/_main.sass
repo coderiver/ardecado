@@ -36,13 +36,162 @@
 		margin: 13px 50px 0 0
 		display: inline-block
 		vertical-align: top
+	&__menu-wrap
+		min-height: 82px
 	&__menu
 		padding: 35px 0 0 
+		.btn_blue
+			display: none
+		&.is-active
+			position: fixed
+			top: 0
+			left: 0
+			right: 0
+			min-width: 1280px
+			background-color: rgba(30, 25, 50, 0.9)
+			padding: 0 
+			.btn_blue
+				&.is-active
+					display: block
+					float: left
+					margin: 28px 20px 0
+			.header__search-btn, .i-home
+				display: block
+			.menu-profile
+				&.is-active
+					display: block
+			.menu__item
+				margin: 0 25px 0 0
+				padding: 27px 0 26px
+				height: 78px  
+				&.is-drop
+					.menu__link
+						&:after
+							margin: 18px 0 0 -16px 
+			.menu__link
+				font-size: 18px
+			.menu-decor
+				margin: 23px 0 0 
+			.basket 
+				width: 180px
+				margin: 0
+				padding: 25px 0 0
+				height: 78px
+				min-height: 0 
+				span
+					&.is-items
+						display: none
+				&__amount
+					width: 70px
+				&__icon
+					color: #7DBE37
+					font-size: 18px
+					background: none
+					width: auto
+					text-align: left
+					padding: 7px 0 0 31px
+					position: relative
+					white-space: nowrap
+					overflow: hidden
+					-ms-text-overflow: ellipsis
+					text-overflow: ellipsis
+					display: block
+					width: 100%
+					&:before
+						font-family: 'icomoon'
+						speak: none
+						font-style: normal
+						font-weight: normal
+						font-variant: normal
+						text-transform: none
+						line-height: 1
+						-webkit-font-smoothing: antialiased
+						-moz-osx-font-smoothing: grayscale
+						font-size: 24px
+						content: "\e600" 
+						position: absolute
+						top: 50%
+						left: 0
+						margin-top: -12px
+				&__money
+					padding: 7px 0 0
+					font-size: 0
+					width: 110px
+					span
+						display: block
+						width: 100%
+						font-size: 18px
+						white-space: nowrap
+						overflow: hidden
+						-ms-text-overflow: ellipsis
+						text-overflow: ellipsis
+		.i-home
+			float: left
+			margin: 31px 30px 0 0
+			display: none
+			&:hover, &:focus
+				text-decoration: none
 	&__login
 		margin: 0 0 5px 
 	&__schedule
 		display: block
-	
+	&__search-btn
+		+s(search-icon)
+		float: left
+		margin: 23px 5px 0 
+		display: none
+
+.menu-profile
+	float: left
+	padding: 24px 18px 20px 19px
+	width: 147px
+	height: 78px
+	display: none
+	&__img
+		position: relative
+		width: 30px
+		height: 31px
+		float: left
+		margin-right: 13px
+		img
+			width: 100%
+			height: 100%
+	&__bonus
+		position: absolute
+		top: 50%
+		right: -7px
+		margin-top: -7px
+		width: 14px
+		text-align: center
+		line-height: 1
+		padding: 2px 1px 0 0 
+		background-color: #FC535F
+		border-radius: 50%
+		color: #F2F9FF
+		font-size: 12px
+		+asblack
+	&__info
+		width: 67px
+		float: right
+	&__link
+		display: block
+		padding: 3px 10px 3px 0
+		position: relative
+		font-size: 14px
+		+asbold
+		color: #9495A5
+		line-height: 1
+		&:hover
+			color: #9495A5 
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			right: 0
+			+s(menu-arr)
+			margin-top: -3px
+			transform-origin: center center
+		
 .inner
 	width: 1200px
 	padding: 0 10px
@@ -1221,13 +1370,25 @@
 		max-width: 100%
 		+border-radius(13px)
 			
-.panel
+.f-panel
 	background: rgba(255, 255, 255, 0.95)
 	padding: 21px 8px 18px 13px 
 	display: inline-block
 	vertical-align: top
 	font-size: 0
 	+border-radius(4px)
+	visibility: hidden
+	opacity: 0
+	+transition(all 0.25s)
+	position: fixed
+	bottom: 20px
+	right: 20px
+	z-index: 700
+	&.is-active
+		visibility: visible
+		opacity: 1
+	&.is-calendar
+		bottom: 130px
 	&__item
 		display: inline-block
 		vertical-align: middle
@@ -2598,3 +2759,105 @@
 			+asbold
 			line-height: 1.2
 			
+.panel-calendar
+	position: fixed
+	bottom: 0
+	left: 0
+	right: 0
+	min-width: 1280px 
+	background: rgba(255, 255, 255, 0.95) 
+	z-index: 500
+	height: 0
+	visibility: hidden
+	opacity: 0
+	+transition(height 0.3s, visibility 0.25s, opacity 0.25s)
+	&.is-active
+		height: 119px
+		visibility: visible
+		opacity: 1
+	&__inner
+		width: 1200px
+		margin: 0 auto 
+		padding: 30px 110px 30px 0
+		+clr
+		height: 119px
+	.slick-list
+		&:before
+			position: absolute
+			top: 0
+			bottom: 0
+			right: -1px
+			width: 1px
+			z-index: 300
+			+box-shadow(0 0 60px 60px rgba(255, 255, 255, 0.95))
+			content: "" 
+	.slick-prev, .slick-next
+		width: 48px
+		height: 48px
+		margin-top: -24px
+		border-radius: 50%
+		&:hover
+			background: #46dbf6 
+		&:before
+			display: none
+	.slick-prev
+		left: auto
+		right: 60px
+		+s(pc-left)
+		&:hover
+			+s(pc-left-hover)
+	.slick-next
+		+s(pc-right)
+		&:hover
+			+s(pc-right-hover)
+
+.panel-item
+	width: 20%
+	float: left
+	&__inner
+		+clr
+		display: block
+		&:hover, &:focus
+			text-decoration: none
+			.panel-item__text
+				span
+					+var
+			.panel-item__text span, 
+			.panel-item__date span, 
+			.panel-item__date small
+				color: #FF5151
+	span, small
+		display: block
+		line-height: 1
+	&__date
+		float: left
+		text-align: center
+		width: 53px
+		background-color: #EFEFEF
+		padding: 10px 0 8px
+		border-radius: 7px
+		margin: 0 17px 0 0  
+		span
+			color: #535353
+			+var
+			font-size: 30px
+		small
+			+semi
+			font-size: 11px
+			text-transform: uppercase
+			color: #9A9898
+	&__text
+		overflow: hidden
+		padding: 5px 10px 0 0
+		span
+			color: #413939
+			+asbold
+			font-size: 16px
+			line-height: 18px
+			max-height: 36px
+			overflow: hidden
+		small
+			color: #A7A7A7
+			font-size: 12px
+			+reg
+			line-height: 1.2
