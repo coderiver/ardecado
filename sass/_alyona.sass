@@ -1,0 +1,67 @@
+//for other blocks
+.item
+	position: relative
+	&.is-one-third
+		height: 448px
+		.item__img
+			width: 380px
+			height: 380px
+	&__btns
+		text-align: right
+		ul
+			position: absolute
+			float: none
+			padding: 4px 0
+	&__price
+		float: none
+		display: inline-block
+	.badge-mod
+		position: absolute
+		right: -15px
+	&-ico
+		position: absolute
+		top: 10px
+		left: 5px
+		font-size: 0
+		i
+			margin: 0 3px
+			vertical-align: middle
+			opacity: 0.6
+
+
+// catalogue
+.breadcrumbs
+	margin: 20px 0
+	&__list
+		font-size: 14px
+		+semi
+		+clr
+		li
+			position: relative
+			margin-right: 3px
+			float: left
+			&:after
+				content: ""
+				display: inline-block
+				margin: 0 10px
+				vertical-align: middle
+				+s(arr-right-small)
+			&:last-child
+				&:after
+					display: none
+				a
+					color: #7a7a7a
+					&:hover
+						text-decoration: none
+		a
+			display: inline-block
+			vertical-align: middle
+			color: #42b0ef
+			&:visited
+				color: #1a44cd
+
+.catalog
+	padding-top: 20px
+	border-top: 1px dashed #d8d8d2
+
+
