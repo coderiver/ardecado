@@ -43,4 +43,108 @@
 .noUi-base
 	width: auto
 	margin: 0 13px 
+	
+//spinner
+.small-spinner
+	width: 80px
+	position: relative
+	padding: 0 22px
+	input
+		color: #71824D
+		font-size: 14px
+		+bold
+		background: #e7edce
+		text-align: center
+		width: 36px
+		padding: 2px 2px
+		border-radius: 2px
+		&.is-green
+			color: #71824D
+			background: #e7edce
+		&.is-red
+			color: #B64F4F
+			background: #fae1e1
+	.ui-spinner-button
+		background-color: #ECECE4
+		border-radius: 50%
+		position: absolute
+		top: 50%
+		margin-top: -7px
+		width: 14px
+		height: 14px
+		font-size: 0
+		&:before, &:after
+			content: ""
+			position: absolute
+			background: #797979
+		&:before
+			left: 3px
+			right: 3px
+			height: 2px
+			margin-top: -1px
+			top: 50%
+	.ui-spinner-up
+		right: 0
+		&:after
+			width: 2px
+			top: 3px
+			bottom: 3px
+			margin-left: -1px
+			left: 50%
+	.ui-spinner-down
+		left: 0
+
+//number
+.d-number
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	height: 26px
+	box-sizing: border-box
+	padding: 0 8px 
+	+user-select(none)
+	min-width: 60px
+	text-align: center
+	.d-number__amount, .d-number__title
+		color: #afafaf
+		font-size: 12px
+		line-height: 16px
+		+semi 
+		padding: 0 1px
+		display: inline-block 
+	&__input
+		display: none
+		&[disabled]
+			background: none
+	&__plus,
+	&__minus
+		width: 8px
+		height: 16px
+		font-size: 0
+		background: none	
+		position: absolute
+		top: 0	
+		+opacity(0.3)
+		&:hover
+			+opacity(1)	
+		&:before, &:after
+			content: "" 
+			position: absolute
+			background: #afafaf 
+			top: 50%
+			left: 50%
+		&:after
+			width: 8px
+			height: 2px
+			margin-top: -1px
+			margin-left: -4px
+	&__minus
+		left: 0
+	&__plus
+		right: 0
+		&:before
+			height: 8px
+			width: 2px
+			margin-top: -4px
+			margin-left: -1px			
 

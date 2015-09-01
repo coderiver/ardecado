@@ -1545,6 +1545,7 @@
 			content: "/"
 			padding: 0 8px 0 0
 .item
+	position: relative
 	padding: 10px 0
 	height: 248px
 	&:hover
@@ -1559,7 +1560,7 @@
 	.badge-mod
 		position: absolute
 		right: -10px
-		top: -15px
+		top: -10px
 		z-index: 10
 	&__img
 		position: relative
@@ -1576,6 +1577,7 @@
 		position: absolute
 		right: 7px
 		bottom: 7px
+		text-align: right
 		background-color: #FFF
 		border-radius: 4px
 		+clr
@@ -1585,15 +1587,15 @@
 			.item__price
 				color: #fff
 		ul
-			float: left
-			padding: 5px 0
 			display: none
+			position: absolute
+			padding: 4px 0	
 		li
 			display: inline-block
 			vertical-align: bottom
 			margin: 0 9px 0 0
 	&__price
-		float: right
+		display: inline-block
 		font-size: 15px
 		color: #6C6161
 		+var
@@ -1608,19 +1610,18 @@
 		text-align: center
 		max-height: 32px
 		overflow: hidden
+	&-ico
+		position: absolute
+		top: 10px
+		left: 5px
+		font-size: 0
+		i
+			margin: 0 3px
+			vertical-align: middle
+			opacity: 0.6
 
+	
 
-//icons
-.i-right-big
-	+s(i-right)
-.i-rb-delivery
-	+s(round-delivery-gray)
-.i-rb-room
-	+s(r-room-gray)
-.i-rb-money
-	+s(money-back)
-.i-rb-mouse
-	+s(r-mouse)
 
 //steps
 .steps
@@ -2529,58 +2530,17 @@
 	&__label, .small-spinner
 		display: inline-block
 		vertical-align: middle
-//spinner
-.small-spinner
-	width: 80px
-	position: relative
-	padding: 0 22px
-	input
-		color: #71824D
-		font-size: 14px
-		+bold
-		background: #e7edce
-		text-align: center
-		width: 36px
-		padding: 2px 2px
-		border-radius: 2px
-		&.is-green
-			color: #71824D
-			background: #e7edce
-		&.is-red
-			color: #B64F4F
-			background: #fae1e1
-	.ui-spinner-button
-		background-color: #ECECE4
-		border-radius: 50%
-		position: absolute
-		top: 50%
-		margin-top: -7px
-		width: 14px
-		height: 14px
-		font-size: 0
-		&:before, &:after
-			content: ""
-			position: absolute
-			background: #797979
-		&:before
-			left: 3px
-			right: 3px
-			height: 2px
-			margin-top: -1px
-			top: 50%
-	.ui-spinner-up
-		right: 0
-		&:after
-			width: 2px
-			top: 3px
-			bottom: 3px
-			margin-left: -1px
-			left: 50%
-	.ui-spinner-down
-		left: 0
 
 //item big
 .item-big
+	&:hover
+		.item__btns ul
+			display: block
+	&:hover
+		.item__btns
+			left: 7px
+	.item__btns .i
+		vertical-align: bottom
 	&__img
 		overflow: hidden
 		position: relative
