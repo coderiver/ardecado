@@ -3,6 +3,11 @@ head.ready(function() {
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
+	$('.js-togglehint').click(function(event) {
+		hint = $(this).data('hint');
+		$('#'+hint).toggle();
+		return false;
+	});
 
 	function scrollFixedElements() {
 	    var scroll_left = $(this).scrollLeft();
