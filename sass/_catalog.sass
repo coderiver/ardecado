@@ -1,14 +1,104 @@
 //to move
+.header
+	&.is-dark-bg
+		background-image: url(img/bg.jpg)
+		-webkit-background-size: cover
+		-o-background-size: cover
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		.search__input
+			background: none
+			border-color: #3c3a39
+			color: #5b5b58
+			+placeholder-color(#5b5b58)
+		.search__btn
+			+s(search-btn-grey)
+		.nav a,
+		.vip-gifts__place,
+		.header__right .link-dotted,
+		.header__right .header__schedule
+			color: #939392
+		.vip-gifts__place
+			&:hover
+				color: #23527c
+
+.logo
+	&.is-vip
+		span
+			left: 115px
+
+.menu
+	&.is-txt-white
+		> .menu__item
+			.menu__link
+				color: #FFF
+				&:before
+					+s(menu-arr-brown)
+
+.menu-decor
+	&.is-brown-bg
+		&:before,
+		&:after
+			background-color: #756c5f
+		i
+			&:before,
+			&:after
+				background-color: #756c5f
+
 .main
 	&.no-margin
 		margin-bottom: 0
 		&:after
 			display: none
 
+.footer
+	&.is-dark-bg
+		background-image: url(img/bg.jpg)
+		-webkit-background-size: cover
+		-o-background-size: cover
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		.footer__schedule
+			color: #939392
+		.search__input
+			background: none
+			border-color: #3c3a39
+			color: #5b5b58
+			+placeholder-color(#5b5b58)
+		.search__btn
+			+s(search-btn-grey)
+
+.steps__list
+	&.is-dark
+		.i-rb-delivery
+			+s(round-delivery-dark)
+		.i-rb-room
+			+s(r-room-dark)
+		.i-rb-money
+			+s(money-back-dark)
+		.i-rb-mouse
+			+s(r-mouse-dark)
+
+h1
+	&.is-orange
+		color: #ff670c
+		.i-star
+			padding-left: 24px
+	&.s-b-margin
+		margin-bottom: 10px
+
+.text
+	&.no-pad
+		padding: 0
+	&.s-margin
+		p
+			margin: 10px 0
 
 // catalog
 .breadcrumbs
-	margin: 20px 0
+	margin-top: 20px
 	&__list
 		font-size: 14px
 		+semi
@@ -65,5 +155,5 @@
 
 	.row
 		padding: 15px 0
-	.text
-		padding: 0
+		&.holidays
+			padding: 30px 0 0
