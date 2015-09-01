@@ -3498,6 +3498,14 @@
 
 		<ul class="popup-links">
 			<li><a href="#" data-toggle="modal" data-target="#pass-success">Pass-success</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#location">Location</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#subscribes-success">subscribes-success</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#feedback-hodiday">CALL BACK SUCCESS HOLIDAY</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#feedback-success">CALL BACK SUCCESS</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#remember-success">REMEMBER PASS SUCCESS</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#sign-in">SIGN IN</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#remember-pass">REMEMBER PASS</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#subscribe-vip">SUBSCRIBE VIP</a></li>
 		</ul>
 
 	</main>
@@ -3597,12 +3605,12 @@
 
 	<div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
-			<div class="feedback">
+			<div class="popup feedback">
 				<i class="feedback__icon"></i>
 				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
-				<span class="feedback__logo">Ар де Кадо</span>
-				<span class="feedback__title">Обратный звонок</span>
-				<span class="feedback__schedule">Мы работаем с понедельника по субботу, с 9:00 до 19:00</span>
+				<span class="popup__small">Ар де Кадо</span>
+				<span class="popup__title">Обратный звонок</span>
+				<span class="popup__schedule">Мы работаем с понедельника по субботу, с 9:00 до 19:00</span>
 				<div class="m-form is-gray">
 					<form action="">
 						<div class="m-form__box">
@@ -3610,7 +3618,7 @@
 							<div class="m-form__field m-form-group">
 								<span class="m-form__number">+7</span>
 								<i class="m-form__check"></i>
-								<input type="text" class="input input_gray" id="in-number" placeholder="(903) 123-45-67">
+								<input type="text" class="input input_gray" id="in-number">
 							</div>
 						</div>
 						<div class="m-form__box js-field-parent">
@@ -3635,12 +3643,182 @@
 				</div>				
 				<div class="m-form__field m-form-group is-hide js-field" data-field="name">
 					<i class="m-form__check"></i>
-					<input type="text" class="input input_gray" id="in-number" placeholder="Алина">
+					<input type="text" class="input input_gray" id="in-number">
 				</div>	
 			</div>
 		</div>
 	</div>
+	<div class="modal fade" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog_signin" role="document">
+			<div class="popup signin">
+				<i class="badge-mod badge-mod_reason"></i>
+				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+				<span class="signin__small">сегодня мы рады вам по-испански :)</span>
+				<span class="signin__title">Bienvenida!</span>
+				<div class="m-form is-blue">
+					<form action="">
+						<div class="m-form__box">
+							<label class="m-form__label" for="sign-number">Номер телефона:</label>
+							<div class="m-form__field m-form-group">
+								<span class="m-form__number">+7</span>
+								<i class="m-form__check is-active"></i>
+								<input type="text" class="input input_blue" id="sign-number">
+							</div>
+						</div>	
+						<div class="m-form__box">
+							<label class="m-form__label" for="sign-pass">Пароль:</label>
+							<div class="m-form__field m-form-group">
+								<i class="m-form__check"></i>
+								<input type="text" class="input input_blue" id="sign-pass">
+								<div class="error-field">неправильный номер или пароль</div>
+							</div>
+						</div>
+						<div class="m-form__remember">
+							<div class="m-form__field m-form-group">
+								<label class="m-checkbox">
+									<input type="checkbox">
+									<span>Запомнить меня</span>
+								</label>
+								<a href="#" class="link-dotted">Забыли пароль?</a>
+							</div>
+						</div>				
+						<button class="b-btn b-btn_blue" type="submit">Войти!</button>
+						<div class="m-form__registration">
+							<button class="btn-registration">Регистрация</button>
+						</div>						
+					</form>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="remember-pass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="popup pass">
+				<i class="pass__icon"></i>
+				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+				<span class="popup__title">Восстановление пароля</span>
+				<span class="popup__text">Введите номер телефона, который вы указывали при регистрации и мы вышлем вам новый пароль!</span>
+				<div class="m-form is-gray">
+					<form action="">
+						<div class="m-form__box">
+							<label class="m-form__label" for="pass-number">Ваш номер телефона:</label>
+							<div class="m-form__field m-form-group">
+								<span class="m-form__number">+7</span>
+								<i class="m-form__check"></i>
+								<input type="text" class="input input_gray" id="pass-number">
+								<div class="error-field">неправильный адрес</div>
+							</div>
+						</div>	
+						<div class="m-form__btns">			
+							<button class="b-btn b-btn_green" type="submit">Жду новый пароль!</button>
+							<a href="#" class="link-dotted">Кажется, я вспомнил</a>
+						</div>						
+					</form>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="subscribe-vip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="popup vip">
+				<i class="vip__icon"></i>
+				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+				<span class="popup__small">Подписка на</span>
+				<span class="popup__title">VIP - подарки</span>
+				<span class="popup__text">Периодически, мы будем присылать вам дайджесты новинок и самых интересных товаров из категории VIP-подарков</span>
+				<div class="m-form is-gray">
+					<form action="">
+						<div class="m-form__box">
+							<label class="m-form__label" for="sign-number">Ваш e-mail:</label>
+							<div class="m-form__field m-form-group">
+								<i class="m-form__check"></i>
+								<input type="text" class="input input_gray" id="sign-number">
+							</div>
+						</div>	
+						<div class="m-form__refresh">
+							<div>Ваш пол — <a href="#"><span>женский</span><i class="icon icon-refresh"></i></a></div>
+						</div>
+						<div class="m-form__btns">			
+							<button class="b-btn b-btn_green" type="submit">Готово!</button>
+						</div>						
+					</form>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="location" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="popup local">
+				<i class="local__icon"></i>
+				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+				<span class="popup__small">Подарки для всей страны</span>
+				<span class="popup__title">Выберите ваш город</span>
+				<div class="popup__search">
+					<input type="text" placeholder="Начните вводить название города">
+					<button></button>
+					<div class="load">
+						<i class="load__one"></i>
+						<i class="load__two"></i>
+						<i class="load__three"></i>
+					</div>
+				</div>
+				<ul class="popup__cities">
+					<li class="is-active">Москва</li>
+					<li>Краснодар</li>
+					<li>Санкт-Петербург</li>
+					<li>Красноярск</li>
+					<li>Астрахань</li>
+					<li>Нижний Новгород</li>
+					<li>Барнаул</li>
+					<li>Новосибирск</li>
+					<li>Владивосток</li>
+					<li>Пермь</li>
+					<li>Владимир</li>
+					<li>Ростов-На-Дону</li>
+					<li>Екатеринбург</li>
+					<li>Самара</li>
+					<li>Иркутск</li>
+					<li>Челябинск</li>
+					<li>Казань</li>
+					<li>Ярославль</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<div class="modal fade" id="pass-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="success">
+				<i class="success__icon"></i>
+				<span class="success__title">Новый пароль выслан!</span>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="subscribes-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="success">
+				<i class="success__icon"></i>
+				<span class="success__title">Подтверждение подписки отправлено!</span>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="feedback-hodiday" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog_big" role="document">
+			<div class="success">
+				<i class="success__icon"></i>
+				<span class="success__title">Сейчас праздники!</span>
+				<span class="success__title">Мы свяжемся с вами 10 числа</span>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="feedback-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="success">
+				<i class="success__icon"></i>
+				<span class="success__title">Ожидайте наш звонок!</span>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="remember-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="success">
 				<i class="success__icon"></i>

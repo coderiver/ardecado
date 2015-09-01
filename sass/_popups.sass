@@ -1,17 +1,22 @@
 .modal-dialog
-	width: 600px
 	margin: 30px auto 
-
-.feedback
+	width: 600px
+	&_big
+		width: 800px
+	&_small
+		width: 500px
+	&_signin
+		margin-top: 80px 
+.popup	
 	background: #f2f2ea
-	+border-radius(20px)
-	padding: 20px 70px 40px  
+	border-radius: 20px
 	text-align: center
 	position: relative
-	&__logo
+	padding: 20px 50px 40px
+	&__small
 		font-size: 24px
 		color: #C0BCB7
-		+as
+		+asbold
 		display: block
 		line-height: 38px
 	&__title
@@ -20,7 +25,63 @@
 		+asblack
 		line-height: 1
 		display: block
-		margin-bottom: 18px
+		margin-bottom: 18px	
+	&__search
+		position: relative
+		margin-bottom: 30px
+		button
+			position: absolute
+			top: 50%
+			right: 24px
+			+s(search-gray)
+			margin-top: -12px
+		.load
+			position: absolute
+			top: 50%
+			margin-top: -7px
+			right: 61px
+		input
+			font-size: 18px
+			+asbold
+			color: #BFBFBF
+			background-color: #f7f7f0
+			border: 4px solid #D6D4CE
+			border-radius: 26px
+			padding: 10px 24px 9px
+			width: 100% 
+	&__cities
+		font-size: 0.1px
+		text-align: justify
+		padding: 0 0 20px 
+		&:after
+			display: inline-block
+			width: 100%
+			content: "" 
+		li
+			width: 220px
+			display: inline-block
+			vertical-align: top
+			font-size: 16px
+			line-height: 24px
+			+semi
+			color: #716D6D
+			padding: 0 33px 
+			position: relative
+			cursor: pointer
+			text-align: left
+			&:hover
+				color: #2D2C2B
+			&:before
+				content: "" 
+				position: absolute
+				top: 5px
+				left: 10px
+				+s(check-small)
+				display: none
+			&.is-active
+				color: #2D2C2B
+				&:before
+					display: block	
 	&__schedule
 		color: #596947
 		font-size: 14px
@@ -29,12 +90,116 @@
 		display: inline-block
 		padding: 15px 20px 
 		+border-radius(7px)
-		margin-bottom: 18px
+		margin-bottom: 18px	
+	.error-field
+		position: absolute
+		top: 100%
+		left: 45px
+		right: 45px	
+		margin-top: -20px
+		z-index: 10
+	&__text
+		padding: 20px 25px
+		position: relative
+		display: block
+		max-width: 420px
+		margin: 0 auto 18px 
+		font-size: 14px
+		color: #645b5b
+		+semi
+		line-height: 1.2
+		&:before, &:after
+			position: absolute
+			left: 0
+			right: 0
+			content: ""
+			height: 6px
+			background: url(img/icons/popup-text.png) repeat-x top center
+		&:before
+			top: 0
+		&:after
+			bottom: 0
+
+.feedback
+	padding: 20px 70px 40px  
 	&__icon
 		+s(feedback)
 		position: absolute
 		top: 15px
 		left: -70px
+
+.signin
+	background: #d5ecec
+	padding-bottom: 28px 
+	&:before
+		position: absolute
+		bottom: 100%
+		left: 50%
+		+s(signin-decor)
+		margin: 0 0 -3px -59px
+		content: "" 
+	&__title
+		color: #48CAE6
+		font-size: 60px
+		+asblack
+		line-height: 1
+		display: block
+		margin-bottom: 8px	
+	&__small
+		color: #7FB6B7
+		+asbold
+		display: block
+		line-height: 38px
+		font-size: 18px
+	.badge-mod
+		position: absolute
+		top: 35px
+		left: -89px
+
+.pass
+	padding-bottom: 25px 
+	.b-btn_green
+		padding: 16px 10px 15px 
+		width: 280px
+	.popup__title
+		font-size: 50px
+		color: #360000
+	&__icon
+		+s(pass-icon)
+		position: absolute
+		top: 17px
+		left: -71px
+
+.vip
+	.popup__text
+		padding: 20px 5px 
+	.b-btn_green
+		width: auto
+	.popup__title
+		color: #2D2C62
+		font-size: 50px
+	&__icon
+		position: absolute
+		top: 17px
+		left: -71px
+		+s(vip-icon)
+
+
+.error-field
+	background: url(img/icons/error-field.png) no-repeat center center
+	min-width: 273px
+	padding: 6px 0 5px 
+	font-size: 13px
+	+semi
+	color: #F7F7F0
+	line-height: 1
+
+.local
+	&__icon
+		position: absolute
+		top: 16px
+		left: -72px
+		+s(location-icon)
 		
 .popup-close
 	font-size: 16px
@@ -48,6 +213,7 @@
 		
 .success
 	text-align: center
+	padding: 0 30px 
 	&__icon
 		+s(success)
 		display: block
@@ -57,3 +223,34 @@
 		font-size: 48px
 		line-height: 1
 		+asblack 
+		display: block
+
++keyframes(load)
+	0%
+		opacity: 1
+		+scale(1)
+	50%
+		opacity: 0.3
+		+scale(0.5)
+	100%
+		opacity: 1 
+		+scale(1)
+
+.load
+	width: 51px
+	font-size: 0
+	i
+		background-color: #2BD5E1
+		width: 13px
+		height: 13px
+		border-radius: 50%
+		display: inline-block
+		vertical-align: middle
+		margin: 0 2px
+	&__one
+		animation: load 1s infinite linear
+	&__two
+		animation: load 1s infinite linear 0.3s
+	&__three
+		animation: load 1s infinite linear 0.6s
+		
