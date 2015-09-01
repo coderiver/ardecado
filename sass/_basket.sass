@@ -22,11 +22,12 @@
 	padding: 20px 25px 30px 25px 
 	position: relative
 	text-align: center
+	box-shadow: 0 5px 5px -5px rgba(#000,.6)
 	+reg
 	&:before,&:after
 		position: absolute
-		top: 0
-		right: 0
+		top: -4px
+		right: -2px
 		+s(basketside-right)  
 		content: ' ' 
 	&:after
@@ -43,11 +44,21 @@
 		font-size: 18px 
 		color: #4A485A 
 		+asbold
+		position: relative
+		z-index: 10 
 	.basketside__amount
 		+var
 		color: #18171D 
 		font-size: 30px 
-		margin: 15px 0 20px 
+		// margin: 15px 0 20px 
+		background: url(img/priceo.png) no-repeat 50% 50%
+		background-size: 100% 100%
+		display: inline-block
+		padding: 20px 20px 10px 20px
+		margin-top: -16px 
+		position: relative
+		z-index: 1 
+		margin-bottom: 10px 
 	.basketside__economy,.basketside__bonus
 		+asbold
 		font-size: 14px 
@@ -63,6 +74,8 @@
 		+s(delivery-green-small)
 		display: inline-block
 	.basketside__delivery
+		margin-bottom: 18px 
+		margin-top: 15px 
 		p
 			+asbold
 			color: #4A485A 
@@ -73,4 +86,34 @@
 				+semi
 				display: block
 				padding-top: 1px 
+	.btn-order
+		padding-left: 0
+		padding-right: 0
+		width: 100%  
+.promocode
+	margin-bottom: 20px 
+	a
+		text-decoration: none
+		&:hover
+			span
+				&:before
+					display: none
+	span
+		+asblack
+		vertical-align: middle
+		font-size: 18px 
+		color: #48B1EC 
+		position: relative
+		&:before
+			position: absolute
+			content: ""
+			bottom: 2px
+			left: 0
+			width: 100%
+			border-bottom: 1px dashed #48B1EC     
+	i
+		+s(question)
+		display: inline-block
+		margin-left: 10px 
+		vertical-align: middle
 
