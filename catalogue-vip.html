@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Catalogue</title>
+	<title>Catalogue VIP</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<!-- theme color for android 5.0 -->
@@ -19,10 +19,10 @@
 
 
 	<!-- begin main  -->
-	<main class="main no-margin">
+	<main class="main">
 
 		<!-- begin header  -->
-		<header class="header">
+		<header class="header is-dark-bg">
 			<div class="inner">
 				<div class="header__left">
 					<nav class="nav">
@@ -46,9 +46,9 @@
 						<button class="search__btn"></button>
 					</div>
 					<a href="#" class="gift-cards"><img src="img/gift-cards.png" alt=""></a>
-					<a href="#" class="logo">
-						<span>студия подарка</span>
-						<img src="img/logo.png" alt="">
+					<a href="#" class="logo is-vip">
+						<span>vip раздел</span>
+						<img src="img/logo-vip.png" alt="">
 						<img src="img/logo-sticker.png" alt="" class="logo__sticker">
 					</a>
 					<div class="vip-gifts">
@@ -68,7 +68,7 @@
 			</div>
 			<div class="header__menu">
 				<div class="inner">
-					<ul class="menu">
+					<ul class="menu is-txt-white">
 						<li class="menu__item is-drop is-he js-m-link">
 							<a href="#" class="menu__link is-he">Для него</a>
 							<div class="m-drop js-m-drop">
@@ -942,7 +942,7 @@
 							<a href="#" class="menu__link is-new">Новинки</a>
 						</li>
 					</ul>
-					<span class="menu-decor"><i></i></span>
+					<span class="menu-decor is-brown-bg"><i></i></span>
 					<div class="basket js-basket">
 						<a href="#" class="basket__amount">
 							<span class="basket__icon">999</span>
@@ -1127,7 +1127,7 @@
 		<div class="steps js-steps">
 			<i class="btn-close btn-close_big js-steps-close"></i>
 			<div class="steps__text">Почему  уже <span>более 160 000</span> человек выбрали нас?<i class="i i-right-big"></i></div>
-			<ul class="steps__list">
+			<ul class="steps__list is-dark">
 				<li>
 					<a href="#">
 						<i class="i i-rb-delivery"></i>
@@ -1163,9 +1163,9 @@
 					<ul class="breadcrumbs__list">
 						<li><a href="#">Главная</a></li>
 						<li><a href="#">Для него</a></li>
-						<li><a href="#">Подарок брату на день рождения</a></li>
+						<li><a href="#">Vip подарки</a></li>
 					</ul>
-					<h1 class="is-gray">Подарок брату на юбилей на день железнодорожника</h1>
+					<h1 class="is-black">VIP подарки</h1>
 				</div>
 			</div>
 
@@ -2191,8 +2191,38 @@
 			</div>
 			<div class="catalog">
 				<div class="catalog__divider"><span></span></div>
-				<div class="text no-pad">
-					<p class="semi-14">Емкость рынка искажает продукт. Рыночная ситуация однообразно поддерживает повседневный системный анализ. <br> Отсюда естественно следует, что VIP-мероприятие нетривиально. Отсюда естественно следует, что партисипативное планирование транслирует стратегический рыночный план. Комплексный анализ ситуации, конечно, основан на тщательном анализе.</p>
+				<div class="row holidays">
+					<div class="col-lg-4 col-xs-4">
+						<div class="holidays__box">
+							<a href="#">
+								<i class="i i-gift-cards"></i>
+								<div class="holidays__text is-gift">
+									<p>Не можете выбрать из разнообразия подарков? Подарите выбор!</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-xs-4">
+						<div class="holidays__box">
+							<a href="#">
+								<i class="i i-march"></i>
+								<div class="holidays__text is-march">
+									<p>Подарки к любому празднику!</p>
+									<p>Календрь подарков Ар де Кадо!</p>
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-xs-4">
+						<div class="holidays__box">
+							<a href="#">
+								<i class="i i-soon"></i>
+								<div class="holidays__text is-soon">
+									<p>Подбери уникальный подарок, пройдя забавный квест!</p>
+								</div>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -2200,6 +2230,98 @@
 
 	</main>
 	<!-- end main -->
+
+	<!-- begin footer  -->
+	<footer class="footer is-dark-bg">
+		<div class="inner">
+			<div class="footer__top">
+				<a href="#" class="btn-comment">Написать отзыв</a>
+				<div class="footer__mail">
+					<span>hello@ac-studio.ru</span>
+					<small>Всегда отвечаем на ваши письма!</small>
+				</div>
+				<div class="footer__phone">
+					<span>8 (495) 777-22-50</span>
+					<a href="#" class="link-dotted">Позвоните мне!</a>
+					<small class="footer__schedule">9:00 — 19:00</small>
+				</div>
+				<div class="search">
+					<input type="text" class="search__input" placeholder="Поиск подарков">
+					<button class="search__btn"></button>
+				</div>
+			</div>
+			<div class="footer__body">
+				<p>Принимаем все популярные электронные способы оплаты:</p>
+				<ul class="footer__logos">
+					<li><a href="#"><img src="img/visa.png" alt=""></a></li>
+					<li><a href="#"><img src="img/mc.png" alt=""></a></li>
+					<li><a href="#"><img src="img/yandex.png" alt=""></a></li>
+					<li><a href="#"><img src="img/ft-4.png" alt=""></a></li>
+					<li><a href="#"><img src="img/qiwi.png" alt=""></a></li>
+					<li><a href="#"><img src="img/ft-a.png" alt=""></a></li>
+				</ul>
+				<div class="footer__more"><a href="#" class="is-last"><span>и множество других</span></a></div>
+			</div>
+			<div class="footer__bottom">
+				<a href="#" class="footer__logo">
+					<img src="img/footer-logo.png" alt="">
+					<span>© 2004 — 2015 </span>
+				</a>
+				<div class="footer__col">
+					<span class="footer__title">Покупателям</span>
+					<ul class="footer__list">
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Возврат товара</a></li>
+						<li><a href="#">Самовывоз</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="footer__col">
+					<span class="footer__title">Подарки</span>
+					<ul class="footer__list">
+						<li><a href="#">Для него</a></li>
+						<li><a href="#">Для нее</a></li>
+						<li><a href="#">Паре</a></li>
+						<li><a href="#">Корпоратив</a></li>
+						<li><a href="#" class="is-red">Новинки</a></li>
+						<li><a href="#">Sale</a></li>
+					</ul>
+				</div>
+				<div class="footer__col">
+					<span class="footer__title">Топ поводы</span>
+					<ul class="footer__list">
+						<li><a href="#">День Рождения</a></li>
+						<li><a href="#" class="is-pink">День Святого Валентина</a></li>
+						<li><a href="#">23 февраля</a></li>
+						<li><a href="#">8 Марта</a></li>
+						<li><a href="#">Свадьба</a></li>
+						<li><a href="#">Идеи подарков</a></li>
+					</ul>
+				</div>
+				<div class="footer__col">
+					<span class="footer__title">Идеи подарков</span>
+					<ul class="footer__list">
+						<li><a href="#">Вход</a></li>
+						<li><a href="#" class="is-green">Регистрация</a></li>
+						<li><a href="#">Профиль</a></li>
+						<li><a href="#">Любимые товары</a></li>
+						<li><a href="#">Накопительные баллы</a></li>
+						<li><a href="#">История заказов</a></li>
+					</ul>
+				</div>
+				<div class="footer__bitrix">
+					<a href="#" class="unlikers">
+						<img src="img/unlikers.png" alt="">
+						<p><b>Unlikers</b> — идеи и создание сайта, 2015</p>
+					</a>
+					<a href="#" class="bitrix"><img src="img/bitrix.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
 
 	<!-- begin modal  -->
 	<div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
