@@ -490,7 +490,86 @@
 	overflow-y: auto
 	overflow-x: hidden
 	background: #fff
-
+.ui-autocomplete
+	box-shadow: 0 5px 21px rgba(0, 0, 0, 0.19)
+	border-radius: 0 0 4px 4px
+	.ui-menu-item
+		a
+			display: block
+			height: 52px
+			padding: 5px 10px
+			p
+				font-size: 12px
+				color: #8c917b
+				+reg
+				strong
+					font-size: 14px
+					+semi
+					color: #595b48
+			&:hover
+				text-decoration: none	
+				background: #f4f4f4 	
+	&.scrollable
+		.scroll-bar.vertical
+			right: 5px
+			width: 7px
+			z-index: 2
+	.overview
+		width: 100%     
+	&.scrollable
+		.scroll-bar.vertical
+			.thumb
+				&:before
+					content: ""
+					position: absolute
+					top: 5px
+					bottom: 5px
+					left: 0
+					right: 0
+					background: rgba(#000, 0.33)
+					border-radius: 7px 
+					cursor: pointer	
+					
+// timeline
+.timeline-wrap
+	padding: 0 55px
+	margin-bottom: 19px
+.timeline
+	position: relative
+	.slick-list
+		padding: 0 10px 
+		z-index: 2
+	.slick-track
+		padding: 10px 0 
+	.timeline__item
+		text-align: center
+		border-radius: 6px
+		&.is-active
+			position: relative
+			background: #fff
+			box-shadow: 0 0 0 10px #fd8282
+			z-index: 999
+		&.weekend
+			.timeline__weekday
+				color: #f57f90
+	.timeline__in
+		height: 65px 
+		padding: 5px 0 
+		background: #fff
+		cursor: pointer 	
+	.timeline__day
+		color: #4a485b
+		+asblack
+		font-size: 20px
+		line-height: 1.2
+	.timeline__nonth						
+		font-size: 13px
+		+semi
+		color: #4a485b
+	.timeline__weekday
+		font-size: 12px
+		+semi
+		color: #a5a5a5	
 
 
 

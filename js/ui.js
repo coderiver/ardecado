@@ -23,35 +23,78 @@ head.ready(function() {
 	});
 
 	// jquery autocomplete
-	$(function() {
-    	var availableTags = [
-    		"ActionScript",
-    		"AppleScript",
-    		"Asp",
-    		"BASIC",
-    		"C",
-    		"C++",
-    		"Clojure",
-    		"COBOL",
-    		"ColdFusion",
-    		"Erlang",
-    		"Fortran",
-    		"Groovy",
-    		"Haskell",
-    		"Java",
-    		"JavaScript",
-    		"Lisp",
-    		"Perl",
-    		"PHP",
-    		"Python",
-    		"Ruby",
-    		"Scala",
-    		"Scheme"
-    	];
-    	$('#order-street').autocomplete({
-    	  source: availableTags
-    	});
+
+	$('.autocomplete').each(function() {
+		var availableTags = [
+			{
+				value: 'Стромынка',
+				adress: 'ул. Стромынка',
+				city: 'г. Москва'
+			},
+			{
+				value: 'Стромынка',
+				adress: 'ул. Стромынка',
+				city: 'г. Химки'
+			},
+			{
+				value: 'Стромынка',
+				adress: 'ул. Стромынка',
+				city: 'г. Казань'
+			},
+			{
+				value: 'Стромынка',
+				adress: 'ул. Стромынка',
+				city: 'г. Ростов'
+			},
+			{
+				value: 'Стромынка',
+				adress: 'ул. Стромынка',
+				city: 'г. Москва'
+			},
+			{
+				value: 'Стромынка',
+				adress: 'ул. Стромынка',
+				city: 'г. Химки'
+			},
+			{
+				value: 'Стромынка',
+				adress: 'ул. Стромынка',
+				city: 'г. Казань'
+			},
+			{
+				value: 'Стромынка',
+				adress: 'ул. Стромынка',
+				city: 'г. Ростов'
+			}
+		];
+		var list = $(this);	
+
+		list.autocomplete({
+			minLength: 0,
+			source: availableTags,
+			open: function(event, ui) {
+				var droplist = $('.ui-autocomplete');
+				droplist.customScrollbar();
+			},
+			focus: function( event, ui ) {
+			    list.val( ui.item.value );
+			    return false;
+			}
+		})
+		.autocomplete( "instance" )._renderItem = function(ul, item) {
+
+			return $('<div>')
+			.append(
+				'<a><p><strong>' + item.adress + '</strong></p>' + '<p>' + item.city + '</p>'
+			).appendTo(ul);
+		}
 	});
+    	
+
+
+
+
+
 
 
 });
