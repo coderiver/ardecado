@@ -1,3 +1,11 @@
+//to move
+.main
+	&.no-margin
+		margin-bottom: 0
+		&:after
+			display: none
+
+
 // catalog
 .breadcrumbs
 	margin: 20px 0
@@ -30,7 +38,32 @@
 				color: #1a44cd
 
 .catalog
-	padding-top: 20px
-	border-top: 1px dashed #d8d8d2
+	margin-bottom: 20px
+	&__divider
+		text-align: center
+		overflow: hidden
+		+semi
+		span
+			position: relative
+			padding: 0 20px
+			font-size: 13px
+			color: #a5a29f
+			&.no-pad
+				padding: 0 0.5px
+			&:before,
+			&:after
+				content: ""
+				position: absolute
+				width: 5000px
+				top: 50%
+				height: 1px
+				border-bottom: 1px dashed #d8d8d2
+			&:before
+				left: 100%
+			&:after
+				right: 100%
 
-
+	.row
+		padding: 15px 0
+	.text
+		padding: 0

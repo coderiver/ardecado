@@ -488,10 +488,10 @@ i { font-style: normal; }
 .slick-prev:before, .slick-next:before { height: 50px; line-height: 50px; }
 
 .slick-prev { left: 0; }
-.slick-prev:before { content: "←"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
+.slick-prev:before { content: "тЖР"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
 
 .slick-next { right: 0; }
-.slick-next:before { content: "→"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
+.slick-next:before { content: "тЖТ"; display: inline-block; vertical-align: middle; font-size: 61px; color: #fff; }
 
 .slick-dots { text-align: center; position: absolute; margin: 0; bottom: 0; left: 0; right: 0; }
 .slick-dots li { position: relative; display: inline-block; padding: 0 3px; }
@@ -1333,6 +1333,9 @@ i { font-style: normal; }
 .panel-item__text span { color: #413939; font-family: "ALSSchlangesans Bold", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 16px; line-height: 18px; max-height: 36px; overflow: hidden; }
 .panel-item__text small { color: #A7A7A7; font-size: 12px; font-family: "ProximaNova Regular", Arial, sans-serif; line-height: 1.2; }
 
+.main.no-margin { margin-bottom: 0; }
+.main.no-margin:after { display: none; }
+
 .breadcrumbs { margin: 20px 0; }
 .breadcrumbs__list { font-size: 14px; font-family: "ProximaNova Semibold", Arial, sans-serif; *zoom: 1; }
 .breadcrumbs__list:after { content: " "; display: table; clear: both; }
@@ -1344,6 +1347,14 @@ i { font-style: normal; }
 .breadcrumbs__list a { display: inline-block; vertical-align: middle; color: #42b0ef; }
 .breadcrumbs__list a:visited { color: #1a44cd; }
 
-.catalog { padding-top: 20px; border-top: 1px dashed #d8d8d2; }
+.catalog { margin-bottom: 20px; }
+.catalog__divider { text-align: center; overflow: hidden; font-family: "ProximaNova Semibold", Arial, sans-serif; }
+.catalog__divider span { position: relative; padding: 0 20px; font-size: 13px; color: #a5a29f; }
+.catalog__divider span.no-pad { padding: 0 0.5px; }
+.catalog__divider span:before, .catalog__divider span:after { content: ""; position: absolute; width: 5000px; top: 50%; height: 1px; border-bottom: 1px dashed #d8d8d2; }
+.catalog__divider span:before { left: 100%; }
+.catalog__divider span:after { right: 100%; }
+.catalog .row { padding: 15px 0; }
+.catalog .text { padding: 0; }
 
 /*# sourceMappingURL=screen.css.map */
