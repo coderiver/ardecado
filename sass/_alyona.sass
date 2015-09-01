@@ -1,11 +1,6 @@
 //for other blocks
 .item
 	position: relative
-	&.is-one-third
-		height: 448px
-		.item__img
-			width: 380px
-			height: 380px
 	&__btns
 		text-align: right
 		ul
@@ -25,7 +20,17 @@
 			vertical-align: middle
 			opacity: 0.6
 
-// catalogue
+.item-big
+	&:hover
+		.item__btns ul
+			display: block
+	&:hover
+		.item__btns
+			left: 7px
+	.item__btns .i
+		vertical-align: bottom
+
+// catalog
 .breadcrumbs
 	margin: 20px 0
 	&__list
