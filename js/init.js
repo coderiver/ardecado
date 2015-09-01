@@ -6,5 +6,5 @@ head.load("js/lib/jquery.js",
 					"js/lib/bootstrap.min.js",
 					"js/lib/nouislider.min.js",
 					"js/lib/jquery.multiple.select.js",
-					"js/select.js",
+					"js/ui.js",
 					"js/common.js");
