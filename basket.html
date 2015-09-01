@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>order-1_faraway</title>
+	<title>basket</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<!-- theme color for android 5.0 -->
@@ -1156,18 +1156,22 @@
 		</div>
 	
 		<!-- begin container  -->
+		<!-- ======================================= -->
+		<!-- ======================================= -->
+		<!-- ======================================= -->
+		<!-- ======================================= -->
 		<section class="container">
 			<!-- ordering -->
 			<div class="ordering">
-				<h1 class="title-h1 is-gray">Оформление заказа</h1>
+				<h1 class="title-h1 is-gray">Корзина товаров</h1>
 				<div class="ordering__in">
-					<div class="ordering__step">
+					<div class="ordering__step is-active">
 						<i class="i i-r-basket-gray"></i>
 						<i class="i i-r-basket-green"></i>
 						<span>Корзина</span>
 					</div>
 					<i class="i i-right-big"></i>
-					<div class="ordering__step is-active">
+					<div class="ordering__step ">
 						<i class="i i-r-check-gray"></i>
 						<i class="i i-r-check-green"></i>
 						<span>Оформление</span>
@@ -1181,353 +1185,237 @@
 				</div>
 			</div>
 		</section>
+		<!-- ======================================= -->
+		<!-- ======================================= -->
+		<!-- ======================================= -->
 		<!-- end container -->
-		
-		<!-- begin order -->
-		<div class="order-wrap">
-			<div class="order">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-xs-8">
-							<div class="delivery">
-								<div class="delivery__city">
-									<div class="delivery__step">
-										<div class="title-h3"><i class="i i-marker-big"></i> Выберите город доставки</div>
-										<div class="delivery__indicator is-passed"></div>
-									</div>
-									<div class="delivery__center">
-										<select multiple="multiple" class="select" placeholder="">
-											<option selected value="Комсомольск на Амуре">Комсомольск на Амуре</option>
-											<option value="Москва">Москва</option>
-											<option value="Казань">Казань</option>
-											<option value="Санкт-Петербург">Санкт-Петербург</option>
-											<option value="Рязань">Рязань</option>
-											<option value="Махачкала">Махачкала</option>
-											<option value="Тюмень">Тюмень</option>
-											<option value="Омск">Омск</option>
-											<option value="Самара">Самара</option>
-											<option value="Челябинск">Челябинск</option>
-										</select>
-									</div>
-								</div>
-								<div class="delivery__kind">
-									<div class="delivery__step">
-										<div class="title-h3"><i class="i i-clock-big"></i> Способ и сроки доставки</div>
-										<div class="delivery__indicator"></div>
-									</div>
-									<!-- tabs -->
-									<div class="tabs-wrap js-tab-group">
-										<div class="tabs">
-											<a href="js-tab-1" class="btn-tab js-tab-link"><span>Курьером</span></a>
-										</div>
-										<!-- tab content 1 -->
-										<div class="js-tab-cont js-tab-1">
-											<div class="faraway">
-												<div class="faraway__icon"><span></span></div>
-												<p><strong>Стандартная доставка по РФ</strong></p>
-												<p>3-5 рабочих дней</p>
-												<div class="faraway__price">200 <i class="rub">P</i></div>
-											</div>
-										</div>
+		<!-- begin basketbottom  -->
+		<div class="basketmain inner row">
+			<div class="col-lg-9 col-xs-9">
+				wide col
+			</div>
+			<div class="col-lg-3 col-xs-3">
+				<!-- begin basketside  -->
+				<div class="basketside">
+					<h3>Ваш заказ</h3>
+					<div class="basketside__weight">Вес заказа: 1500 г.</div>
+					<div class="basketside__goods">4 товара на сумму</div>
+					<div class="basketside__amount">6 940 Р</div>
+					<div class="basketside__economy">Экономия 495 руб.</div>
+					<div class="basketside__bonus">Заработаете бонусов: <span>392</span></div>
+					<div class="basketside__delivery">
+						<div class="basketside__icon"></div>
+						<p>25 сентября 2015 <small>Ориентировочная дата отгрузки</small></p>
+					</div>
+					<div class="promocode">
+						<a href="#"><span>Промокод</span><i></i></a>
+					</div>
+					<a href="#" class="btn-order">Оформить заказ</a>
+
+				</div>
+				<!-- end basketside -->
+			</div>
+		</div>
+		<div class="basketbottom"><div class="inner">
+			<h3>Также вам может понравиться</h3>
+			<div class="row items js-carousel-parent">
+				<div class="col-lg-12 col-xs-12">
+					<div class="row carousel js-carousel">
+						<div class="col-lg-2 col-xs-2">
+							<div class="item">
+								<div class="item__img">
+									<a href="#">
+										<img src="img/item-img.png" alt="">	
+									</a>							
+									<div class="item__btns">
+										<ul>
+											<li><a href="#" class="i i-add-gray"></a></li>
+											<li><a href="#" class="i i-basket-empty"></a></li>
+											<li><a href="#" class="i i-heart"></a></li>
+										</ul>
+										<span class="item__price">1 320 <i class="rub">Р</i></span>
 									</div>
 								</div>
-								<div class="delivery__info">
-									<div class="delivery__step">
-										<div class="title-h3"><i class="i i-user"></i> Информация для доставки</div>
-										<div class="delivery__indicator"></div>
-									</div>
-									<!-- tabs -->
-									<div class="tabs-wrap js-tab-group">
-										<div class="tabs">
-											<a href="js-tab-1" class="btn-tab js-tab-link"><span>Я - получатель</span></a>
-											<a href="js-tab-2" class="btn-tab js-tab-link"><span>Вручите от моего имени</span></a>
-										</div>
-										<!-- tab content 1 -->
-										<div class="js-tab-cont js-tab-1">
-											<div class="form">
-												<div class="form__row">
-													<div class="form__col form__col-2">
-														<div class="text-field">
-															<p>Ваше имя <span class="required-field">*</span></p>
-															<label class="text-field__block">
-																<input type="text">
-															</label>
-															<span class="error__message">ошибка ввода</span>
-														</div>
-													</div>
-													<div class="form__col form__col-3">
-														<div class="text-field">
-															<p>Ваш email <span class="required-field">*</span></p>
-															<label class="text-field__block">
-																<input type="text">
-															</label>
-															<span class="error__message">ошибка ввода</span>
-														</div>
-													</div>
-													<div class="form__col form__col-3">
-														<div class="text-field">
-															<p>Ваш телефон <span class="required-field">*</span></p>
-															<div class="phone-field">
-																<label class="text-field__block">
-																	<input type="text" placeholder="903">
-																</label>
-																<label class="text-field__block">
-																	<input type="text" placeholder="799 - 48 - 72">
-																</label>
-															</div>
-															<span class="error__message">ошибка ввода</span>
-														</div>
-													</div>
-													<button type="button" class="add-row"><i class="i i-add"></i></button>
-												</div>
-												<div class="form__row">
-													<div class="form__col form__col-2">
-														<p>Выбрать шаблон адреса</p>
-														<select  multiple="multiple" class="select" placeholder="не выбрано">
-															<option value="Комсомольск на Амуре">Комсомольск на Амуре</option>
-															<option value="Москва">Москва</option>
-															<option value="Казань">Казань</option>
-															<option value="Санкт-Петербург">Санкт-Петербург</option>
-															<option value="Рязань">Рязань</option>
-															<option value="Махачкала">Махачкала</option>
-															<option value="Тюмень">Тюмень</option>
-															<option value="Омск">Омск</option>
-															<option value="Самара">Самара</option>
-															<option value="Челябинск">Челябинск</option>
-														</select>
-													</div>
-													<div class="form__col form__col-3">
-														<div class="text-field ui-widget">
-															<p>Улица <span class="required-field">*</span></p>
-															<label class="text-field__block">
-																<input id="order-street" type="text">
-															</label>
-															<span class="error__message">ошибка ввода</span>
-														</div>
-													</div>
-												</div>
-												<div class="form__row">
-													<div class="form__col form__col-1">
-														<div class="text-field">
-															<p>Дом <span class="required-field">*</span></p>
-															<label class="text-field__block">
-																<input type="text">
-															</label>
-															<span class="error__message">ошибка ввода</span>
-														</div>
-													</div>
-													<div class="form__col form__col-1">
-														<div class="text-field">
-															<p>Корпус</p>
-															<label class="text-field__block">
-																<input type="text">
-															</label>
-															<span class="error__message">ошибка ввода</span>
-														</div>
-													</div>
-													<div class="form__col form__col-1">
-														<div class="text-field">
-															<p>Домофон</p>
-															<label class="text-field__block">
-																<input type="text">
-															</label>
-															<span class="error__message">ошибка ввода</span>
-														</div>
-													</div>
-													<div class="form__col form__col-1">
-														<div class="text-field">
-															<p>Этаж</p>
-															<label class="text-field__block">
-																<input type="text">
-															</label>
-															<span class="error__message">ошибка ввода</span>
-														</div>
-													</div>
-													<div class="form__col form__col-1">
-														<div class="text-field">
-															<p>Подьезд</p>
-															<label class="text-field__block">
-																<input type="text">
-															</label>
-															<span class="error__message">ошибка ввода</span>
-														</div>
-													</div>
-													<div class="form__col form__col-1">
-														<div class="text-field">
-															<p>Квартира/офис <span class="required-field">*</span></p>
-															<label class="text-field__block">
-																<input type="text">
-															</label>
-															<span class="error__message">ошибка ввода</span>
-														</div>
-													</div>
-													<div class="form__col form__col-2">
-														<div class="checkbox-wrapper">
-															<label class="save-checkbox">
-																<input type="checkbox">
-																<span>Сохранить в шаблоны</span>
-															</label>
-														</div>
-														
-													</div>
-												</div>
-												<div class="form__row">
-													<div class="form__col form__col-8">
-														<a href="#" class="form__link">Добавить комментарий по доставке</a>
-													</div>
-												</div>
-											</div>
-										</div>
-										<!-- tab content 2 -->
-										<div class="js-tab-cont js-tab-2">
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nostrum numquam saepe quidem consectetur, officiis eum illo incidunt error excepturi nulla minima. Distinctio nihil, excepturi assumenda voluptatem laboriosam modi quibusdam.
-										</div>
-									</div>
-								</div>
-								<div class="delivery__payment">
-									<div class="delivery__step">
-										<div class="title-h3"><i class="i i-rub-big"></i> Способы оплаты</div>
-										<div class="delivery__indicator"></div>
-									</div>
-									<div class="payment row">
-										<div class="payment__row">
-											<label class="checkbox">
-												<input type="checkbox">
-												<span>Со счета (На счету: 1 480 руб.)</span>
-											</label>
-										</div>
-										<div class="payment__col">
-											<ul>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Наличные <i class="i i-1000"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Банковские карты <img src="img/visa.png" width="38" alt=""> <img src="img/mc.png" width="30" alt=""></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Яндекс.Деньги <i class="i i-yandex-text"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Webmoney <i class="i i-webmoney-small"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Банковским переводом <i class="i i-bank"></i></span>
-													</label>
-												</li>
-											</ul>
-										</div>
-										<div class="payment__col">
-											<ul>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>QIWI-кошелек <i class="i i-qiwi-small"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Альфа-клик <i class="i i-alpha"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Связной <i class="i i-svijznoy"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Евросеть <i class="i i-euroset"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Выписать счет на юр. лицо</span>
-													</label>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
+								<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
 							</div>
 						</div>
-						<div class="col-lg-3 col-xs-3 col-lg-offset-1 col-xs-offset-1">
-							<!-- bill -->
-							<div class="bill">
-								<div class="bill__in">
-									<div class="bill__topper">
-										<h6 class="title-h6">Ваш заказ</h6>
-										<p>Вес заказа: 1500 г.</p>
-									</div>
-									<div class="bill__content">
-										<div class="bill__item">
-											<p>4 товара на сумму</p>
-											<div class="bill__price">46 940 <i class="rub">Р</i></div>
-										</div>
-										<div class="bill__item">
-											<p>Стоимость, способ и<br> дата доставки</p>
-											<div class="bill__price">600 <i class="rub">Р</i></div>
-											<div class="bill__text">25 сентября, курьеромs</div>
-										</div>
-										<div class="bill__item">
-											<p>Способ оплаты</p>
-											<div class="bill__text">Банковские карты</div>
-											<ul class="bill__cards">
-												<li>
-													<img src="img/visa.png" width="38" alt="">
-												</li>
-												<li>
-													<img src="img/mc.png" width="30" alt="">
-												</li>
-											</ul>
-										</div>
-										<div class="bill__item">
-											<div class="bill__bonus">Оплачено бонусами: 1 300 руб.</div>
-										</div>
-										<div class="bill__pay">
-											<p>Итого к оплате</p>
-											<div class="bill__total">47 540 <i class="rub">Р</i></div>
-										</div>
-										<div class="bill__agreement">
-											<label class="bill__checkbox">
-												<input type="checkbox">
-												<span>Хочу получать новости и акции</span>
-											</label>
-											<label class="bill__checkbox">
-												<input type="checkbox">
-												<span>Хочу получать новости и акции</span>
-											</label>
-										</div>
-										<button class="btn-order">Оформить заказ</button>
+						<div class="col-lg-2 col-xs-2">
+							<div class="item">
+								<div class="item__img">
+									<a href="#">
+										<img src="img/item-img.png" alt="">	
+									</a>							
+									<div class="item__btns">
+										<ul>
+											<li><a href="#" class="i i-add-gray"></a></li>
+											<li><a href="#" class="i i-basket-empty"></a></li>
+											<li><a href="#" class="i i-heart"></a></li>
+										</ul>
+										<span class="item__price">1 320 <i class="rub">Р</i></span>
 									</div>
 								</div>
+								<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
 							</div>
-							<div class="phone-order">
-								<p>8 (495) 777-22-50</p>
-								<span>Можете заказать по телефону</span>
+						</div>
+						<div class="col-lg-2 col-xs-2">
+							<div class="item">
+								<div class="item__img">
+									<a href="#">
+										<img src="img/item-img.png" alt="">	
+									</a>							
+									<div class="item__btns">
+										<ul>
+											<li><a href="#" class="i i-add-gray"></a></li>
+											<li><a href="#" class="i i-basket-empty"></a></li>
+											<li><a href="#" class="i i-heart"></a></li>
+										</ul>
+										<span class="item__price">1 320 <i class="rub">Р</i></span>
+									</div>
+								</div>
+								<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-xs-2">
+							<div class="item">
+								<div class="item__img">
+									<a href="#">
+										<img src="img/item-img.png" alt="">	
+									</a>							
+									<div class="item__btns">
+										<ul>
+											<li><a href="#" class="i i-add-gray"></a></li>
+											<li><a href="#" class="i i-basket-empty"></a></li>
+											<li><a href="#" class="i i-heart"></a></li>
+										</ul>
+										<span class="item__price">1 320 <i class="rub">Р</i></span>
+									</div>
+								</div>
+								<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-xs-2">
+							<div class="banner">
+								<a href="#"><img src="img/small-banner1.png" alt=""></a>
+							</div>							
+						</div>
+						<div class="col-lg-2 col-xs-2">
+							<div class="item">
+								<div class="item__img">
+									<a href="#">
+										<img src="img/item-img.png" alt="">	
+									</a>			
+									<div class="item__btns is-orange">
+										<ul>
+											<li><a href="#" class="i i-add-gray"></a></li>
+											<li><a href="#" class="i i-basket-empty"></a></li>
+											<li><a href="#" class="i i-heart"></a></li>
+										</ul>
+										<span class="item__price">1 320 <i class="rub">Р</i></span>
+									</div>
+								</div>
+								<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-xs-2">
+							<div class="item">
+								<div class="item__img">
+									<a href="#">
+										<img src="img/item-img.png" alt="">	
+									</a>							
+									<div class="item__btns">
+										<ul>
+											<li><a href="#" class="i i-add-gray"></a></li>
+											<li><a href="#" class="i i-basket-empty"></a></li>
+											<li><a href="#" class="i i-heart"></a></li>
+										</ul>
+										<span class="item__price">1 320 <i class="rub">Р</i></span>
+									</div>
+								</div>
+								<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-xs-2">
+							<div class="item">
+								<div class="item__img">
+									<a href="#">
+										<img src="img/item-img.png" alt="">	
+									</a>							
+									<div class="item__btns">
+										<ul>
+											<li><a href="#" class="i i-add-gray"></a></li>
+											<li><a href="#" class="i i-basket-empty"></a></li>
+											<li><a href="#" class="i i-heart"></a></li>
+										</ul>
+										<span class="item__price">1 320 <i class="rub">Р</i></span>
+									</div>
+								</div>
+								<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-xs-2">
+							<div class="item">
+								<div class="item__img">
+									<a href="#">
+										<img src="img/item-img.png" alt="">	
+									</a>							
+									<div class="item__btns">
+										<ul>
+											<li><a href="#" class="i i-add-gray"></a></li>
+											<li><a href="#" class="i i-basket-empty"></a></li>
+											<li><a href="#" class="i i-heart"></a></li>
+										</ul>
+										<span class="item__price">1 320 <i class="rub">Р</i></span>
+									</div>
+								</div>
+								<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-xs-2">
+							<div class="item">
+								<div class="item__img">
+									<a href="#">
+										<img src="img/item-img.png" alt="">	
+									</a>							
+									<div class="item__btns">
+										<ul>
+											<li><a href="#" class="i i-add-gray"></a></li>
+											<li><a href="#" class="i i-basket-empty"></a></li>
+											<li><a href="#" class="i i-heart"></a></li>
+										</ul>
+										<span class="item__price">1 320 <i class="rub">Р</i></span>
+									</div>
+								</div>
+								<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-xs-2">
+							<div class="banner">
+								<a href="#"><img src="img/small-banner1.png" alt=""></a>
+							</div>		
+						</div>
+						<div class="col-lg-2 col-xs-2">
+							<div class="item">
+								<div class="item__img">
+									<a href="#">
+										<img src="img/item-img.png" alt="">	
+									</a>			
+									<div class="item__btns is-orange">
+										<ul>
+											<li><a href="#" class="i i-add-gray"></a></li>
+											<li><a href="#" class="i i-basket-empty"></a></li>
+											<li><a href="#" class="i i-heart"></a></li>
+										</ul>
+										<span class="item__price">1 320 <i class="rub">Р</i></span>
+									</div>
+								</div>
+								<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div>		
 			</div>
-		</div>
+		</div></div>
+		<!-- end basketbottom -->
 
 	</main>
 	<!-- end main -->
