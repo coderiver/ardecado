@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>order-1</title>
+	<title>order-2</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<!-- theme color for android 5.0 -->
@@ -1425,8 +1425,20 @@
 																</label>
 															</div>
 															<span class="error__message">ошибка ввода</span>
+															<button type="button" class="add-row"><i class="i i-add"></i></button>
 														</div>
-														<button type="button" class="add-row"><i class="i i-add"></i></button>
+														<div class="text-field">
+															<div class="phone-field">
+																<label class="text-field__block">
+																	<input type="text" placeholder="903">
+																</label>
+																<label class="text-field__block">
+																	<input type="text" placeholder="799 - 48 - 72">
+																</label>
+															</div>
+															<span class="error__message">ошибка ввода</span>
+															<button type="button" class="remove-row"><i class="i i-remove"></i></button>
+														</div>
 													</div>
 												</div>
 												<div class="form__row">
@@ -1566,6 +1578,19 @@
 												<input type="checkbox">
 												<span>Со счета (На счету: 1 480 руб.)</span>
 											</label>
+											<div class="acc-payment">
+												<p>Можете оплатить заказ со своего счета частично, указав сумму ниже:</p>
+												<div class="acc-payment__in">
+													<div class="text-field">
+														<label class="text-field__block">
+															<input type="text">
+														</label>
+														<span class="error__message">ошибка ввода</span>
+													</div>
+													<span><i class="rub">P</i></span>
+												</div>
+												<p>При частичной оплате, выберите еще один способ оплаты, для оплаты оставшейся суммы</p>
+											</div>
 										</div>
 										<div class="payment__col">
 											<ul>

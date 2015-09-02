@@ -283,10 +283,6 @@
 			font-size: 13px
 			color: #8c917b
 			margin-bottom: 8px
-		.add-row
-			position: absolute
-			top: 46px
-			right: -34px
 	.form__link
 		display: inline-block
 		color: #42b0ef
@@ -318,7 +314,18 @@
 	.form__col-8
 		width: 100%
 .add-row
+	background: transparent
+	position: absolute
+	top: 41px
+	right: -34px
+.remove-row
+	position: absolute
+	top: 50%
+	right: -34px
+	margin-top: -7px 
 	background: transparent 
+.i-remove
+	+s(remove)	
 .required-field
 	color: #f04040
 	+semi
@@ -326,6 +333,10 @@
 	font-size: 18px
 
 .text-field
+	position: relative
+	margin-top: 20px
+	&:first-child
+		margin-top: 0 
 	.error__message
 		display: none
 		padding-top: 6px
@@ -375,7 +386,7 @@
 	border-radius: 3px
 	background: #dbe3c2
 .checkbox
-	display: block
+	display: inline-block
 	cursor: pointer
 	+nosel
 	input
@@ -700,6 +711,42 @@
 							display: none
 				label
 					padding: 11px 
+.acc-payment
+	width: 326px
+	padding: 3px 13px
+	border-radius: 5px
+	margin-bottom: 10px
+	background: #f4fbdc
+	p
+		margin-top: 10px
+		margin-bottom: 10px
+		color: #595b48
+		font-size: 13px
+		line-height: 1.2 
+		+reg
+	.acc-payment__in
+		& > span
+			display: inline-block
+			vertical-align: middle
+			+asbold
+			font-size: 24px
+			color: #382f2f 
+		.text-field
+			width: 110px
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+		
+
+
+
+
+
+
+
+
+
+
 
 
 
