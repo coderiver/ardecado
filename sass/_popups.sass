@@ -26,6 +26,19 @@
 		line-height: 1
 		display: block
 		margin-bottom: 18px	
+		&.is-green
+			color: #AEC877
+		&.is-purple
+			color: #2D2C62
+		&.is-brown
+			color: #360000
+		&.is-yellow
+			color: #F9BA53
+		&.is-pink
+			color: #F57676
+		.i
+			display: inline
+			margin: 0 10px 0 0 
 	&__search
 		position: relative
 		margin-bottom: 30px
@@ -119,6 +132,11 @@
 			top: 0
 		&:after
 			bottom: 0
+	&__logo
+		display: block
+		margin: 10px 0 18px 
+		img
+			max-width: 100%
 
 .feedback
 	padding: 20px 70px 40px  
@@ -163,7 +181,6 @@
 		width: 280px
 	.popup__title
 		font-size: 50px
-		color: #360000
 	&__icon
 		+s(pass-icon)
 		position: absolute
@@ -176,15 +193,60 @@
 	.b-btn_green
 		width: auto
 	.popup__title
-		color: #2D2C62
 		font-size: 50px
 	&__icon
 		position: absolute
 		top: 17px
 		left: -71px
 		+s(vip-icon)
+.subscribe
+	.popup__text
+		padding: 20px 5px 
+	.b-btn_green
+		width: auto
+	.popup__title
+		font-size: 50px
+	&__icon
+		position: absolute
+		top: 17px
+		left: -71px
+		+s(subscribe-icon)
 
+.signup
+	.popup__text
+		padding: 20px 5px 
+	
 
+.popup-discount
+	position: absolute
+	top: 41px
+	left: -58px
+	+s(yellow-bg)
+	&__icon
+		padding: 26px 20px 
+		span, small
+			display: block
+			color: #fff
+		span
+			font-size: 24px
+			+asblack
+			line-height: 19px
+			margin-bottom: 5px
+		small
+			+asbold
+			font-size: 13px
+			line-height: 1
+	p
+		position: absolute
+		top: 50%
+		right: 100%
+		+asblack
+		font-size: 15px
+		line-height: 1.2
+		color: #fff
+		width: 100px
+		text-align: right
+		margin: -27px 13px 0 0  
 .error-field
 	background: url(img/icons/error-field.png) no-repeat center center
 	min-width: 273px
