@@ -570,11 +570,83 @@
 		font-size: 12px
 		+semi
 		color: #a5a5a5	
-
-
-
-
-
+// daytime
+.daytime
+	padding-bottom: 20px
+.radiotime
+	text-align: center
+	&.is-selected
+		.radiotime__price
+			background: #f4fbdc 
+	.radiotime__title
+		+asblack
+		color: #595b48
+		font-size: 16px			
+	.radiotime__options
+		font-size: 0
+		margin-bottom: 7px
+		span, input
+			display: inline-block
+			vertical-align: middle
+			font-size: 14px
+			+asbold
+			color: #595b48  
+		input
+			margin: 0 4px
+			width: 43px
+			height: 26px
+			border-radius: 5px
+			background: #fff 
+			text-align: center
+			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06)
+		input:disabled
+			box-shadow: none
+			background: transparent 	
+	.radiotime__price	
+		display: inline-block
+		padding: 3px 7px
+		border-radius: 5px 		
+		+var
+		color: #595b48
+		font-size: 18px
+.radio-big
+	position: relative
+	margin-bottom: 15px
+	input
+		position: absolute
+		opacity: 0
+	input + span
+		display: inline-block
+		width: 31px
+		height: 31px
+		border-radius: 50%
+		background: #e4ebcc 
+		border: 3px solid #c2c9ac
+	input:checked + span
+		border: 10px solid #a3a795		
+.checkbox-big
+	position: relative
+	margin-bottom: 15px
+	input
+		position: absolute
+		opacity: 0
+	input + span
+		display: inline-block
+		width: 31px
+		height: 31px
+		border-radius: 4px
+		background: #e4ebcc 
+		border: 3px solid #c2c9ac
+	input:checked + span
+		background: #a3a795
+		&:before
+			content: ""
+			position: absolute
+			top: 7px
+			left: 6px
+			+s(check-delivery)
+.accuracy
+	text-align: center			
 
 
 
