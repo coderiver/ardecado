@@ -66,25 +66,24 @@
         top: 100%
     &.top
         bottom: 100%
-        box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.15)
-.select, .select-placeholder       
-    .scrollable .scroll-bar.vertical
-        right: 5px
-        width: 7px
-        z-index: 2
-    .overview
-        width: 100%     
-    .scrollable .scroll-bar.vertical .thumb
-        &:before
-            content: ""
-            position: absolute
-            top: 5px
-            bottom: 5px
-            left: 0
-            right: 0
-            background: rgba(#000, 0.33)
-            border-radius: 7px 
-            cursor: pointer    
+        box-shadow: 0 -4px 5px rgba(0, 0, 0, 0.15)    
+.scrollable .scroll-bar.vertical
+    right: 5px
+    width: 7px
+    z-index: 2
+.overview
+    width: 100%     
+.scrollable .scroll-bar.vertical .thumb
+    &:before
+        content: ""
+        position: absolute
+        top: 5px
+        bottom: 5px
+        left: 0
+        right: 0
+        background: rgba(#000, 0.33)
+        border-radius: 7px 
+        cursor: pointer    
 
 .ms-search
     display: inline-block
@@ -178,3 +177,80 @@
         vertical-align: middle
 .ms-no-results
     display: none
+    
+// metro select
+.metro
+    position: relative
+    cursor: pointer
+    font-size: 12px
+    select
+        position: absolute
+        opacity: 0
+.metro__text
+    position: relative
+    display: block
+    padding: 0 25px 0 12px 
+    height: 46px
+    line-height: 46px
+    border-radius: 5px
+    background: #fff 
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    +asbold
+    font-size: 18px
+    color: #382f2f
+    &:after
+        content: ""
+        position: absolute
+        right: 15px
+        top: 50%
+        margin-top: -3px
+        +s(checkbox)
+.metro__list
+    position: absolute
+    display: none
+    left: 0
+    right: 0
+    top: 100%
+    z-index: 100
+    margin-top: 4px
+    border-radius: 5px
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.19)
+    max-height: 200px
+    overflow-x: hidden
+    overflow-y: auto
+    background: #fff
+    .metro__item
+        padding: 9px 13px 
+        cursor: pointer
+        line-height: 1
+        +asbold
+        font-size: 18px
+        color: #382f2f
+        &:hover
+            background: #f4f4f4
+.round
+    display: inline-block
+    width: 14px
+    height: 14px
+    border-radius: 50%
+    margin-right: 10px
+    &.round_red
+        background: #ff0f0f
+    &.round_green
+        background: #67b11e 
+    &.round_violet
+        background: #a537bd
+    &.round_blue
+        background: #1d6eca
+
+
+
+
+
+
+
+
+
+

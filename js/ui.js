@@ -90,7 +90,53 @@ head.ready(function() {
 		}
 	});
     	
+	// metro select
 
+	$(document).click(function() {
+        $(".js-metro").removeClass("is-active");
+	      $(".js-metro-list").slideUp(100);
+    });
+    
+  // select list
+    $("body").on("click",".js-metro",function(event) {
+        event.stopPropagation();
+    });
+    $("body").on("click",".js-metro-text",function(event) {
+    	var select = $(this).parents(".js-metro");
+
+        if (select.hasClass("is-active")) {
+            $(".js-metro").removeClass("is-active");
+            $(".js-metro-list").slideUp(100);
+        }
+        else {
+            $(".js-metro").removeClass("is-active");
+            $(".js-metro-list").slideUp(100);
+            select.toggleClass("is-active").find(".js-metro-list").slideToggle(100);
+        }
+        setTimeout(function() {
+        	if (!$('.js-metro-list').hasClass('is-loaded')) {
+        		$('.js-metro-list').customScrollbar();
+        		$('.js-metro-list').addClass('is-loaded');
+        	};
+        	
+        }, 100);
+    });
+
+    $("body").on("click",".metro__item",function() {
+        var val = $(this).attr("data-val");
+        var text = $(this).html();
+        var select = $(this).parents(".js-metro");
+        var selectList = $(this).parents(".js-metro-list");
+        select.find(".js-metro-text").html(text);
+        select.find("option").removeAttr("selected");
+        select.find('option[value="'+val+'"]').attr("selected", "selected");
+        selectList.find(".metro__item").removeClass("is-active");
+        $(this).addClass("is-active");
+        select.removeClass("is-active");
+        selectList.slideUp(100);
+        return false;
+        
+    });
 
 
 
