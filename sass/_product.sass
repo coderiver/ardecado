@@ -257,15 +257,15 @@
 		background-color: #fff 
 		cursor: pointer 
 		position: relative
-		&.is-active,&:hover
+		&.is-active
 			i
 				content: ' '
 				position: absolute
 				+s(check-black)
-				top: 8px 
+				top: 7px 
 				left: 5px 
 		&[style]
-			&.is-active,&:hover
+			&.is-active
 				i
 					+s(check-white)
 .select_small
@@ -347,9 +347,191 @@
 	text-decoration: underline
 	text-align: center
 				
-		
-	
-	
+.protabs
+	padding-top: 23px 
+	border-top: 1px dashed #D9D9D3 
+	&__tabs
+		font-size: 0 
+		margin-bottom: 14px
+		+clr
+		a
+			display: inline-block
+			height: 46px 
+			line-height: 46px
+			background: #F2F2ED  
+			border-radius: 8px
+			font-size: 24px 
+			color: #48B1EC 
+			width: 152px 
+			margin-right: 7px 
+			+asblack
+			text-decoration: none
+			position: relative
+			text-align: center
+			b
+				position: absolute
+				right: 10px 
+				top: 6px 
+				color: #A8A8A4 
+				font-size: 14px 
+				line-height: 1 
+			span
+				position: relative
+				&:before
+					position: absolute
+					bottom: 3px 
+					left: 0
+					width: 100%  
+					content: "" 
+					border-top: 1px dashed #88C8ED
+					
+			&:last-child
+				margin-right: 0 
+			&:hover,&.is-active
+				background: #FFFFFF 
+				color: #4A485A 
+				span
+					&:before
+						display: none 
+	&__description
+		font-size: 13px 
+		color: #5C5047 
+		line-height: 1.3
+		padding-top: 10px 
+		p
+			margin-bottom: 1em 
+.addcommentplease
+	font-size: 17px 
+	margin-bottom: 15px 
+	+asblack
+	.help
+		margin-left: 4px 
+	strong
+		font-weight: normal
+		border-radius: 6px
+		background: #FBF0A9 
+		padding: 2px 6px 
+.addcomment
+	margin-bottom: 20px 
+	textarea
+		border: 2px solid #D8D6D0 
+		height: 80px 
+		padding: 10px 16px
+		box-sizing: border-box
+		margin-bottom: 10px 
+		width: 100% 
+		+reg
+		font-size: 14px 
+		color: #5C5147 
+		resize: none
+.btn-addcomment
+	color: #fff 
+	height: 38px 
+	line-height: 38px
+	padding: 0 24px
+	border-radius: 6px 
+	font-size: 22px 
+	+asblack
+	background: #89C867 
+	cursor: pointer
+	&:hover
+		background: #58911B 
+	&.is-inactive
+		color: #DFEED6 
+		cursor: default
+		background: #B0D798 
+		&:hover
+			background: #B0D798 
+.comment
+	background: #FFF 
+	border-radius: 16px
+	margin-bottom: 15px 
+	padding: 14px 10px 1px 10px
+	&.is-blue
+		.comment__name
+			color: #ED90A6 
+		.comment__av
+			background-color: #ED90A6 
+	.comment__content
+		padding:  8px 6px 0 6px
+		font-size: 14px 
+		+reg
+		color: #5C5147 
+		border-top: 1px dashed #EDEDEC 
+		p
+			margin-bottom: 1em 
+	.comment__top
+		padding-bottom: 10px 
+		position: relative
+		+clr
+	.comment__av
+		float: left
+		border-radius: 50%
+		overflow: hidden
+		margin-right: 15px 
+		margin-left: 10px 
+		background-color: #BBDBEC 
+		img
+			display: block
+	.comment__name
+		text-decoration: none
+		color: #53B5ED 
+		+asbold
+		font-size: 16px 
+		padding-top: 3px 
+		display: inline-block
+	.comment__date
+		+reg
+		font-size: 12px 
+		color: #B1ADAD 
+	.comment__rating
+		position: absolute
+		top: 5px 
+		right: 10px 
+		font-size: 0 
+		.comment__karma
+			+asblack
+			margin: 0 8px  
+			vertical-align: middle
+			color: #5C5147 
+			font-size: 20px
+			display: inline-block
+			&.is-plus
+				color: #8BA94D  
+			&.is-minus
+				color: #D88384 
+		.comment__plus,.comment__minus
+			+asbold
+			font-size: 21px 
+			background: #E8EEDC 
+			width: 20px 
+			height: 20px 
+			line-height: 20px
+			border-radius: 20px
+			display: inline-block
+			vertical-align: middle 
+			text-align: center
+			color: #7F9B46 
+			cursor: pointer
+		.comment__minus
+			background: #EEE6DC 
+			color: #D88384
+	.comment__reply
+		padding-left: 38px 
+		position: relative
+		&:before
+			content: " " 
+			+s(reply)
+			position: absolute 
+			top: 8px 
+			left: 4px 
+		.comment__top
+			.comment__name 
+				color: #D03C2F 
+		.comment__content
+			border-top: none
+			padding-left: 6px 
+
 
 
 

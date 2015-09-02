@@ -397,9 +397,9 @@ head.ready(function() {
 			tab_cont.hide();
 			tab_cont.first().show();
 
-			$('body').on('click', '.btn-tab', function(){
+			$('body').on('click', '.btn-tab, .js-tab-link', function(){
 	       		link = $(this).attr('href');
-	       		$(this).parents('.js-tab-group').find('.btn-tab').removeClass('is-active');
+	       		$(this).parents('.js-tab-group').find('.btn-tab,.js-tab-link').removeClass('is-active');
 	       		$(this).addClass('is-active');
 	       		$(this).parents('.js-tab-group').find('.js-tab-cont').hide();
 	       		$(this).parents('.js-tab-group').find('.' + link).fadeIn(300);
