@@ -1,0 +1,357 @@
+.catalog__divider
+	clear: both
+
+.productbottom
+	text-align: center
+	clear: both
+	margin-bottom: 30px 
+	padding-top: 16px 
+	a
+		margin: 0 9px 
+		&:hover
+			text-decoration: none
+
+.productmain
+	.breadcrumbs
+		margin: 10px 0
+
+.probasket
+	height: 0
+	position: relative
+	width: 100%
+	+reg
+	span
+		position: absolute
+		width: 100%
+		left: 0
+		display: block
+		bottom: 10px   
+		font-size: 13px 
+		color: #6DB045 
+		text-align: center
+		strong
+			font-weight: normal
+			+semi
+.proartikul
+	margin-bottom: 16px 
+	background: #F4F4F0 
+	border-radius: 10px
+	text-align: center
+	padding: 15px 0 8px 0
+	border-radius: 10px
+	margin-bottom: 16px 
+	background: #F4F4F0  
+	color: #000000 
+	+semi
+	font-size: 13px 
+	&__text
+		display: block
+.prodelivery
+	background: #FFFFFF 
+	margin-bottom: 16px 
+	border-radius: 10px
+	padding: 17px 12px 10px 12px 
+	h5
+		font-size: 22px 
+		padding-left: 57px 
+		position: relative
+		margin-top: 0 
+		margin-bottom: 7px 
+		i
+			display: inline-block
+			position: absolute
+			top: 0px 
+			left: 0 
+	&__icon
+		+s(r-delivery-small)
+	&__selficon
+		+s(r-room-small)
+	&__list
+		list-style: none
+		font-size: 13px 
+		+semi
+		margin-bottom: 17px 
+		li
+			padding-left: 20px 
+			position: relative
+			margin-bottom: 10px 
+			a
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+				&.js-link
+					text-decoration: none
+					border-bottom: 1px dotted 
+					&:hover
+						text-decoration: none
+						border-bottom: 1px dotted #fff
+			&:last-child
+				margin-bottom: 0 
+			&:before
+				position: absolute
+				content: ""
+				left: 0
+				top: 2px   
+		em
+			font-style: normal
+			background: #E2FEB9
+			padding: 0 2px  
+	&__price
+		&:before
+			+s(rub-small)
+	&__location
+		&:before
+			+s(location)
+	&__time
+		&:before
+			+s(time)
+	&__more
+		text-align: center
+		font-size: 16px 
+		padding-bottom: 6px 
+		a
+			text-decoration: none
+			border-bottom: 1px dashed
+			&:hover
+				text-decoration: none
+				border-color: #FFF 
+			
+.js-link,.js-link:hover
+	text-decoration: none
+	border-bottom: 1px dotted 
+.profeatures
+	margin-bottom: 16px 
+	background: #F4F4F0 
+	border-radius: 10px
+	padding: 13px 14px 
+	list-style: none
+	li
+		margin-bottom: 24px 
+		position: relative
+		font-size: 13px 
+		color: #56415E 
+		padding-left: 33px 
+		&:last-child
+			margin-bottom: 0 
+		&:before
+			position: absolute
+			top: -1px 
+			left: 0 
+			content: ' '
+			+s(round-check-small) 
+.prosocials
+	font-size: 0 
+	a
+		display: inline-block
+		margin-right: 16px 
+		&:last-child
+			margin-right: 0 
+	@each $s in fb,tw,vk,ok,mail,print
+		&__#{$s}
+			+s(p-#{$s})
+			&:hover
+				+s(p-#{$s}h)
+.propic
+	border-radius: 18px
+	overflow: hidden
+	position: relative 
+	img
+		display: block
+	.propic__badge
+		position: absolute
+		top: 8px 
+		right: 8px
+	.propic__actions
+		position: absolute
+		top: 12px  
+		left: 12px 
+		a
+			margin-right: 10px 
+			display: inline-block
+			opacity: .6
+			cursor: pointer
+			&:hover
+				opacity: 1  
+	@each $s in fave,view,add 
+		.propic__#{$s}
+			+s(pro-#{$s})  
+.prothumbnails
+	+clr
+	margin: 15px 0 17px 0 
+.prothumbnail
+	float: left
+	border-radius: 6px
+	margin-right: 20px  
+	position: relative
+	cursor: pointer
+	overflow: hidden
+	&:last-child
+		margin-right: 0
+	a
+		display: block
+		img
+			display: block
+	&__3d
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(#A262E1,.6)
+		cursor: pointer
+		border-radius: 6px
+		&:before
+			content: "" 
+			position: absolute
+			+s(i-3d)
+			top: 12px
+			left: 12px  
+			cursor: pointer
+	&__video
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(#E96372,.5) 
+		cursor: pointer
+		border-radius: 6px
+		&:before
+			content: "" 
+			position: absolute
+			+s(i-video)
+			top: 12px
+			left: 17px  
+			cursor: pointer
+.protitle
+	margin-bottom: 7px 
+	margin-top: 0
+.prodescription
+	font-size: 13px  
+	color: #5B5047 
+	p
+		margin-bottom: 1em
+.prodesign
+	float: right
+	width: 230px 
+	&__label
+		font-size: 14px 
+		+semi
+		color: #7A7A7A 
+		margin-bottom: 7px 
+.procolors
+	float: left
+	width: 230px 
+	margin-bottom: 20px 
+	&__label
+		font-size: 14px 
+		+semi
+		color: #7A7A7A 
+		margin-bottom: 7px 
+	&__color
+		width: 26px 
+		height: 26px 
+		border-radius: 50% 
+		margin-right: 10px
+		display: inline-block
+		background-color: #fff 
+		cursor: pointer 
+		position: relative
+		&.is-active,&:hover
+			i
+				content: ' '
+				position: absolute
+				+s(check-black)
+				top: 8px 
+				left: 5px 
+		&[style]
+			&.is-active,&:hover
+				i
+					+s(check-white)
+.select_small
+	.ms-choice
+		height: 38px 
+		line-height: 38px 
+		padding-left: 14px 
+	.ms-choice > span
+		font-size: 15px 
+		+asbold
+	.ms-drop ul > li label
+		padding-left: 33px
+.divider
+	clear: both
+.proprice
+	float: left
+	width: 230px 
+	margin-bottom: 20px 
+	.proprice__value
+		+var
+		color: #4A485A  
+		font-size: 30px 
+		display: inline-block
+		vertical-align: middle
+	&__multiply
+		color: #C9C9BF 
+		display: inline-block
+		vertical-align: middle
+		margin: 0 7px 
+		line-height: 1 
+		font-size: 30px 
+	&__number
+		width: 45px 
+		border: none 
+		border-radius: 8px
+		+var
+		font-size: 24px 
+		color: #CDCDCD
+		text-align: center
+		background: #F6F6F3 
+		padding: 0
+		vertical-align: middle 
+		&:focus
+			color: #000 
+.prometa
+	float: right
+	width: 230px 
+	padding-top: 5px 
+.probonuses
+	font-size: 24px 
+	background: #FBF0A9
+	+asbold
+	border-radius: 8px
+	padding: 0 15px 0 8px 
+	display: inline-block
+	vertical-align: middle
+	strong
+		font-weight: normal
+		+var
+.help
+	display: inline-block
+	vertical-align: middle
+	&__icon
+		+s(question)
+		display: inline-block
+		margin-left: 10px 
+		vertical-align: middle
+.probuy
+	margin-bottom: 25px 
+	button
+		margin-right: 14px 
+		vertical-align: middle
+.prooneclick
+	display: inline-block
+	vertical-align: middle
+	+semi
+	font-size: 14px 
+	color: #7A7A7A 
+	text-decoration: underline
+	text-align: center
+				
+		
+	
+	
+
+
+
+
+

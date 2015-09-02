@@ -1,3 +1,5 @@
+=grid($n)
+	width: $n*80px + 20px*($n - 1)
 .emptybasket
 	text-align: center
 	border-top: 1px dashed #D6D6D0 
@@ -15,21 +17,29 @@
 		text-align: center
 		padding-bottom: 0
 		margin-bottom: 0
+		small
+			display: block
+			text-align: center
+			+asbold
+			font-size: 16px 
+			color: #AAAAA3 
+			margin-bottom: 4px 
 	.slick-list
 		margin-top: -20px 
 .basketside
-	background: #fff 
-	padding: 20px 25px 30px 25px 
+	background: #fff
+	padding: 20px 20px 30px 20px 
 	position: relative
 	text-align: center
+	box-shadow: 0 5px 5px -5px rgba(#000,.6)
 	+reg
 	&:before,&:after
 		position: absolute
-		top: 0
-		right: 0
+		top: -4px 
+		right: -2px
 		+s(basketside-right)  
 		content: ' ' 
-	&:after
+	&:after 
 		right: auto 
 		+s(basketside-left) 
 		top: -17px 
@@ -43,11 +53,21 @@
 		font-size: 18px 
 		color: #4A485A 
 		+asbold
+		position: relative
+		z-index: 10 
 	.basketside__amount
 		+var
 		color: #18171D 
 		font-size: 30px 
-		margin: 15px 0 20px 
+		// margin: 15px 0 20px 
+		background: url(img/priceo.png) no-repeat 50% 50%
+		background-size: 100% 100%
+		display: inline-block
+		padding: 20px 20px 10px 20px
+		margin-top: -16px 
+		position: relative
+		z-index: 1 
+		margin-bottom: 10px 
 	.basketside__economy,.basketside__bonus
 		+asbold
 		font-size: 14px 
@@ -63,6 +83,8 @@
 		+s(delivery-green-small)
 		display: inline-block
 	.basketside__delivery
+		margin-bottom: 18px 
+		margin-top: 15px 
 		p
 			+asbold
 			color: #4A485A 
@@ -73,4 +95,259 @@
 				+semi
 				display: block
 				padding-top: 1px 
-
+.promocode
+	margin-bottom: 20px 
+	position: relative
+	a
+		text-decoration: none
+		&:hover
+			span
+				&:before
+					display: none
+	span
+		+asblack
+		vertical-align: middle
+		font-size: 18px 
+		color: #48B1EC 
+		position: relative
+		&:before
+			position: absolute
+			content: ""
+			bottom: 2px
+			left: 0
+			width: 100%
+			border-bottom: 1px dashed #48B1EC     
+	i
+		+s(question)
+		display: inline-block
+		margin-left: 10px 
+		vertical-align: middle
+%input
+	border: 1px solid #E0E0E0 
+	+asbold
+	font-size: 22px 
+	color: #4A485A 
+	width: 100%
+	box-sizing: border-box 
+	padding: 8px 10px
+	background: #FCFCFC 
+.promocodeinput
+	position: relative
+	margin-bottom: 18px 
+	input
+		@extend %input 
+	.promocodeinput__correct,.promocodeinput__wrong
+		position: absolute
+		top: 14px 
+		right: 10px 
+		+s(check-mod-green)
+	.promocodeinput__wrong
+		+s(wrong)
+		top: 10px 
+.enterthephone
+	text-align: right
+	+clr
+	margin-bottom: 18px 
+	input
+		@extend %input
+	.enterthephone__label
+		text-align: left
+		+semi
+		font-size: 12px 
+		margin-bottom: 10px 
+		color: #858490 
+		text-align: center
+		span
+			color: #FC4F52 
+	.enterthephone__code
+		font-size: 24px 
+		+asbold
+		color: #C8C8C4 
+		float: left
+		padding-top: 8px 
+	.enterthephone__code1
+		width: 60px 
+		display: inline-block
+	.enterthephone__number
+		width: 140px 
+		display: inline-block
+		margin-left: 10px 
+.hint
+	font-size: 12px 
+	display: none
+	+reg
+	color: #747474 
+	padding: 10px 
+	width: 240px 
+	text-align: left
+	background: #FFFFFF 
+	position: absolute
+	bottom: 100% 
+	left: 0px 
+	box-shadow: 0 0 15px rgba(#000, .3)
+.bitem
+	+clr
+	border-top: 1px dashed #D6D6D0 
+	padding: 30px 0 
+	.bitem__pic
+		+grid(2)
+		float: left 
+		margin-right: 20px 
+		.item
+			height: auto 
+			padding: 0 
+	.bitem__info
+		+grid(3)
+		float: left
+		margin-right: 20px 
+		h5
+			margin: 0 0 10px 0
+		p
+			font-size: 13px 
+			strong
+				+semi
+			a
+				color: #48B1EC 
+				text-decoration: underline
+	.bitem__number
+		+grid(2)
+		float: left
+		text-align: center
+	.bitem__price
+		float: right
+		+grid(2)
+		position: relative
+	.bitem__artikul
+		font-size: 12px 
+		color: #4A485A 
+		+semi
+		margin-bottom: 10px  
+	.bitem__numberlabel
+		margin-bottom: 12px 
+		font-size: 13px 
+		color: #4A485A 
+	.bitem__deliver
+		+s(green)
+		+semi
+		color: #2C5F1C 
+		font-size: 12px 
+		position: relative
+		i
+			+s(delivery-green)
+			position: absolute
+			left: 13px 
+			top: 14px 
+		span
+			position: absolute
+			left: 66px 
+			top: 8px 
+			text-align: left
+		&.is-red
+			+s(red)
+			color: #B76B6C 
+			i
+				+s(delivery-red)
+	.bitem__pricewrap
+		width: 130px 
+		text-align: center
+		.bitem__pricetitle
+			margin-bottom: 10px 
+			font-size: 13px 
+			color: #4A485A 
+	.bitem__actual-price
+		font-size: 24px 
+		+var
+		color: #4A485A 
+		margin-bottom: 10px 
+	.bitem__oldprice
+		color: #4A485A 
+		font-size: 14px 
+		+var
+		color: #4A485A 
+		text-decoration: line-through 
+		margin-bottom: 10px 
+	.bitem__newprice
+		color: #F17834 
+		font-size: 24px 
+		+var
+		margin-bottom: 0px  
+	.bitem__bonuses
+		background: #FBF0A9 
+		border-radius: 6px
+		color: #4A485A 
+		font-size: 14px 
+		padding: 4px 10px
+		line-height: 1
+		display: inline-block
+		+asbold
+		strong
+			font-weight: normal 
+			+var
+	.bitem__discount
+		background: #FED6B0 
+		border-radius: 6px
+		color: #DD6424 
+		font-size: 14px 
+		padding: 4px 10px
+		line-height: 1
+		display: inline-block
+		+asbold
+	.bitem__color
+		width: 19px 
+		height: 19px 
+		display: inline-block
+		background: #B5ADEF 
+		vertical-align: middle
+		margin-left: 5px 
+		border-radius: 50%
+		margin-right: 8px 
+	.bitem__edit
+		margin-left: 10px 
+	.bitem__remove
+		+s(close-big)
+		display: inline-block
+		position: absolute
+		right: 0
+		top: 30px  
+		cursor: pointer
+		&:hover
+			+s(close-big-active)
+	.bitem__plusminus
+		position: relative
+		text-align: center
+		margin-bottom: 25px 
+		&:hover
+			.bitem__plus,.bitem__minus
+				opacity: 1  
+		input
+			background: #F6F6F3 
+			width: 50px 
+			text-align: center
+			+var
+			font-size: 24px 
+			color: #CDCDCD 
+			display: inline-block
+			padding: 2px 0 
+			border-radius: 10px
+			&:focus,&:hover
+				color: #CDCDCD
+		.bitem__amount
+			display: inline-block
+			width: 50px 
+			vertical-align: middle
+		.bitem__plus,.bitem__minus
+			+var
+			opacity: 0 
+			font-size: 20px 
+			color: #CDCDCD 
+			cursor: pointer
+			padding: 10px
+			display: inline-block
+			vertical-align: middle
+			&:hover
+				color: #4A485A 
+.ordering
+	.title-h1
+		a
+			float: left
+			margin-top: 5px 
