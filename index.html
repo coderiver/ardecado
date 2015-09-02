@@ -57,9 +57,55 @@
 					</div>
 				</div>			
 				<div class="header__right">
-					<div class="header__login">
+					<div class="header__login" hidden>
 						<button class="btn btn_blue">Войти</button>
 						<button class="btn btn_green">Получить бонус</button>
+					</div>
+					<div class="profile js-profile">
+						<a href="#" class="profile__img">
+							<i class="i i-profile-small"></i>
+							<span class="profile__bonus">1</span>
+						</a>
+						<div class="profile__info">
+							<a href="#" class="profile__link js-profile-link">Привет, Константин</a>
+							<small>Номер клиента: AWD-425-29</small>
+						</div>
+						<div class="profile-drop js-profile-drop">
+							<ul>
+								<li>
+									<a href="#">
+										<span>История заказов</span>
+										<small>пока нет заказов</small>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>Личная информация</span>
+										<small>заполнена на 60%</small>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>Мои бонусы <i class="is-amount">1</i></span>
+										<small class="is-price">236 <i class="rub">Р</i></small>
+										<small>(67 баллов)</small>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>Любимые товары</span>
+										<small>2 товара</small>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>Напоминания и подписка</span>
+										<small>пока нет напоминаний</small>
+									</a>
+								</li>
+							</ul>
+							<button class="profile-drop__leave">Выход из магазина <i class="btn-close"></i></button>
+						</div>
 					</div>
 					<span class="phone">8 (495) 777-22-50</span>
 					<a href="#" class="link-dotted" data-toggle="modal" data-target="#feedback">Перезвонить?</a>
@@ -945,14 +991,50 @@
 							</li>
 						</ul>
 						<span class="menu-decor"><i></i></span>
-						<button class="btn btn_blue is-active">Войти</button>
-						<div class="menu-profile">
+						<button class="btn btn_blue">Войти</button>
+						<div class="menu-profile is-active js-profile">
 							<a href="#" class="menu-profile__img">
 								<i class="i i-profile-small"></i>
 								<span class="menu-profile__bonus">1</span>
 							</a>
 							<div class="menu-profile__info">
-								<a href="#" class="menu-profile__link">Личный кабинет</a>
+								<a href="#" class="menu-profile__link js-profile-link">Личный кабинет</a>
+							</div>
+							<div class="profile-drop js-profile-drop">
+								<ul>
+									<li>
+										<a href="#">
+											<span>История заказов</span>
+											<small>пока нет заказов</small>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>Личная информация</span>
+											<small>заполнена на 60%</small>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>Мои бонусы <i class="is-amount">1</i></span>
+											<small class="is-price">236 <i class="rub">Р</i></small>
+											<small>(67 баллов)</small>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>Любимые товары</span>
+											<small>2 товара</small>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<span>Напоминания и подписка</span>
+											<small>пока нет напоминаний</small>
+										</a>
+									</li>
+								</ul>
+								<button class="profile-drop__leave">Выход из магазина <i class="btn-close"></i></button>
 							</div>
 						</div>
 						<a href="#" class="header__search-btn"></a>
@@ -3506,6 +3588,10 @@
 			<li><a href="#" data-toggle="modal" data-target="#sign-in">SIGN IN</a></li>
 			<li><a href="#" data-toggle="modal" data-target="#remember-pass">REMEMBER PASS</a></li>
 			<li><a href="#" data-toggle="modal" data-target="#subscribe-vip">SUBSCRIBE VIP</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#share-mail">SHARE ON MAIL</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#subscribe-sets">SUBSCRIBE SETS</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#subscribe-holiday">SUBSCRIBE HOLLIDAY</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#sign-up">SIGN UP</a></li>
 		</ul>
 
 	</main>
@@ -3654,7 +3740,7 @@
 				<i class="badge-mod badge-mod_reason"></i>
 				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
 				<span class="signin__small">сегодня мы рады вам по-испански :)</span>
-				<span class="signin__title">Bienvenida!</span>
+				<span class="signin__title is-blue">Bienvenida!</span>
 				<div class="m-form is-blue">
 					<form action="">
 						<div class="m-form__box">
@@ -3696,7 +3782,7 @@
 			<div class="popup pass">
 				<i class="pass__icon"></i>
 				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
-				<span class="popup__title">Восстановление пароля</span>
+				<span class="popup__title is-brown">Восстановление пароля</span>
 				<span class="popup__text">Введите номер телефона, который вы указывали при регистрации и мы вышлем вам новый пароль!</span>
 				<div class="m-form is-gray">
 					<form action="">
@@ -3724,22 +3810,117 @@
 				<i class="vip__icon"></i>
 				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
 				<span class="popup__small">Подписка на</span>
-				<span class="popup__title">VIP - подарки</span>
+				<span class="popup__title is-purple">VIP - подарки</span>
 				<span class="popup__text">Периодически, мы будем присылать вам дайджесты новинок и самых интересных товаров из категории VIP-подарков</span>
 				<div class="m-form is-gray">
 					<form action="">
 						<div class="m-form__box">
-							<label class="m-form__label" for="sign-number">Ваш e-mail:</label>
-							<div class="m-form__field m-form-group">
+							<label class="m-form__label" for="vip-mail">Ваш e-mail:</label>
+							<div class="m-form__field m-form__field-big m-form-group">
 								<i class="m-form__check"></i>
-								<input type="text" class="input input_gray" id="sign-number">
+								<input type="text" class="input input_brown" id="vip-mail">
 							</div>
 						</div>	
 						<div class="m-form__refresh">
-							<div>Ваш пол — <a href="#"><span>женский</span><i class="icon icon-refresh"></i></a></div>
+							<div>Ваш пол — <a href="#" class="is-female"><span>женский</span><i class="icon icon-refresh"></i></a></div>
 						</div>
 						<div class="m-form__btns">			
 							<button class="b-btn b-btn_green" type="submit">Готово!</button>
+						</div>						
+					</form>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="share-mail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="popup vip">
+				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+				<span class="popup__title is-green">Отправить ссылку</span>
+				<span class="popup__text">Укажите e-mail адрес человека, с которым вы хотите поделиться данной страницей и мы вышлем ее адресату</span>
+				<div class="m-form is-gray">
+					<form action="">
+						<div class="m-form__box">
+							<label class="m-form__label" for="share">Ваш e-mail:</label>
+							<div class="m-form__field m-form__field-big m-form-group">
+								<i class="m-form__check"></i>
+								<input type="text" class="input input_brown" id="share">
+							</div>
+						</div>
+						<div class="m-form__btns">			
+							<button class="b-btn b-btn_green" type="submit">Готово!</button>
+						</div>						
+					</form>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="subscribe-sets" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="popup subscribe">
+				<i class="subscribe__icon"></i>
+				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+				<span class="popup__small">Подписка на</span>
+				<span class="popup__title is-yellow">Подарочные сеты</span>
+				<span class="popup__text">Периодически мы будем присылать вам дайджесты самых интересных и выгодных сетов, чтобы вы ничего не упустили!</span>
+				<div class="m-form is-gray">
+					<form action="">
+						<div class="m-form__box">
+							<label class="m-form__label" for="subscribe-mail">Ваш e-mail:</label>
+							<div class="m-form__field m-form__field-big m-form-group">
+								<i class="m-form__check"></i>
+								<input type="text" class="input input_brown" id="subscribe-mail">
+								<div class="error-field">неправильный адрес</div>
+							</div>
+						</div>
+						<div class="m-form__refresh">
+							<div>Ваш пол — <a href="#" class="is-male"><span>мужской</span><i class="icon icon-refresh"></i></a></div>
+						</div>
+						<div class="m-form__btns">			
+							<button class="b-btn b-btn_green" type="submit">Готово!</button>
+						</div>						
+					</form>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="popup signup">
+				<div class="popup-discount">
+					<div class="popup-discount__icon">
+						<span>+100 баллов</span>
+						<small>на ваш счет для покупок</small>
+					</div>
+					<p>Сегодня вы получите при регистрации</p>
+				</div>
+				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+				<span class="popup__small">Уже зарегисрированы?</span>
+				<a href="#" class="popup__logo">
+					<img src="img/popup-logo.png" alt="">
+				</a>
+				<span class="popup__text">На ваш мобильный телефон будет прислан пароль, а также будут приходить смс-уведомления о статусе заказа</span>
+				<div class="m-form is-gray">
+					<form action="">
+						<div class="m-form__box">
+							<label class="m-form__label" for="signup-number">Номер телефона:</label>
+							<div class="m-form__field m-form-group">
+								<span class="m-form__number">+7</span>
+								<i class="m-form__check"></i>
+								<input type="text" class="input input_brown is-error" id="signup-number">
+								<div class="error-field">такой номер телефона уже используется</div>
+							</div>
+						</div>	
+						<div class="m-form__box">
+							<label class="m-form__label" for="sign-pass">Ваше имя:</label>
+							<div class="m-form__field m-form-group">
+								<i class="m-form__check is-active"></i>
+								<input type="text" class="input input_brown" id="sign-pass">
+							</div>
+						</div>
+						<div class="m-form__btns">			
+							<button class="b-btn b-btn_green b-btn_med" type="submit">Регистрируюсь!</button>
+							<a href="#" class="link-dotted">Уже зарегисрированы?</a>
 						</div>						
 					</form>
 				</div>		
@@ -3826,15 +4007,19 @@
 			</div>
 		</div>
 	</div>
+	
+	<div class="fixed-br js-panel js-fixed">
+		<div class="f-panel js-panel-block">
+			<a href="#" class="f-panel__item is-calendar js-panel-btn js-panel-calendar" data-btn="panel-1"></a>
+			<a href="#" class="f-panel__item is-now js-panel-btn js-panel-view" data-btn="panel-2"></a>
+			<a href="#" class="f-panel__item is-view js-panel-btn js-panel-view" data-btn="panel-3"></a>
+			<a href="#" class="f-panel__item is-right js-panel-close"></a>
+		</div>
+		<button class="f-panel-open js-panel-open"><i></i></button>
+		<button class="btn-up js-btn-up"></button>
+	</div>	
 
-	<div class="f-panel js-panel js-fixed">
-		<a href="#" class="f-panel__item is-calendar js-calendar-btn"></a>
-		<a href="#" class="f-panel__item is-now"></a>
-		<a href="#" class="f-panel__item is-view"></a>
-		<a href="#" class="f-panel__item is-right"></a>
-	</div>
-
-	<div class="panel-calendar js-calendar-block js-fixed-func">
+	<div class="panel-calendar js-panel-box js-fixed-func" data-block="panel-1">
 		<div class="panel-calendar__inner js-panel-slider">
 			<div class="panel-item">
 				<a href="#" class="panel-item__inner">
@@ -3930,6 +4115,124 @@
 						<span>Всемирный день гражданской обор</span>
 						<small>106 подарков</small>
 					</div>
+				</a>				
+			</div>
+		</div>
+	</div>
+	<div class="panel-img js-panel-box js-fixed-func" data-block="panel-2">
+		<div class="panel-img__inner js-view-slider">
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+		</div>
+	</div>
+	<div class="panel-img js-panel-box js-fixed-func" data-block="panel-3">
+		<div class="panel-img__inner js-view-slider">
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 		</div>

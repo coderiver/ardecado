@@ -13,25 +13,4 @@ head.ready(function() {
 		$(this).addClass('is-active');
 	});
 
-	// daytime form
-
-	function radioTime() {
-
-		$('.js-radiotime-radio').on('click', function() {
-			var item = $(this).parents('.js-radiotime'),
-				input = item.find('.js-radiotime-input');
-
-			// remove prev selected item
-			$('.js-radiotime').removeClass('is-selected');	
-			$('.js-radiotime-input').attr('disabled', 'disabled');
-
-			item.addClass('is-selected');
-			input.removeAttr('disabled');
-
-		});
-	}
-	if ($('.js-radiotime').length) {
-		radioTime();
-	};
-
 });
