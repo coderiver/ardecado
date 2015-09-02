@@ -34,11 +34,11 @@
 //     @each $s in a,b,c
 // 	    	#{$s}
 //				display: none
-// ## fonts 
+// ## fonts
 // Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
+// +font(book, cytiapro-black-webfont)
 // =book
-// 	font-family: "book", Arial, sans-serif 
+// 	font-family: "book", Arial, sans-serif
 // insert pics into css
 // div
 // 	+pic("blabla.png")
@@ -74,7 +74,7 @@
 	font-family: "ProximaNova Semibold", Arial, sans-serif
 =bold
 	font-family: "ProximaNova Bold", Arial, sans-serif
-	
+
 
 =asblack
 	font-family: "ALSSchlangesans Black", Arial, sans-serif
@@ -90,7 +90,7 @@
 	font-family: "ALSSchlangesans Thin", Arial, sans-serif
 =as
 	font-family: "ALSSchlangesans", Arial, sans-serif
-	
+
 =var
 	font-family: "Vagroundedtl Regular", Arial, sans-serif
 	-webkit-font-smoothing: antialiased
@@ -102,38 +102,38 @@
 
 html, body
 	height: 100%
-	
+
 body
 	+reg
-	font-size: 12px 
+	font-size: 12px
 	line-height: 1.4
-	background: #ecece4 
+	background: #ecece4
 	min-width: 1280px
-	
+
 //res
 h1, h2, h3, h4, h5, h6, b, strong, label
 	font-weight: normal
 h1, h2, h3, h4, h5, h6, .title-h1, .title-h2, .title-h3, .title-h4, .title-h5, .title-h6
-	margin: 20px 0 
+	margin: 20px 0
 h1, .title-h1
 	font-size: 48px
 	+asblack
 	line-height: 1
 	&.is-pink
-		color: #eb778f 
+		color: #eb778f
 	&.is-gray
 		color: #4a495b
 	&.is-black
-		color: #312b26 
+		color: #312b26
 	&.is-red
-		color: #f57676 
-		
+		color: #f57676
+
 h2, .title-h2
 	font-size: 44px
 	line-height: 1
 	+asblack
-	color: #595b48 
-	
+	color: #595b48
+
 h3, .title-h3
 	font-size: 35px
 	color: #595b48
@@ -144,7 +144,7 @@ h4, .title-h4
 	color: #75726e
 	+asbold
 	line-height: 38px
-	
+
 h5, .title-h5
 	font-size: 30px
 	color: #4a485b
@@ -158,56 +158,56 @@ h6, .title-h6
 	&.h6-small
 		font-size: 16px
 		color: #b8b8b0
-		+asbold 
-		line-height: 1.2	
+		+asbold
+		line-height: 1.2
 i
 	font-style: normal
 *
 	outline: none !important
 .text
-	 
-	p	
+
+	p
 		line-height: 20px
-		margin: 20px 0 
-		
+		margin: 20px 0
+
 	p, ul, ol
 		&.arial-14
 			font-size: 14px
 			color: #000
-			font-family: Arial, sans-serif  
+			font-family: Arial, sans-serif
 		&.semi-14
 			+semi
 			font-size: 14px
-			color: #716d6d 
+			color: #716d6d
 		&.reg-13
 			+reg
 			font-size: 13px
-			color: #595b48 
+			color: #595b48
 			&.is-light
-				color: #858490 
+				color: #858490
 			&.is-lighter
-				color: #b3b3b2 
+				color: #b3b3b2
 			&.is-gray
-				color: #4a485b 
+				color: #4a485b
 			&.is-slash
-				color: #716d6d 
+				color: #716d6d
 		&.reg-14
 			+reg
 			font-size: 14px
-			color: #595b48 
+			color: #595b48
 		&.asbold-18
 			font-size: 18px
 			line-height: 24px
 			color: #727272
 			&.is-lighter
-				color: #7c7c75  
+				color: #7c7c75
 		&.asbold-14
 			+asbold
 			font-size: 14px
-			color: #4a485b 
+			color: #4a485b
 			a
 				&:visited
-					color: #b54bec 	
+					color: #b54bec
 		a
 			color: #7dc5ea
 			text-decoration: underline
@@ -215,27 +215,27 @@ i
 				color: #1a83cd
 				text-decoration: none
 			&:visited
-				color: #1a44cd 
+				color: #1a44cd
 				text-decoration: none
 	ul, ol
 		line-height: 25px
 
 	ul
-		list-style-type: disc 
+		list-style-type: disc
 		text-indent: -5px
-		padding: 0 20px 
+		padding: 0 20px
 		&.is-link
-			color: #7dc5ea 
+			color: #7dc5ea
 		ul
 			list-style-type: none
 
 	ol
 		list-style-type: decimal
 		text-indent: -5px
-		padding: 0 20px 
+		padding: 0 20px
 		ol
 			list-style-type: none
-	
+
 // mod
 
 .link-dotted
@@ -243,10 +243,10 @@ i
 	text-decoration: none
 	&:hover, &:focus
 		text-decoration: none
-	
+
 .btn
 	font-size: 12px
-	color: #fff 
+	color: #fff
 	+semi
 	line-height: 1
 	padding: 5px 11px 4px
@@ -271,14 +271,14 @@ i
 	text-decoration: none
 	line-height: 1
 	padding: 16px 0 13px 77px
-	position: relative 
+	position: relative
 	display: inline-block
 	vertical-align: top
 	&:hover
 		text-decoration: none
-		color: #f49460 
+		color: #f49460
 	&:before
-		content: "" 
+		content: ""
 		position: absolute
 		top: 0
 		left: 0
@@ -290,7 +290,7 @@ i
 	+asblack
 	background-color: #87CA62
 	padding: 16px 50px 15px
-	+border-radius(5px) 
+	+border-radius(5px)
 	text-align: center
 	line-height: 1
 	&_green
@@ -301,15 +301,23 @@ i
 			background-color: #58911B
 	&_blue
 		background-color: #46D7F6
-		min-width: 280px 
+		min-width: 280px
 		&:hover, &:active
 			background-color: #2D99A6
+	&_big
+		padding: 16px 15px 15px
+		width: 320px
+	&_med
+		padding: 16px 15px 15px
+		width: 280px
+	&_small
+		width: auto
 
 .btn-new
 	+s(btn-new)
 	display: inline-block
 	vertical-align: top
-	
+
 .btn-check
 	+s(btn-check)
 	font-size: 18px
@@ -380,8 +388,8 @@ i
 	&_blue
 		background-color: #31D4E7
 		&:hover, &:active
-			background-color: #2D99A6		
-		
+			background-color: #2D99A6
+
 .btn-blue
 	color: #42B0EF
 	font-size: 18px
@@ -394,8 +402,8 @@ i
 	vertical-align: top
 	&:hover, &:active
 		color: #fff
-		background-color: #42B0EF 
-		
+		background-color: #42B0EF
+
 .btn-back
 	width: 130px
 	line-height: 34px
@@ -407,7 +415,7 @@ i
 	text-decoration: none
 	text-align: center
 	position: relative
-	padding: 0 0 0 10px 
+	padding: 0 0 0 10px
 	&_gray
 		+s(btn-back-gray)
 		&:hover
@@ -419,7 +427,7 @@ i
 	&:hover, &:active, &:focus
 		text-decoration: none
 		color: #fff
-		
+
 .btn-play
 	color: #FFF
 	font-size: 18px
@@ -429,11 +437,11 @@ i
 	width: 83px
 	padding: 13px 10px 3px
 	display: inline-block
-	vertical-align: top 
+	vertical-align: top
 	&:hover
 		+opacity(0.8)
 	&:before
-		content: "" 
+		content: ""
 		margin: 0 auto 6px
 	&_video
 		background: #f5636f
@@ -441,7 +449,7 @@ i
 			+s(video)
 			display: block
 	&_model
-		background: #9145ee 
+		background: #9145ee
 		&:before
 			+s(model)
 			display: block
@@ -461,7 +469,7 @@ i
 		top: 22px
 		left: 31px
 		+s(up)
-		content: "" 
+		content: ""
 
 .btn-like
 	+s(btn-like)
@@ -470,26 +478,26 @@ i
 	vertical-align: top
 	&:hover
 		+s(btn-like-hover)
-	
+
 .btn-order
 	font-size: 26px
 	color: #FFF
 	+asblack
 	background-color: #87CA62
-	padding: 13px 20px 12px 
+	padding: 13px 20px 12px
 	+border-radius(4px)
 	display: inline-block
 	vertical-align: top
 	line-height: 24px
 	text-align: center
-	width: 240px	
+	width: 240px
 	&:hover
 		background-color: #C9E4BA
 	&:active
 		background-color: #58911B
 	&_big
 		padding: 10px 20px 10px
-	
+
 .btn-basket
 	display: inline-block
 	vertical-align: top
@@ -499,14 +507,14 @@ i
 	+asblack
 	width: 240px
 	padding: 10px 0 9px 65px
-	text-align: left 
+	text-align: left
 	background-color: #87CA62
 	line-height: 1
 	+border-radius(4px)
 	&:hover, &:active
 		background-color: #58911B
 	&:before
-		content: "" 
+		content: ""
 		position: absolute
 		top: 8px
 		left: 16px
@@ -522,14 +530,14 @@ i
 	line-height: 1
 	background-color: #383C49
 	padding: 11px 17px 9px
-	+border-radius(7px) 
+	+border-radius(7px)
 	display: inline-block
 	vertical-align: top
 	&:hover, &:visited, &:active, &:focus
 		color: #fff
-		text-decoration: none 
+		text-decoration: none
 		background-color: #4C98CF
-		
+
 .btn-all
 	+asbold
 	font-size: 16px
@@ -542,7 +550,7 @@ i
 	+border-radius(7px)
 	text-decoration: none
 	&:hover, &:focus, &:active
-		background: #fff 
+		background: #fff
 	&:hover, &:focus, &:visited, &:active
 		text-decoration: none
 		color: #42B0EF
@@ -554,7 +562,7 @@ i
 		color: #2D2C62
 		&:hover, &:focus, &:visited, &:active
 			color: #2D2C62
-	
+
 .btn-registration
 	color: #FFF
 	font-size: 14px
@@ -564,7 +572,7 @@ i
 	padding: 8px 15px 7px
 	+border-radius(4px)
 	display: inline-block
-	vertical-align: top 
+	vertical-align: top
 	&:hover, &:hover
 		background-color: #58911B
 
@@ -617,16 +625,24 @@ i
 		color: #D3D1CA
 		+placeholder-color(#D3D1CA)
 		border-color: #d6d4ce
-		background: #f7f7f0  
+		background: #f7f7f0
 	&_blue
 		color: #2B4748
 		+placeholder-color(#2B4748)
 		background-color: #D8F0F0
-		border-color: #a7cecf 
+		border-color: #a7cecf
 		&:focus
 			background-color: #E7F6F6
-			
-//icomoon		
+	&_brown
+		+asbold
+		color: #493E3E
+		border-color: #d6d4ce
+		background: #f7f7f0
+	&.is-error
+		background: #f9d6d6
+		color: #f57676
+
+//icomoon
 
 
 [class^="icon-"], [class*=" icon-"]
@@ -729,11 +745,11 @@ i
 .i
 	display: inline-block
 	vertical-align: top
-	&.i-pie, &.i-deer, 
-	&.i-marker-big, 
-	&.i-marker-small, 
-	&.i-marker-med, 
-	&.i-refresh-blue, 
+	&.i-pie, &.i-deer,
+	&.i-marker-big,
+	&.i-marker-small,
+	&.i-marker-med,
+	&.i-refresh-blue,
 	&.i-refresh-pink,
 	&.i-settings,
 	&.i-close,
@@ -940,11 +956,11 @@ i
 	&.i-diamond-big
 		+s(icon-diamond)
 	&.i-gift-cards
-		+s(gift-cards-big)	
+		+s(gift-cards-big)
 	&.i-march
-		+s(eight-march)	
+		+s(eight-march)
 	&.i-soon
-		+s(soon)	
+		+s(soon)
 	&.i-r-basket-gray
 		+s(r-basket-gray)
 	&.i-r-basket-green
@@ -955,30 +971,30 @@ i
 		+s(r-money-green)
 	&.i-r-check-gray
 		+s(r-check-gray)
-	&.i-r-check-green		
+	&.i-r-check-green
 		+s(r-check-green)
 	&.i-remind-deco
-		+s(remind-deco)	
+		+s(remind-deco)
 	&.i-ardecado-small
-		+s(ardecado-small)	
+		+s(ardecado-small)
 	&.i-1000
-		+s(1000)	
+		+s(1000)
 	&.i-yandex-text
-		+s(yandex-text)	
+		+s(yandex-text)
 	&.i-webmoney
 		+s(icon-webmoney)
 	&.i-webmoney-small
-		+s(webmoney)		
+		+s(webmoney)
 	&.i-bank
-		+s(bank)		
+		+s(bank)
 	&.i-qiwi-small
-		+s(qiwi-small)	
+		+s(qiwi-small)
 	&.i-alpha
-		+s(alpha)	
+		+s(alpha)
 	&.i-svijznoy
 		+s(svijznoy)
 	&.i-euroset
-		+s(euroset)	
+		+s(euroset)
 	&.i-right-big
 		+s(i-right)
 	&.i-rb-delivery
@@ -988,4 +1004,4 @@ i
 	&.i-rb-money
 		+s(money-back)
 	&.i-rb-mouse
-		+s(r-mouse)	
+		+s(r-mouse)
