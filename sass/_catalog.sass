@@ -82,13 +82,19 @@
 			+s(r-mouse-dark)
 
 
-h1
+h1,
+.title-h1
 	&.is-orange
 		color: #ff670c
 		.i-star
 			padding-left: 24px
+	&.is-red
+		.i-star
+			padding-left: 15px
 	&.s-b-margin
 		margin-bottom: 10px
+	&.no-margin
+		margin: 0
 
 .text
 	&.no-pad
@@ -96,6 +102,45 @@ h1
 	&.s-margin
 		p
 			margin: 10px 0
+	p
+		&.txt-brown
+			color: #706153
+
+.social
+	&.no-border
+		border: none
+	&.no-margin
+		margin: 0
+	&.no-pad
+		padding: 0
+
+.pages-mod
+	&.is-fixed
+		position: fixed
+		left: 75px
+		bottom: 20px
+		z-index: 700
+		visibility: hidden
+		opacity: 0
+		+tr(0.25s)
+	&.is-active
+		visibility: visible
+		opacity: 1
+
+.item
+	&.is-quarter
+		height: 293px
+		.item__img
+			width: 280px
+			height: 225px
+		.item__text
+			max-height: 42px
+
+.item__text
+	&.is-mod
+		font-size: 18px
+		color: #4a485b
+		+asbold
 
 // catalog
 .breadcrumbs
@@ -130,7 +175,7 @@ h1
 	&__more
 		+s(add-small)
 		vertical-align: middle
-		margin-left: 4px 
+		margin-left: 4px
 
 .catalog
 	margin-bottom: 20px
@@ -162,3 +207,47 @@ h1
 		padding: 15px 0
 		&.holidays
 			padding: 30px 0 0
+		&.s-pad
+			padding: 10px 0
+
+.sort
+	text-align: right
+	font-size: 14px
+	&__span
+		display: inline-block
+		vertical-align: middle
+	.select
+		display: inline-block
+		max-width: 90px
+		vertical-align: middle
+		span
+			padding-left: 0
+			font-size: 14px
+			color: #31a4e6
+		.ms-choice
+			height: 19px
+			line-height: 20px
+			background: none
+			> div
+				right: 0
+				margin-top: -2px
+				+s(menu-arr)
+			> span
+				right: 10px
+				+semi
+		.ms-drop ul > li label
+			padding: 11px 8px 11px 11px
+			+semi
+			&:before
+				display: none
+	.i
+		margin-right: 5px
+
+
+.sale-banner
+	img
+		width: 100%
+
+.i-sort-menu
+	vertical-align: middle
+	+s(sort-menu)
