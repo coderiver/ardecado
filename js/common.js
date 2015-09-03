@@ -577,7 +577,16 @@ head.ready(function() {
 	//profile
 
 	$('.js-profile-link').on('click', function() {
-		$(this).parents('.js-profile').find('.js-profile-drop').slideToggle('fast');
+		if ($(this).hasClass('is-active')) {
+			$('.js-profile-link').removeClass('is-active');
+			$('.js-profile-drop').slideUp('fast');
+		}
+		else {
+			$('.js-profile-link').removeClass('is-active');
+			$('.js-profile-drop').slideUp('fast');
+			$(this).addClass('is-active');
+			$(this).parents('.js-profile').find('.js-profile-drop').slideDown('fast');
+		}		
 		return false;
 	});
 	$('.js-profile-drop').each(function() {
@@ -588,5 +597,11 @@ head.ready(function() {
 			event.stopPropagation();
 		});
 	});
+
+	$('.js-tooltip').tooltipster({
+		contentAsHTML: true,
+		hideOnClick: true
+	});
+
 
 });

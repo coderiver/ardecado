@@ -54,6 +54,7 @@
 			min-width: 1280px
 			background-color: rgba(30, 25, 50, 0.9)
 			padding: 0
+			z-index: 300
 			.btn_blue
 				&.is-active
 					display: block
@@ -1598,6 +1599,35 @@
 	padding: 9px 13px 7px
 	+border-radius(2px)
 
+.tooltipster-default
+	+box-shadow(0 0 30px rgba(0, 0, 0, 0.14))
+	background-color: #FFF
+	border: none
+	+border-radius(2px)
+	.tooltipster-content
+		padding: 9px 13px 7px
+		color: #747474
+		font-size: 13px
+		+reg
+	small
+		font-size: 12px
+		padding: 5px 10px
+		display: block 
+	p
+		text-align: center
+		font-size: 14px
+		color: #716D6D
+	b
+		display: block
+		color: #343434
+		+semi
+		padding: 3px 0 0 
+	.tooltipster-arrow-top,
+	.tooltipster-arrow-left,
+	.tooltipster-arrow-right,
+	.tooltipster-arrow-bottom,
+		display: none
+		
 //pages
 .pages
 	text-align: center
