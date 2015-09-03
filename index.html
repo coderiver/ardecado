@@ -43,7 +43,7 @@
 						</ul>
 					</nav>
 					<div class="search">
-						<input type="text" class="search__input" placeholder="Поиск подарков">
+						<input type="text" class="search__input js-search-input" placeholder="Поиск подарков">
 						<button class="search__btn"></button>
 					</div>
 					<a href="#" class="gift-cards"><img src="img/gift-cards.png" alt=""></a>
@@ -3613,7 +3613,7 @@
 					<small class="footer__schedule">9:00 — 19:00</small>
 				</div>
 				<div class="search">
-					<input type="text" class="search__input" placeholder="Поиск подарков">
+					<input type="text" class="search__input js-search-input" placeholder="Поиск подарков">
 					<button class="search__btn"></button>
 				</div>
 			</div>
@@ -3872,6 +3872,33 @@
 								<i class="m-form__check"></i>
 								<input type="text" class="input input_brown" id="subscribe-mail">
 								<div class="error-field">неправильный адрес</div>
+							</div>
+						</div>
+						<div class="m-form__refresh">
+							<div>Ваш пол — <a href="#" class="is-male"><span>мужской</span><i class="icon icon-refresh"></i></a></div>
+						</div>
+						<div class="m-form__btns">			
+							<button class="b-btn b-btn_green" type="submit">Готово!</button>
+						</div>						
+					</form>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="subscribe-holiday" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="popup subscribe">
+				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+				<span class="popup__small">Подписка на</span>
+				<span class="popup__title is-pink"><i class="i i-deer"></i>Новый Год</span>
+				<span class="popup__text">Периодически мы будем присылать вам дайджесты самых интересных и выгодных предложений к данному празднику</span>
+				<div class="m-form is-gray">
+					<form action="">
+						<div class="m-form__box">
+							<label class="m-form__label" for="holiday-mail">Ваш e-mail:</label>
+							<div class="m-form__field m-form__field-big m-form-group">
+								<i class="m-form__check"></i>
+								<input type="text" class="input input_brown" id="holiday-mail">
 							</div>
 						</div>
 						<div class="m-form__refresh">
@@ -4251,6 +4278,149 @@
 
 	<div class="js-search-block search-block">
 		
+		<div class="container">
+
+			<i class="i i-close js-search-close"></i>
+			
+			<div class="row">
+				
+				<div class="col-lg-12 col-xs-12">
+					
+					<span class="search-block__title">Супер-поиск Ар де Кадо</span>
+
+					<div class="search-block__input">
+						<i class="search-block__left"></i>
+						<i class="search-block__right"></i>
+						<input type="text">
+						<button></button>
+					</div>
+
+					<div class="search-block__btns">
+						<span class="search-block__label">Разделы каталога</span>
+						<button class="btn-gender">Для дома</button>
+						<button class="btn-gender">Предметы интерьера</button>
+						<button class="btn-gender">Текстиль</button>
+					</div>
+
+					<div class="search-block__text">
+						<p>Извините, но нам ничего не удалось найти по Вашему запросу.</p>
+						<p>Возможно, результаты поиска будут лучше, если вы введете менее точный запрос.</p>
+					</div>
+
+					<div class="search-block__categories">
+						<p>Посмотрите наши самые популярные категории</p>
+						<button class="btn-gender">Мужчинам (1200)</button>
+						<button class="btn-gender">Женщинам (1000)</button>
+						<button class="btn-gender">VIP-подарки (850)</button>
+						<button class="btn-gender">Шефу (799)</button>
+					</div>
+
+				</div>
+				
+			</div>
+
+			<div class="row search-block__results">
+
+				<div class="col-lg-12 col-xs-12">
+					<span class="search-block__label">Показано <b>6</b> из <b>38 товаров</b></span>
+				</div>		
+				<div class="search-block__items">
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">	
+								</a>							
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+					
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">	
+								</a>							
+								<div class="item__btns is-discount">
+									<div class="item__price">
+										<span>1 320 <i class="rub">Р</i></span>
+										<span class="is-discount">1 620 <i class="rub">Р</i></span>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+					
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">	
+								</a>							
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+					
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">	
+								</a>							
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+					
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">	
+								</a>							
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+					
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">	
+								</a>							
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+				</div>		
+
+				<div class="search-block__more">
+					<button class="b-btn b-btn_green">Показать еще!</button>
+					<p><a href="#">Все результаты на одной странице</a></p>
+				</div>		
+			</div>
+
+		</div>	
+
 	</div>
 
 <!-- load scripts -->
