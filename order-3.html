@@ -1667,73 +1667,239 @@
 												<p>При частичной оплате, выберите еще один способ оплаты, для оплаты оставшейся суммы</p>
 											</div>
 										</div>
-										<div class="payment__col">
-											<ul>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Наличные <i class="i i-1000"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Банковские карты <img src="img/visa.png" width="38" alt=""> <img src="img/mc.png" width="30" alt=""></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Яндекс.Деньги <i class="i i-yandex-text"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Webmoney <i class="i i-webmoney-small"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Банковским переводом <i class="i i-bank"></i></span>
-													</label>
-												</li>
-											</ul>
+										<div class="payment__row">
+											<div class="payment__col">
+												<label class="radio">
+													<input type="radio" name="payment">
+													<span>Наличные <i class="i i-1000"></i></span>
+												</label>
+											</div>
+											<div class="payment__col">
+												<label class="radio">
+													<input type="radio" name="payment">
+													<span>QIWI-кошелек <i class="i i-qiwi-small"></i></span>
+												</label>
+											</div>
+										</div>	
+										<div class="payment__row">
+											<div class="payment__col">
+												<label class="radio">
+													<input type="radio" name="payment">
+													<span>Банковские карты <img src="img/visa.png" width="38" alt=""> <img src="img/mc.png" width="30" alt=""></span>
+												</label>
+											</div>
+											<div class="payment__col">
+												<label class="radio">
+													<input type="radio" name="payment">
+													<span>Альфа-клик <i class="i i-alpha"></i></span>
+												</label>
+											</div>
 										</div>
-										<div class="payment__col">
-											<ul>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>QIWI-кошелек <i class="i i-qiwi-small"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Альфа-клик <i class="i i-alpha"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Связной <i class="i i-svijznoy"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Евросеть <i class="i i-euroset"></i></span>
-													</label>
-												</li>
-												<li>
-													<label class="radio">
-														<input type="radio" name="payment">
-														<span>Выписать счет на юр. лицо</span>
-													</label>
-												</li>
-											</ul>
+										<div class="payment__row">
+											<div class="payment__col">
+												<label class="radio">
+													<input type="radio" name="payment">
+													<span>Яндекс.Деньги <i class="i i-yandex-text"></i></span>
+												</label>
+											</div>
+											<div class="payment__col">
+												<label class="radio">
+													<input type="radio" name="payment">
+													<span>Связной <i class="i i-svijznoy"></i></span>
+												</label>
+											</div>
+										</div>
+										<div class="payment__row">
+											<div class="payment__col">
+												<label class="radio">
+													<input type="radio" name="payment">
+													<span>Webmoney <i class="i i-webmoney-small"></i></span>
+												</label>
+											</div>
+											<div class="payment__col">
+												<label class="radio">
+													<input type="radio" name="payment">
+													<span>Евросеть <i class="i i-euroset"></i></span>
+												</label>
+											</div>
+										</div>
+										<div class="payment__row">
+											<div class="payment__col">
+												<label class="radio">
+													<input type="radio" name="payment">
+													<span>Банковским переводом <i class="i i-bank"></i></span>
+												</label>
+											</div>
+											<div class="payment__col">
+												<label class="radio">
+													<input type="radio" name="payment">
+													<span>Выписать счет на юр. лицо</span>
+												</label>
+											</div>
+											<div class="entity">
+												<div class="alert"><span>Внимание! Все поля обязательны к заполнению. В случае отсутствия КПП, укажите 0.</span></div>
+												<div class="form">
+													<form action="#">
+														<div class="form__row">
+															<div class="entity__col-2">
+																<p>Правовая форма</p>
+																<select  multiple="multiple" class="select" placeholder="Выберите">
+																	<option value="Комсомольск на Амуре">Юр лицо</option>
+																	<option value="Москва">Физ лицо</option>
+																</select>
+															</div>
+															<div class="entity__col-5">
+																<div class="text-field">
+																	<p>Наименование организации / ИП</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+															<div class="entity__col-2">
+																<div class="text-field">
+																	<p>ИНН</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+															<div class="entity__col-1">
+																<div class="text-field">
+																	<p>КПП</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+														</div>
+														<div class="entity__block">
+															<div class="entity__title">Юридический адрес:</div>
+														</div>
+														<div class="form__row">
+															<div class="entity__col-2">
+																<div class="text-field">
+																	<p>Индекс</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+															<div class="entity__col-4">
+																<div class="text-field">
+																	<p>Регион, район, населенный пункт</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+															<div class="entity__col-6">
+																<div class="text-field">
+																	<p>Улица, дом, корпус/строение, офис/квартира</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+														</div>
+														<div class="entity__block">
+															<div class="entity__title">Юридический адрес:</div>
+															<label class="radio">
+																<input type="radio" name="payment">
+																<span>не совпадает с юридическим</span>
+															</label>
+															<label class="radio">
+																<input type="radio" name="payment">
+																<span>совпадает с юридическим</span>
+															</label>
+														</div>
+														<div class="form__row">
+															<div class="entity__col-2">
+																<div class="text-field">
+																	<p>Индекс</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+															<div class="entity__col-4">
+																<div class="text-field">
+																	<p>Регион, район, населенный пункт</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+															<div class="entity__col-6">
+																<div class="text-field">
+																	<p>Улица, дом, корпус/строение, офис/квартира</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+														</div>
+														<div class="form__row">
+															<div class="entity__col-7">
+																<div class="text-field">
+																	<p>Название банка</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+															<div class="entity__col-3">
+																<div class="text-field">
+																	<p>Город банка</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+															<div class="entity__col-1">
+																<div class="text-field">
+																	<p>БИК</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+														</div>
+														<div class="form__row">
+															<div class="entity__col-7">
+																<div class="text-field">
+																	<p>Корреспондентский счет</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+															<div class="entity__col-6">
+																<div class="text-field error">
+																	<p>Расчетный счет</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
