@@ -513,7 +513,7 @@ i { font-style: normal; }
 .ms-drop ul > li label { position: relative; font-weight: normal; display: inline-block; width: 100%; height: 45px; text-align: left; white-space: nowrap; padding: 11px 0 11px 42px; font-size: 14px; cursor: pointer; overflow: hidden; -ms-text-overflow: ellipsis; text-overflow: ellipsis; white-space: nowrap; }
 .ms-drop ul > li label.optgroup { font-weight: bold; }
 .ms-drop ul > li label input[type="radio"] { position: absolute; opacity: 0; }
-.ms-drop ul > li.selected label { font-weight: bold; }
+.ms-drop ul > li.selected label { font-family: "ProximaNova Semibold", Arial, sans-serif; color: #000; }
 .ms-drop ul > li.selected label:before { content: ""; position: absolute; top: 50%; left: 15px; margin-top: -7px; background: url("img/svg/check.svg") no-repeat 0 0; -moz-background-size: 10px 9px; -o-background-size: 10px 9px; -webkit-background-size: 10px 9px; background-size: 10px 9px; width: 10px; height: 9px; display: inline-block; }
 .ms-drop input[type="checkbox"] { vertical-align: middle; }
 
@@ -762,10 +762,12 @@ i { font-style: normal; }
 
 .radio { display: block; }
 .radio input { position: absolute; opacity: 0; }
-.radio input + span { position: relative; display: inline-block; cursor: pointer; padding-left: 23px; font-family: "ALSSchlangesans Bold", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 16px; color: #595b48; }
+.radio input + span { position: relative; display: inline-block; cursor: pointer; margin-left: 23px; font-family: "ALSSchlangesans Bold", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 16px; color: #595b48; }
 .radio input + span img, .radio input + span i { display: inline-block; vertical-align: middle; margin-left: 5px; }
-.radio input + span:before { content: ""; position: absolute; top: 3px; left: 0; width: 14px; height: 14px; border-radius: 50%; background: #fff; }
+.radio input + span:before { content: ""; position: absolute; top: 3px; left: -23px; width: 14px; height: 14px; border-radius: 50%; background: #fff; }
 .radio input:checked + span:before { border: 3px solid #b0b59d; }
+.radio.radio_map input + span:before { background: #f4f4f4; box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15); }
+.radio.radio_map input:checked + span { background: #fff87d; }
 
 .ui-autocomplete { position: absolute !important; max-width: 100%; max-height: 135px; overflow-y: auto; overflow-x: hidden; background: #fff; }
 
@@ -829,6 +831,14 @@ i { font-style: normal; }
 .acc-payment p { margin-top: 10px; margin-bottom: 10px; color: #595b48; font-size: 13px; line-height: 1.2; font-family: "ProximaNova Regular", Arial, sans-serif; }
 .acc-payment .acc-payment__in > span { display: inline-block; vertical-align: middle; font-family: "ALSSchlangesans Bold", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 24px; color: #382f2f; }
 .acc-payment .acc-payment__in .text-field { width: 110px; display: inline-block; vertical-align: middle; margin-right: 10px; }
+
+.map { height: 500px; padding: 20px 20px 20px 15px; background-color: #fff; border-radius: 6px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+.map .map__in { *zoom: 1; height: 100%; }
+.map .map__in:after { content: " "; display: table; clear: both; }
+.map .map__list { float: left; width: 284px; padding-right: 50px; height: 100%; overflow-y: auto; }
+.map .map__list > ul > li { border-bottom: 1px solid #f9f9f9; }
+.map .map__list > ul > li > ul { padding-left: 23px; }
+.map .map__list > ul > li > ul li { margin-bottom: 10px; font-family: "ProximaNova Regular", Arial, sans-serif; color: #595b48; font-size: 14px; }
 
 .container { max-width: 1200px; margin: 0 auto; }
 

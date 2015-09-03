@@ -472,7 +472,7 @@
 		position: relative
 		display: inline-block
 		cursor: pointer
-		padding-left: 23px
+		margin-left: 23px
 		+asbold
 		font-size: 16px
 		color: #595b48
@@ -484,15 +484,21 @@
 			content: ""
 			position: absolute
 			top: 3px
-			left: 0
+			left: -23px
 			width: 14px
 			height: 14px
 			border-radius: 50%
 			background: #fff
 	input:checked + span
 		&:before
-			border: 3px solid #b0b59d	 					
-
+			border: 3px solid #b0b59d	
+	&.radio_map
+		input + span
+			&:before
+				background: #f4f4f4
+				box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15) 					
+		input:checked + span
+			background: #fff87d 
 // autocomplete
 .ui-autocomplete
 	position: absolute!important
@@ -736,7 +742,33 @@
 			display: inline-block
 			vertical-align: middle
 			margin-right: 10px
-		
+			
+// map
+.map
+	height: 500px
+	padding: 20px 20px 20px 15px 
+	background-color: #fff
+	border-radius: 6px
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)		
+	.map__in
+		+clr
+		height: 100% 
+	.map__list
+		float: left
+		width: 284px
+		padding-right: 50px
+		height: 100% 
+		overflow-y: auto 
+		& > ul 
+			& > li
+				border-bottom: 1px solid #f9f9f9  
+				& > ul
+					padding-left: 23px
+					li
+						margin-bottom: 10px 
+						+reg
+						color: #595b48
+						font-size: 14px 		
 
 
 
