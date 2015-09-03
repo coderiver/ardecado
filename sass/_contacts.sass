@@ -1,0 +1,65 @@
+// map
+.gmap
+	border: 18px solid #fff
+	border-radius: 18px
+	+box
+	.embed-responsive
+		padding-bottom: 87%
+
+// contacts
+.contacts
+	&__bl
+		padding-left: 16.66666667%
+		color: #4a485b
+		overflow: hidden
+	&__in
+		position: relative
+		padding: 25px 0 20px
+		&:before
+			content: ""
+			position: absolute
+			width: 1000px
+			left: -50px
+			bottom: 0
+			border-bottom: 1px dashed #d6d6d0
+		&.no-top-pad
+			padding-top: 0
+		&:last-child
+			&:before
+				display: none
+	&__print
+		+clr
+	&__ttl
+		margin-bottom: 3px
+		font-size: 24px
+		+asblack
+	&__address
+		margin-bottom: 5px
+		font-size: 18px
+		+asbold
+	&__hour
+		font-size: 16px
+		+reg
+		p:first-child
+			+semi
+		.txt-pink
+			color: #f25a68
+			+semi
+		.bg-yellow
+			padding: 0 5px
+			background: #fbf1ba
+	&__when
+		margin: 25px 0
+		font-size: 18px
+		+asbold
+		span
+			padding: 0 5px
+			background: #d9cef7
+	&__list
+		font-size: 16px
+		+asbold
+	&__link
+		font-size: 18px
+		color: #42b0ef
+	.i-print
+		float: right
