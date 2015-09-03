@@ -7,7 +7,7 @@ head.load("js/lib/jquery.js",
 					"js/lib/nouislider.min.js",
 					"js/lib/jquery.multiple.select.js",
 					"js/lib/jquery.tooltipster.min.js",
+					"js/lib/fancybox.min.js",
 					"js/ui.js",
 					"js/order.js",
-					"js/fancybox.min.js",
 					"js/common.js");

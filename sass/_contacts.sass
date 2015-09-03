@@ -8,6 +8,7 @@
 
 // contacts
 .contacts
+	margin: 10px 0 70px
 	&__bl
 		padding-left: 16.66666667%
 		color: #4a485b
@@ -33,6 +34,9 @@
 		margin-bottom: 3px
 		font-size: 24px
 		+asblack
+		&.border-dot
+			color: #42b0ef
+			border-bottom: 1px dotted #42b0ef
 	&__address
 		margin-bottom: 5px
 		font-size: 18px
@@ -52,6 +56,10 @@
 		margin: 25px 0
 		font-size: 18px
 		+asbold
+		&.bg-yellow
+			margin-bottom: 5px
+			span
+				background: #f7f1ce
 		span
 			padding: 0 5px
 			background: #d9cef7
@@ -66,6 +74,15 @@
 		color: #8d8c97
 		font-size: 18px
 		+asbold
+		&.no-margin
+			margin-top: 0
+	&__tel
+		margin-bottom: 35px
+		line-height: 1
+	&__number
+		font-size: 36px
+		color: #4a485b
+		+var
 	&__mail
 		margin-top: 18px
 		line-height: 1.1
@@ -77,8 +94,57 @@
 		margin-top: 40px
 		color: #4a485b
 		+asbold
+		&__in
+			margin-top: 20px
 		p
 			text-align: center
 			font-size: 24px
+		.row
+			padding: 16px 0
+		.fancywrap
+			position: relative
+			.i-gallery
+				position: absolute
+				top: 50%
+				left: 50%
+				margin: -18.5px 0 0 -18.5px
+				+s(arr-gallery)
+			span
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				background: #fff
+				color: #4a485b
+				border-radius: 50%
+				+var
+				+vertical
+				small
+					display: inline-block
+					font-size: 20px
+					vertical-align: -7px
+		.fancybox
+			position: relative
+			display: block
+			max-height: 140px
+			overflow: hidden
+			border: 12px solid #fff
+			border-radius: 6px
+			+box
+			img
+				display: block
+				height: 100%
 	.i-print
 		float: right
+
+
+//fancybox
+.fancybox-overlay
+	background: url('img/fancybox_overlay.png')
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span
+	background-image: url('img/fancybox_sprite.png')
+
+.fancybox-nav
+	background: transparent url('img/blank.gif')
