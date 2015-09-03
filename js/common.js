@@ -606,5 +606,26 @@ head.ready(function() {
 		hideOnClick: true
 	});
 
+	$('.js-search-input').keyup(function() {
+		$('.js-search-block').addClass('is-active');
+		$('body').addClass('is-search');
+		$(this).val('');
+	});
+	$('.js-search-block').each(function() {
+		$(this).click(function() {
+			$(this).removeClass('is-active');
+			$('body').removeClass('is-search');
+		});
+		$('.js-search-close').click(function() {
+			$('.js-search-block').removeClass('is-active');
+			$('body').removeClass('is-search');
+		});
+		$('.container').click(function(event) {
+			event.stopPropagation();
+		});
+	});
+
+	//fancy
+	$(".fancybox").fancybox();
 
 });
