@@ -1,10 +1,10 @@
 // map
-.gmap
-	border: 18px solid #fff
-	border-radius: 18px
-	+box
-	.embed-responsive
-		padding-bottom: 87%
+.map
+	&.is-border
+		position: relative
+		border: 18px solid #fff
+		border-radius: 18px
+		+box
 
 // contacts
 .contacts
@@ -61,5 +61,24 @@
 	&__link
 		font-size: 18px
 		color: #42b0ef
+	&__info
+		margin-top: 40px
+		color: #8d8c97
+		font-size: 18px
+		+asbold
+	&__mail
+		margin-top: 18px
+		line-height: 1.1
+		a
+			font-size: 36px
+			color: #42b0ef
+			+asblack
+	&__gallery
+		margin-top: 40px
+		color: #4a485b
+		+asbold
+		p
+			text-align: center
+			font-size: 24px
 	.i-print
 		float: right

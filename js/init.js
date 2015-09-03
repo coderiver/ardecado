@@ -1,4 +1,4 @@
-head.load("js/lib/jquery.js", 
+head.load("js/lib/jquery.js",
 					"js/lib/jquery-ui.min.js",
 					"js/lib/jquery.ui.touch-punch.min.js",
 					"js/lib/slick.min.js",
@@ -9,4 +9,5 @@ head.load("js/lib/jquery.js",
 					"js/lib/jquery.tooltipster.min.js",
 					"js/ui.js",
 					"js/order.js",
+					"js/fancybox.min.js",
 					"js/common.js");

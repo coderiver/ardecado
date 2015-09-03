@@ -2021,8 +2021,7 @@ h1.no-margin, .title-h1.no-margin { margin: 0; }
 .month__li a { text-decoration: underline; color: #42b0ef; font-family: "ALSSchlangesans Black", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .month__li a:hover { color: #e478a5; }
 
-.gmap { border: 18px solid #fff; border-radius: 18px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-.gmap .embed-responsive { padding-bottom: 87%; }
+.map.is-border { position: relative; border: 18px solid #fff; border-radius: 18px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .contacts__bl { padding-left: 16.66667%; color: #4a485b; overflow: hidden; }
 .contacts__in { position: relative; padding: 25px 0 20px; }
@@ -2041,6 +2040,11 @@ h1.no-margin, .title-h1.no-margin { margin: 0; }
 .contacts__when span { padding: 0 5px; background: #d9cef7; }
 .contacts__list { font-size: 16px; font-family: "ALSSchlangesans Bold", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .contacts__link { font-size: 18px; color: #42b0ef; }
+.contacts__info { margin-top: 40px; color: #8d8c97; font-size: 18px; font-family: "ALSSchlangesans Bold", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.contacts__mail { margin-top: 18px; line-height: 1.1; }
+.contacts__mail a { font-size: 36px; color: #42b0ef; font-family: "ALSSchlangesans Black", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.contacts__gallery { margin-top: 40px; color: #4a485b; font-family: "ALSSchlangesans Bold", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.contacts__gallery p { text-align: center; font-size: 24px; }
 .contacts .i-print { float: right; }
 
 /*# sourceMappingURL=screen.css.map */
