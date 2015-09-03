@@ -7,14 +7,14 @@ head.ready(function() {
 	});
 
 	function scrollFixedElements() {
-	    var scroll_left = $(this).scrollLeft();
-	    $(".js-fixed-func").css({
-	        left: -scroll_left
-	    });
+		var scroll_left = $(this).scrollLeft();
+		$(".js-fixed-func").css({
+			left: -scroll_left
+		});
 	}
 	scrollFixedElements();
 	$(window).scroll(function(){
-	    scrollFixedElements()
+		scrollFixedElements()
 	});
 
 	//nav link and subnav
@@ -33,7 +33,7 @@ head.ready(function() {
 	});
 
 	//number
-	function number() { 
+	function number() {
 		var number = $(".js-number");
 		number.each(function(){
 			var max_number = +($(this).attr("data-max-number"));
@@ -116,7 +116,7 @@ head.ready(function() {
 			slider[i].noUiSlider.on('update', function( values, handle ) {
 				if ( handle ) {
 					$('.value-input').text(Math.round(values[handle]) + ":00");
-				} 
+				}
 				else {
 					$('.value-span').text(Math.round(values[handle]) + ":00");
 				}
@@ -170,9 +170,9 @@ head.ready(function() {
 				$('.js-m-slider').slick('goTo', index);
 				return false;
 			});
-		};		
+		};
 	});
-	
+
 	if ($('.js-remind').length) {
 		$('.js-remind-link').click(function() {
 			var this_top = $(this).offset().top,
@@ -194,7 +194,7 @@ head.ready(function() {
 		});
 	};
 
-	
+
 
 	$('.js-carousel-parent').each(function() {
 		var slider = $(this).find('.js-carousel'),
@@ -213,7 +213,7 @@ head.ready(function() {
 			arrows: false,
 			slidesToShow: 6,
 			slidesToScroll: 6
-		});	
+		});
 
 		var slide = slider.find('.slick-slide').length,
 			cloneSlide = slider.find('.slick-cloned').length;
@@ -222,13 +222,13 @@ head.ready(function() {
 
 		totalBox.text(total);
 		counter.text(index);
-			
-		// slide change event	
+
+		// slide change event
 		slider.on('afterChange', function(event, slick, currentSlide) {
 			index = currentSlide;
 
 			index = index + 6;
-			
+
 			counter.text(index);
 		});
 
@@ -260,7 +260,7 @@ head.ready(function() {
 			arrows: false,
 			slidesToShow: 3,
 			slidesToScroll: 3
-		});	
+		});
 
 		var slide = slider.find('.slick-slide').length,
 			cloneSlide = slider.find('.slick-cloned').length;
@@ -269,13 +269,13 @@ head.ready(function() {
 
 		totalBox.text(total);
 		counter.text(index);
-			
-		// slide change event	
+
+		// slide change event
 		slider.on('afterChange', function(event, slick, currentSlide) {
 			index = currentSlide;
 
 			index = index + 3;
-			
+
 			counter.text(index);
 		});
 
@@ -369,16 +369,16 @@ head.ready(function() {
 	if ($('.map').length) {
 		ymaps.ready(function () {
 		  var myMap = new ymaps.Map('YMapsID', {
-		      center: [59.939095,30.315868],
-		      zoom: 10,
-		      controls: []
+			  center: [59.939095,30.315868],
+			  zoom: 10,
+			  controls: []
 		  });
 		  myMap.behaviors.disable('scrollZoom');
 		 // Создаем метку с помощью вспомогательного класса.
-		    myPlacemark = new ymaps.Placemark([59.939095,30.315868], {}, {
-		        preset: 'twirl#redDotIcon'
+			myPlacemark = new ymaps.Placemark([59.939095,30.315868], {}, {
+				preset: 'twirl#redDotIcon'
 
-		    });
+			});
 
 		 myMap.geoObjects.add(myPlacemark)
 
@@ -392,32 +392,32 @@ head.ready(function() {
 			var tab_cont = $(this).find('.js-tab-cont'),
 				tab_link = $(this).find('.js-tab-link');
 
-			tab_link.first().addClass('is-active');	
+			tab_link.first().addClass('is-active');
 			tab_cont.hide();
 			tab_cont.first().show();
 
 			$('body').on('click', '.btn-tab, .js-tab-link', function(){
-	       		var link = $(this).attr('href');
-	       		var activeTab = $(this).parents('.js-tab-group').find('.' + link);
-	       		$(this).parents('.js-tab-group').find('.btn-tab,.js-tab-link').removeClass('is-active');
-	       		$(this).addClass('is-active');
-	       		$(this).parents('.js-tab-group').find('.js-tab-cont').hide();
-	       		activeTab.show();
-	       		
-	       		var customScroll = activeTab.find('.js-scroll-init');
+				var link = $(this).attr('href');
+				var activeTab = $(this).parents('.js-tab-group').find('.' + link);
+				$(this).parents('.js-tab-group').find('.btn-tab,.js-tab-link').removeClass('is-active');
+				$(this).addClass('is-active');
+				$(this).parents('.js-tab-group').find('.js-tab-cont').hide();
+				activeTab.show();
 
-	       		if (customScroll.length) {
-	       			if (!customScroll.hasClass('is-loaded')) {
-	       				customScroll.customScrollbar();
-	       				customScroll.addClass('is-loaded');
-	       			};
-	       		};
+				var customScroll = activeTab.find('.js-scroll-init');
 
-	       		return false;
-	       	});
+				if (customScroll.length) {
+					if (!customScroll.hasClass('is-loaded')) {
+						customScroll.customScrollbar();
+						customScroll.addClass('is-loaded');
+					};
+				};
+
+				return false;
+			});
 		});
-  	}
-  	tab();
+	}
+	tab();
 
 	//spinner
 
@@ -496,7 +496,7 @@ head.ready(function() {
 				$('.js-menu-in').removeClass('is-active');
 			};
 		};
-		
+
 	});
 	$(window).load(function() {
 		if ($('.js-menu').length) {
@@ -518,7 +518,7 @@ head.ready(function() {
 	// 	return false;
 	// });
 	$(".js-panel-btn").click(function () {
-		
+
 		var id = $(this).data("btn"),
 			$item = $('.js-panel-box'),
 			$currItem = $('.js-panel-box[data-block=' + id + ']');
@@ -547,7 +547,7 @@ head.ready(function() {
 			};
 		};
 		return false;
-		
+
 	});
 	$('.js-panel-open').on('click', function() {
 		$(this).addClass('is-close');
@@ -589,7 +589,7 @@ head.ready(function() {
 			$('.js-profile-drop').slideUp('fast');
 			$(this).addClass('is-active');
 			$(this).parents('.js-profile').find('.js-profile-drop').slideDown('fast');
-		}		
+		}
 		return false;
 	});
 	$('.js-profile-drop').each(function() {
@@ -625,7 +625,13 @@ head.ready(function() {
 		});
 	});
 
-	//fancy
-	$(".fancybox").fancybox();
-
+	// fancy
+	$('.fancybox').fancybox({
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
+	});
 });
+
