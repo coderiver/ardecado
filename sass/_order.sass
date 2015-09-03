@@ -459,10 +459,19 @@
 	.payment__col
 		float: left
 		width: 50%
-		padding-left: 12.5%
-		ul
-			li
-				margin-bottom: 15px 
+	.payment__info
+		clear: both
+		padding: 10px
+		border-radius: 4px
+		background: #f4fbdc
+		+reg
+		font-size: 13px
+		color: #595b48
+		a
+			text-decoration: none
+			color: #54b6ee
+			&:hover
+				text-decoration: underline	
 .radio
 	display: block
 	input
@@ -783,9 +792,58 @@
 	bottom: 0	
 	left: 0			 		
 
-
-
-
+.entity
+	position: relative
+	margin-left: -12.5%
+	clear: both
+	border-radius: 6px
+	background: #ecece4 
+	padding: 25px 21px 21px
+	&:before
+		content: ""
+		position: absolute
+		top: -10px
+		right: 35%
+		+arr(26, 10, #ecece4, t)
+	.entity__block
+		font-size: 0
+		margin-bottom: 10px
+		.radio
+			display: inline-block
+			vertical-align: middle 
+			margin: 0 0 0 23px 
+	.entity__title
+		display: inline-block
+		vertical-align: middle
+		font-size: 16px
+		color: #000
+		+asbold  	
+	.form__row
+		+clr
+		margin: 0 0 20px -3% 
+		& > div
+			float: left
+			margin-left: 3%
+		.text-field
+			.text-field__block
+				background: #dedfd9
+			&.error
+				.text-field__block
+					background: #ecb0b0 	 	
+	.entity__col-1
+		width: 15% 
+	.entity__col-2
+		width: 19%
+	.entity__col-3
+		width: 25% 	
+	.entity__col-4
+		width: 29% 		
+	.entity__col-5
+		width: 35% 		
+	.entity__col-6
+		width: 43% 
+	.entity__col-7
+		width: 51% 	
 
 
 
