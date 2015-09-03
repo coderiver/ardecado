@@ -66,11 +66,14 @@ body
 					margin: 28px 20px 0
 			.header__search-btn, .i-home
 				display: block
+			.menu
+				width: 710px
+				margin: 0 25px 0 0 
 			.menu-profile
 				&.is-active
 					display: block
 			.menu__item
-				margin: 0 25px 0 0
+				// margin: 0 25px 0 0
 				padding: 27px 0 26px
 				height: 78px
 				&.is-drop
@@ -366,16 +369,27 @@ body
 	margin-bottom: 2px
 
 .menu
-	font-size: 0
+	font-size: 0.1px
 	float: left
+	width: 885px
+	line-height: 1
+	font-size: 0
+	text-align: justify
+	margin: 0 45px 0 0 
+	&:after
+		display: inline-block
+		content: "" 
+		width: 100%
+		height: 0
 	a
 		text-decoration: none
 	&__item
 		display: inline-block
 		vertical-align: top
-		margin: 0 45px 0 0
 		padding: 2px 0 17px
 		position: relative
+		white-space: normal
+		line-height: 1.4
 		&.is-drop
 			.menu__link
 				padding: 0 15px 0 0
@@ -3359,5 +3373,51 @@ body
 				content: "" 
 			.btn-tab
 				margin: 0
-	.btn-tab
-		font-size: 30px
+	&__item
+		padding: 40px 0
+		text-align: center
+		h6, .title-h6
+			margin: 0 0 5px 
+		p
+			color: #4A485B
+			font-size: 14px
+			+reg
+			line-height: 1.2
+			a
+				color: #42B0EF
+	&__icon
+		height: 62px
+		+vertical
+		margin-bottom: 20px
+		i
+			display: inline-block
+			vertical-align: middle
+			&.is-year
+				+s(years)
+			&.is-delivery
+				+s(round-delivery-green)
+			&.is-check
+				+s(checked)
+			&.is-shop
+				+s(r-room-pink)
+			&.is-gift
+				+s(prize)
+			&.is-percent
+				+s(percent)
+			&.is-phone
+				+s(mobile)
+			&.is-money
+				+s(dollar)
+			&.is-back
+				+s(back)
+		 
+.btn-tab_big
+	font-size: 30px
+	line-height: 35px
+	display: inline-block
+	vertical-align: top
+	span
+		line-height: 25px
+.btn-tab_under
+	span
+		border-bottom-style: solid 
