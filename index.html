@@ -12,6 +12,7 @@
 	<link rel="stylesheet" media="all" href="css/bootstrap.min.css" >
 	<link rel="stylesheet" media="all" href="css/jquery.custom-scrollbar.css" >
 	<link rel="stylesheet" media="all" href="css/nouislider.min.css" >
+	<link rel="stylesheet" media="all" href="css/tooltipster.css" >
 	<link rel="stylesheet" media="all" href="screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 </head>
@@ -42,7 +43,7 @@
 						</ul>
 					</nav>
 					<div class="search">
-						<input type="text" class="search__input" placeholder="Поиск подарков">
+						<input type="text" class="search__input js-search-input" placeholder="Поиск подарков">
 						<button class="search__btn"></button>
 					</div>
 					<a href="#" class="gift-cards"><img src="img/gift-cards.png" alt=""></a>
@@ -1221,7 +1222,7 @@
 		<!-- end header -->
 		
 		<div class="steps js-steps">
-			<i class="btn-close btn-close_big js-steps-close"></i>
+			<i class="btn-close btn-close_big js-steps-close js-tooltip" title="<small>Удобный личный кабинет, <br> отслеживание заказа по смс</small>"></i>
 			<div class="steps__text">Почему  уже <span>более 160 000</span> человек выбрали нас?<i class="i i-right-big"></i></div>
 			<ul class="steps__list">
 				<li>
@@ -1738,7 +1739,7 @@
 						<div class="col-lg-4 col-xs-4">
 							<div class="holiday-title">
 								<small>Главный повод</small>
-								<span><i class="i i-deer"></i><i class="i i-star"></i>Новый Год</span>
+								<span><i class="i i-deer"></i><i class="i i-star js-tooltip" title="Нажмите, чтобы получать лучшие предложения <br> и акции к данному поводу на свою почту"></i>Новый Год</span>
 							</div>
 						</div>
 						<div class="col-lg-4 col-xs-4">
@@ -2382,7 +2383,7 @@
 						<div class="col-lg-5 col-xs-5">
 							<div class="holiday-title">
 								<small>Универсальный повод</small>
-								<span><i class="i i-pie"></i><i class="i i-star"></i>День Рождения</span>
+								<span><i class="i i-pie"></i><i class="i i-star js-tooltip" title="Нажмите, чтобы получать лучшие предложения <br> и акции к данному поводу на свою почту"></i>День Рождения</span>
 							</div>
 						</div>
 						<div class="col-lg-3 col-xs-3">
@@ -3612,7 +3613,7 @@
 					<small class="footer__schedule">9:00 — 19:00</small>
 				</div>
 				<div class="search">
-					<input type="text" class="search__input" placeholder="Поиск подарков">
+					<input type="text" class="search__input js-search-input" placeholder="Поиск подарков">
 					<button class="search__btn"></button>
 				</div>
 			</div>
@@ -4010,9 +4011,9 @@
 	
 	<div class="fixed-br js-panel js-fixed">
 		<div class="f-panel js-panel-block">
-			<a href="#" class="f-panel__item is-calendar js-panel-btn js-panel-calendar" data-btn="panel-1"></a>
-			<a href="#" class="f-panel__item is-now js-panel-btn js-panel-view" data-btn="panel-2"></a>
-			<a href="#" class="f-panel__item is-view js-panel-btn js-panel-view" data-btn="panel-3"></a>
+			<a href="#" class="f-panel__item is-calendar js-panel-btn js-tooltip js-panel-calendar" data-btn="panel-1" title="Календарь подарков"></a>
+			<a href="#" class="f-panel__item is-now js-panel-btn js-tooltip js-panel-view" data-btn="panel-2" title="Сейчас покупают"></a>
+			<a href="#" class="f-panel__item is-view js-panel-btn js-tooltip js-panel-view" data-btn="panel-3" title="Вы просмотрели"></a>
 			<a href="#" class="f-panel__item is-right js-panel-close"></a>
 		</div>
 		<button class="f-panel-open js-panel-open"><i></i></button>
@@ -4122,57 +4123,62 @@
 	<div class="panel-img js-panel-box js-fixed-func" data-block="panel-2">
 		<div class="panel-img__inner js-view-slider">
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
@@ -4181,61 +4187,200 @@
 	<div class="panel-img js-panel-box js-fixed-func" data-block="panel-3">
 		<div class="panel-img__inner js-view-slider">
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 			<div class="panel-item">
-				<a href="#" class="panel-item__inner">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>				
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
 					<img src="img/panel-item-img.png" alt="">
 				</a>				
 			</div>
 		</div>
+	</div>
+
+	<div class="js-search-block search-block">
+		
+		<div class="container">
+
+			<i class="i i-close js-seach-close"></i>
+			
+			<div class="row">
+				
+				<div class="col-lg-12 col-xs-12">
+					
+					<span class="search-block__title">Супер-поиск Ар де Кадо</span>
+
+					<div class="search-block__input">
+						<i class="search-block__left"></i>
+						<i class="search-block__right"></i>
+						<input type="text">
+						<button></button>
+					</div>
+
+					<div class="search-block__btns">
+						<span class="search-block__label">Разделы каталога</span>
+						<button class="btn-gender">Для дома</button>
+						<button class="btn-gender">Предметы интерьера</button>
+						<button class="btn-gender">Текстиль</button>
+					</div>
+
+				</div>
+				
+			</div>
+
+			<div class="row search-block__results">
+
+				<div class="col-lg-12 col-xs-12">
+					<span class="search-block__label">Показано <b>6</b> из <b>38 товаров</b></span>
+				</div>		
+				<div class="search-block__items">
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">	
+								</a>							
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+					
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">	
+								</a>							
+								<div class="item__btns is-discount">
+									<div class="item__price">
+										<span>1 320 <i class="rub">Р</i></span>
+										<span class="is-discount">1 620 <i class="rub">Р</i></span>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+					
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">	
+								</a>							
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+					
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">	
+								</a>							
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+					
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">	
+								</a>							
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+					
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">	
+								</a>							
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+				</div>		
+
+				<div class="search-block__more">
+					<button class="b-btn b-btn_green">Показать еще!</button>
+					<p><a href="#">Все результаты на одной странице</a></p>
+				</div>		
+			</div>
+
+		</div>	
+
 	</div>
 
 <!-- load scripts -->

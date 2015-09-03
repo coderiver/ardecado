@@ -1,3 +1,7 @@
+body
+	&.is-search
+		overflow: hidden
+
 .container
 	max-width: 1200px
 	margin: 0 auto 
@@ -54,6 +58,7 @@
 			min-width: 1280px
 			background-color: rgba(30, 25, 50, 0.9)
 			padding: 0
+			z-index: 300
 			.btn_blue
 				&.is-active
 					display: block
@@ -1598,6 +1603,35 @@
 	padding: 9px 13px 7px
 	+border-radius(2px)
 
+.tooltipster-default
+	+box-shadow(0 0 30px rgba(0, 0, 0, 0.14))
+	background-color: #FFF
+	border: none
+	+border-radius(2px)
+	.tooltipster-content
+		padding: 9px 13px 7px
+		color: #747474
+		font-size: 13px
+		+reg
+	small
+		font-size: 12px
+		padding: 5px 10px
+		display: block 
+	p
+		text-align: center
+		font-size: 14px
+		color: #716D6D
+	b
+		display: block
+		color: #343434
+		+semi
+		padding: 3px 0 0 
+	.tooltipster-arrow-top,
+	.tooltipster-arrow-left,
+	.tooltipster-arrow-right,
+	.tooltipster-arrow-bottom,
+		display: none
+		
 //pages
 .pages
 	text-align: center
@@ -3137,3 +3171,144 @@
 			position: absolute
 			top: 1px
 			right: 0
+			
+.search-block
+	overflow: auto
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: rgba(black, 0.88) 
+	z-index: 2000 
+	visibility: hidden
+	opacity: 0
+	&.is-active
+		visibility: visible
+		opacity: 1
+	.container
+		position: relative
+	.i-close
+		position: absolute
+		top: 29px
+		right: -5px
+		cursor: pointer
+		z-index: 20 
+	&__title
+		color: #DD7C56
+		font-size: 18px
+		+asbold
+		text-align: center
+		display: block
+		padding: 27px 50px 
+	&__input
+		position: relative
+		padding: 0 100px 0 50px
+		min-height: 104px
+		&:before, &:after
+			content: "" 
+			position: absolute
+			left: 55px
+			right: 55px
+			height: 5px
+			background: -ms-linear-gradient(left, #50cb90 0%, #74c24c 20%, #c59340 40%, #eb5278 60%, #d844aa 80%, #d542b3 100%)
+			background: -o-linear-gradient(left, #50cb90 0%, #74c24c 20%, #c59340 40%, #eb5278 60%, #d844aa 80%, #d542b3 100%)
+			background: -webkit-linear-gradient(left, #50cb90 0%, #74c24c 20%, #c59340 40%, #eb5278 60%, #d844aa 80%, #d542b3 100%)
+			background: linear-gradient(to right, #50cb90 0%, #74c24c 20%, #c59340 40%, #eb5278 60%, #d844aa 80%, #d542b3 100%)
+		&:before
+			top: 0
+		&:after
+			bottom: 0
+		input
+			color: #DEDEDE
+			font-size: 44px
+			+asbold
+			background: none
+			width: 100%
+			padding: 21px 0px
+		button
+			position: absolute
+			top: 50%
+			right: 16px
+			+s(search-close)
+			margin-top: -26px
+			z-index: 20 
+	&__left, &__right
+		position: absolute
+		top: 0
+		width: 55px
+		height: 104px
+		overflow: hidden
+		&:before
+			content: "" 
+			position: absolute
+			top: 0
+			bottom: 0
+			border: 5px solid transparent
+			width: 104px
+			border-radius: 50%
+	&__left
+		left: 0
+		&:before
+			left: 0
+			border-color: #50cb90
+	&__right
+		right: 0
+		&:before
+			right: 0
+			border-color: #d542b3
+	&__btns
+		font-size: 0
+		padding: 27px 0 26px 
+		border-bottom: 1px solid rgba(#fff, 0.33) 
+		.btn-gender
+			display: inline-block
+			vertical-align: middle 
+			margin: 0 18px 0 0 
+	&__label
+		display: inline-block
+		vertical-align: middle
+		color: #C0BCB7
+		font-size: 18px
+		+asbold
+		margin: 0 20px 0 0 
+		b
+			color: #fff 
+	&__results
+		padding: 25px 0
+	&__items
+		padding: 15px 0 0 
+		+clr
+		clear: both
+	.item
+		&:hover
+			.item__btns
+				left: auto
+		&__btns
+			&.is-discount
+				padding: 5px 7px 2px 10px 
+				background-color: #FF995C
+				.item__price
+					color: #fff 
+		&__price		
+			span
+				line-height: 1
+				display: block
+				&.is-discount
+					font-size: 12px
+					text-decoration: line-through
+	&__more
+		text-align: center
+		padding: 30px 0 0 
+		.b-btn
+			margin-bottom: 35px
+		p
+			font-size: 18px
+			+asbold
+			line-height: 1
+			a
+				color: #4BADF4
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+					
