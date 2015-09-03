@@ -9,6 +9,7 @@
 	<meta name="theme-color" content="#fff"> 
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<script src="http://api-maps.yandex.ru/2.1-dev/?lang=ru-RU&load=package.full" type="text/javascript"></script>
 	<link rel="stylesheet" media="all" href="css/bootstrap.min.css" >
 	<link rel="stylesheet" media="all" href="css/jquery.custom-scrollbar.css" >
 	<link rel="stylesheet" media="all" href="css/nouislider.min.css" >
@@ -1374,7 +1375,7 @@
 											<div class="map">
 												<div class="map__in">
 													<div class="map__list js-scroll-init">
-														<ul>
+														<ul class="map__items">
 															<li>
 																<label class="radio radio_map">
 																	<input type="radio" name="map">
@@ -1446,7 +1447,9 @@
 															</li>
 														</ul>
 													</div>
-													<div class="map__canvas"></div>
+													<div class="map__canvas">
+														<div id="YMapsID"></div>
+													</div>
 												</div>
 											</div>
 										</div>

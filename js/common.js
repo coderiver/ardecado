@@ -364,6 +364,26 @@ head.ready(function() {
 		slidesToScroll: 1
 	});
 
+	// map
+
+	if ($('.map').length) {
+		ymaps.ready(function () {
+		  var myMap = new ymaps.Map('YMapsID', {
+		      center: [59.939095,30.315868],
+		      zoom: 10,
+		      controls: []
+		  });
+		  myMap.behaviors.disable('scrollZoom');
+		 // Создаем метку с помощью вспомогательного класса.
+		    myPlacemark = new ymaps.Placemark([59.939095,30.315868], {}, {
+		        preset: 'twirl#redDotIcon'
+
+		    });
+
+		 myMap.geoObjects.add(myPlacemark)
+
+		});
+	};
 
 	// tabs
 

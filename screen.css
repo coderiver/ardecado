@@ -833,12 +833,15 @@ i { font-style: normal; }
 .acc-payment .acc-payment__in .text-field { width: 110px; display: inline-block; vertical-align: middle; margin-right: 10px; }
 
 .map { height: 500px; padding: 20px 20px 20px 15px; background-color: #fff; border-radius: 6px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
-.map .map__in { *zoom: 1; height: 100%; }
+.map .map__in { position: relative; *zoom: 1; height: 100%; }
 .map .map__in:after { content: " "; display: table; clear: both; }
-.map .map__list { float: left; width: 284px; padding-right: 50px; height: 100%; overflow-y: auto; }
-.map .map__list > ul > li { border-bottom: 1px solid #f9f9f9; }
-.map .map__list > ul > li ul { padding-left: 23px; }
-.map .map__list > ul > li ul li { margin-bottom: 10px; font-family: "ProximaNova Regular", Arial, sans-serif; color: #595b48; font-size: 14px; }
+.map .map__list { float: left; width: 270px; padding-right: 50px; height: 100%; overflow-y: auto; }
+.map .map__items > li { border-bottom: 1px solid #f9f9f9; }
+.map .map__items > li ul { padding-left: 23px; }
+.map .map__items > li ul li { margin-bottom: 10px; font-family: "ProximaNova Regular", Arial, sans-serif; color: #595b48; font-size: 14px; }
+.map .map__canvas { position: absolute; top: 0; right: 0; bottom: 0; left: 284px; }
+
+#YMapsID { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
 
 .container { max-width: 1200px; margin: 0 auto; }
 
