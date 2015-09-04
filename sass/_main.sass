@@ -1780,6 +1780,19 @@ body
 				background: #fff
 				.item__price
 					color: #6C6161
+	&:after, &:before
+		position: absolute
+		content: ""
+		bottom: 9px
+		right: 0
+		height: 18px
+		width: 40px
+		box-shadow: 0 10px 15px 10px #ecece4
+		background-color: #ecece4
+		opacity: 0.8
+	&:before
+		width: 10px
+		opacity: 1
 	.badge-mod
 		position: absolute
 		right: -10px
@@ -1838,6 +1851,7 @@ body
 		top: 10px
 		left: 5px
 		font-size: 0
+		z-index: 10
 		i
 			margin: 0 3px
 			vertical-align: middle
@@ -3295,6 +3309,8 @@ body
 		+clr
 		clear: both
 	.item
+		&:before, &:after
+			display: none
 		&:hover
 			.item__btns
 				left: auto
@@ -3342,8 +3358,33 @@ body
 		.btn-gender
 			display: inline-block
 			margin: 0 11px 
+
+//about
 			
 .about
+	&__text
+		li, p
+			font-size: 14px
+			color: #4a485b
+		p
+			+reg
+			line-height: 1.2
+		li
+			+semi
+			line-height: 24px
+	&__forms
+		padding: 0 0 40px
+		.tabs
+			text-align: center
+			margin: 0 0 30px 
+			p
+				font-size: 14px
+				+reg
+				color: #4a485b
+				max-width: 540px
+				margin: 0 auto 
+			.btn-tab
+				margin: 0 25px 30px
 	.breadcrumbs
 		margin: 10px 0 0 
 	h1, .title-h1
@@ -3421,3 +3462,86 @@ body
 	span
 		border-bottom-style: solid 
 		
+
+.block-form
+	background-color: #f2f2f2
+	width: 580px
+	margin: 0 auto 
+	padding: 30px 35px 40px 
+	border-radius: 13px
+	&__full
+		font-size: 0
+	&__full, &__col
+		padding: 0 0 25px 
+	&__row
+		+clr
+	&__col
+		width: 50%
+		float: left
+	&__message
+		text-align: center
+		padding: 5px 0 20px 
+		p
+			color: #ff1616
+			font-size: 14px
+			+asbold
+	&__add
+		padding: 0 0 35px
+		text-align: center
+	&__file
+		position: relative
+		display: inline-block
+		text-align: center
+		cursor: pointer
+		input
+			display: none
+		span, small
+			display: block
+		span
+			color: #42b0ef
+			font-size: 20px
+			text-decoration: underline
+			+asblack
+			padding: 0 0 2px 
+		small
+			font-size: 13px
+			color: #8e8e8e
+			+semi
+	&__btn
+		text-align: center
+		.btn-order
+			max-width: 220px
+	.text-field__block
+		+g(#e4e4e2, #d5d5d0)
+		textarea
+			width: 100%
+			padding: 7px 10px 
+			border: none
+			font-size: 18px
+			+asbold
+			resize: none
+			height: 99px
+			color: #4a485b
+		input, textarea
+			+g( #fdfdfd, #fafafa)
+	.text-field_phone
+		padding: 0 0 0 20px
+		position: relative
+	.text-field_mail
+		max-width: 205px
+	.phone-field
+		&__label
+			position: absolute
+			bottom: 0
+			left: 0
+			line-height: 42px
+			font-size: 24px
+			color: #9a9a9a
+			+asbold
+.text-field__amount
+	float: right
+	+semi
+	font-size: 13px
+	color: #8c917b
+	
+	

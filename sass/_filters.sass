@@ -1,1 +1,110 @@
 // filters styles
+.filters
+	.row
+		padding: 0 0 15px
+		&:first-child
+			padding: 15px 0 5px 
+	.filters__title
+		+asbold
+		color: #7c7c75
+		font-size: 16px
+		white-space: nowrap
+		&.clear
+			color: #a57878
+		&.right
+			text-align: right	
+.filter
+	position: relative
+	&.is-open
+		&:before
+			content: ""
+			position: absolute
+			bottom: -15px
+			left: 50%
+			+s(m-drop)
+			margin-left: -15px
+			z-index: 99
+	.filter__view
+		position: relative
+		width: 100%
+		height: 50px 
+		background: #fff  
+		padding: 3% 15% 3% 10% 
+		border-radius: 6px
+		cursor: pointer
+		&:before
+			content: ""
+			position: absolute
+			top: 13px
+			right: 13px
+			+arr(15, 8, #b1b1b1, b)
+	.filter__name
+		+asblack
+		color: #56544f
+		font-size: 16px					
+	.filter__value
+		+semi
+		color: #31a4e6
+		font-size: 13px
+		&.placeholder
+			color: #b1b1b1
+	.filter__dropdown	
+		position: absolute
+		top: 65px
+		left: 0
+		width: 1180px
+		padding: 8px 8px 16px
+		background: #fff  
+		border-radius: 6px
+		box-shadow: 0 2px 9.7px 0.3px rgba(0, 0, 0, 0.1)
+		+clr
+		z-index: 98
+	.filter__nav
+		position: relative	
+		float: left
+		width: 292px
+		& > li
+			width: 214px
+			a
+				position: relative
+				display: block
+				float: none
+				width: 100% 
+				height: 50px
+				line-height: 50px
+				border-radius: 6px
+				padding: 0 24px 0 15px  
+				+semi
+				font-size: 14px
+				color: #56544f 
+				&:after
+					content: ""
+					position: absolute
+					top: 50%
+					right: 17px
+					+s(drop-arr)
+					margin-top: -4px
+				&:hover
+					color: #fff
+					text-decoration: none
+					background: url(img/svg/drop-he.svg)
+					+cover
+					&:after
+						+s(drop-arr-hover)
+	.filter__content
+		overflow: hidden
+		.checkbox
+			display: block
+			input + span
+				&:before
+					top: 3px
+					border: 2px solid #e2e2e2
+					background: #f9f9f9 
+				&:after
+					top: 5px	
+	.filter__more
+		padding-left: 28%
+		
+
+
+
