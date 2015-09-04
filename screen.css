@@ -1809,7 +1809,22 @@ body.is-search { overflow: hidden; }
 
 .text-field__amount { float: right; font-family: "ProximaNova Semibold", Arial, sans-serif; font-size: 13px; color: #8c917b; }
 
-.cards__inner { margin: 0 auto; }
+.cards__top { text-align: center; max-width: 860px; margin: 0 auto; padding: 20px 0 5px; }
+.cards__top p { font-size: 14px; font-family: "ProximaNova Regular", Arial, sans-serif; color: #706153; line-height: 1.2; }
+.cards__top h1, .cards__top .title-h1 { margin: 0 0 25px; }
+.cards__banner { position: relative; }
+.cards__banner img { max-width: 100%; }
+.cards__take { position: absolute; top: 14px; right: 34px; background: #a0c768; width: 140px; height: 140px; border-radius: 50%; text-align: center; padding: 28px 0; }
+.cards__take:hover, .cards__take:focus { color: white; text-decoration: none; }
+.cards__take span, .cards__take small { display: block; line-height: 1.2; }
+.cards__take span { font-size: 24px; text-decoration: underline; color: white; font-family: "ALSSchlangesans Black", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.cards__take small { font-size: 18px; font-family: "ProximaNova Regular", Arial, sans-serif; color: #d3ecae; text-decoration: none; }
+.cards__tabs { padding: 0 0 20px; }
+.cards__tabs .btn-tab { margin: 0 25px; }
+.cards__info { text-align: center; max-width: 920px; margin: 0 auto; }
+.cards__info p { color: #727272; font-size: 18px; line-height: 1.2; font-family: "ALSSchlangesans Bold", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; margin-bottom: 12px; }
+.cards__info p b { font-family: "ALSSchlangesans Black", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #4a485b; }
+.cards__form { padding: 0 75px; }
 
 .filters .row { padding: 0 0 15px; }
 .filters .row:first-child { padding: 15px 0 5px; }
