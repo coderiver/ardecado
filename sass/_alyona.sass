@@ -1,0 +1,331 @@
+// catalog
+.breadcrumbs
+	margin-top: 20px
+	&__list
+		font-size: 14px
+		+semi
+		+clr
+		li
+			position: relative
+			margin-right: 3px
+			float: left
+			&:after
+				content: ""
+				display: inline-block
+				margin: 0 10px
+				vertical-align: middle
+				+s(arr-right-small)
+			&:last-child
+				&:after
+					display: none
+				a
+					color: #7a7a7a
+					&:hover
+						text-decoration: none
+		a
+			display: inline-block
+			vertical-align: middle
+			color: #42b0ef
+			&:visited
+				color: #1a44cd
+	&__more
+		+s(add-small)
+		vertical-align: middle
+		margin-left: 4px
+	.i-flag-big
+		margin-right: 20px
+
+.catalog
+	margin-bottom: 20px
+	&__divider
+		position: relative
+		text-align: center
+		overflow: hidden
+		+semi
+		span
+			display: inline-block
+			padding: 0 20px
+			font-size: 13px
+			color: #a5a29f
+			background: #ecece4
+			&.no-pad
+				padding: 0 0.5px
+			&:after
+				content: ""
+				position: absolute
+				left: 0
+				right: 0
+				top: 50%
+				height: 1px
+				border-bottom: 1px dashed #d8d8d2
+				z-index: -1 
+
+	.row
+		padding: 15px 0
+		&.holidays
+			padding: 30px 0 0
+		&.s-pad
+			padding: 10px 0
+
+.sort
+	text-align: right
+	font-size: 14px
+	&__span
+		display: inline-block
+		vertical-align: middle
+	.select
+		display: inline-block
+		max-width: 90px
+		vertical-align: middle
+		span
+			padding-left: 0
+			font-size: 14px
+			color: #31a4e6
+		.ms-choice
+			height: 19px
+			line-height: 20px
+			background: none
+			> div
+				right: 0
+				margin-top: -2px
+				+s(menu-arr)
+			> span
+				right: 10px
+				+semi
+		.ms-drop ul > li label
+			padding: 11px 8px 11px 11px
+			+semi
+			&:before
+				display: none
+	.i
+		margin-right: 5px
+
+
+.sale-banner
+	img
+		width: 100%
+
+.i-sort-menu
+	vertical-align: middle
+	+s(sort-menu)
+
+// contacts
+.contacts
+	margin: 10px 0 70px
+	&__bl
+		padding-left: 16.66666667%
+		color: #4a485b
+		overflow: hidden
+	&__in
+		position: relative
+		padding: 25px 0 20px
+		&:before
+			content: ""
+			position: absolute
+			width: 1000px
+			left: -50px
+			bottom: 0
+			border-bottom: 1px dashed #d6d6d0
+		&.no-top-pad
+			padding-top: 0
+		&:last-child
+			&:before
+				display: none
+	&__print
+		+clr
+	&__ttl
+		margin-bottom: 3px
+		font-size: 24px
+		+asblack
+		&.border-dot
+			color: #42b0ef
+			border-bottom: 1px dotted #42b0ef
+	&__address
+		margin-bottom: 5px
+		font-size: 18px
+		+asbold
+	&__hour
+		font-size: 16px
+		+reg
+		p:first-child
+			+semi
+		.txt-pink
+			color: #f25a68
+			+semi
+		.bg-yellow
+			padding: 0 5px
+			background: #fbf1ba
+	&__when
+		margin: 25px 0
+		font-size: 18px
+		+asbold
+		&.bg-yellow
+			margin-bottom: 5px
+			span
+				background: #f7f1ce
+		span
+			padding: 0 5px
+			background: #d9cef7
+	&__list
+		font-size: 16px
+		+asbold
+	&__link
+		font-size: 18px
+		color: #42b0ef
+	&__info
+		margin-top: 40px
+		color: #8d8c97
+		font-size: 18px
+		+asbold
+		&.no-margin
+			margin-top: 0
+	&__tel
+		margin-bottom: 35px
+		line-height: 1
+	&__number
+		font-size: 36px
+		color: #4a485b
+		+var
+	&__mail
+		margin-top: 18px
+		line-height: 1.1
+		a
+			font-size: 36px
+			color: #42b0ef
+			+asblack
+	&__gallery
+		margin-top: 40px
+		color: #4a485b
+		+asbold
+		&__in
+			margin-top: 20px
+		p
+			text-align: center
+			font-size: 24px
+		.row
+			padding: 16px 0
+		.fancywrap
+			position: relative
+			.i-gallery
+				position: absolute
+				top: 50%
+				left: 50%
+				margin: -18.5px 0 0 -18.5px
+				+s(arr-gallery)
+			span
+				position: absolute
+				top: 0
+				left: 0
+				width: 30px
+				height: 30px
+				background: #fff
+				color: #4a485b
+				border-radius: 50%
+				+var
+				+vertical
+				small
+					display: inline-block
+					font-size: 20px
+					vertical-align: -7px
+		.fancybox
+			position: relative
+			display: block
+			max-height: 140px
+			overflow: hidden
+			border: 12px solid #fff
+			border-radius: 6px
+			+box
+			img
+				display: block
+				height: 100%
+	.i-print
+		float: right
+
+
+//fancybox
+.fancybox-overlay
+	background: url('img/fancybox_overlay.png')
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span
+	background-image: url('img/fancybox_sprite.png')
+
+.fancybox-nav
+	background: transparent url('img/blank.gif')
+
+// course
+.course
+	margin-bottom: 50px
+	padding: 25px 0 15px 15px
+	border-radius: 6px
+	background-color: #FAF9F1
+	.row
+		padding-bottom: 30px
+		&:last-child
+			padding-bottom: 0
+	.i-gift
+		left: 5px
+	.i-prize,
+	.i-house-big
+		left: -5px
+	.i-time
+		left: -10px
+	.i-cup-big
+		left: -2.5px
+
+.month
+	margin-bottom: 25px
+	&:last-child
+		margin-bottom: 45px
+	&__ttl
+		font-size: 32px
+		color: #75726e
+		text-align: center
+		line-height: 1
+		+asbold
+	&__list
+		margin-top: 32px
+		font-size: 16px
+		color: #4a485b
+		+asbold
+	&__li
+		padding-bottom: 18px
+		a
+			text-decoration: underline
+			color: #42b0ef
+			+asblack
+			&:hover
+				color: #e478a5
+
+//not found
+.not-found
+	position: relative
+	padding: 55px 0 35px
+	text-align: center
+	&__link
+		position: absolute
+		top: 20px
+		right: 62px
+		font-size: 16px
+		a
+			text-decoration: underline
+			color: #42b0ef
+			&:hover
+				text-decoration: none
+		&:before
+			content: ""
+			position: absolute
+			top: 100%
+			left: -50px
+			margin-top: 13px
+			+s(line)
+
+// calendar
+.i
+	&.i-flag-big
+		+s(flag-big)
+
+.social
+	&.is-small
+		text-align: left
+		.social__box
+			margin-right: 28px

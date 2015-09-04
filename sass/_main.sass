@@ -15,6 +15,10 @@ body
 		height: 445px
 		clear: both
 		width: 100%
+	&.no-margin
+		margin-bottom: 0
+		&:after
+			display: none
 
 .header
 	background: #0c112d
@@ -22,6 +26,28 @@ body
 	font-size: 0
 	position: relative
 	z-index: 1000
+	&.is-dark-bg
+		background-image: url(img/bg.jpg)
+		-webkit-background-size: cover
+		-o-background-size: cover
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		.search__input
+			background: none
+			border-color: #3c3a39
+			color: #5b5b58
+			+placeholder-color(#5b5b58)
+		.search__btn
+			+s(search-btn-grey)
+		.nav a,
+		.vip-gifts__place,
+		.header__right .link-dotted,
+		.header__right .header__schedule
+			color: #939392
+		.vip-gifts__place
+			&:hover
+				color: #23527c
 	&__left
 		float: left
 		width: 940px
@@ -319,6 +345,9 @@ body
 		bottom: 100%
 		right: -1px
 		margin: 0 0 2px
+	&.is-vip
+		span
+			left: 115px
 
 .vip-gifts
 	display: inline-block
@@ -381,6 +410,12 @@ body
 		content: "" 
 		width: 100%
 		height: 0
+	&.is-txt-white
+		> .menu__item
+			.menu__link
+				color: #FFF
+				&:before
+					+s(menu-arr-brown)
 	a
 		text-decoration: none
 	&__item
@@ -496,6 +531,14 @@ body
 		margin: 0 0 4px
 	&:after
 		margin: 0
+	&.is-brown-bg
+		&:before,
+		&:after
+			background-color: #756c5f
+		i
+			&:before,
+			&:after
+				background-color: #756c5f
 
 .basket
 	float: right
@@ -893,6 +936,22 @@ body
 	background: #2e3146
 	padding: 35px 0 30px
 	font-size: 0
+	&.is-dark-bg
+		background-image: url(img/bg.jpg)
+		-webkit-background-size: cover
+		-o-background-size: cover
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		.footer__schedule
+			color: #939392
+		.search__input
+			background: none
+			border-color: #3c3a39
+			color: #5b5b58
+			+placeholder-color(#5b5b58)
+		.search__btn
+			+s(search-btn-grey)
 	&__top
 		border-bottom: 1px dashed #494b5c
 		+clr
@@ -1683,6 +1742,17 @@ body
 	font-size: 0
 	position: relative
 	text-align: center
+	&.is-fixed
+		position: fixed
+		left: 75px
+		bottom: 20px
+		z-index: 700
+		visibility: hidden
+		opacity: 0
+		+tr(0.25s)
+	&.is-active
+		visibility: visible
+		opacity: 1
 	&__inner
 		position: relative
 		display: inline-block
@@ -1727,6 +1797,20 @@ body
 
 .items
 	padding: 20px 0 0
+	&.is-mod
+		padding-top: 25px
+		border-top: 1px dashed #d8d8d2
+		.items__top
+			margin-bottom: 0
+		.btn-all
+			margin: 6px 0 0
+		.title-h1
+			margin: 0
+			text-align: center
+		.items__pages
+			margin-top: 6px
+			span
+				color: #4a495b
 	&__top
 		margin-bottom: 10px
 	.btn-all
@@ -1793,6 +1877,13 @@ body
 	&:before
 		width: 10px
 		opacity: 1
+	&.is-quarter
+		height: 293px
+		.item__img
+			width: 280px
+			height: 225px
+		.item__text
+			max-height: 42px
 	.badge-mod
 		position: absolute
 		right: -10px
@@ -1846,6 +1937,10 @@ body
 		text-align: center
 		max-height: 32px
 		overflow: hidden
+		&.is-mod
+			font-size: 18px
+			color: #4a485b
+			+asbold
 	&-ico
 		position: absolute
 		top: 10px
@@ -1868,6 +1963,15 @@ body
 	position: relative
 	padding: 20px 0 19px
 	border-bottom: 1px dashed #d8d8d2
+	&.is-dark
+		.i-rb-delivery
+			+s(round-delivery-dark)
+		.i-rb-room
+			+s(r-room-dark)
+		.i-rb-money
+			+s(money-back-dark)
+		.i-rb-mouse
+			+s(r-mouse-dark)
 	.btn-close
 		position: absolute
 		top: 33px
@@ -2827,6 +2931,12 @@ body
 		display: inline-block
 		content: ""
 		width: 100%
+	&.no-border
+		border: none
+	&.no-margin
+		margin: 0
+	&.no-pad
+		padding: 0
 	&__box, &__web, &__number
 		display: inline-block
 		vertical-align: top
@@ -2928,6 +3038,9 @@ body
 
 .holidays
 	padding: 10px 0 20px
+	&.is-border
+		padding-top: 32px
+		border-top: 1px dashed #d8d8d2
 	&__box
 		position: relative
 		padding: 0 0 15px

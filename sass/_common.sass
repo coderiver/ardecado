@@ -127,6 +127,17 @@ h1, .title-h1
 		color: #312b26
 	&.is-red
 		color: #f57676
+	&.is-orange
+		color: #ff670c
+		.i-star
+			padding-left: 24px
+	&.is-red
+		.i-star
+			padding-left: 15px
+	&.s-b-margin
+		margin-bottom: 10px
+	&.no-margin
+		margin: 0
 
 h2, .title-h2
 	font-size: 44px
@@ -165,10 +176,16 @@ i
 *
 	outline: none !important
 .text
-
+	&.no-pad
+		padding: 0
+	&.s-margin
+		p
+			margin: 10px 0
 	p
 		line-height: 20px
 		margin: 20px 0
+		&.txt-brown
+			color: #706153
 
 	p, ul, ol
 		&.arial-14
@@ -712,6 +729,14 @@ i
 	+asbold
 	position: relative
 	padding: 5px 0 5px 50px
+	&.is-gift
+		color: #878787
+	&.is-jubilee
+		color: #e47479
+	&.is-house
+		color: #748055
+	&.is-memory
+		color: #75726e
 	.i
 		position: absolute
 		top: 50%
