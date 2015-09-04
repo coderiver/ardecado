@@ -620,7 +620,7 @@ head.ready(function() {
 			$('.js-search-block').removeClass('is-active');
 			$('body').removeClass('is-search');
 		});
-		$('.container').click(function(event) {
+		$('.js-search-block .container').click(function(event) {
 			event.stopPropagation();
 		});
 	});
