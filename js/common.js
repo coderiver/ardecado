@@ -633,5 +633,20 @@ head.ready(function() {
 			}
 		}
 	});
+
+	$('.js-month-carousel').slick({
+		dots: false,
+		//variableWidth: true,
+		infinite: true,
+		centerMode: true,
+		slidesToScroll: 1,
+		focusOnSelect: true,
+		slidesToShow: 5,
+		initialSlide: 4,
+		accessibility: true,
+		speed: 300,
+		swipe: false,
+		centerPadding: '100px'
+	});
 });
 

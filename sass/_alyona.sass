@@ -329,3 +329,72 @@
 		text-align: left
 		.social__box
 			margin-right: 28px
+		.social__btn
+			&:before
+				display: none
+			&.is-fb
+				+s(p-fbh)
+			&.is-vk
+				+s(p-vkh)
+			&.is-tw
+				+s(p-twh)
+			&.is-od
+				+s(p-okh)
+		.social__number
+			padding: 6px 0
+			+s(soc-number-small)
+
+.month-carousel
+	position: relative
+	margin: 0 0 35px
+	&__slide
+		position: relative
+		max-width: 350px
+		padding: 10px 25px
+		font-size: 30px
+		text-align: center
+		text-decoration: underline
+		color: #42b0ef
+		line-height: 1
+		height: 80px
+		cursor: pointer
+		+asblack
+	&__info
+		display: none
+		margin-top: 10px
+		color: #4a485b
+		font-size: 14px
+		opacity: 0
+		visibility: hidden
+		+asbold
+	.slick-next
+		right: 0
+		margin-top: -28px
+		+s(hot-right)
+		&:before
+			content: ""
+	.slick-prev
+		left: 0
+		margin-top: -28px
+		+s(hot-left)
+		&:before
+			content: ""
+	.slick-center
+		font-size: 52px
+		color: #4a485b
+		border: none
+		text-align: center
+		text-decoration: none
+		+transition(width 0.5s)
+		&:before
+			opacity: 0
+		.month-carousel__info
+			display: block
+			opacity: 1
+			visibility: visible
+		.month-carousel__inside
+			position: absolute
+			top: 0
+			bottom: 0
+			left: -30px
+			right: -30px
