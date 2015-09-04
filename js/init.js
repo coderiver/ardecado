@@ -9,5 +9,6 @@ head.load("js/lib/jquery.js",
 					"js/lib/jquery.tooltipster.min.js",
 					"js/lib/fancybox.min.js",
 					"js/ui.js",
+					"js/filters.js",
 					"js/order.js",
 					"js/common.js");

@@ -181,28 +181,27 @@ h1,
 .catalog
 	margin-bottom: 20px
 	&__divider
+		position: relative
 		text-align: center
 		overflow: hidden
 		+semi
 		span
-			position: relative
+			display: inline-block
 			padding: 0 20px
 			font-size: 13px
 			color: #a5a29f
+			background: #ecece4 
 			&.no-pad
 				padding: 0 0.5px
-			&:before,
 			&:after
 				content: ""
 				position: absolute
-				width: 5000px
+				left: 0
+				right: 0
 				top: 50%
 				height: 1px
 				border-bottom: 1px dashed #d8d8d2
-			&:before
-				left: 100%
-			&:after
-				right: 100%
+				z-index: -1 
 
 	.row
 		padding: 15px 0
