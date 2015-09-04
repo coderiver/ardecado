@@ -3363,12 +3363,15 @@ body
 			
 .about
 	&__text
+		padding: 20px 0 60px 
 		li, p
 			font-size: 14px
 			color: #4a485b
 		p
 			+reg
 			line-height: 1.2
+		p, ul, ol
+			padding: 8px 0 
 		li
 			+semi
 			line-height: 24px
@@ -3488,6 +3491,22 @@ body
 	&__add
 		padding: 0 0 35px
 		text-align: center
+		.is-label
+			font-size: 13px
+			color: #8e8e8e
+			+semi
+			small
+				display: inline-block
+				position: relative	
+	&__delete
+		padding: 0 13px 0 0
+		i 
+			+s(file-delete)
+			position: absolute
+			top: 50%
+			right: 0
+			margin-top: -5px
+			cursor: pointer
 	&__file
 		position: relative
 		display: inline-block
@@ -3495,18 +3514,13 @@ body
 		cursor: pointer
 		input
 			display: none
-		span, small
-			display: block
 		span
+			display: block
 			color: #42b0ef
 			font-size: 20px
 			text-decoration: underline
 			+asblack
 			padding: 0 0 2px 
-		small
-			font-size: 13px
-			color: #8e8e8e
-			+semi
 	&__btn
 		text-align: center
 		.btn-order
@@ -3543,5 +3557,3 @@ body
 	+semi
 	font-size: 13px
 	color: #8c917b
-	
-	
