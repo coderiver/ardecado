@@ -1809,6 +1809,8 @@ body.is-search { overflow: hidden; }
 
 .text-field__amount { float: right; font-family: "ProximaNova Semibold", Arial, sans-serif; font-size: 13px; color: #8c917b; }
 
+.cards__inner { margin: 0 auto; }
+
 .filters .row { padding: 0 0 15px; }
 .filters .row:first-child { padding: 15px 0 5px; }
 .filters .filters__title { font-family: "ALSSchlangesans Bold", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #7c7c75; font-size: 16px; white-space: nowrap; }
