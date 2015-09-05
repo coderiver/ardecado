@@ -398,3 +398,66 @@
 			bottom: 0
 			left: -30px
 			right: -30px
+
+.sheet-list
+	margin-bottom: 50px
+
+.sheet
+	position: relative
+	text-align: center
+	height: 200px
+	background: #F8F8F5 url('img/icons/calendar-top.png') top center repeat-x
+	border: 5px solid #f9f9f6
+	border-top: none
+	cursor: pointer
+	box-shadow: 0px 5px 5px 0px #e1e1dd
+	&:after
+		content: ""
+		position: absolute
+		top: 5px
+		left: -5px
+		right: -8px
+		bottom: -14px
+		background: #F8F8F5
+		border: 5px solid #f9f9f6
+		box-shadow: 0px 5px 5px 0px #e1e1dd
+		z-index: -1
+		+transform(rotateZ(0.5deg))
+	&.is-current
+		.title-h1
+			position: relative
+			&:before
+				content: ""
+				position: absolute
+				top: -17px
+				left: 50%
+				margin-left: -64px
+				z-index: -1
+				+s(calendar-all)
+	&.is-rotate
+		&:after
+			+transform(rotateZ(-0.5deg))
+	&__in
+		position: relative
+		padding: 33px 15px 0
+		z-index: 1
+	&__date
+		margin-bottom: 2px
+		font-size: 12px
+		color: #A7A7A7
+		+reg
+	&__txt
+		height: 46px
+		margin-bottom: 5px
+		font-size: 18px
+		color: #535353
+		line-height: 1.3
+		overflow: hidden
+		+asbold
+	&__link
+		text-decoration: underline
+		font-size: 18px
+		color: #42B0EF
+		+asbold
+	.txt-up
+		text-transform: uppercase
