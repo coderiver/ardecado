@@ -115,6 +115,7 @@ h1, h2, h3, h4, h5, h6, b, strong, label
 	font-weight: normal
 h1, h2, h3, h4, h5, h6, .title-h1, .title-h2, .title-h3, .title-h4, .title-h5, .title-h6
 	margin: 20px 0
+	display: block
 h1, .title-h1
 	font-size: 48px
 	+asblack
@@ -444,6 +445,45 @@ i
 	&:hover, &:active, &:focus
 		text-decoration: none
 		color: #fff
+
+.btn-buy
+	display: inline-block
+	vertical-align: top
+	padding: 5px 20px 5px 41px 
+	background-color: #87ca62
+	color: white
+	font-size: 18px
+	line-height: 19px
+	+asblack
+	border-radius: 4px
+	position: relative
+	&:hover
+		background: #c9e4ba
+	&:active
+		background: #58911b 
+	&:before
+		content: ""
+		+s(small-basket)
+		position: absolute
+		left: 13px
+		top: 50%
+		margin-top: -9px
+		
+.btn-pay
+	display: inline-block
+	vertical-align: top
+	padding: 12px 25px 12px 25px 
+	background-color: #87ca62
+	color: white
+	font-size: 24px
+	line-height: 1
+	+asblack
+	border-radius: 5px
+	position: relative
+	&:hover
+		background: #c9e4ba
+	&:active
+		background: #58911b 
 
 .btn-play
 	color: #FFF
@@ -1030,3 +1070,9 @@ i
 		+s(money-back)
 	&.i-rb-mouse
 		+s(r-mouse)
+	&.i-yellow-check
+		+s(checked-yellow)
+	&.i-purple-dollar
+		+s(dollar-purple)
+	&.i-green-percent
+		+s(percent-green)

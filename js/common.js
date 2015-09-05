@@ -204,6 +204,9 @@ head.ready(function() {
 			prev = $(this).find('.js-carousel-prev'),
 			next = $(this).find('.js-carousel-next');
 
+		if ($(this).hasClass('js-carousel-big')) {
+			index = 3;
+		};
 		slider.on('init', function(event, slick) {
 			$(this).addClass('is-loaded');
 		});
@@ -211,8 +214,8 @@ head.ready(function() {
 		slider.slick({
 			dots: false,
 			arrows: false,
-			slidesToShow: 6,
-			slidesToScroll: 6
+			slidesToShow: index,
+			slidesToScroll: index
 		});
 
 		var slide = slider.find('.slick-slide').length,
@@ -225,11 +228,18 @@ head.ready(function() {
 
 		// slide change event
 		slider.on('afterChange', function(event, slick, currentSlide) {
-			index = currentSlide;
+			indexChange = currentSlide;
 
-			index = index + 6;
+			indexChange = indexChange + index;
 
-			counter.text(index);
+			totalChange = slide - cloneSlide;
+
+			if (indexChange > totalChange) {
+				counter.text(totalChange);
+			}
+			else {
+				counter.text(indexChange);
+			};			
 		});
 
 		// navigation
@@ -242,59 +252,6 @@ head.ready(function() {
 		});
 
 	});
-
-	$('.js-big-parent').each(function() {
-		var slider = $(this).find('.js-big'),
-			index = 3,
-			counter = $(this).find('.js-big-current'),
-			totalBox = $(this).find('.js-big-total'),
-			prev = $(this).find('.js-big-prev'),
-			next = $(this).find('.js-big-next');
-
-		slider.on('init', function(event, slick) {
-			$(this).addClass('is-loaded');
-		});
-
-		slider.slick({
-			dots: false,
-			arrows: false,
-			slidesToShow: 3,
-			slidesToScroll: 3
-		});
-
-		var slide = slider.find('.slick-slide').length,
-			cloneSlide = slider.find('.slick-cloned').length;
-
-		total = slide -	cloneSlide;
-
-		totalBox.text(total);
-		counter.text(index);
-
-		// slide change event
-		slider.on('afterChange', function(event, slick, currentSlide) {
-			index = currentSlide;
-
-			index = index + 3;
-
-			counter.text(index);
-		});
-
-		// navigation
-		prev.on('click', function() {
-			slider.slick('slickPrev');
-		});
-
-		next.on('click', function() {
-			slider.slick('slickNext');
-		});
-
-	});
-
-	// select
-	// $('.select').selectFix({
-	// 	'container-max-height': 200,
-	// 	'arrow': true
-	// });
 
 	$('.js-slider').slick({
 		fade: true,
@@ -648,5 +605,7 @@ head.ready(function() {
 		swipe: false,
 		centerPadding: '100px'
 	});
+
+	
 });
 

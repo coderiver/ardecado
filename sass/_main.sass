@@ -3689,7 +3689,7 @@ body
 		position: relative
 		img
 			max-width: 100%
-	&__take
+	&-take
 		position: absolute
 		top: 14px
 		right: 34px
@@ -3733,6 +3733,234 @@ body
 				+asblack
 				color: #4a485b
 	&__form
-		padding: 0 75px 
-
-		
+		padding: 30px 75px 37px 
+		position: relative
+		background-color: #f2f2f2
+		border-radius: 13px
+		text-align: center
+		p
+			color: #4a485b
+			font-size: 24px
+			+asbold
+			margin-bottom: 15px
+	&-faq
+		position: absolute
+		width: 139px
+		height: 139px
+		background-color: #ffad7b
+		top: -17px
+		right: -82px
+		border-radius: 50%
+		font-size: 24px
+		color: #fff
+		+asblack
+		text-decoration: none
+		padding: 33px 20px 
+		text-align: center 
+		&:hover, &:active, &:focus
+			color: #fff
+			text-decoration: none 
+		span
+			border-bottom: 1px dotted #fff 
+	&__field
+		font-size: 0
+		padding: 16px 0
+		&.is-border
+			border-top: 1px dashed #dcdcda 
+			border-bottom: 1px dashed #dcdcda 
+	&__check
+		width: 300px
+		display: inline-block
+		vertical-align: middle
+		text-align: left
+	&__amount
+		width: 90px
+		display: inline-block
+		vertical-align: middle
+		.text-field__block
+			width: 53px
+			display: inline-block
+			vertical-align: middle
+		span
+			font-size: 18px
+			color: #4a485b
+			+asbold
+			display: inline-block
+			vertical-align: middle
+			padding: 0 0 0 10px 
+	.text-field__block
+		+g(#e4e4e2, #d5d5d0)
+		padding: 2px
+		border-radius: 2px 
+		input
+			+g( #fdfdfd, #fafafa)
+			width: 100%
+			height: 28px
+			padding: 0 10px
+			text-align: center
+			color: #4a485b
+			font-size: 18px
+			+asbold  
+	&__result
+		padding: 20px 0 0 
+		h6, .title-h6
+			margin: 0 0 7px 
+		small
+			display: block
+			font-size: 13px
+			color: #696969 
+			margin-bottom: 25px
+		.btn-order
+			width: auto
+	&__order
+		text-align: center
+		padding: 20px 0 45px
+		.title-h1
+			display: block
+			margin: 0 0 30px 
+	&__icons
+		font-size: 0
+		li
+			display: inline-block
+			vertical-align: top
+			width: 180px
+			margin: 0 60px
+			font-size: 16px
+			line-height: 19px
+			+asbold
+			text-align: left
+			padding: 0 0 0 70px 
+			position: relative
+			&.is-yellow
+				color: #80704e
+			&.is-purple
+				color: #4e4f73
+			&.is-green
+				color: #687642
+			.i
+				position: absolute
+				top: 0
+				left: 0
+				&.i-yellow-check
+					top: -5px
+	&-link
+		text-align: center
+		padding: 37px 0 33px 
+		a
+			line-height: 18px
+			text-decoration: underline
+			font-size: 18px
+			color: #42b0ef
+			&:hover
+				text-decoration: none
+	&__payment
+		margin-bottom: 70px
+		&-inner
+			background-color: #e4ebcc
+			border: 16px solid white
+			border-radius: 13px
+			box-shadow: 0 5px 49px rgba(0, 0, 0, 0.17)
+			text-align: center
+			padding: 0 0 35px 
+		.payment 
+			text-align: left
+			&__col
+				&.is-right
+					float: right
+		.delivery__payment
+			margin-bottom: 25px
+.checkbox-dark
+	display: inline-block
+	position: relative
+	padding: 0 0 0 33px 
+	cursor: pointer
+	input
+		display: none
+		&:checked + span
+			&:before
+				background-color: #4a485b				
+			&:after
+				opacity: 1
+				visibility: visible
+	span
+		font-size: 18px
+		color: #4a485b
+		+asbold
+		line-height: 1.2
+		display: block
+		&:before, &:after
+			position: absolute
+			content: "" 
+		&:before
+			top: 0
+			left: 0
+			width: 18px
+			height: 18px
+			border-radius: 2px
+			background-color: #f2f2f2
+			box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.15)
+			+transition(all 0.2s)
+		&:after
+			top: 4px
+			left: 3px
+			+svg(check-white, 12, 10)
+			opacity: 0
+			visibility: hidden
+			+transition(all 0.2s)
+			
+.card
+	text-align: center
+	padding: 20px 0  
+	&__info
+		padding: 19px
+		height: 175px
+		background: url(img/card-bg.png) no-repeat center center 
+		border-radius: 13px
+		margin-bottom: 15px
+		img
+			margin-bottom: 5px
+		p
+			font-size: 18px
+			color: #fffbf6
+			line-height: 1
+			+asblack
+			text-shadow: 1px 1px 0px rgba(28, 22, 15, 0.23)
+			margin-bottom: 20px
+	&__price
+		font-size: 24px
+		+var
+		color: #fff
+		line-height: 1
+		padding: 10px 10px 4px
+		border-radius: 5px  
+		display: inline-block
+		&.is-gold
+			background-color: #f7a328
+		&.is-blue
+			background-color: #98d1b3
+			color: #572864
+		&.is-white
+			background-color: #fadfb7
+			color: #eb186c
+		&.is-brown
+			background-color: #ac2462
+			color: #fadfb7
+		&.is-red
+			background-color: #f81d5e
+			color: #fab857
+		&.is-white-mod
+			background-color: #fadfb7
+			color: #572864
+		&.is-orange
+			background-color: #fa6357
+			color: #fffbf6
+		&.is-purple
+			background-color: #572864
+			color: #fffbf6
+	small
+		display: block
+		color: #716d6d
+		font-size: 14px
+		+asbold
+		line-height: 1
+		margin-bottom: 15px
