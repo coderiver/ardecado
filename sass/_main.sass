@@ -3237,7 +3237,7 @@ body
 			right: 0
 			margin-top: -2px
 			+s(lil-white-down)
-.m-profile-drop
+.m-profile-drop, .profile-drop
 	position: absolute
 	top: 100%
 	left: 50%
@@ -3653,20 +3653,21 @@ body
 			color: #4a485b
 		input, textarea
 			+g( #fdfdfd, #fafafa)
-	.text-field_phone
-		padding: 0 0 0 20px
-		position: relative
 	.text-field_mail
 		max-width: 205px
-	.phone-field
-		&__label
-			position: absolute
-			bottom: 0
-			left: 0
-			line-height: 42px
-			font-size: 24px
-			color: #9a9a9a
-			+asbold
+
+.text-field_phone
+	padding: 0 0 0 20px
+	position: relative
+.phone-field
+	&__label
+		position: absolute
+		bottom: 0
+		left: 0
+		line-height: 42px
+		font-size: 24px
+		color: #9a9a9a
+		+asbold
 .text-field__amount
 	float: right
 	+semi
@@ -3783,6 +3784,18 @@ body
 			width: 53px
 			display: inline-block
 			vertical-align: middle
+			+g(#e4e4e2, #d5d5d0)
+			padding: 2px
+			border-radius: 2px
+			input
+				+g( #fdfdfd, #fafafa)
+				width: 100%
+				height: 28px
+				padding: 0 10px
+				text-align: center
+				color: #4a485b
+				font-size: 18px
+				+asbold
 		span
 			font-size: 18px
 			color: #4a485b
@@ -3790,19 +3803,6 @@ body
 			display: inline-block
 			vertical-align: middle
 			padding: 0 0 0 10px
-	.text-field__block
-		+g(#e4e4e2, #d5d5d0)
-		padding: 2px
-		border-radius: 2px
-		input
-			+g( #fdfdfd, #fafafa)
-			width: 100%
-			height: 28px
-			padding: 0 10px
-			text-align: center
-			color: #4a485b
-			font-size: 18px
-			+asbold
 	&__result
 		padding: 20px 0 0
 		h6, .title-h6
@@ -3853,6 +3853,7 @@ body
 			text-decoration: underline
 			font-size: 18px
 			color: #42b0ef
+			+asbold
 			&:hover
 				text-decoration: none
 	&__payment
@@ -3970,3 +3971,210 @@ body
 		line-height: 1
 		margin-bottom: 15px
 
+.form-electro
+	padding: 45px 60px 37px
+	margin: 0 0 40px 
+	position: relative
+	background-color: #f2f2f2
+	border-radius: 13px
+	text-align: center
+	.text-field
+		p
+			color: #696969 
+	.text-field_mb
+		padding: 0 0 25px 
+	.text-field__block
+		+g(#e4e4e2, #d5d5d0)
+		textarea
+			width: 100%
+			padding: 7px 10px
+			border: none
+			font-size: 18px
+			+asbold
+			resize: none
+			height: 174px
+			color: #4a485b
+			display: block
+		input, textarea
+			+g( #fdfdfd, #fafafa)
+			font-size: 24px
+			+placeholder
+				line-height: 1.4
+	.phone-field__label
+		line-height: 46px 
+	&__row
+		+clr
+		text-align: left
+	&__col
+		width: 50%
+		float: left
+		padding: 0 25px 25px
+		small
+			font-size: 11px
+			color: #696969 
+			+reg
+			display: block
+			padding: 10px 0 0 
+	&__message
+		padding: 0 0 19px 
+		p
+			color: #ff1616
+			+reg
+			font-size: 14px
+			line-height: 13px
+			margin-bottom: 25px
+	&__check
+		text-align: center
+		.card-checbox
+			margin: 0 0 3px 
+		a
+			line-height: 18px
+			text-decoration: underline
+			font-size: 18px
+			color: #42b0ef
+			+asbold
+			&:hover
+				text-decoration: none
+		
+.card-checkbox
+	position: relative
+	display: inline-block
+	text-align: left
+	margin-bottom: 5px
+	input
+		position: absolute
+		opacity: 0
+	span
+		position: relative
+		+semi
+		padding-left: 20px
+		font-size: 12px
+		color: #858490
+		&:before
+			content: ""
+			position: absolute
+			top: 1px
+			left: 0
+			width: 12px
+			height: 12px
+			border-radius: 2px
+			border: 1px solid #ceced4
+		&:after
+			content: ""
+			position: absolute
+			top: 2px
+			left: 1px
+			+s(checkbox-small)
+			display: none
+	input:checked + span
+		&:after
+			display: block	
+			
+.field-date
+	&__radio
+		text-align: justify
+		font-size: 0.1px
+		padding: 0 0 18px 
+		&:after
+			content: "" 
+			display: inline-block
+			width: 100%
+		.radio
+			display: inline-block
+			vertical-align: top
+	&__selects
+		text-align: justify
+		font-size: 0.1px
+		&:after
+			content: "" 
+			display: inline-block
+			width: 100%
+	&__day, &__month, &__year
+		display: inline-block
+		vertical-align: top
+	&__day
+		width: 67px
+	&__month
+		width: 113px
+	&__year
+		width: 78px
+	.ms-choice
+		+g( #fdfdfd, #fafafa)
+	.ms-choice > span
+		padding-left: 9px
+		right: 20px
+	.ms-choice > div
+		margin-top: -3px
+	.radio+.radio, .checkbox+.checkbox
+		margin: 0
+	.ms-drop ul > li label
+		padding-left: 9px
+	.ms-drop ul > li.selected label:before
+		display: none
+.radio_in
+	margin: 0
+	input
+		&:checked + span
+			+semi
+			&:after
+				display: block
+			&:before
+				border: none
+		+ span
+			font-size: 13px
+			color: dimgrey
+			+reg
+			&:before
+				top: 1px
+			&:after
+				content: "" 
+				position: absolute
+				width: 6px
+				height: 6px
+				background-color: #565466
+				top: 5px
+				left: -19px
+				display: none
+				border-radius: 50%
+			
+
+.c-faq
+	text-align: center
+	max-width: 880px
+	margin: 0 auto 
+	padding: 15px 0 50px 
+	&__title
+		color: #4a485b
+		font-size: 36px
+		+asblack
+		line-height: 1
+		display: block
+		margin-bottom: 35px
+	&__question
+		padding: 0 0 10px 
+	&__link
+		color: #42b0ef
+		font-size: 24px
+		line-height: 1
+		display: inline-block
+		+asblack
+		text-decoration: none
+		&.is-active, &:hover, &:focus
+			color: #42b0ef
+			text-decoration: none
+			span
+				border-bottom: 1px dashed transparent
+		span
+			border-bottom: 1px dashed #42b0ef
+			display: inline-block
+	&__text
+		padding: 10px 0 0 
+		display: none
+		p
+			color: #727272
+			font-size: 18px
+			line-height: 20px
+			+asbold
+			padding: 10px 0 
+			
+			

@@ -606,6 +606,19 @@ head.ready(function() {
 		centerPadding: '100px'
 	});
 
+	$('.js-accordion-link').click(function() {
+		if ($(this).hasClass('is-active')) {
+			$('.js-accordion-link').removeClass('is-active');
+			$('.js-accordion-block').slideUp('fast');
+		}
+		else {
+			$('.js-accordion-link').removeClass('is-active');
+			$(this).addClass('is-active');
+			$('.js-accordion-block').slideUp('fast');
+			$(this).parents('.js-accordion').find('.js-accordion-block').slideDown('fast');
+		};
+		return false;
+	});
 	
 });
 
