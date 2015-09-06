@@ -2470,4 +2470,8 @@ body.is-search { overflow: hidden; }
 .indicator:before { content: ""; position: absolute; top: 0; left: 0; background: url('img/icons-s7c70e4adfc.png') 0 -2903px no-repeat; width: 22px; height: 17px; }
 .indicator.is-passed:before { background: url('img/icons-s7c70e4adfc.png') 0 -2876px no-repeat; width: 22px; height: 17px; }
 
+.no-favorites { padding: 75px 0 250px; text-align: center; }
+.no-favorites .title-h1 { color: #4a485b; }
+.no-favorites img { margin-bottom: 50px; }
+
 /*# sourceMappingURL=screen.css.map */
