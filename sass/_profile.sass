@@ -1,1 +1,174 @@
 // profile pages styles
+.profile
+    .profile__topper
+        text-align: center
+        margin-bottom: 25px
+    .profile__header
+        position: relative
+        display: inline-block
+        h1
+            margin-bottom: 10px
+            .i
+                margin-right: 18px
+    .profile__icon
+        position: absolute
+        top: 0
+        left: 100%            
+    .profile__state
+        +asbold
+        font-size: 18px
+        color: #72726b
+        strong
+            +asblack
+            color: #4a485b
+.money
+    display: inline-block
+    vertical-align: middle
+    padding: 0 5px
+    border-radius: 4px
+    background: #fffdcc
+    +asblack
+    color: #42b0ef
+          
+.profile-tabs
+    .profile-tabs__nav 
+        +justify
+    .profile-tabs__link
+        position: relative
+        display: inline-block
+        line-height: normal 
+        margin: 0 5px  
+        height: 46px
+        padding: 10px 15px
+        background: #f8f8f7
+        border-radius: 5px 5px 0 0
+        &:before
+            content: ""
+            position: absolute
+            top: 0
+            left: -11px
+            +arr(11, 46, #f8f8f7, br)
+        &:after
+            content: ""
+            position: absolute
+            top: 0
+            right: -11px
+            +arr(11, 46, #f8f8f7, bl)    
+        span
+            display: inline-block
+            font-size: 22px
+            +asblack
+            color: #42b0ef   
+        &:hover
+            text-decoration: none
+        &.is-active
+            padding: 15px 
+            height: 55px
+            background: #fbfbfa 
+            &:before
+                content: ""
+                position: absolute
+                top: 0
+                left: -13px
+                +arr(13, 55, #fbfbfa, br)
+            &:after
+                content: ""
+                position: absolute
+                top: 0
+                right: -13px
+                +arr(13, 55, #fbfbfa, bl) 
+            span
+                font-size: 24px
+                color: #4a485b
+.profile-box
+    max-width: 1280px
+    margin: -2px auto 68px
+    border-radius: 8px
+    padding: 30px 34px 
+    background: #f3f3f3
+    border: 16px solid #fbfbfa
+    box-shadow: 0 5px 49px rgba(0, 0, 0, 0.17)                    
+
+.bonus
+    .bonus__topper
+        margin-bottom: 25px
+        text-align: center
+    h6
+        margin-bottom: 10px
+        text-align: left
+        .money
+            color: #4a485b
+    .bonus__more
+        +semi
+        font-size: 14px
+        color: #4eb5f0 
+    .bonus__plus, .bonus__minus
+        color: #71b44c
+        +bold
+        font-size: 16px
+    .bonus__minus
+        color: #ec7474               
+.operations
+    width: 100%
+    table-layout: fixed
+    background: #f9f9f9 
+    thead
+        background: #ededed 
+        td
+            height: 40px
+            padding: 0 15px 
+            font-size: 18px
+            +asbold
+            color: #4a485b
+            text-align: center
+            vertical-align: middle
+            &:first-child
+                width: 45%   
+                text-align: left
+            a
+                color: #4a485b
+                span, i
+                    vertical-align: middle
+    tbody
+        td
+            vertical-align: middle
+            text-align: center
+            +semi
+            padding: 10px 15px 
+            font-size: 14px
+            color: #535454    
+            &:first-child
+                text-align: left
+.date
+    font-size: 14px
+    color: #828282
+    +semi 
+.gk-activate
+    padding: 25px 0 
+    background: #f9f9f9
+    text-align: center
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05)
+    p
+        +semi
+        font-size: 13px
+        color: #8e8e8e
+    .title-h3
+        color: #4a485b                             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
