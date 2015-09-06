@@ -1,5 +1,8 @@
 // profile pages styles
 .profile
+    .text-field
+        .text-field__block
+            +g(#d4d4d0, #e2e2df)
     .profile__topper
         text-align: center
         margin-bottom: 25px
@@ -144,16 +147,57 @@
     color: #828282
     +semi 
 .gk-activate
-    padding: 25px 0 
+    padding: 1px 0 
     background: #f9f9f9
     text-align: center
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.05)
-    p
-        +semi
-        font-size: 13px
-        color: #8e8e8e
+    .gk-activate__block
+        position: relative
+        margin-top: 28px
+        padding-top: 1px
+        & > p
+            margin-bottom: 25px
+            padding: 0 45px 
+            +semi
+            font-size: 13px
+            color: #8e8e8e
+        &:before
+            content: ""
+            position: absolute
+            top: 0
+            left: 45px
+            right: 45px
+            border-bottom: 1px dashed #e5e5e4 
+        &:first-child
+            margin-top: 0 
+            padding-top: 0
+            &:before
+                display: none      
     .title-h3
-        color: #4a485b                             
+        padding: 0 30px 
+        color: #4a485b 
+    .card
+        padding: 0
+    .gk-activate__form
+        .row
+            margin-bottom: 20px    
+    .gk-activate__title
+        color: #382f2f
+        +asbold
+        font-size: 18px 
+.indicator
+    position: absolute
+    top: 11px
+    left: 14px
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        +s(check-mod)
+    &.is-passed
+        &:before
+            +s(check-mod-green)                                        
 
 
 
