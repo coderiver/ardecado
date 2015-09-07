@@ -239,7 +239,7 @@ head.ready(function() {
 			}
 			else {
 				counter.text(indexChange);
-			};			
+			};
 		});
 
 		// navigation
@@ -593,7 +593,6 @@ head.ready(function() {
 
 	$('.js-month-carousel').slick({
 		dots: false,
-		//variableWidth: true,
 		infinite: true,
 		centerMode: true,
 		slidesToScroll: 1,
@@ -619,6 +618,16 @@ head.ready(function() {
 		};
 		return false;
 	});
-	
+
+	var mySwiper = new Swiper ('.swiper-container', {
+		loop: true,
+		nextButton: '.swiper-button-next',
+		prevButton: '.swiper-button-prev',
+		centeredSlides: true,
+		initialSlide: 4,
+		slidesPerView: 'auto',
+		slideToClickedSlide: true
+	})
+
 });
 
