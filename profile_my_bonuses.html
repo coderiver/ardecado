@@ -1223,19 +1223,397 @@
 		<!-- begin container  -->
 		<section class="container">
 
-		<!-- breadcrumbs -->
-		<div class="row breadcrumbs">
-			<div class="col-lg-12 col-xs-12">
-				<ul class="breadcrumbs__list">
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Личный кабинет</a></li>
-				</ul>
+			<!-- breadcrumbs -->
+			<div class="row breadcrumbs">
+				<div class="col-lg-12 col-xs-12">
+					<ul class="breadcrumbs__list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Личный кабинет</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
+		</section>
 
 		<!-- profile -->
-		<div class="profile-wrap">
-			
+		<div class="profile">
+			<div class="profile__topper container">
+				<div class="profile__header">
+					<h1 class="is-gray"><i class="i i-profile-big"></i>Личный кабинет</h1>
+					<div class="profile__state">
+						<p>Ваш код клиента <strong>ADC-145678</strong> и у вас на счету: <span class="money">286 <i class="rub">P</i></span></p>
+					</div>
+					<img class="profile__icon" src="img/lovely.png" alt="">
+				</div>
+			</div>
+			<div class="profile__content">
+				<!-- tabs -->
+				<div class="profile-tabs js-tab-group">
+					<div class="profile-tabs__nav container">
+						<a href="js-tab-1" class="profile-tabs__link js-tab-link"><span>Мои заказы</span></a>
+						<a href="js-tab-2" class="profile-tabs__link js-tab-link"><span>Личная информация</span></a>
+						<a href="js-tab-3" class="profile-tabs__link js-tab-link"><span>Мои бонусы</span></a>
+						<a href="js-tab-4" class="profile-tabs__link is-active js-tab-link"><span>Любимые товары</span></a>
+						<a href="js-tab-5" class="profile-tabs__link js-tab-link"><span>Напоминания и рассылки</span></a>
+					</div>
+					<div class="profile-box">
+						<!-- tab content 1 -->
+						<div class="js-tab-cont js-tab-1" style="display: none;">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias veniam sequi quasi quia nulla necessitatibus mollitia similique cum hic iste odit, magni, placeat recusandae. Autem dolorem aspernatur error corrupti temporibus.
+						</div>
+						<!-- tab content 2 -->
+						<div class="js-tab-cont js-tab-2" style="display: none;">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quaerat, amet reiciendis vel iste hic placeat provident ea unde illum architecto fugit? Quam, sint, velit. Fuga eveniet, dolor sapiente nam?
+						</div>
+						<!-- tab content 3 -->
+						<div class="js-tab-cont js-tab-3" style="display: none;">
+							<div class="row">
+								<div class="col-lg-6 col-xs-6">
+									<div class="bonus">
+										<div class="bonus__topper">
+											<h6>На вашем бонусном счете: <span class="money">2 869 <i class="rub">P</i></span> </h6>
+											<a href="#" class="bonus__more">Узнать подробней о бонусной программе</a>
+										</div>
+										<table class="operations">
+											<thead>
+												<td>Операция</td>
+												<td><a href="#"><span>Дата</span> <i class="i i-menu-arr"></i></a></td>
+												<td>Кол-во бонусов</td>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<p>Начисление за заказ № 143-768</p>
+														<p>сумма 2 500 руб.</p>
+													</td>
+													<td>
+														<div class="date">сегодня</div>
+													</td>
+													<td>
+														<div class="bonus__plus">+ 250 руб</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p>Начисление за заказ № 531-720</p>
+														<p>сумма 1 140 руб.</p>
+													</td>
+													<td>
+														<div class="date">16.04.2015</div>
+													</td>
+													<td>
+														<div class="bonus__plus">+ 1024 руб</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p>Частичная оплата заказа № 892-930</p>
+														<p>суммой 1 140 руб.</p>
+													</td>
+													<td>
+														<div class="date">02.04.2015</div>
+													</td>
+													<td>
+														<div class="bonus__minus">+ 800 руб</div>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p>Бонус за регистрацию на сайте</p>
+													</td>
+													<td>
+														<div class="date">29.03.2015</div>
+													</td>
+													<td>
+														<div class="bonus__plus">+ 1024 руб</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="col-lg-6 col-xs-6">
+									<div class="gk-activate">
+										<div class="gk-activate__block">
+											<h3 class="title-h3">Активация подарочной карты</h3>
+											<p>При активации, сумма номинала карты будет начислена вам на личный счет. После нажатия кнопки "Активировать" баланс будет пополнен мгновенно.</p>
+											<div class="card">
+												<div class="card__info">
+													<img src="img/card-logo.png" alt="">
+													<p>ПОДАРОЧНАЯ КАРТА</p>
+												</div>
+											</div>
+											<div class="gk-activate__form">
+												<div class="row">
+													<div class="col-lg-12 col-xs-12">
+														<div class="gk-activate__title">Введите код активации:</div>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-2 col-xs-2"></div>
+													<div class="col-lg-2 col-xs-2">
+														<div class="text-field">
+															<label class="text-field__block">
+																<input type="text">
+															</label>
+															<span class="error__message">ошибка ввода</span>
+														</div>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<div class="text-field">
+															<label class="text-field__block">
+																<input type="text">
+															</label>
+															<span class="error__message">ошибка ввода</span>
+														</div>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<div class="text-field">
+															<label class="text-field__block">
+																<input type="text">
+															</label>
+															<span class="error__message">ошибка ввода</span>
+														</div>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<div class="text-field">
+															<label class="text-field__block">
+																<input type="text">
+															</label>
+															<span class="error__message">ошибка ввода</span>
+														</div>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<i class="indicator"></i>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-lg-12 col-xs-12">
+														<button class="btn-order">Активировать!</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="gk-activate__block">
+											<h3 class="title-h3">Пригласить друга в бонусную программу!</h3>
+											<p>Вы можете пригласить друга принять участие в бонусной программе Студии Подарка Ар Де Кадо! Если он примет приглашение и зарегистрируется в программе, вы получите призовые бонусы за его первые пять покупок! Приглашайте больше друзей - получайте больше призовых бонусов!</p>
+											<div class="gk-activate__form">
+												<form action="#">
+													<div class="row">
+														<div class="col-lg-2 col-xs-2"></div>
+														<div class="col-lg-8 col-xs-8">
+															<div class="text-field">
+																<p>Имя друга</p>
+																<label class="text-field__block">
+																	<input type="text">
+																</label>
+															</div>
+														</div>
+														<div class="col-lg-2 col-xs-2"></div>
+													</div>
+													<div class="row">
+														<div class="col-lg-2 col-xs-2"></div>
+														<div class="col-lg-8 col-xs-8">
+															<div class="text-field">
+																<p>E-mail друга</p>
+																<label class="text-field__block">
+																	<input type="text">
+																</label>
+															</div>
+														</div>
+														<div class="col-lg-2 col-xs-2"></div>
+													</div>
+													<div class="row">
+														<div class="col-lg-12 col-xs-12">
+															<span class="error__message" style="display: block;">Все поля обязательны для заполнения</span>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-lg-12 col-xs-12">
+															<button class="btn-order">Пригласить!</button>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>	
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- tab content 4 -->
+						<div class="js-tab-cont js-tab-4">
+							<div class="favorites">
+								<div class="favorites__topper row">
+									<div class="col-lg-10 col-xs-10 col-lg-offset-1 col-xs-offset-1">
+										<div class="title-h1">Сейчас у вас <span class="fav-counter">8</span> любимых товаров</div>
+										<p>Добавьте товар в Любимые, если он вам понравился и вы решили приобрести его в ближайшее время. Так вы сэкономите время на поиск данного товара в следующий раз. Если товара нет в наличии,  добавив его в Любимые, вы первым узнаете о его появлении,  мы пришлем уведомление на ваш e-mail. Также мы присылаем уведомления о новых скидках на те товары, которые лежат у вас в Любимых!</p>
+									</div>
+								</div>
+								<div class="favorite__list">
+									<div class="row">
+										<div class="col-lg-3 col-xs-3">
+											<div class="item-big">
+												<div class="item-big__img">
+													<a href="#">
+														<img src="img/item-pillow.png" alt="">
+													</a>
+													<div class="item__btns">
+														<ul>
+															<li><a href="#" class="i i-add-gray"></a></li>
+															<li><a href="#" class="i i-basket-empty"></a></li>
+															<li><a href="#" class="i i-heart"></a></li>
+														</ul>
+														<span class="item__price">820 <i class="rub">Р</i></span>
+													</div>
+												</div>
+												<a href="#" class="item__text">Подушка «Раз овечка, два овечка»</a>
+											</div>
+										</div>
+										<div class="col-lg-3 col-xs-3">
+											<div class="item-big">
+												<div class="item-big__img">
+													<a href="#">
+														<img src="img/item-pillow.png" alt="">
+													</a>
+													<div class="item__btns">
+														<ul>
+															<li><a href="#" class="i i-add-gray"></a></li>
+															<li><a href="#" class="i i-basket-empty"></a></li>
+															<li><a href="#" class="i i-heart"></a></li>
+														</ul>
+														<span class="item__price">820 <i class="rub">Р</i></span>
+													</div>
+												</div>
+												<a href="#" class="item__text">Тапочки «Обращение президента»</a>
+											</div>
+										</div>
+										<div class="col-lg-3 col-xs-3">
+											<div class="item-big">
+												<div class="item-big__img">
+													<a href="#">
+														<img src="img/item-pillow.png" alt="">
+													</a>
+													<div class="item__btns">
+														<ul>
+															<li><a href="#" class="i i-add-gray"></a></li>
+															<li><a href="#" class="i i-basket-empty"></a></li>
+															<li><a href="#" class="i i-heart"></a></li>
+														</ul>
+														<span class="item__price">820 <i class="rub">Р</i></span>
+													</div>
+												</div>
+												<a href="#" class="item__text">Открытка-упаковка Новогодняя Шоколадница</a>
+											</div>
+										</div>
+										<div class="col-lg-3 col-xs-3">
+											<div class="item-big">
+												<div class="item-big__img">
+													<a href="#">
+														<img src="img/item-pillow.png" alt="">
+													</a>
+													<div class="item__btns">
+														<ul>
+															<li><a href="#" class="i i-add-gray"></a></li>
+															<li><a href="#" class="i i-basket-empty"></a></li>
+															<li><a href="#" class="i i-heart"></a></li>
+														</ul>
+														<span class="item__price">820 <i class="rub">Р</i></span>
+													</div>
+												</div>
+												<a href="#" class="item__text">Подушка «Раз овечка, два овечка»</a>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-lg-3 col-xs-3">
+											<div class="item-big">
+												<div class="item-big__img">
+													<a href="#">
+														<img src="img/item-pillow.png" alt="">
+													</a>
+													<div class="item__btns">
+														<ul>
+															<li><a href="#" class="i i-add-gray"></a></li>
+															<li><a href="#" class="i i-basket-empty"></a></li>
+															<li><a href="#" class="i i-heart"></a></li>
+														</ul>
+														<span class="item__price">820 <i class="rub">Р</i></span>
+													</div>
+												</div>
+												<a href="#" class="item__text">Подушка «Раз овечка, два овечка»</a>
+											</div>
+										</div>
+										<div class="col-lg-3 col-xs-3">
+											<div class="item-big">
+												<div class="item-big__img">
+													<a href="#">
+														<img src="img/item-pillow.png" alt="">
+													</a>
+													<div class="item__btns">
+														<ul>
+															<li><a href="#" class="i i-add-gray"></a></li>
+															<li><a href="#" class="i i-basket-empty"></a></li>
+															<li><a href="#" class="i i-heart"></a></li>
+														</ul>
+														<span class="item__price">820 <i class="rub">Р</i></span>
+													</div>
+												</div>
+												<a href="#" class="item__text">Тапочки «Обращение президента»</a>
+											</div>
+										</div>
+										<div class="col-lg-3 col-xs-3">
+											<div class="item-big">
+												<div class="item-big__img">
+													<a href="#">
+														<img src="img/item-pillow.png" alt="">
+													</a>
+													<div class="item__btns">
+														<ul>
+															<li><a href="#" class="i i-add-gray"></a></li>
+															<li><a href="#" class="i i-basket-empty"></a></li>
+															<li><a href="#" class="i i-heart"></a></li>
+														</ul>
+														<span class="item__price">820 <i class="rub">Р</i></span>
+													</div>
+												</div>
+												<a href="#" class="item__text">Открытка-упаковка Новогодняя Шоколадница</a>
+											</div>
+										</div>
+										<div class="col-lg-3 col-xs-3">
+											<div class="item-big">
+												<div class="item-big__img">
+													<a href="#">
+														<img src="img/item-pillow.png" alt="">
+													</a>
+													<div class="item__btns">
+														<ul>
+															<li><a href="#" class="i i-add-gray"></a></li>
+															<li><a href="#" class="i i-basket-empty"></a></li>
+															<li><a href="#" class="i i-heart"></a></li>
+														</ul>
+														<span class="item__price">820 <i class="rub">Р</i></span>
+													</div>
+												</div>
+												<a href="#" class="item__text">Подушка «Раз овечка, два овечка»</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="no-favorites row" style="display: none;">
+									<div class="col-lg-10 col-xs-10 col-lg-offset-1 col-xs-offset-1">
+										<img src="img/favorite.png" alt="">
+										<div class="title-h1">У вас пока нет любимых товаров</div>
+										<p>Добавьте товар в Любимые, если он вам понравился и вы решили приобрести его в ближайшее время. Так вы сэкономите время на поиск данного товара в следующий раз. Если товара нет в наличии,  добавив его в Любимые, вы первым узнаете о его появлении,  мы пришлем уведомление на ваш e-mail. Также мы присылаем уведомления о новых скидках на те товары, которые лежат у вас в Любимых!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- tab content 5 -->
+						<div class="js-tab-cont js-tab-5" style="display: none;">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quaerat, amet reiciendis vel iste hic placeat provident ea unde illum architecto fugit? Quam, sint, velit. Fuga eveniet, dolor sapiente nam?
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 
 	</main>

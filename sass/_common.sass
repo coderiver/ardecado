@@ -74,7 +74,8 @@
 	font-family: "ProximaNova Semibold", Arial, sans-serif
 =bold
 	font-family: "ProximaNova Bold", Arial, sans-serif
-
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
 
 =asblack
 	font-family: "ALSSchlangesans Black", Arial, sans-serif
@@ -860,6 +861,8 @@ i
 		+svg(clock-small, 12, 12)
 	&.i-rub-small
 		+s(rub-small)
+	&.i-menu-arr
+		+s(menu-arr)	
 	&.i-marker-small
 		font-size: 15px
 		color: #42B0EF
@@ -872,6 +875,8 @@ i
 			content: "\e601"
 	&.i-add
 		+s(add)
+	&.i-indicator
+		+s(check-mod)	
 	&.i-refresh-blue, &.i-refresh-pink
 		font-size: 13px
 		&:before
@@ -918,6 +923,8 @@ i
 			content: "\e60a"
 	&.i-profile-small
 		+s(profile)
+	&.i-profile-big
+		+s(profile-dark)	
 	&.i-question
 		+s(question)
 	&.i-print
