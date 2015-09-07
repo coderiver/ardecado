@@ -235,11 +235,6 @@
     z-index: 9   
     
 .personal
-    p
-        margin-bottom: 10px
-        font-size: 13px
-        +semi
-        color: #8e8e8e
     position: relative
     &:before
         content: ""
@@ -250,6 +245,11 @@
         margin-left: -50px
         width: 2px
         background: #eaeaeb
+    p
+        margin-bottom: 10px
+        font-size: 13px
+        +semi
+        color: #8e8e8e
     .btn-order
         font-size: 24px
         width: 100%    
@@ -261,8 +261,8 @@
             border-top: none
             padding-top: 0
     .personal__row
-        margin-bottom: 15px
-    .personal__submit
+        margin-bottom: 25px
+    .personal__center
         text-align: center       
     .personal__salutation          
         text-align: center
@@ -270,10 +270,10 @@
             font-size: 18px
     .personal__divide
         border-bottom: 1px dashed #dadad8   
-        margin-bottom: 15px
+        margin-bottom: 25px
     .personal__divide-bold
         border-bottom: 2px solid #dadad8   
-        margin: 30px 0          
+        margin: 25px 0 0          
     .personal__phone, .personal__gift
         margin-bottom: 15px
         .add-row, .remove-row
@@ -290,7 +290,26 @@
             right: auto
             margin-top: 12px
     .personal__city
-        margin-bottom: 15px                                
+        margin-bottom: 15px
+    .personal__title
+        border-bottom: 1px dashed #dadad8
+        margin-bottom: 25px
+    .personal__history
+        li
+            margin-bottom: 15px
+            p
+                margin-bottom: 0
+                font-size: 16px
+                color: #4a485b
+                .money
+                    color: #4a485b
+            a
+                font-size: 13px
+                color: #4eb5f0 
+    .personal__hint
+        font-size: 16px
+        color: #4eb5f0 
+        +asblack                                                      
 .avatar
     text-align: center
     padding-bottom: 20px
@@ -326,6 +345,21 @@
         +semi
         font-size: 12px
         color: #8e8e8e
+    .btn-order
+        width: auto
+        height: 34px
+        font-size: 20px
+        padding: 5px 20px   
+    .avatar__another
+        +semi
+        font-size: 13px
+        color: #42b0ef
+    .avatar__cancel
+        +semi
+        font-size: 13px
+        color: #f3899a
+    .avatar__row
+        margin-top: 10px                  
 .age
     .age__title
         margin-bottom: 10px
@@ -347,11 +381,13 @@
     vertical-align: middle
 .checkbox + .hint-info
     margin-left: 30px                                              
-.password
-    text-align: center
-    .password__title
-        border-bottom: 1px dashed #dadad8
-        margin-bottom: 15px 
+.btn-remove
+    height: 26px
+    padding: 0 11px 
+    color: #f28294
+    +asbold
+    font-size: 14px
+    background: #ffe6e8           
 
 
 
