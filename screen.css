@@ -1868,6 +1868,7 @@ body.is-search { overflow: hidden; }
 .cards-link a { line-height: 18px; text-decoration: underline; font-size: 18px; color: #42b0ef; font-family: "ALSSchlangesans Bold", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .cards-link a:hover { text-decoration: none; }
 .cards__payment { margin-bottom: 70px; }
+.cards__payment h1, .cards__payment .title-h1 { text-align: center; }
 .cards__payment-inner { background-color: #e4ebcc; border: 16px solid white; border-radius: 13px; box-shadow: 0 5px 49px rgba(0, 0, 0, 0.17); text-align: center; padding: 0 0 35px; }
 .cards__payment .payment { text-align: left; padding: 0 60px; }
 .cards__payment .payment__row { padding: 0; }
