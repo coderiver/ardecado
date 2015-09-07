@@ -316,3 +316,75 @@
 	&__three
 		animation: load 1s infinite linear 0.6s
 		
+.geo
+	width: 980px
+	background-color: white
+	border-radius: 6px
+	padding: 10px
+	&__inner
+		+clr
+	&__col
+		width: 50%
+		padding: 10px 
+		float: left
+		color: #4a485b
+	h6
+		font-size: 24px
+		color: #4a485b
+		margin: 0 0 5px 
+	&__subtitle
+		font-size: 18px
+		+asbold
+		display: block
+		margin-bottom: 10px
+	p, li
+		font-size: 16px
+		line-height: 19px
+	p
+		+semi
+	li
+		+reg
+		span
+			&.is-time
+				background-color: #fbf1ba
+				padding: 0 5px 
+			&.is-weekend
+				color: #f25a68
+				+semi
+	a
+		color: #42b0ef
+		border-color: #42b0ef
+	&__box
+		padding: 0 0 25px 
+	&__bg
+		font-size: 18px
+		color: #4a485b
+		+asbold
+		background-color: #d9cef7
+		padding: 0 5px
+		margin: 0 0 25px -5px
+		line-height: 19px
+		display: inline-block  
+	&__contacts
+		border-top: 1px dashed #e0e0de 
+		padding: 5px 0 0 
+		margin: 5px 0 0 
+	&__field
+		padding: 25px 0 0 
+		p, small
+			line-height: 1
+		p
+			font-size: 36px
+			+var
+		small
+			font-size: 18px
+			+asbold
+			color: #8d8c97
+			display: block
+			
+.close-out
+	position: absolute
+	right: -38px
+	top: 4px
+	cursor: pointer
+	+s(close-out)
