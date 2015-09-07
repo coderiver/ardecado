@@ -34,4 +34,19 @@ head.ready(function() {
 		radioTime();
 	};
 
+	// password input
+
+	$('.js-pass-btn').on('click', function() {
+		var input = $(this).parent().find('input');
+		
+		if ($(this).hasClass('is-active')) {
+			$(this).removeClass('is-active');
+			input.attr('type', 'password');
+		}
+		else {
+			$(this).addClass('is-active');
+			input.attr('type', 'text');
+		}
+	});
+
 });

@@ -1250,9 +1250,9 @@
 				<div class="profile-tabs js-tab-group">
 					<div class="profile-tabs__nav container">
 						<a href="js-tab-1" class="profile-tabs__link js-tab-link"><span>Мои заказы</span></a>
-						<a href="js-tab-2" class="profile-tabs__link js-tab-link"><span>Личная информация</span></a>
+						<a href="js-tab-2" class="profile-tabs__link is-active js-tab-link"><span>Личная информация</span></a>
 						<a href="js-tab-3" class="profile-tabs__link js-tab-link"><span>Мои бонусы</span></a>
-						<a href="js-tab-4" class="profile-tabs__link is-active js-tab-link"><span>Любимые товары</span></a>
+						<a href="js-tab-4" class="profile-tabs__link js-tab-link"><span>Любимые товары</span> <div class="count-indicator">1</div></a>
 						<a href="js-tab-5" class="profile-tabs__link js-tab-link"><span>Напоминания и рассылки</span></a>
 					</div>
 					<div class="profile-box">
@@ -1261,8 +1261,217 @@
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias veniam sequi quasi quia nulla necessitatibus mollitia similique cum hic iste odit, magni, placeat recusandae. Autem dolorem aspernatur error corrupti temporibus.
 						</div>
 						<!-- tab content 2 -->
-						<div class="js-tab-cont js-tab-2" style="display: none;">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quaerat, amet reiciendis vel iste hic placeat provident ea unde illum architecto fugit? Quam, sint, velit. Fuga eveniet, dolor sapiente nam?
+						<div class="js-tab-cont js-tab-2">
+							<div class="personal">
+								<div class="row">
+									<div class="col-lg-6 col-xs-6">
+										<div class="row">
+											<div class="col-lg-10">
+												<div class="avatar">
+													<label>
+														<input type="file">
+														<div class="avatar__img"></div>
+														<p>Загрузить аватар</p>
+													</label>
+													<div class="avatar__help">размер не менее 100x100 px; форматы: jpg, png</div>
+												</div>
+											</div>
+										</div>
+										<div class="personal__row row">
+											<div class="col-lg-6 col-xs-6 col-lg-offset-2 col-xs-offset-2">
+												<div class="personal__salutation">
+													<p>Обращение</p>
+													<select multiple="multiple" class="select" placeholder="">
+														<option selected="" value="Уважаемый">Уважаемый</option>
+														<option value="Уважаемая">Уважаемая</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="personal__row row">
+											<div class="col-lg-10 col-xs-10">
+												<div class="text-field center">
+													<p>ФИО <span class="required-field">*</span></p>
+													<label class="text-field__block">
+														<input class="ui-autocomplete-input" type="text" autocomplete="off">
+													</label>
+													<span class="error__message">ошибка ввода</span>
+												</div>
+											</div>
+										</div>
+										<div class="personal__row row">
+											<div class="col-lg-4 col-xs-4">
+												<div class="text-field">
+													<p>Ваш email <span class="required-field">*</span></p>
+													<label class="text-field__block">
+														<input class="ui-autocomplete-input" type="text" autocomplete="off">
+													</label>
+													<span class="error__message">ошибка ввода</span>
+												</div>
+											</div>
+											<div class="age col-lg-6 col-xs-6">
+												<div class="age__title">Дата рождения</div>
+												<div class="row">
+													<div class="col-lg-4 col-xs-4">
+														<select multiple="multiple" class="select" placeholder="дд">
+															<option value="1">1</option>
+															<option value="2">2</option>
+															<option value="3">3</option>
+															<option value="4">4</option>
+															<option value="5">5</option>
+															<option value="6">6</option>
+															<option value="7">7</option>
+														</select>
+													</div>
+													<div class="col-lg-4 col-xs-4">
+														<select multiple="multiple" class="select" placeholder="месяц">
+															<option value="Январь">Январь</option>
+															<option value="Февраль">Февраль</option>
+															<option value="Март">Март</option>
+															<option value="Апрель">Апрель</option>
+															<option value="Май">Май</option>
+															<option value="Июнь">Июнь</option>
+															<option value="Июль">Июль</option>
+														</select>
+													</div>
+													<div class="col-lg-4 col-xs-4">
+														<select multiple="multiple" class="select" placeholder="год">
+															<option value="2010">2010</option>
+															<option value="2011">2011</option>
+															<option value="2012">2012</option>
+															<option value="2013">2013</option>
+															<option value="2014">2014</option>
+															<option value="2015">2015</option>
+															<option value="2016">2016</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row personal__phone">
+											<div class="col-lg-6 col-xs-6">
+												<div class="text-field">
+													<p>Ваш телефон <span class="required-field">*</span></p>
+													<div class="phone-field">
+														<label class="text-field__block">
+															<input type="text" placeholder="903">
+														</label>
+														<label class="text-field__block">
+															<input type="text" placeholder="799 - 48 - 72">
+														</label>
+													</div>
+													<span class="error__message">ошибка ввода</span>
+												</div>
+											</div>
+											<div class="col-lg-1 col-xs-1">
+												<button type="button" class="add-row"><i class="i i-add"></i></button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-10 col-xs-10">
+												<div class="personal__divide"></div>
+											</div>
+										</div>
+										<div class="row personal__gift">
+											<div class="col-lg-10 col-xs-10">
+												<label class="checkbox">
+													<input type="checkbox">
+													<span>Я хочу получать подарки на мой день рождения</span>
+												</label>
+												<button type="button" class="hint-info"><i class="i i-question"></i></button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-10 col-xs-10">
+												<div class="personal__divide"></div>
+											</div>
+										</div>
+										<div class="row personal__submit">
+											<div class="col-lg-6 col-xs-6 col-lg-offset-2 col-xs-offset-2">
+												<button type="button" class="btn-order">Сохранить данные</button>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-10 col-xs-10">
+												<div class="personal__divide-bold"></div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-10 col-xs-10">
+												<div class="password">
+													<div class="password__title">
+														<h5>Смена пароля</h5>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="personal__row row">
+											<div class="col-lg-6 col-xs-6 col-lg-offset-2 col-xs-offset-2">
+												<div class="text-field center">
+													<p>Старый пароль <span class="required-field">*</span></p>
+													<label class="text-field__block">
+														<input type="password">
+													</label>
+													<span class="error__message">ошибка ввода</span>
+												</div>
+											</div>
+										</div>
+										<div class="personal__row row">
+											<div class="col-lg-6 col-xs-6 col-lg-offset-2 col-xs-offset-2">
+												<div class="text-field center pass">
+													<p>Новый пароль <span class="required-field">*</span></p>
+													<label class="text-field__block">
+														<input type="password">
+														<button type="button" class="pass-btn js-pass-btn"><i class="i i-view"></i><i class="i i-view-active"></i></button>
+													</label>
+													<span class="error__message">ошибка ввода</span>
+												</div>
+											</div>
+										</div>
+										<div class="personal__row row">
+											<div class="col-lg-6 col-xs-6 col-lg-offset-2 col-xs-offset-2">
+												<button type="button" class="btn-order">Сохранить!</button>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-xs-6">
+										<div class="personal__row row">
+											<div class="personal__adress col-lg-12 col-xs-12">
+												<div class="row">
+													<div class="col-lg-4 col-xs-4">
+														<h5>Ваши адреса</h5>
+													</div>
+													<div class="col-lg-6 col-xs-6">
+														<select multiple="multiple" class="select" placeholder="">
+															<option selected="" value="Основной">Основной</option>
+															<option value="Дополнительный">Дополнительный</option>
+														</select>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<button type="button" class="add-row"><i class="i i-add"></i></button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-lg-12 col-xs-12">
+												<div class="personal__divide"></div>
+											</div>
+										</div>
+										<div class="personal__city row">
+											<div class="col-lg-8 col-xs-8">
+												<p>Выберите город</p>
+												<select multiple="multiple" class="select" placeholder="не выбран">
+													<option selected="" value="Москва">Москва</option>
+													<option value="Рязань">Рязань</option>
+													<option value="Рязань">Рязань</option>
+												</select>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
 						</div>
 						<!-- tab content 3 -->
 						<div class="js-tab-cont js-tab-3" style="display: none;">
@@ -1440,7 +1649,7 @@
 							</div>
 						</div>
 						<!-- tab content 4 -->
-						<div class="js-tab-cont js-tab-4">
+						<div class="js-tab-cont js-tab-4" style="display: none;">
 							<div class="favorites">
 								<div class="favorites__topper row">
 									<div class="col-lg-10 col-xs-10 col-lg-offset-1 col-xs-offset-1">

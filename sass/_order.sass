@@ -337,6 +337,8 @@
 	margin-top: 20px
 	&:first-child
 		margin-top: 0 
+	&.center
+		text-align: center	
 	&.error
 		.text-field__block
 			+g(#ecb1b1, #f3bcbc)
@@ -349,6 +351,7 @@
 		margin-bottom: 8px
 		+text-overflow
 	.text-field__block
+		position: relative
 		display: block
 		padding: 2px 
 		border-radius: 2px
@@ -365,6 +368,24 @@
 				color: rgba(#4a485b, 0.4)
 				font-size: 24px
 				+asbold
+	.pass-btn
+		position: absolute
+		top: 13px
+		right: 10px
+		background: transparent
+		.i-view-active
+			display: none
+		&.is-active
+			.i-view
+				display: none
+			.i-view-active
+				display: block
+.i
+	&.i-view
+		+s(view)
+	&.i-view-active
+		+s(view-active)						
+		 			
 .error__message
 	display: none
 	padding-top: 6px
