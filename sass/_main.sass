@@ -4179,3 +4179,219 @@ body
 			+asbold
 			padding: 10px 0 
 			
+
+//DELIVERY
+.del
+	text-align: center
+	&__top
+		padding: 25px 0 35px
+		border-bottom: 1px dashed #d8d8d2  
+		h1, .title-h1
+			margin: 0 0 25px 
+		p
+			color: #5a5867
+			font-size: 20px
+			+asbold
+			line-height: 1.2
+			a
+				color: #42b0ef 
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+	&__section
+		padding: 30px 0 35px 
+		border-bottom: 1px dashed #d8d8d2  
+		p
+			font-size: 14px
+			+reg
+			color: #4a485b 
+			line-height: 1.2
+			a
+				color: #42b0ef
+				text-decoration: none
+	&__title, &__subtitle
+		display: block
+	&__title
+		font-size: 28px
+		color: #4a485b
+		+asblack
+		line-height: 1.2
+		margin-bottom: 30px
+	&__subtitle
+		font-size: 20px
+		color: #807e8e
+		+asbold
+		line-height: 27px
+		margin-bottom: 35px
+	&-table
+		text-align: center
+		color: #4a485b
+		line-height: 1.2
+		table-layout: fixed
+		border-radius: 9px
+		border: 3px solid #d7d7cf
+		width: 100%
+		th, td
+			border: 1px solid #c9c9c2
+			border-top: none
+			border-bottom: none
+			&:last-child
+				border-left: none
+		th
+			font-size: 18px
+			font-weight: normal
+			+asblack
+			background-color: #d7d7cf
+			text-align: center
+			padding: 10px 10px 9px
+		td
+			font-size: 14px
+			+asbold
+			padding: 18px 30px 17px
+			vertical-align: middle
+			height: 68px 
+			&.is-first
+				text-align: left
+				padding: 18px 37px 17px
+			&.zone
+				font-size: 16px
+				+asblack
+				padding: 31px 20px 30px 
+				height: auto
+				&.is-green
+					color: #88af73
+					background-color: #eef4df
+				&.is-yellow
+					color: #afa673
+					background-color: #eee7c3
+				&.is-red
+					color: #af7b73
+					background-color: #eecbc3
+			b
+				+asblack
+		tr
+			&:nth-child(even)
+				background-color: #e4e4dc
+		a
+			color: #42b0ef 
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+		&__subhead 
+			th
+				border-top: 1px solid #c9c9c2 
+				font-size: 14px
+				padding: 12px 10px 11px 
+		&-wrap
+			border-radius: 9px
+			overflow: hidden
+			margin-bottom: 25px
+	&__list
+		font-size: 14px
+		line-height: 24px
+		color: #4a485b
+		+reg
+		padding: 0 0 0 62px
+		position: relative
+		text-align: left
+		margin-bottom: 25px
+		&:before
+			content: ""
+			position: absolute
+			top: 5px
+			left: 0
+			+s(del-warning)
+		li
+			padding: 0 0 0 15px
+			position: relative
+			&:before
+				content: "" 
+				position: absolute
+				top: 11px
+				left: 0
+				width: 11px
+				height: 1px
+				background-color: #4a485b
+	&__result
+		font-size: 20px
+		color: #4a485b
+		+asbold
+		line-height: 27px
+		margin-bottom: 25px 
+		a
+			text-decoration: underline
+			color: #42b0ef
+			&:hover
+				text-decoration: none
+		b
+			+asblack
+			display: inline-block
+			background-color: #f9f1d5
+			border-radius: 3px
+			padding: 0 5px 
+	&__link
+		a
+			color: #42b0ef
+			font-size: 30px
+			line-height: 40px
+			text-decoration: underline
+			+asblack
+			&:hover
+				text-decoration: none
+	&__pay
+		text-align: left
+		padding: 30px 0 10px 100px  
+		position: relative
+		.del__icon
+			position: absolute
+			top: 50%
+			left: 0
+			+translateY(-50%)
+		span
+			display: block
+			font-size: 16px
+			+asbold
+			color: #4a485b 
+			margin-bottom: 15px
+		p
+			margin-bottom: 17px
+	&__cards, &__icons
+		font-size: 0
+		margin-bottom: 15px
+		li
+			display: inline-block
+			vertical-align: middle
+	&__cards
+		li
+			margin: 0 5px 0 0
+	&__icons
+		li
+			margin: 0 25px 0 0 
+			
+.block-contacts
+	text-align: center
+	line-height: 1.2
+	font-size: 0
+	padding: 30px 0 0 
+	&__title
+		font-size: 30px
+		display: block
+		margin-bottom: 40px
+	p, &__title
+		+asblack
+	p, small, &__title
+		color: #4a485b
+	&__box
+		width: 33.3%
+		display: inline-block
+		vertical-align: top
+		padding: 0 0 35px 
+	p
+		font-size: 28px
+		margin-bottom: 2px
+	small
+		font-size: 14px
+		+reg
+	a
+		color: #42b0ef
+		
