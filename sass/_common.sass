@@ -186,9 +186,6 @@ i
 	p
 		line-height: 20px
 		margin: 20px 0
-		&.txt-brown
-			color: #706153
-
 	p, ul, ol
 		&.arial-14
 			font-size: 14px
@@ -227,6 +224,10 @@ i
 			a
 				&:visited
 					color: #b54bec
+		&.txt-brown
+			color: #706153
+		&.no-b-margin
+			margin-bottom: 0
 		a
 			color: #7dc5ea
 			text-decoration: underline
@@ -450,7 +451,7 @@ i
 .btn-buy
 	display: inline-block
 	vertical-align: top
-	padding: 5px 20px 5px 41px 
+	padding: 5px 20px 5px 41px
 	background-color: #87ca62
 	color: white
 	font-size: 18px
@@ -461,7 +462,7 @@ i
 	&:hover
 		background: #c9e4ba
 	&:active
-		background: #58911b 
+		background: #58911b
 	&:before
 		content: ""
 		+s(small-basket)
@@ -469,11 +470,11 @@ i
 		left: 13px
 		top: 50%
 		margin-top: -9px
-		
+
 .btn-pay
 	display: inline-block
 	vertical-align: top
-	padding: 12px 25px 12px 25px 
+	padding: 12px 25px 12px 25px
 	background-color: #87ca62
 	color: white
 	font-size: 24px
@@ -484,7 +485,7 @@ i
 	&:hover
 		background: #c9e4ba
 	&:active
-		background: #58911b 
+		background: #58911b
 
 .btn-play
 	color: #FFF
@@ -862,7 +863,7 @@ i
 	&.i-rub-small
 		+s(rub-small)
 	&.i-menu-arr
-		+s(menu-arr)	
+		+s(menu-arr)
 	&.i-marker-small
 		font-size: 15px
 		color: #42B0EF
@@ -876,7 +877,7 @@ i
 	&.i-add
 		+s(add)
 	&.i-indicator
-		+s(check-mod)	
+		+s(check-mod)
 	&.i-refresh-blue, &.i-refresh-pink
 		font-size: 13px
 		&:before
@@ -924,7 +925,7 @@ i
 	&.i-profile-small
 		+s(profile)
 	&.i-profile-big
-		+s(profile-dark)	
+		+s(profile-dark)
 	&.i-question
 		+s(question)
 	&.i-print
