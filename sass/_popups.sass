@@ -1,16 +1,18 @@
 .modal
-	background: rgba(#090911, 0.88) 
+	background: rgba(#090911, 0.88)
 
 .modal-dialog
-	margin: 30px auto 
+	margin: 30px auto
 	width: 600px
+	&_large
+		width: 965px
 	&_big
 		width: 800px
 	&_small
 		width: 500px
 	&_signin
-		margin-top: 80px 
-.popup	
+		margin-top: 80px
+.popup
 	background: #f2f2ea
 	border-radius: 20px
 	text-align: center
@@ -28,7 +30,7 @@
 		+asblack
 		line-height: 1
 		display: block
-		margin-bottom: 18px	
+		margin-bottom: 18px
 		&.is-green
 			color: #AEC877
 		&.is-purple
@@ -41,7 +43,7 @@
 			color: #F57676
 		.i
 			display: inline
-			margin: 0 10px 0 0 
+			margin: 0 10px 0 0
 	&__search
 		position: relative
 		margin-bottom: 30px
@@ -64,15 +66,15 @@
 			border: 4px solid #D6D4CE
 			border-radius: 26px
 			padding: 10px 24px 9px
-			width: 100% 
+			width: 100%
 	&__cities
 		font-size: 0.1px
 		text-align: justify
-		padding: 0 0 20px 
+		padding: 0 0 20px
 		&:after
 			display: inline-block
 			width: 100%
-			content: "" 
+			content: ""
 		li
 			width: 220px
 			display: inline-block
@@ -81,14 +83,14 @@
 			line-height: 24px
 			+semi
 			color: #716D6D
-			padding: 0 33px 
+			padding: 0 33px
 			position: relative
 			cursor: pointer
 			text-align: left
 			&:hover
 				color: #2D2C2B
 			&:before
-				content: "" 
+				content: ""
 				position: absolute
 				top: 5px
 				left: 10px
@@ -97,21 +99,21 @@
 			&.is-active
 				color: #2D2C2B
 				&:before
-					display: block	
+					display: block
 	&__schedule
 		color: #596947
 		font-size: 14px
 		+semi
 		background-color: #E3EECF
 		display: inline-block
-		padding: 15px 20px 
+		padding: 15px 20px
 		+border-radius(7px)
-		margin-bottom: 18px	
+		margin-bottom: 18px
 	.error-field
 		position: absolute
 		top: 100%
 		left: 45px
-		right: 45px	
+		right: 45px
 		margin-top: -20px
 		z-index: 10
 	&__text
@@ -119,7 +121,7 @@
 		position: relative
 		display: block
 		max-width: 420px
-		margin: 0 auto 18px 
+		margin: 0 auto 18px
 		font-size: 14px
 		color: #645b5b
 		+semi
@@ -137,12 +139,65 @@
 			bottom: 0
 	&__logo
 		display: block
-		margin: 10px 0 18px 
+		margin: 10px 0 18px
 		img
 			max-width: 100%
+	&-product
+		padding: 0
+		text-align: left
+		.row
+			padding: 35px
+			&.is-border
+				border-top: 1px dashed #d8d8d2
+				border-bottom: 1px dashed #d8d8d2
+		.proinner
+			padding-left: 35px
+		.procolors
+			width: 235px
+		.prodelivery
+			margin-bottom: 0
+			padding: 0
+			background: none
+			&__list
+				margin-bottom: 10px
+			&__more
+				padding-bottom: 0
+				text-align: left
+				font-size: 13px
+			&__features
+				padding-left: 28px
+				color: #57405f
+				font-size: 13px
+				list-style-type: disc
+				+semi
+			a
+				text-decoration: none
+				color: #42b0ef
+				border-bottom: 1px dotted #42b0ef
+				&:hover
+					border: none
+		.popup-close
+			top: 20px
+			right: 20px
+		.slick-prev
+			margin-top: -10px
+			left: 25px
+			+s(slider-arr-prev)
+			&:before
+				content: ""
+			&:hover
+				+s(m-left)
+		.slick-next
+			margin-top: -10px
+			right: 25px
+			+s(slider-arr-next)
+			&:before
+				content: ""
+			&:hover
+				+s(m-right)
 
 .feedback
-	padding: 20px 70px 40px  
+	padding: 20px 70px 40px
 	&__icon
 		+s(feedback)
 		position: absolute
@@ -151,21 +206,21 @@
 
 .signin
 	background: #d5ecec
-	padding-bottom: 28px 
+	padding-bottom: 28px
 	&:before
 		position: absolute
 		bottom: 100%
 		left: 50%
 		+s(signin-decor)
 		margin: 0 0 -3px -59px
-		content: "" 
+		content: ""
 	&__title
 		color: #48CAE6
 		font-size: 60px
 		+asblack
 		line-height: 1
 		display: block
-		margin-bottom: 8px	
+		margin-bottom: 8px
 	&__small
 		color: #7FB6B7
 		+asbold
@@ -178,9 +233,9 @@
 		left: -89px
 
 .pass
-	padding-bottom: 25px 
+	padding-bottom: 25px
 	.b-btn_green
-		padding: 16px 10px 15px 
+		padding: 16px 10px 15px
 		width: 280px
 	.popup__title
 		font-size: 50px
@@ -192,7 +247,7 @@
 
 .vip
 	.popup__text
-		padding: 20px 5px 
+		padding: 20px 5px
 	.b-btn_green
 		width: auto
 	.popup__title
@@ -204,7 +259,7 @@
 		+s(vip-icon)
 .subscribe
 	.popup__text
-		padding: 20px 5px 
+		padding: 20px 5px
 	.b-btn_green
 		width: auto
 	.popup__title
@@ -217,8 +272,8 @@
 
 .signup
 	.popup__text
-		padding: 20px 5px 
-	
+		padding: 20px 5px
+
 
 .popup-discount
 	position: absolute
@@ -226,7 +281,7 @@
 	left: -58px
 	+s(yellow-bg)
 	&__icon
-		padding: 26px 20px 
+		padding: 26px 20px
 		span, small
 			display: block
 			color: #fff
@@ -249,11 +304,11 @@
 		color: #fff
 		width: 100px
 		text-align: right
-		margin: -27px 13px 0 0  
+		margin: -27px 13px 0 0
 .error-field
 	background: url(img/icons/error-field.png) no-repeat center center
 	min-width: 273px
-	padding: 6px 0 5px 
+	padding: 6px 0 5px
 	font-size: 13px
 	+semi
 	color: #F7F7F0
@@ -265,7 +320,7 @@
 		top: 16px
 		left: -72px
 		+s(location-icon)
-		
+
 .popup-close
 	font-size: 16px
 	background: none
@@ -275,10 +330,10 @@
 	color: #360000
 	&:hover
 		color: #C0BCB7
-		
+
 .success
 	text-align: center
-	padding: 0 30px 
+	padding: 0 30px
 	&__icon
 		+s(success)
 		display: block
@@ -287,7 +342,7 @@
 		color: #fdfefa
 		font-size: 48px
 		line-height: 1
-		+asblack 
+		+asblack
 		display: block
 
 +keyframes(load)
@@ -298,7 +353,7 @@
 		opacity: 0.3
 		+scale(0.5)
 	100%
-		opacity: 1 
+		opacity: 1
 		+scale(1)
 
 .load
@@ -318,7 +373,7 @@
 		animation: load 1s infinite linear 0.3s
 	&__three
 		animation: load 1s infinite linear 0.6s
-		
+
 .geo
 	width: 980px
 	background-color: white
@@ -328,13 +383,13 @@
 		+clr
 	&__col
 		width: 50%
-		padding: 10px 
+		padding: 10px
 		float: left
 		color: #4a485b
 	h6
 		font-size: 24px
 		color: #4a485b
-		margin: 0 0 5px 
+		margin: 0 0 5px
 	&__subtitle
 		font-size: 18px
 		+asbold
@@ -350,7 +405,7 @@
 		span
 			&.is-time
 				background-color: #fbf1ba
-				padding: 0 5px 
+				padding: 0 5px
 			&.is-weekend
 				color: #f25a68
 				+semi
@@ -358,7 +413,7 @@
 		color: #42b0ef
 		border-color: #42b0ef
 	&__box
-		padding: 0 0 25px 
+		padding: 0 0 25px
 	&__bg
 		font-size: 18px
 		color: #4a485b
@@ -367,13 +422,13 @@
 		padding: 0 5px
 		margin: 0 0 25px -5px
 		line-height: 19px
-		display: inline-block  
+		display: inline-block
 	&__contacts
-		border-top: 1px dashed #e0e0de 
-		padding: 5px 0 0 
-		margin: 5px 0 0 
+		border-top: 1px dashed #e0e0de
+		padding: 5px 0 0
+		margin: 5px 0 0
 	&__field
-		padding: 25px 0 0 
+		padding: 25px 0 0
 		p, small
 			line-height: 1
 		p
@@ -384,7 +439,7 @@
 			+asbold
 			color: #8d8c97
 			display: block
-			
+
 .close-out
 	position: absolute
 	right: -38px
@@ -394,7 +449,7 @@
 
 .pop-tab
 	width: 755px
-	padding: 40px 0 
+	padding: 40px 0
 	&__title
 		display: block
 		color: #807e8e
@@ -407,7 +462,7 @@
 		box-shadow: 0 0 0 13px #fff
 		border-radius: 9px
 		position: relative
-		background: #fff 
+		background: #fff
 	.close-out
 		right: -50px
 		top: -8px
@@ -420,7 +475,7 @@
 
 .pop-cities
 	font-size: 0
-	padding: 15px 60px 20px 
+	padding: 15px 60px 20px
 	&__box
 		a
 			color: #4a485b
@@ -435,11 +490,11 @@
 		vertical-align: top
 		width: 20%
 		ul
-			padding: 8px 0 
+			padding: 8px 0
 	.text-field
 		float: right
 		width: 395px
-		margin: 0 0 0 20px 
+		margin: 0 0 0 20px
 		position: relative
 		i
 			position: absolute
@@ -454,9 +509,9 @@
 				line-height: 1.4
 	h6
 		padding: 10px 0
-		overflow: hidden 
+		overflow: hidden
 		font-size: 26px
 	&__top
-		padding: 0 0 5px 
+		padding: 0 0 5px
 .ui-autocomplete
-	z-index: 2000 
+	z-index: 2000
