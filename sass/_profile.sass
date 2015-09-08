@@ -448,7 +448,9 @@
     &.i-pencil-blue
         +s(pencil-blue) 
     &.i-repeat
-        +s(repeat)           
+        +s(repeat)
+    &.i-cancel
+        +s(cancel)              
 .booking
     margin-bottom: 20px
     .booking__topper
@@ -458,11 +460,14 @@
         font-size: 16px
         color: #858490
         border-top: 3px solid #eaeaeb
-        background: #f9f9f9  
+        background: #f9f9f9 
+        & > div
+            &:last-child
+                text-align: center 
         h6
             font-size: 22px
             margin: 0 
-    .booking__done
+    .booking__done, .booking__pending
         display: inline-block
         padding: 0 15px
         border-radius: 5px
@@ -474,6 +479,40 @@
             top: -1px
             vertical-align: middle
             margin-right: 5px
+    .booking__pending
+        background: #fedfaa
+        color: #58311a 
+    .booking__about
+        padding-bottom: 30px
+        border-bottom: 1px dashed #dadad8 
+        margin-bottom: 30px        
+    .booking__delivery, .booking__payment
+        position: relative
+        padding-left: 40px
+        &:before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            +s(delivery)          
+        .title-h6
+            margin: 0 
+            font-size: 24px
+        p
+            +reg
+            margin-bottom: 3px
+            font-size: 16px
+            color: #535454
+            strong
+                +semi
+    .booking__payment
+        &:before
+            +s(rub-round) 
+        .btn-order
+            width: auto
+            height: 34px
+            font-size: 20px
+            padding: 5px 20px           
     .booking__btn
         position: relative
         display: block
@@ -507,6 +546,7 @@
         font-size: 24px
         color: #4a485b
         line-height: 1.2
+        white-space: nowrap
     .booking__total
         display: inline-block
         padding: 0 10px 

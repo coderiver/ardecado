@@ -1263,10 +1263,10 @@
 									<div class="col-lg-9 col-xs-9">
 										<div class="row">
 											<div class="col-lg-4 col-xs-4">
-												<a href="js-orders-1" class="orders__link is-active js-orders-link"><span>Завершенные заказы</span></a>
+												<a href="js-orders-1" class="orders__link js-orders-link"><span>Завершенные заказы</span></a>
 											</div>
 											<div class="col-lg-4 col-xs-4">
-												<a href="js-orders-2" class="orders__link js-orders-link"><span>Незавершенные заказы</span></a>
+												<a href="js-orders-2" class="orders__link is-active js-orders-link"><span>Незавершенные заказы</span></a>
 												<span class="orders__counter">(1)</span>
 											</div>
 											<div class="col-lg-4 col-xs-4">
@@ -1279,7 +1279,7 @@
 										<a href="#" class="orders-gift">Получили подарочную карту?</a>
 									</div>
 								</div>
-								<div class="js-orders-cont js-orders-1">
+								<div class="js-orders-cont js-orders-1" style="display: none;">
 									<div class="orders__content">
 										<div class="orders__stats row">
 											<div class="col-lg-2 col-xs-2">
@@ -1419,11 +1419,299 @@
 													<div class="col-lg-2 col-xs-2">
 														<button type="button" class="booking__btn js-booking-btn">Показать товары</button>
 													</div>
-													<div class="col-lg-4 col-xs-4">
+													<div class="col-lg-4 col-xs-4 col-lg-offset-1 col-xs-offset-1">
 														<div class="booking__subtitle">Стоимость доставки: 500 Р</div>
 														<p>Способ доставки: курьером</p>
 													</div>
+													<div class="col-lg-3 col-xs-3">
+														<div class="booking__subtitle">Общая стоимость товаров:</div>
+														<p>Всего начислено: 230 Р</p>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<div class="booking__total">13 890 <i class="rub">P</i></div>
+													</div>
+												</div>
+												<div class="booking__tools row">
+													<div class="col-lg-3 col-xs-3">
+														<button type="button" class="booking__button"><i class="i i-repeat"></i> <span>Повторить заказ</span></button>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<button type="button" class="booking__button"><i class="i i-printer"></i> <span>Распечатать</span></button>
+													</div>
+													<div class="col-lg-3 col-xs-3">
+														<button type="button" class="btn-remove btn-remove_big">Оформить претензию</button>
+													</div>
 													<div class="col-lg-4 col-xs-4">
+														<button type="button" class="booking__button"><i class="i i-pencil-blue"></i> <span>Оставить отзыв о нашей работе</span></button>
+													</div>
+												</div>
+											</div>
+											<div class="booking js-booking">
+												<div class="booking__topper row">
+													<div class="col-lg-2 col-xs-2">
+														<h6>Заказ № 343-295</h6>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<p>Оформлен 28.04.2015</p>
+													</div>
+													<div class="col-lg-1 col-xs-1">
+														<img src="img/svg/right-gray.svg" width="20" alt="">
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<p>Доставлен 30.04.2015</p>
+													</div>
+													<div class="col-lg-1 col-xs-1">
+														<img src="img/svg/right-gray.svg" width="20" alt="">
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<p>Оплачен 24.04.2015</p>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<span class="booking__done"><i class="i i-check-green-dark"></i>Выполнен</span>
+													</div>
+												</div>
+												<ul class="booking__product js-booking-hidden" style="display: none;">
+													<li class="block row">
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__img">
+																<img src="img/bigpic.jpg" alt="">
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__about">
+																<div class="block__title">Артикул: 2845</div>
+																<h6>Подушка «Раз овечка,два овечка»</h6>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Цена</div>
+															<div class="block__numbers">3400 <i class="rub">P</i></div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Количество</div>
+															<div class="block__numbers">3</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Бонусов</div>
+															<div class="money"><strong>+ 46</strong> бонусов</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Стоимость</div>
+															<div class="block__price">3400 <i class="rub">P</i></div>
+														</div>
+													</li>
+													<li class="block row">
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__img">
+																<img src="img/bigpic.jpg" alt="">
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__about">
+																<div class="block__title">Артикул: 2845</div>
+																<h6>Подушка «Раз овечка,два овечка»</h6>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Цена</div>
+															<div class="block__numbers">3400 <i class="rub">P</i></div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Количество</div>
+															<div class="block__numbers">3</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Бонусов</div>
+															<div class="money"><strong>+ 46</strong> бонусов</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Стоимость</div>
+															<div class="block__price">3400 <i class="rub">P</i></div>
+														</div>
+													</li>
+													<li class="block row">
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__img">
+																<img src="img/bigpic.jpg" alt="">
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__about">
+																<div class="block__title">Артикул: 2845</div>
+																<h6>Подушка «Раз овечка,два овечка»</h6>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Цена</div>
+															<div class="block__numbers">3400 <i class="rub">P</i></div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Количество</div>
+															<div class="block__numbers">3</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Бонусов</div>
+															<div class="money"><strong>+ 46</strong> бонусов</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Стоимость</div>
+															<div class="block__price">3400 <i class="rub">P</i></div>
+														</div>
+													</li>
+												</ul>
+												<div class="booking__bottom row">
+													<div class="col-lg-2 col-xs-2">
+														<button type="button" class="booking__btn js-booking-btn">Показать товары</button>
+													</div>
+													<div class="col-lg-4 col-xs-4 col-lg-offset-1 col-xs-offset-1">
+														<div class="booking__subtitle">Стоимость доставки: 500 Р</div>
+														<p>Способ доставки: курьером</p>
+													</div>
+													<div class="col-lg-3 col-xs-3">
+														<div class="booking__subtitle">Общая стоимость товаров:</div>
+														<p>Всего начислено: 230 Р</p>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<div class="booking__total">13 890 <i class="rub">P</i></div>
+													</div>
+												</div>
+												<div class="booking__tools row">
+													<div class="col-lg-3 col-xs-3">
+														<button type="button" class="booking__button"><i class="i i-repeat"></i> <span>Повторить заказ</span></button>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<button type="button" class="booking__button"><i class="i i-printer"></i> <span>Распечатать</span></button>
+													</div>
+													<div class="col-lg-3 col-xs-3">
+														<button type="button" class="btn-remove btn-remove_big">Оформить претензию</button>
+													</div>
+													<div class="col-lg-4 col-xs-4">
+														<button type="button" class="booking__button"><i class="i i-pencil-blue"></i> <span>Оставить отзыв о нашей работе</span></button>
+													</div>
+												</div>
+											</div>
+											<div class="booking js-booking">
+												<div class="booking__topper row">
+													<div class="col-lg-2 col-xs-2">
+														<h6>Заказ № 343-295</h6>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<p>Оформлен 28.04.2015</p>
+													</div>
+													<div class="col-lg-1 col-xs-1">
+														<img src="img/svg/right-gray.svg" width="20" alt="">
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<p>Доставлен 30.04.2015</p>
+													</div>
+													<div class="col-lg-1 col-xs-1">
+														<img src="img/svg/right-gray.svg" width="20" alt="">
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<p>Оплачен 24.04.2015</p>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<span class="booking__done"><i class="i i-check-green-dark"></i>Выполнен</span>
+													</div>
+												</div>
+												<ul class="booking__product js-booking-hidden" style="display: none;">
+													<li class="block row">
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__img">
+																<img src="img/bigpic.jpg" alt="">
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__about">
+																<div class="block__title">Артикул: 2845</div>
+																<h6>Подушка «Раз овечка,два овечка»</h6>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Цена</div>
+															<div class="block__numbers">3400 <i class="rub">P</i></div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Количество</div>
+															<div class="block__numbers">3</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Бонусов</div>
+															<div class="money"><strong>+ 46</strong> бонусов</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Стоимость</div>
+															<div class="block__price">3400 <i class="rub">P</i></div>
+														</div>
+													</li>
+													<li class="block row">
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__img">
+																<img src="img/bigpic.jpg" alt="">
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__about">
+																<div class="block__title">Артикул: 2845</div>
+																<h6>Подушка «Раз овечка,два овечка»</h6>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Цена</div>
+															<div class="block__numbers">3400 <i class="rub">P</i></div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Количество</div>
+															<div class="block__numbers">3</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Бонусов</div>
+															<div class="money"><strong>+ 46</strong> бонусов</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Стоимость</div>
+															<div class="block__price">3400 <i class="rub">P</i></div>
+														</div>
+													</li>
+													<li class="block row">
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__img">
+																<img src="img/bigpic.jpg" alt="">
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__about">
+																<div class="block__title">Артикул: 2845</div>
+																<h6>Подушка «Раз овечка,два овечка»</h6>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Цена</div>
+															<div class="block__numbers">3400 <i class="rub">P</i></div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Количество</div>
+															<div class="block__numbers">3</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Бонусов</div>
+															<div class="money"><strong>+ 46</strong> бонусов</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Стоимость</div>
+															<div class="block__price">3400 <i class="rub">P</i></div>
+														</div>
+													</li>
+												</ul>
+												<div class="booking__bottom row">
+													<div class="col-lg-2 col-xs-2">
+														<button type="button" class="booking__btn js-booking-btn">Показать товары</button>
+													</div>
+													<div class="col-lg-4 col-xs-4 col-lg-offset-1 col-xs-offset-1">
+														<div class="booking__subtitle">Стоимость доставки: 500 Р</div>
+														<p>Способ доставки: курьером</p>
+													</div>
+													<div class="col-lg-3 col-xs-3">
 														<div class="booking__subtitle">Общая стоимость товаров:</div>
 														<p>Всего начислено: 230 Р</p>
 													</div>
@@ -1450,9 +1738,194 @@
 									</div>
 								</div>
 								<div class="js-orders-cont js-orders-2">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, corrupti hic commodi velit aliquid facilis animi repellat eius, dignissimos esse impedit sequi cupiditate dolores doloribus voluptatem tenetur quia! Vitae, possimus!
+									<div class="orders__content">
+										<div class="orders__stats row">
+											<div class="col-lg-2 col-xs-2">
+												<p>Всего заказов: 1</p>
+											</div>
+											<div class="col-lg-2 col-xs-2">
+												<p>На сумму: <strong>160 000 <i class="rub">Р</i></strong></p>
+											</div>
+											<div class="col-lg-3 col-xs-3">
+												<p>Сумма с доставкой: <strong>163 890 <i class="rub">Р</i></strong></p>
+											</div>
+											<div class="col-lg-2 col-xs-2"></div>
+											<div class="col-lg-3 col-xs-3">
+												<label class="checkbox">
+													<input type="checkbox">
+													<span>Показать отмененные заказы</span>
+												</label>
+											</div>
+										</div>	
+										<div class="booking-wrap">
+											<div class="booking js-booking">
+												<div class="booking__topper row">
+													<div class="col-lg-2 col-xs-2">
+														<h6>Заказ № 343-295</h6>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<p>Оформлен 28.04.2015</p>
+													</div>
+													<div class="col-lg-1 col-xs-1">
+														<img src="img/svg/right-gray.svg" width="20" alt="">
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<p>Доставлен 30.04.2015</p>
+													</div>
+													<div class="col-lg-1 col-xs-1">
+														<img src="img/svg/right-gray.svg" width="20" alt="">
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<p>Оплачен 24.04.2015</p>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<span class="booking__pending">Собирается</span>
+													</div>
+												</div>
+												<div class="booking__about row">
+													<div class="col-lg-6 col-xs-6">
+														<div class="booking__delivery">
+															<h6 class="title-h6">Доставка</h6>
+															<p><strong>Способ доставки:</strong> Курьером по РФ</p>
+															<p><strong>Планируемая дата доставки:</strong> 30 апреля 2015</p>
+															<p><strong>Адрес доставки:</strong> Комсомольск-На-Амуре, ул. Проспект 50-летия Октября, д. 56, кв. 14. </p>
+															<p><strong>Стоимость доставки:</strong> 1 200 <i class="rub">P</i></p>
+														</div>
+													</div>
+													<div class="col-lg-6 col-xs-6">
+														<div class="booking__payment">
+															<h6 class="title-h6">Оплата</h6>
+															<p><strong>Способ оплаты:</strong> Банковской картой</p>
+															<p><strong>Оплачено бонусами:</strong> 1 200 <i class="rub">P</i></p>
+															<p><strong>Осталось доплатить:</strong> 21 200 <i class="rub">P</i></p>
+															<button type="button" class="btn-order">Оплатить</button>
+														</div>
+													</div>
+												</div>
+												<ul class="booking__product js-booking-hidden" style="display: none;">
+													<li class="block row">
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__img">
+																<img src="img/bigpic.jpg" alt="">
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__about">
+																<div class="block__title">Артикул: 2845</div>
+																<h6>Подушка «Раз овечка,два овечка»</h6>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Цена</div>
+															<div class="block__numbers">3400 <i class="rub">P</i></div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Количество</div>
+															<div class="block__numbers">3</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Бонусов</div>
+															<div class="money"><strong>+ 46</strong> бонусов</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Стоимость</div>
+															<div class="block__price">3400 <i class="rub">P</i></div>
+														</div>
+													</li>
+													<li class="block row">
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__img">
+																<img src="img/bigpic.jpg" alt="">
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__about">
+																<div class="block__title">Артикул: 2845</div>
+																<h6>Подушка «Раз овечка,два овечка»</h6>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Цена</div>
+															<div class="block__numbers">3400 <i class="rub">P</i></div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Количество</div>
+															<div class="block__numbers">3</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Бонусов</div>
+															<div class="money"><strong>+ 46</strong> бонусов</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Стоимость</div>
+															<div class="block__price">3400 <i class="rub">P</i></div>
+														</div>
+													</li>
+													<li class="block row">
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__img">
+																<img src="img/bigpic.jpg" alt="">
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__about">
+																<div class="block__title">Артикул: 2845</div>
+																<h6>Подушка «Раз овечка,два овечка»</h6>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Цена</div>
+															<div class="block__numbers">3400 <i class="rub">P</i></div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Количество</div>
+															<div class="block__numbers">3</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Бонусов</div>
+															<div class="money"><strong>+ 46</strong> бонусов</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Стоимость</div>
+															<div class="block__price">3400 <i class="rub">P</i></div>
+														</div>
+													</li>
+												</ul>
+												<div class="booking__bottom row">
+													<div class="col-lg-2 col-xs-2">
+														<button type="button" class="booking__btn js-booking-btn">Показать товары</button>
+													</div>
+													<div class="col-lg-4 col-xs-4 col-lg-offset-1 col-xs-offset-1">
+														<div class="booking__subtitle">Стоимость доставки: 500 Р</div>
+														<p>Способ доставки: курьером</p>
+													</div>
+													<div class="col-lg-3 col-xs-3">
+														<div class="booking__subtitle">Общая стоимость товаров:</div>
+														<p>Всего начислено: 230 Р</p>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<div class="booking__total">13 890 <i class="rub">P</i></div>
+													</div>
+												</div>
+												<div class="booking__tools row">
+													<div class="col-lg-3 col-xs-3">
+														<button type="button" class="booking__button"><i class="i i-repeat"></i> <span>Повторить заказ</span></button>
+													</div>
+													<div class="col-lg-3 col-xs-3">
+														<button type="button" class="booking__button"><i class="i i-cancel"></i> <span>Отменить заказ</span></button>
+													</div>
+													<div class="col-lg-3 col-xs-3">
+														<button type="button" class="booking__button"><i class="i i-printer"></i> <span>Распечатать</span></button>
+													</div>
+													<div class="col-lg-3 col-xs-3">
+														<button type="button" class="btn-remove btn-remove_big">Оформить претензию</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="js-orders-cont js-orders-3">
+								<div class="js-orders-cont js-orders-3" style="display: none;">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia beatae deserunt hic aliquid quisquam. Incidunt ex velit, vero nam eius asperiores tenetur inventore corporis atque reprehenderit impedit assumenda quaerat necessitatibus?
 								</div>
 							</div>
