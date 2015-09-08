@@ -4425,6 +4425,9 @@ body
 	+s(back)
 
 .feedback-page
+	&__comment
+		text-align: center
+		padding: 0 0 52px 
 	.comment
 		margin-bottom: 30px
 
@@ -4499,4 +4502,71 @@ body
 	.btn-post
 		margin-bottom: 42px
 		
-		
+.filter-comments
+	text-align: center
+	font-size: 0
+	padding: 0 0 30px 
+	li
+		display: inline-block
+		vertical-align: top
+		padding: 0 20px 
+	a
+		color: #42b0ef
+		font-size: 18px
+		+asbold
+		display: inline-block
+		line-height: 19px
+		padding: 0 7px 
+		position: relative
+		&:hover, &:focus
+			text-decoration: none
+		&.is-active
+			background-color: #fff09f
+			color: #4a485b
+		&.is-drop
+			padding-right: 25px
+			&:before
+				content: "" 
+				position: absolute
+				top: 50%
+				right: 0
+				+arr(16, 8, #b1b1b1, b)
+				margin-top: -4px
+				
+.add-post
+	text-align: left
+	padding: 40px 0 60px 
+	border-top: 1px dashed #d8d8d2 
+	display: none
+	textarea
+		height: 155px
+		background-color: white
+		border: 2px solid #deded9
+		width: 100%
+		display: block
+		padding: 8px 12px 
+		resize: none
+		margin-bottom: 30px
+	&__title
+		display: block
+		color: #706153
+		font-size: 14px
+		+semi
+		margin-bottom: 15px
+	ul
+		li
+			color: #9c958f
+			font-size: 14px
+			+reg
+			padding: 0 0 0 17px
+			position: relative
+			line-height: 1.2
+			&:before
+				position: absolute
+				top: 8px
+				left: 0
+				content: "" 
+				width: 12px
+				height: 1px
+				background: #9c958f 
+				
