@@ -640,6 +640,9 @@ head.ready(function() {
 				slidesToShow: 1,
 				slidesToScroll: 1
 			});
+		};
+		if ($('.js-scroll').length) {
+			$('.js-scroll').customScrollbar();
 		}
 	});
 
