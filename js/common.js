@@ -634,7 +634,10 @@ head.ready(function() {
 		slideToClickedSlide: true
 	});
 
-	$('.js-popup-slider').slick();
+	$('.js-popup-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
 
 });
 
