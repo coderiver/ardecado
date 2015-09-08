@@ -561,7 +561,27 @@
         color: #42b0ef
         background: transparent
         .i
-            vertical-align: baseline                           
+            vertical-align: baseline
+    .booking__todo
+        padding-top: 35px
+        text-align: left         
+    .booking__feedback, .booking__basket, .booking__favorite
+        display: inline-block
+        font-size: 18px
+        color: #42b0ef
+        margin-bottom: 5px
+        +asbold
+        .i
+            vertical-align: middle
+            margin-right: 10px
+    .booking__basket
+        color: #93bb58
+        img
+            margin-right: 5px
+    .booking__favorite
+        color: #f2a1b4
+        img
+            margin-right: 11px 
 .block
     text-align: center
     padding-bottom: 30px
@@ -589,6 +609,12 @@
         color: rgba(#4a485b, 0.5)
     .block__price    
         color: #4a485b
+        &.action
+            color: #f37826
+        &.old
+            font-size: 14px
+            +var
+            text-decoration: line-through     
 
 
 

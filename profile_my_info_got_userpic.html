@@ -1266,11 +1266,11 @@
 												<a href="js-orders-1" class="orders__link js-orders-link"><span>Завершенные заказы</span></a>
 											</div>
 											<div class="col-lg-4 col-xs-4">
-												<a href="js-orders-2" class="orders__link is-active js-orders-link"><span>Незавершенные заказы</span></a>
+												<a href="js-orders-2" class="orders__link js-orders-link"><span>Незавершенные заказы</span></a>
 												<span class="orders__counter">(1)</span>
 											</div>
 											<div class="col-lg-4 col-xs-4">
-												<a href="js-orders-3" class="orders__link js-orders-link"><span>Заказанные товары</span></a>
+												<a href="js-orders-3" class="orders__link is-active js-orders-link"><span>Заказанные товары</span></a>
 												<span class="orders__counter">(16)</span>
 											</div>
 										</div>
@@ -1279,7 +1279,7 @@
 										<a href="#" class="orders-gift">Получили подарочную карту?</a>
 									</div>
 								</div>
-								<div class="js-orders-cont js-orders-1" style="display: none;">
+								<div class="js-orders-cont js-orders-1">
 									<div class="orders__content">
 										<div class="orders__stats row">
 											<div class="col-lg-2 col-xs-2">
@@ -1737,7 +1737,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="js-orders-cont js-orders-2">
+								<div class="js-orders-cont js-orders-2" style="display: none;">
 									<div class="orders__content">
 										<div class="orders__stats row">
 											<div class="col-lg-2 col-xs-2">
@@ -1829,7 +1829,10 @@
 														</div>
 														<div class="log-lg-2 col-xs-2">
 															<div class="block__title">Стоимость</div>
-															<div class="block__price">3400 <i class="rub">P</i></div>
+															<div class="block__price action">3400 <i class="rub">P</i></div>
+															<div class="block__price old">
+																3400 <i class="rub">P</i>
+															</div>
 														</div>
 													</li>
 													<li class="block row">
@@ -1926,7 +1929,156 @@
 									</div>
 								</div>
 								<div class="js-orders-cont js-orders-3" style="display: none;">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia beatae deserunt hic aliquid quisquam. Incidunt ex velit, vero nam eius asperiores tenetur inventore corporis atque reprehenderit impedit assumenda quaerat necessitatibus?
+									<div class="orders__content">
+										<div class="booking-wrap">
+											<div class="booking js-booking">
+												<div class="booking__topper row">
+													<div class="col-lg-2 col-xs-2">
+														<h6>Заказ № 343-295</h6>
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														<p>Оформлен 28.04.2015</p>
+													</div>
+													<div class="col-lg-1 col-xs-1">
+														
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														
+													</div>
+													<div class="col-lg-1 col-xs-1">
+														
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														
+													</div>
+													<div class="col-lg-2 col-xs-2">
+														
+													</div>
+												</div>
+												<ul class="booking__product js-booking-hidden">
+													<li class="block row">
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__img">
+																<img src="img/bigpic.jpg" alt="">
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__about">
+																<div class="block__title">Артикул: 2845</div>
+																<h6>Подушка «Раз овечка,два овечка»</h6>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Цена</div>
+															<div class="block__numbers">3400 <i class="rub">P</i></div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Количество</div>
+															<div class="block__numbers">3</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Стоимость</div>
+															<div class="block__price action">3400 <i class="rub">P</i></div>
+															<div class="block__price old">
+																3400 <i class="rub">P</i>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<ul class="booking__todo">
+																<li>
+																	<a href="#" class="booking__feedback">
+																	<i class="i i-pencil-blue"></i>Написать отзыв</a>
+																</li>
+																<li>
+																	<a href="#" class="booking__basket"><img src="img/svg/basket-empty.svg" width="22" alt="">
+																	В корзину</a>
+																</li>
+																<li>
+																	<a href="#" class="booking__favorite"><img src="img/svg/heart-small.svg" width="20" alt="">В любимые</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li class="block row">
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__img">
+																<img src="img/bigpic.jpg" alt="">
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__about">
+																<div class="block__title">Артикул: 2845</div>
+																<h6>Подушка «Раз овечка,два овечка»</h6>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Цена</div>
+															<div class="block__numbers">3400 <i class="rub">P</i></div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Количество</div>
+															<div class="block__numbers">3</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Стоимость</div>
+															<div class="block__price action">3400 <i class="rub">P</i></div>
+															<div class="block__price old">
+																3400 <i class="rub">P</i>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<ul class="booking__todo">
+																<li>
+																	<a href="#" class="booking__feedback">
+																	<i class="i i-pencil-blue"></i>Написать отзыв</a>
+																</li>
+																<li>
+																	<a href="#" class="booking__basket"><img src="img/svg/basket-empty.svg" width="22" alt="">
+																	В корзину</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+													<li class="block row">
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__img">
+																<img src="img/bigpic.jpg" alt="">
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__about">
+																<div class="block__title">Артикул: 2845</div>
+																<h6>Подушка «Раз овечка,два овечка»</h6>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Цена</div>
+															<div class="block__numbers">3400 <i class="rub">P</i></div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Количество</div>
+															<div class="block__numbers">3</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<div class="block__title">Стоимость</div>
+															<div class="block__price action">3400 <i class="rub">P</i></div>
+															<div class="block__price old">
+																3400 <i class="rub">P</i>
+															</div>
+														</div>
+														<div class="log-lg-2 col-xs-2">
+															<ul class="booking__todo">
+																<li>
+																	<a href="#" class="booking__feedback">
+																	<i class="i i-pencil-blue"></i>Написать отзыв</a>
+																</li>
+															</ul>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>

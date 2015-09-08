@@ -5,9 +5,9 @@ head.ready(function() {
 			var tab_cont = $(this).find('.js-orders-cont'),
 				tab_link = $(this).find('.js-orders-link');
 
-			//tab_link.first().addClass('is-active');
-			//tab_cont.hide();
-			//tab_cont.first().show();
+			tab_link.first().addClass('is-active');
+			tab_cont.hide();
+			tab_cont.first().show();
 
 			$('body').on('click', '.js-orders-link', function(){
 				var link = $(this).attr('href');
