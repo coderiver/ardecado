@@ -1377,6 +1377,10 @@
 			</div>
 		</section>
 		<!-- end container -->
+		
+		<ul class="popup-links">
+			<li><a href="#" data-toggle="modal" data-target="#geoselect">GEOSELEKT</a></li>
+		</ul>
 
 	</main>
 	<!-- end main -->
@@ -1472,6 +1476,49 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+
+
+	<div class="modal fade" id="geoselect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog geo" role="document">
+			<button type="button" class="close-out" data-dismiss="modal" aria-label="Close"></button>
+			<div class="geo__inner">
+				<div class="geo__col">
+					<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=azsLMwRt8DaNPNWsO7yYoErxjib6J06d&width=100%&height=516"></script>
+				</div>
+				<div class="geo__col">
+					<div class="geo__box">
+						<h6>Наш офис в Москве</h6>
+						<span class="geo__subtitle">м. Белорусская, 1-я улица Ямского Поля, 15, офис 107</span>
+						<p>Часы работы офиса:</p>
+						<ul>
+							<li>с понедельника по пятницу - <span class="is-time">c 9-00 до 19-00</span></li>
+							<li>суббота и воскресенье - <span class="is-weekend">выходные дни</span></li>
+						</ul>
+					</div>					
+					<span class="geo__bg">Прием рекламаций: в рабочие дни - c 13 до 18 часов.</span>
+					<div class="geo__box">
+						<h6><a href="#" class="link-dotted">Пункт самовывоза в Москве</a></h6>
+						<span class="geo__subtitle">м. Белорусская, 1-я улица Ямского Поля, 15, офис 107</span>
+						<p>Часы работы офиса:</p>
+						<ul>
+							<li>с понедельника по пятницу - <span class="is-time">c 9-00 до 19-00</span></li>
+							<li>суббота и воскресенье - <span class="is-weekend">выходные дни</span></li>
+						</ul>
+					</div>
+					<div class="geo__contacts">
+						<div class="geo__field">
+							<p>8 (495) 777-22-50</p>
+							<small>многоканальный телефон</small>
+						</div>
+						<div class="geo__field">
+							<p><a href="#">contact@ac-studio.ru</a></p>
+							<small>отвечаем на все ваши письма</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<div class="fixed-br js-panel js-fixed">
 		<div class="f-panel js-panel-block">
@@ -1859,6 +1906,8 @@
 		</div>	
 
 	</div>
+
+
 
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
