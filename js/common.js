@@ -619,6 +619,11 @@ head.ready(function() {
 		return false;
 	});
 
+	$('.js-comment-open').click(function() {
+		$(this).parents('.js-comment').find('.js-comment-block').slideToggle(400);
+		return false;
+	});
+
 	var mySwiper = new Swiper ('.swiper-container', {
 		loop: true,
 		nextButton: '.swiper-button-next',
@@ -627,7 +632,9 @@ head.ready(function() {
 		initialSlide: 4,
 		slidesPerView: 'auto',
 		slideToClickedSlide: true
-	})
+	});
+
+	$('.js-popup-slider').slick();
 
 });
 

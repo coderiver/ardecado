@@ -2099,6 +2099,7 @@ body.is-search { overflow: hidden; }
 
 .i-back { background: url('img/icons-sc0b60aa748.png') 0 -442px no-repeat; width: 56px; height: 56px; }
 
+.feedback-page__comment { text-align: center; padding: 0 0 52px; }
 .feedback-page .comment { margin-bottom: 30px; }
 
 .comment__av { width: 42px; height: 42px; }
@@ -2122,6 +2123,20 @@ body.is-search { overflow: hidden; }
 
 .pages-bottom { text-align: center; padding: 10px 0 77px; }
 .pages-bottom .btn-post { margin-bottom: 42px; }
+
+.filter-comments { text-align: center; font-size: 0; padding: 0 0 30px; }
+.filter-comments li { display: inline-block; vertical-align: top; padding: 0 20px; }
+.filter-comments a { color: #42b0ef; font-size: 18px; font-family: "ALSSchlangesans Bold", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; display: inline-block; line-height: 19px; padding: 0 7px; position: relative; }
+.filter-comments a:hover, .filter-comments a:focus { text-decoration: none; }
+.filter-comments a.is-active { background-color: #fff09f; color: #4a485b; }
+.filter-comments a.is-drop { padding-right: 25px; }
+.filter-comments a.is-drop:before { content: ""; position: absolute; top: 50%; right: 0; width: 0px; height: 0px; border-style: solid; border-width: 8px 8px 0 8px; border-color: #b1b1b1 transparent transparent transparent; margin-top: -4px; }
+
+.add-post { text-align: left; padding: 40px 0 60px; border-top: 1px dashed #d8d8d2; display: none; }
+.add-post textarea { height: 155px; background-color: white; border: 2px solid #deded9; width: 100%; display: block; padding: 8px 12px; resize: none; margin-bottom: 30px; }
+.add-post__title { display: block; color: #706153; font-size: 14px; font-family: "ProximaNova Semibold", Arial, sans-serif; margin-bottom: 15px; }
+.add-post ul li { color: #9c958f; font-size: 14px; font-family: "ProximaNova Regular", Arial, sans-serif; padding: 0 0 0 17px; position: relative; line-height: 1.2; }
+.add-post ul li:before { position: absolute; top: 8px; left: 0; content: ""; width: 12px; height: 1px; background: #9c958f; }
 
 .filters .row { padding: 0 0 15px; }
 .filters .row:first-child { padding: 15px 0 5px; }
