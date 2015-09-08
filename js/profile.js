@@ -32,6 +32,28 @@ head.ready(function() {
 	}
 	tab();
 
+	// booking show more
+
+	$('.js-booking-btn').on('click', function() {
+		if ($(this).hasClass('is-open')) {
+			$(this).parents('.js-booking').find('.js-booking-hidden').slideUp();
+			$(this).text('Показать товары').removeClass('is-open');
+		}
+		else {
+			$(this).parents('.js-booking').find('.js-booking-hidden').slideDown();
+			$(this).text('Скрыть товары').addClass('is-open');
+		}
+	});
+
+
+
+
+
+
+
+
+
+
 
 
 });

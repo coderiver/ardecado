@@ -388,8 +388,168 @@
     +asbold
     font-size: 14px
     background: #ffe6e8 
-    
+    &.btn-remove_big
+        width: 100%
+        height: 34px
+        border-radius: 5px
+        text-align: center 
+        font-size: 24px  
 // orders       
+.orders
+    .orders__link
+        display: inline-block
+        padding: 0 5px
+        border-radius: 5px 
+        font-size: 20px
+        +asbold
+        color: #42b0ef
+        span
+            display: inline-block
+            border-bottom: 1px dotted 
+            line-height: 1
+        &.is-active
+            color: #4a485b
+            background: #f4fbdc
+            span
+                border-bottom: none     
+    .orders__counter
+        font-size: 20px
+        +asbold
+        color: #bfbfbf
+.orders-gift
+    display: inline-block
+    padding: 0 7px
+    background: #e3dcfb  
+    color: #605e6d
+    font-size: 20px
+    border-radius: 5px
+    +asbold 
+    &:hover
+        text-decoration: none
+.orders__nav
+    padding-bottom: 25px
+    margin-bottom: 25px
+    border-bottom: 1px dashed #dadad8
+.orders__stats
+    margin-bottom: 30px
+    font-size: 16px
+    +semi
+    color: #535454
+    strong
+        +asbold
+    .checkbox
+        margin: 0                     
+// booking
+.i
+    &.i-check-green-dark
+        +s(check-green-dark)
+    &.i-printer
+        +s(printer)
+    &.i-pencil-blue
+        +s(pencil-blue) 
+    &.i-repeat
+        +s(repeat)           
+.booking
+    margin-bottom: 20px
+    .booking__topper
+        padding: 21px 0 
+        margin-bottom: 30px
+        +semi
+        font-size: 16px
+        color: #858490
+        border-top: 3px solid #eaeaeb
+        background: #f9f9f9  
+        h6
+            font-size: 22px
+            margin: 0 
+    .booking__done
+        display: inline-block
+        padding: 0 15px
+        border-radius: 5px
+        color: #44581a
+        +asbold
+        background: #d1e58d 
+        .i
+            position: relative
+            top: -1px
+            vertical-align: middle
+            margin-right: 5px
+    .booking__btn
+        position: relative
+        display: block
+        width: 100% 
+        height: 46px
+        +asbold
+        font-size: 18px
+        color: #4a485b
+        padding: 0 25px 0 13px        
+        background: #e8e6e6
+        border-radius: 3px 
+        &:after
+            content: ""
+            position: absolute
+            top: 21px
+            right: 15px
+            +s(arr-down)
+        &.is-open
+            &:after
+                +rotate(180)
+    .booking__bottom   
+        margin-bottom: 30px
+        & > div:last-child
+            text-align: center
+        p
+            +semi
+            font-size: 14px
+            color: #858490            
+    .booking__subtitle
+        +asbold
+        font-size: 24px
+        color: #4a485b
+        line-height: 1.2
+    .booking__total
+        display: inline-block
+        padding: 0 10px 
+        +var
+        border-radius: 3px
+        color: #4a485b
+        font-size: 24px
+        background: #fcf1a5
+    .booking__button
+        +asbold
+        font-size: 24px
+        color: #42b0ef
+        background: transparent
+        .i
+            vertical-align: baseline                           
+.block
+    text-align: center
+    padding-bottom: 30px
+    margin-bottom: 30px
+    border-bottom: 1px dashed #dadad8  
+    h6
+        margin: 0 
+    .block__about
+        text-align: left    
+    .block__title
+        margin-bottom: 15px
+    .money
+        margin-top: 10px
+        color: #4a485b 
+        strong
+            +var    
+    .block__img
+        font-size: 0
+        img
+            width: 100%
+            border-radius: 13px
+    .block__numbers, .block__price
+        +var
+        font-size: 24px
+        color: rgba(#4a485b, 0.5)
+    .block__price    
+        color: #4a485b
+
 
 
 
