@@ -634,9 +634,13 @@ head.ready(function() {
 		slideToClickedSlide: true
 	});
 
-	$('.js-popup-slider').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1
+	$('.modal').on('shown.bs.modal', function(e) {
+		if ($('.js-popup-slider').length) {
+			$('.js-popup-slider').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1
+			});
+		}
 	});
 
 });
