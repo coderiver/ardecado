@@ -9,7 +9,6 @@
 	<meta name="theme-color" content="#fff"> 
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
-	<script src="http://api-maps.yandex.ru/2.1-dev/?lang=ru-RU&load=package.full" type="text/javascript"></script>
 	<link rel="stylesheet" media="all" href="css/bootstrap.min.css" >
 	<link rel="stylesheet" media="all" href="css/jquery.custom-scrollbar.css" >
 	<link rel="stylesheet" media="all" href="css/nouislider.min.css" >
@@ -1254,137 +1253,250 @@
 		</div>
 
 		<!-- begin container  -->
-		<section class="container">
+		<section class="container feedback-page">
+			<div class=" breadcrumbs">
+				<ul class="breadcrumbs__list">
+					<li><a href="#a">Главная</a></li>
+					<li><a href="#f">О магазине Де де Кадо</a></li>
+				</ul>
+			</div>
 			<div class="row">
-				<div class="col-lg-10 col-xs-10 col-lg-offset-1 col-xs-offset-1">
-					<div class="del">
-						<div class="del__top">
-							<h1 class="is-gray">Доставка и оплата</h1>
-							<p>Ваш регион Москва <a href="#">Изменить</a></p>
-						</div>
-						<div class="del__section">
-							<span class="del__title">Условия доставки по Санкт-Петербургу в пределах КАД</span>
-							<span class="del__subtitle">Минимальная стоимость заказа для доставки курьером 600 руб.</span>
-							<div class="del-table-wrap">
-								<table class="del-table">
-									<thead>
-										<tr>
-											<th rowspan="2">Вариант доставки</th>
-											<th rowspan="2">Интервал и условия  доставки </th>
-											<th colspan="2">Стоимость доставки при заказе:</th>
-										</tr>
-										<tr class="del-table__subhead">								
-											<th>от 600 до 2999 руб.</th>
-											<th>от 3000 руб.</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td class="is-first"><b>Самовывоз</b></td>
-											<td><a href="#">Адрес и график работы</a></td>
-											<td>280</td>
-											<td>0</td>
-										</tr>
-										<tr>
-											<td class="is-first"><b>Доставка курьером в  пределах КАД</b></td>
-											<td>1-2 рабочих дня вручение заказа с 10:00 до 21:00</td>
-											<td>450</td>
-											<td>200</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>							
-							<ul class="del__list">
-								<li>Доставка является услугой, не связанной с составом заказа. Услуга считается выполненной в момент получения заказа клиентом.</li>
-								<li> Услуги курьерской доставки по Москве в пределах МКАД исполняются собственной службой доставки Студии Подарка и осуществляются строго  после согласования заказа с клиентом, в день заказа, на следующий день либо в указанную при заказе на сайте или по телефону клиентом дату.</li>
-								<li>Заказы стоимостью менее 600 руб можно получить только Самовывозом из Шоурума на Белорусской.</li>
-								<li>Минимальный интервал Стандартной доставки курьером составляет 3 часа.</li>
-								<li>Стоимость услуги подъема крупногабаритных заказов на этаж рассчитывается дополнительно и оплачивается из расчета 100 руб./этаж.</li>
-								<li>Крупногабаритными считаются товары и заказы, общий вес и объем которых не превышает 10 кг и/или 0,1 куб.м (примерно 45х45х45см).</li>
-							</ul>
-							<div class="del__result">У вас в корзине <a href="#">5 товаров</a> на сумму <b>26 936 <i class="rub">Р</i></b></div>
-							<div class="del__link">
-								<a href="#">Рассчитать стоимость доставки для товаров в моей корзине</a>
-							</div>
-						</div>
-						<div class="del__section">
-							<span class="del__title">Способы оплаты</span>
-							<p>Вы можете оплатить выбранные Вами подарки любым доступным способом:</p>
-							<div class="del__pay">
-								<i class="del__icon i i-nal"></i>		
-								<span>Наличный расчет</span>
-								<p>Произвести оплату наличными средствами можно при получении заказа; Предварительно, Вы можете посмотреть и примерить заказанные позиции. Таким образом, Вы оплачиваете только те наименования, которые Вам понравились и подошли.</p>								
-								<p>Вы можете заказать не более 5-ти позиций на выбор.</p>			
-							</div>
-							<div class="del__pay">
-								<i class="del__icon i i-cards"></i>						
-								<span>Банковские карты</span>
-								<ul class="del__cards">
-									<li><a href="#" class="js-tooltip" title="Банковские карты"><img src="img/visa.png" alt="" width="90px" height="28px"></a></li>
-									<li><a href="#" class="js-tooltip" title="Банковские карты"><img src="img/mc.png" alt="" width="69px" height="41px"></a></li>
-								</ul>
-								<p>Вы всегда можете оплатить заказ банковской картой или электронными деньгами. Оплата заказов производится моментально, в любое время дня и ночи. Платежи осуществляются через процессинговый центр PayAnyWay.</p>	
-								<p>Безопасность платежей с помощью банковских карт обеспечивается технологиями защищенного соединения HTTPS и двухфакторной аутентификации пользователя 3D Secure.</p>	
-								<p><a href="#">Обращаем Ваше внимание, что АР ДЕ КАДО не получает и не сохраняет данные Вашей кредитной карты.</a></p>		
-							</div>
-							<div class="del__pay">
-								<i class="del__icon i i-comp"></i>						
-								<span>Оплата on-line</span>
-								<ul class="del__icons">
-									<li><a href="#" class="js-tooltip i i-yandex" title="Банковские карты"></a></li>
-									<li><a href="#" class="js-tooltip i i-webmoney" title="Банковские карты"></a></li>
-									<li><a href="#" class="js-tooltip i i-qiwi" title="Банковские карты"></a></li>
-									<li><a href="#" class="js-tooltip i i-alfabank" title="Банковские карты"></a></li>
-									<li><a href="#" class="js-tooltip i i-sberbank" title="Банковские карты"></a></li>
-									<li><a href="#" class="js-tooltip i i-euro" title="Банковские карты"></a></li>
-									<li><a href="#" class="js-tooltip i i-svyaznoy" title="Банковские карты"></a></li>
-								</ul>	
-								<p>Вы всегда можете оплатить заказ банковской картой или электронными деньгами. Оплата заказов производится моментально, в любое время дня и ночи. Платежи осуществляются через процессинговый центр PayAnyWay.</p>
-								<p>Безопасность платежей с помощью банковских карт обеспечивается технологиями защищенного соединения HTTPS и двухфакторной аутентификации пользователя 3D Secure.</p>			
-							</div>
-							<div class="del__pay">
-								<i class="del__icon i i-bank-big"></i>
-								<span>Банковский перевод</span>
-								<p>Произвести оплату наличными средствами можно при получении заказа; Предварительно, Вы можете посмотреть и примерить заказанные позиции. Таким образом, Вы оплачиваете только те наименования, которые Вам понравились и подошли.</p>								
-								<p>Вы можете заказать не более 5-ти позиций на выбор.</p>			
-							</div>
-						</div>
-						<div class="del__section">
-							<a href="#" class="i i-back"></a>
-							<span class="del__title">Гарантия возврата и обмена</span>
-							<p>Мы строго соблюдаем закон и рады пойти навстречу Любимым  покупателям. <a href="#">Подробнее о возврате и обмене</a>.</p>
-						</div>
-						<div class="block-contacts">
-							<span class="block-contacts__title">Если у вас остались вопросы, позвоните нам:</span>
-							<div class="block-contacts__box">
-								<p>8 (495) 777-22-50</p>
-								<small>Москва</small>
-							</div>
-							<div class="block-contacts__box">
-								<p>8 (812) 612-26-30</p>
-								<small>Санкт-Петербург</small>
-							</div>
-							<div class="block-contacts__box">
-								<p>8 (800) 775-21-90</p>
-								<small>По всей России</small>
-							</div>
-							<div class="block-contacts__box">
-								<p><a href="#">zakaz@ac-studio.ru</a></p>
-								<small>или напишите нам письмо</small>
-							</div>
-						</div>
+				<div class="col-lg-12 col-xs-12">
+					<div class="about__info">
+						<h1 class="is-gray">Страница отзывов и предложений</h1>
+						<p>Страница отзывов и предложений предназначена для быстрого реагирования на Ваши пожелания, предложения и нарушения в обслуживании.</p>
+						<p>Вы можете пожаловаться на нагрубившего курьера, оставить предложение о расширении ассортимента, выразить благодарность сотрудникам. Будем благодарны, если Вы оставите свой отзыв о работе нашего интернет-магазина.</p>
+						<p>Для нас очень важны Ваши мнения, пожелания, конструктивная критика.</p>
 					</div>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-lg-12 col-xs-12">
+					<div class="social no-pad no-border is-small is-center">
+						<div class="social__box is-fb">
+							<div class="social__web">
+								<a href="#" class="social__btn is-fb"></a>
+							</div>
+							<div class="social__number">38</div>
+						</div>
+						<div class="social__box is-vk">
+							<div class="social__web">
+								<a href="#" class="social__btn is-vk"></a>
+							</div>
+							<div class="social__number">38</div>
+						</div>
+						<div class="social__box is-tw">
+							<div class="social__web">
+								<a href="#" class="social__btn is-tw"></a>
+							</div>
+							<div class="social__number">38</div>
+						</div>
+						<div class="social__box is-od">
+							<div class="social__web">
+								<a href="#" class="social__btn is-od"></a>
+							</div>
+							<div class="social__number">38</div>
+						</div>
+					</div>
+					<div class="feedback-page__comment js-comment">
+						<div class="add-post js-comment-block">
+							<textarea name="" id="" cols="30" rows="10" placeholder="Начните писать ваш комментарий"></textarea>
+							<span class="add-post__title">Не публикуются отзывы:</span>
+							<ul>
+								<li>которые содержат нецензурные выражения, непристойные или оскорбительные высказывания;</li>
+								<li>коммерческие предложения, реклама (номера телефонов, ссылки на другие сайты);</li>
+								<li>не отвечающие тематике сайта;</li>
+								<li>которые содержат вопросы, относящиеся только к конкретному заказу (содержание заказа, доставка, оплата и т.п.)</li>
+							</ul>
+						</div>
+						<button class="btn-post js-comment-open">Написать отзыв</button>
+					</div>
+					<div class="filter-comments">
+						<ul>
+							<li><a href="#" class="is-active">Всего 365 отзывов </a></li>
+							<li><a href="#" class="is-drop">Самые полезные</a></li>
+							<li><a href="#">С ответами представителя</a></li>
+							<li><a href="#" class="is-drop">По новизне</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-12 col-xs-12">		
+				<!-- begin comment  -->
+				<div class="comment is-blue">
+					<div class="comment__top">
+						<div class="comment__av"><img src="http://placehold.it/42x42" alt=""></div>
+						<div class="comment__name">Екатерина И.</div>
+						<div class="comment__date">Москва, 25 августа 2015 в 23:38</div>
+						<div class="comment__rating">
+							<div class="comment__minus">-</div>
+							<div class="comment__karma is-plus">852</div>
+							<div class="comment__plus">+</div>
+						</div>
+					</div>
+					<div class="comment__content">
+						<p>Два раза пользовался сервисом. Первый раз заказывал себе мужскую рубашку по индивидуальным размерам. Все подошло, рубашка понравилась, до сих пор ношу с удовольствием. Второй опыт был отрицательный. Заказал себе готовую рубашку и жене, по индивидуальным размерам и компоновке. В итоге в рубашке жены ошиблись с воротником: вместо ткани с рисунком пошили из обычной белой. Вину свою ателье признало и предложило выслать рубашку обратно и перешить ее с требуемым воротником. Но, к сожалению, рубашка к тому же не подошла по размерам жене. Тут наверное наша вина, что-то не так измерили. Поэтому жена решила забить на нее, уже не исправить. С моей, мужской рубашкой, тоже вышла оплошность. При заказе то ли у меня рука дрогнула, то ли на сайте сбой был, но в итоге пришла мне приталенная рубашка, а в которой я, 32-летний мужчина, даже если сильно похудею, буду смотреться очень комично. В ней комично смотрится даже мой 17-летний племянник с вполне обычной фигурой юноши. Непонятно на какую фигуру вообще, такие рубашки шьются.</p>
+					</div>
+				</div>
+				<!-- end comment -->	
+				<!-- begin comment  -->
+				<div class="comment is-blue">
+					<div class="comment__top">
+						<div class="comment__av"><img src="http://placehold.it/42x42" alt=""></div>
+						<div class="comment__name">Виктория</div>
+						<div class="comment__date">Санкт-Петербург, 5 июля 2015 в 10:33</div>
+						<div class="comment__rating">
+							<div class="comment__minus">-</div>
+							<div class="comment__karma">0</div>
+							<div class="comment__plus">+</div>
+						</div>
+					</div>
+					<div class="comment__content">
+						<p>Ужасный магазин, потратила на выбор подарка пол дня!! Поэтому жена решила забить на нее, уже не исправить. Сократите ассортимент, вы отнимаете у людей время!</p>
+					</div>
+					<div class="comment__reply is-red">
+						<div class="comment__top">
+							<div class="comment__av"><img src="http://placehold.it/42x42" alt=""></div>
+							<div class="comment__name">Ар де Кадо</div>
+							<div class="comment__date">6 июля 2015 в 16:52</div>
+							<div class="comment__rating">
+								<div class="comment__minus">-</div>
+								<div class="comment__karma">0</div>
+								<div class="comment__plus">+</div>
+							</div>
+						</div>
+						<div class="comment__content">
+							<p>Спасибо за Ваш отзыв! Благодаря Вам мы станем лучше. Возможно в профиле были указаны параметры готового изделия, а необходимо параметры тела. Хотим напомнить, что при построении конструкции изделия специалисты к меркам добавляют прибавки на свободу движения и облегания в зависимости от объема рубашки (приталенный, стандартный, свободный). Рекомендуем для начала заказывать тестовое изделие или воспользоваться нашим специальным предложением, при котором тестовое изделие изготавливается бесплатно. По Вашему заказу былотправлен запрос с уточнениями, поэтому мы не смогли запустить его сразу в работу. Как только ответ был получен(26 января), мы запустили производство и 04 февраля заказ был отправлен.</p>
+						</div>
+					</div>
+				</div>
+				<!-- end comment -->	
+				<!-- begin comment  -->
+				<div class="comment is-blue is-disable">
+					<div class="comment__top">
+						<div class="comment__av"></div>
+						<div class="comment__name">KittyLight27</div>
+						<div class="comment__date">Москва, 5 июля 2015 в 10:33</div>
+						<div class="comment__rating">
+							<div class="comment__minus">-</div>
+							<div class="comment__karma is-minus">-5</div>
+							<div class="comment__plus">+</div>
+						</div>
+					</div>
+					<div class="comment__content">
+						<p>Ужасный магазин, потратила на выбор подарка пол дня!! Сократите ассортимент, вы отнимаете у людей время!</p>
+					</div>
+				</div>
+				<!-- end comment -->	
+				<!-- begin comment  -->
+				<div class="comment is-pink">
+					<div class="comment__top">
+						<div class="comment__av"></div>
+						<div class="comment__share">
+							<button class="btn-share">Расшарить отзыв</button>
+						</div>
+						<div class="comment__name">Борис Б.</div>
+						<div class="comment__date">Москва, 25 августа 2015 в 23:38</div>
+						<div class="comment__rating">
+							<div class="comment__minus">-</div>
+							<div class="comment__karma is-plus">123</div>
+							<div class="comment__plus">+</div>
+						</div>
+					</div>
+					<div class="comment__content">
+						<p>Два раза пользовался сервисом. Первый раз заказывал себе мужскую рубашку по индивидуальным размерам. Все подошло, рубашка понравилась, до сих пор ношу с удовольствием. Второй опыт был отрицательный. Заказал себе готовую рубашку и жене, по индивидуальным размерам и компоновке. В итоге в рубашке жены ошиблись с воротником: вместо ткани с рисунком пошили из обычной белой. Вину свою ателье признало и предложило выслать рубашку обратно и перешить ее с требуемым воротником. Но, к сожалению, рубашка к тому же не подошла по размерам жене. Тут наверное наша вина, что-то не так измерили. Поэтому жена решила забить на нее, уже не исправить. С моей, мужской рубашкой, тоже вышла оплошность. При заказе то ли у меня рука дрогнула, то ли на сайте сбой был, но в итоге пришла мне приталенная рубашка, а в которой я, 32-летний мужчина, даже если сильно похудею, буду смотреться очень комично. В ней комично смотрится даже мой 17-летний племянник с вполне обычной фигурой юноши. Непонятно на какую фигуру вообще, такие рубашки шьются.</p>
+					</div>
+				</div>
+				<!-- end comment -->
+				<!-- begin comment  -->
+				<div class="comment is-blue">
+					<div class="comment__top">
+						<div class="comment__av"><img src="http://placehold.it/42x42" alt=""></div>
+						<div class="comment__share">
+							<button class="btn-share">Расшарить отзыв</button>
+						</div>
+						<div class="comment__name">Fleur de Neige</div>
+						<div class="comment__date">Санкт-Петербург, 5 июля 2015 в 10:33</div>
+						<div class="comment__rating">
+							<div class="comment__minus">-</div>
+							<div class="comment__karma">0</div>
+							<div class="comment__plus">+</div>
+						</div>
+					</div>
+					<div class="comment__social">
+						<div class="social no-pad no-border is-small is-center">
+							<div class="social__box is-fb">
+								<div class="social__web">
+									<a href="#" class="social__btn is-fb"></a>
+								</div>
+								<div class="social__number">38</div>
+							</div>
+							<div class="social__box is-vk">
+								<div class="social__web">
+									<a href="#" class="social__btn is-vk"></a>
+								</div>
+								<div class="social__number">38</div>
+							</div>
+							<div class="social__box is-tw">
+								<div class="social__web">
+									<a href="#" class="social__btn is-tw"></a>
+								</div>
+								<div class="social__number">38</div>
+							</div>
+							<div class="social__box is-od">
+								<div class="social__web">
+									<a href="#" class="social__btn is-od"></a>
+								</div>
+								<div class="social__number">38</div>
+							</div>
+							<div class="social__box is-mail">
+								<div class="social__web">
+									<a href="#" class="social__btn is-mail">Выслать почтой</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comment__content">
+						<p>Ужасный магазин, потратила на выбор подарка пол дня!! Сократите ассортимент, вы отнимаете у людей время!</p>
+						<p>Два раза пользовался сервисом. Первый раз заказывал себе мужскую рубашку по индивидуальным размерам. Все подошло, рубашка понравилась, до сих пор ношу с удовольствием. </p>
+					</div>
+					<div class="comment__reply is-red">
+						<div class="comment__top">
+							<div class="comment__av"><img src="http://placehold.it/42x42" alt=""></div>
+							<div class="comment__name">Ар де Кадо</div>
+							<div class="comment__date">6 июля 2015 в 16:52</div>
+							<div class="comment__rating">
+								<div class="comment__minus">-</div>
+								<div class="comment__karma">0</div>
+								<div class="comment__plus">+</div>
+							</div>
+						</div>
+						<div class="comment__content">
+							<p>Спасибо за Ваш отзыв! Благодаря Вам мы станем лучше. Возможно в профиле были указаны параметры готового изделия, а необходимо параметры тела. Хотим напомнить, что при построении конструкции изделия специалисты к меркам добавляют прибавки на свободу движения и облегания в зависимости от объема рубашки (приталенный, стандартный, свободный). Рекомендуем для начала заказывать тестовое изделие или воспользоваться нашим специальным предложением, при котором тестовое изделие изготавливается бесплатно. По Вашему заказу был отправлен запрос с уточнениями, поэтому мы не смогли запустить его сразу в работу. Как только ответ был получен (26 января), мы запустили производство и 04 февраля заказ был отправлен.</p>
+						</div>
+					</div>
+				</div>
+				<!-- end comment -->	
+			</div>
+			<div class="col-lg-12 col-xs-12">
+				<div class="pages-bottom">
+					<button class="btn-post">Написать отзыв</button>
+					<div class="pages pages_small">
+						<ul class="pages__list">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#" class="is-active">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+						</ul>
+						<span class="pages__span">из</span>
+						<a href="#" class="pages__btn">28</a>
+					</div>
+				</div>
+			</div>
+			
 		</section>
 		<!-- end container -->
-		
-		<ul class="popup-links">
-			<li><a href="#" data-toggle="modal" data-target="#spb">spb</a></li>
-			<li><a href="#" data-toggle="modal" data-target="#table">TAB POPUP</a></li>
-			<li><a href="#" data-toggle="modal" data-target="#address">ADRESS POPUP</a></li>
-			<li><a href="#" data-toggle="modal" data-target="#geoselect">GEOSELEKT</a></li>
-		</ul>
 
 	</main>
 	<!-- end main -->
@@ -1480,362 +1592,6 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-
-
-	<div class="modal fade" id="spb" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog geo" role="document">
-			<button type="button" class="close-out" data-dismiss="modal" aria-label="Close"></button>
-			<div class="geo__inner">
-				<div class="geo__col">
-					<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=azsLMwRt8DaNPNWsO7yYoErxjib6J06d&width=100%&height=516"></script>
-				</div>
-				<div class="geo__col">
-					<div class="geo__box">
-						<h6>Наш офис в Москве</h6>
-						<span class="geo__subtitle">м. Белорусская, 1-я улица Ямского Поля, 15, офис 107</span>
-						<p>Часы работы офиса:</p>
-						<ul>
-							<li>с понедельника по пятницу - <span class="is-time">c 9-00 до 19-00</span></li>
-							<li>суббота и воскресенье - <span class="is-weekend">выходные дни</span></li>
-						</ul>
-					</div>					
-					<span class="geo__bg">Прием рекламаций: в рабочие дни - c 13 до 18 часов.</span>
-					<div class="geo__box">
-						<h6><a href="#" class="link-dotted">Пункт самовывоза в Москве</a></h6>
-						<span class="geo__subtitle">м. Белорусская, 1-я улица Ямского Поля, 15, офис 107</span>
-						<p>Часы работы офиса:</p>
-						<ul>
-							<li>с понедельника по пятницу - <span class="is-time">c 9-00 до 19-00</span></li>
-							<li>суббота и воскресенье - <span class="is-weekend">выходные дни</span></li>
-						</ul>
-					</div>
-					<div class="geo__contacts">
-						<div class="geo__field">
-							<p>8 (495) 777-22-50</p>
-							<small>многоканальный телефон</small>
-						</div>
-						<div class="geo__field">
-							<p><a href="#">contact@ac-studio.ru</a></p>
-							<small>отвечаем на все ваши письма</small>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="table" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog pop-tab" role="document">
-			<span class="pop-tab__title">Стоимость доставки в пределах МКАД:</span>
-			<div class="pop-tab__inner">
-				<button type="button" class="close-out" data-dismiss="modal" aria-label="Close"></button>
-				<table class="del-table">
-					<thead>
-						<tr>
-							<th>Вариант доставки</th>
-							<th>Интервал и условия доставки </th>
-							<th>Стоимость доставки</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="is-first"><b>Самовывоз из Шоурума на Белорусской</b></td>
-							<td><b>Ежедневно с 14:00</b></td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td class="is-first"><b>Стандартная доставка курьером</b></td>
-							<td>11:00 - 18:00</td>
-							<td>0</td>
-						</tr>
-						<tr>
-							<td class="is-first">Доставка курьером утром или вечером</td>
-							<td>Утро 10:00 - 13:00 <br>Вечер 18:00 - 21:00</td>
-							<td>200</td>
-						</tr>
-						<tr>
-							<td class="is-first">Доставка курьером в точный час</td>
-							<td>1-2 рабочих дня вручение заказа с 10:00 до 21:00</td>
-							<td>300</td>
-						</tr>
-						<tr>
-							<td class="is-first">Доставка курьером в выходные и праздники</td>
-							<td>11:00 - 17:00</td>
-							<td>300</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="address" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog pop-address" role="document">
-			<div class="map">
-				<div class="map__in">
-					<div class="map__list js-scroll-init">
-						<ul class="map__items">
-							<li>
-								<label class="radio radio_map">
-									<input type="radio" name="map">
-									<span>ул. Ленинский проспект д. 34</span>
-								</label>
-							</li>
-							<li>
-								<label class="radio radio_map">
-									<input type="radio" name="map">
-									<span>ул. Косыгина д. 184</span>
-								</label>
-							</li>
-							<li>
-								<label class="radio radio_map">
-									<input type="radio" name="map">
-									<span>ул. Проспект 60-летия Октября д. 294 стр. 1</span>
-								</label>
-								<ul>
-									<li>Можно забрать: завтра (среда 27 сентября) с 14:00</li>
-									<li>Далее: пн-пт. с 11:00 - 19:00</li>
-									<li>Стоимость: 175 руб.</li>
-								</ul>
-							</li>
-							<li>
-								<label class="radio radio_map">
-									<input type="radio" name="map">
-									<span>ул. Ленинский проспект д. 34</span>
-								</label>
-							</li>
-							<li>
-								<label class="radio radio_map">
-									<input type="radio" name="map">
-									<span>ул. Косыгина д. 184</span>
-								</label>
-							</li>
-							<li>
-								<label class="radio radio_map">
-									<input type="radio" name="map">
-									<span>ул. Проспект 60-летия Октября д. 294 стр. 1</span>
-								</label>
-								<ul>
-									<li>Можно забрать: завтра (среда 27 сентября) с 14:00</li>
-									<li>Далее: пн-пт. с 11:00 - 19:00</li>
-									<li>Стоимость: 175 руб.</li>
-								</ul>
-							</li>
-							<li>
-								<label class="radio radio_map">
-									<input type="radio" name="map">
-									<span>ул. Ленинский проспект д. 34</span>
-								</label>
-							</li>
-							<li>
-								<label class="radio radio_map">
-									<input type="radio" name="map">
-									<span>ул. Косыгина д. 184</span>
-								</label>
-							</li>
-							<li>
-								<label class="radio radio_map">
-									<input type="radio" name="map">
-									<span>ул. Проспект 60-летия Октября д. 294 стр. 1</span>
-								</label>
-								<ul>
-									<li>Можно забрать: завтра (среда 27 сентября) с 14:00</li>
-									<li>Далее: пн-пт. с 11:00 - 19:00</li>
-									<li>Стоимость: 175 руб.</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<div class="map__canvas">
-						<div id="YMapsID"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal fade" id="geoselect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog geo" role="document">
-			<button type="button" class="close-out" data-dismiss="modal" aria-label="Close"></button>
-			<div class="geo__inner">
-				<div class="pop-cities">
-					<div class="pop-cities__top">
-						<div class="text-field">
-							<label class="text-field__block">
-								<input class="autocomplete" type="text" placeholder="Начните вводить свой населенный пункт">
-								<i></i>
-							</label>
-						</div>
-						<h6>Выберите ваше местоположение</h6>
-					</div>
-					<div class="pop-cities__box">
-						<ul>
-							<li class="pop-cities__col">
-								<ul>
-									<li><a href="#">Москва</a></li>
-									<li><a href="#">Санкт-Петербург</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Абакан</a></li>
-									<li><a href="#">Альметьевск</a></li>
-									<li><a href="#">Архангельск</a></li>
-									<li><a href="#">Асбест</a></li>
-									<li><a href="#">Астрахань</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Барнаул</a></li>
-									<li><a href="#">Белгород</a></li>
-									<li><a href="#">Березники</a></li>
-									<li><a href="#">Благовещенск</a></li>
-									<li><a href="#">Братск</a></li>
-									<li><a href="#">Брянск</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Великий Новгород</a></li>
-									<li><a href="#">Владивосток</a></li>
-									<li><a href="#">Владимир</a></li>
-									<li><a href="#">Волгоград</a></li>
-									<li><a href="#">Волгодонск</a></li>
-									<li><a href="#">Воркута</a></li>
-									<li><a href="#">Воронеж</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Гатчина</a></li>
-								</ul>
-							</li>
-							<li class="pop-cities__col">
-								<ul>
-									<li><a href="#">Глазов</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Екатеринбург</a></li>
-									<li><a href="#">Елец</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Иваново</a></li>
-									<li><a href="#">Ижевск</a></li>
-									<li><a href="#">Иркутск</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Йошкар-Ола</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Казань</a></li>
-									<li><a href="#">Калининград</a></li>
-									<li><a href="#">Калуга</a></li>
-									<li><a href="#">Каменск-Уральский</a></li>
-									<li><a href="#">Канск</a></li>
-									<li><a href="#">Каспийск</a></li>
-									<li><a href="#">Кемерово</a></li>
-									<li><a href="#">Киров</a></li>
-									<li><a href="#">Комсомольск-на-Амуре</a></li>
-									<li><a href="#">Кострома</a></li>
-									<li><a href="#">Краснодар</a></li>
-									<li><a href="#">Красноярск</a></li>
-									<li><a href="#">Курган</a></li>
-									<li><a href="#">Курск</a></li>
-								</ul>
-							</li>
-							<li class="pop-cities__col">
-								<ul>
-									<li><a href="#">Ленинск-Кузнецкий</a></li>
-									<li><a href="#">Липецк</a></li>
-									<li><a href="#">Люберцы</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Магнитогорск</a></li>
-									<li><a href="#">Майкоп</a></li>
-									<li><a href="#">Миасс</a></li>
-									<li><a href="#">Мурманск</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Набережные Челны</a></li>
-									<li><a href="#">Нефтекамск</a></li>
-									<li><a href="#">Нижневартовск</a></li>
-									<li><a href="#">Нижний Новгород</a></li>
-									<li><a href="#">Нижний Тагил</a></li>
-									<li><a href="#">Новокузнецк</a></li>
-									<li><a href="#">Новороссийск</a></li>
-									<li><a href="#">Новосибирск</a></li>
-									<li><a href="#">Новоуральск</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Озерск</a></li>
-									<li><a href="#">Омск</a></li>
-									<li><a href="#">Орел</a></li>
-									<li><a href="#">Оренбург</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Пенза</a></li>
-								</ul>
-							</li>
-							<li class="pop-cities__col">
-								<ul>
-									<li><a href="#">Первоуральск</a></li>
-									<li><a href="#">Пермь</a></li>
-									<li><a href="#">Петрозаводск</a></li>
-									<li><a href="#">Псков</a></li>
-									<li><a href="#">Пятигорск</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Ростов-на-Дону</a></li>
-									<li><a href="#">Рязань</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Самара</a></li>
-									<li><a href="#">Саранск</a></li>
-									<li><a href="#">Саратов</a></li>
-									<li><a href="#">Серов</a></li>
-									<li><a href="#">Смоленск</a></li>
-									<li><a href="#">Снежинск</a></li>
-									<li><a href="#">Ставрополь</a></li>
-									<li><a href="#">Сургут</a></li>
-									<li><a href="#">Сыктывкар</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Таганрог</a></li>
-									<li><a href="#">Тамбов</a></li>
-									<li><a href="#">Тверь</a></li>
-									<li><a href="#">Тольятти</a></li>
-									<li><a href="#">Томск</a></li>
-								</ul>
-							</li>
-							<li class="pop-cities__col">
-								<ul>
-									<li><a href="#">Тула</a></li>
-									<li><a href="#">Тюмень</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Улан-Удэ</a></li>
-									<li><a href="#">Ульяновск</a></li>
-									<li><a href="#">Уфа</a></li>
-									<li><a href="#">Ухта</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Хабаровск</a></li>
-									<li><a href="#">Ханты-Мансийск</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Чебоксары</a></li>
-									<li><a href="#">Челябинск</a></li>
-									<li><a href="#">Череповец</a></li>
-									<li><a href="#">Чита</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Шадринск</a></li>
-									<li><a href="#">Шахты</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Щелково</a></li>
-								</ul>
-								<ul>
-									<li><a href="#">Якутск</a></li>
-									<li><a href="#">Ярославль</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	
 	<div class="fixed-br js-panel js-fixed">
 		<div class="f-panel js-panel-block">
@@ -2223,8 +1979,6 @@
 		</div>	
 
 	</div>
-
-
 
 <!-- load scripts -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
