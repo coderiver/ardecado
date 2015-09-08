@@ -621,3 +621,87 @@
 				text-decoration: underline
 				&:hover
 					text-decoration: none
+
+
+// order check
+.i-small-check
+	+s(small-check)
+
+
+.report
+	position: relative
+	min-height: 160px
+	&.is-error
+		.report__paid
+			+s(not-paid)
+		.report__ttl,
+		.report__bl-ttl
+			color: #543939
+		.report__bl
+			color: #857473
+			border-color: #DFB8AF
+			&.txt-mod
+				color: #543939
+	&__ttl
+		padding-top: 20px
+		text-align: center
+		font-size: 48px
+		color: #595b48
+		+asblack
+		.i, span
+			display: inline-block
+			vertical-align: middle
+		.i
+			margin-right: 22px
+	&__check
+		font-size: 20px
+		color: #888681
+		+asbold
+		span
+			color: #595b48
+		span
+			display: inline-block
+			padding: 0 5px
+			background: #f4fbdc
+			border-radius: 2px
+	&__bl
+		margin: 30px 70px 0
+		padding-top: 30px
+		font-size: 18px
+		color: #888681
+		border-top: 1px dashed #cad6b3
+		&.txt-mod
+			color: #595b48
+			+asbold
+			p
+				margin-top: 18px
+				&:first-child
+					margin-top: 0
+		&-ttl
+			margin-bottom: 10px
+			font-size: 22px
+			color: #595b48
+			+asblack
+	&__paid
+		position: absolute
+		top: 75px
+		right: -15px
+		+s(paid)
+	&__cards
+		margin-top: 13px
+		img
+			display: inline-block
+			vertical-align: middle
+			margin: 0 5px
+	a
+		text-decoration: underline
+		color: #42b0ef
+		&:hover
+			text-decoration: none
+	.btn-pay
+		margin-top: 25px
+		min-width: 253px
+
+.cards__payment-inner
+	&.is-error
+		background-color: #F0D4D4

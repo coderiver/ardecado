@@ -1,12 +1,13 @@
 .catalog__divider
 	clear: both
 .productbottom
+	margin-bottom: 10px
 	text-align: center
 	clear: both
-	margin-bottom: 30px 
-	padding-top: 16px  
+	padding: 16px 0 30px
+	border-bottom: 1px dashed #d8d8d2
 	a
-		margin: 0 9px 
+		margin: 0 9px
 		&:hover
 			text-decoration: none
 
@@ -24,77 +25,77 @@
 		width: 100%
 		left: 0
 		display: block
-		bottom: 10px   
-		font-size: 13px 
-		color: #6DB045 
+		bottom: 10px
+		font-size: 13px
+		color: #6DB045
 		text-align: center
 		strong
 			font-weight: normal
 			+semi
 .proartikul
-	margin-bottom: 16px 
-	background: #F4F4F0 
+	margin-bottom: 16px
+	background: #F4F4F0
 	border-radius: 10px
 	text-align: center
 	padding: 15px 0 8px 0
 	border-radius: 10px
-	margin-bottom: 16px 
-	background: #F4F4F0  
-	color: #000000 
+	margin-bottom: 16px
+	background: #F4F4F0
+	color: #000000
 	+semi
-	font-size: 13px 
+	font-size: 13px
 	&__text
 		display: block
 .prodelivery
-	background: #FFFFFF 
-	margin-bottom: 16px 
+	background: #FFFFFF
+	margin-bottom: 16px
 	border-radius: 10px
-	padding: 17px 12px 10px 12px 
+	padding: 17px 12px 10px 12px
 	h5
-		font-size: 22px 
-		padding-left: 57px 
+		font-size: 22px
+		padding-left: 57px
 		position: relative
-		margin-top: 0 
-		margin-bottom: 7px 
+		margin-top: 0
+		margin-bottom: 7px
 		i
 			display: inline-block
 			position: absolute
-			top: 0px 
-			left: 0 
+			top: 0px
+			left: 0
 	&__icon
 		+s(r-delivery-small)
 	&__selficon
 		+s(r-room-small)
 	&__list
 		list-style: none
-		font-size: 13px 
+		font-size: 13px
 		+semi
-		margin-bottom: 17px 
+		margin-bottom: 17px
 		li
-			padding-left: 20px 
+			padding-left: 20px
 			position: relative
-			margin-bottom: 10px 
+			margin-bottom: 10px
 			a
 				text-decoration: underline
 				&:hover
 					text-decoration: none
 				&.js-link
 					text-decoration: none
-					border-bottom: 1px dotted 
+					border-bottom: 1px dotted
 					&:hover
 						text-decoration: none
 						border-bottom: 1px dotted #fff
 			&:last-child
-				margin-bottom: 0 
+				margin-bottom: 0
 			&:before
 				position: absolute
 				content: ""
 				left: 0
-				top: 2px   
+				top: 2px
 		em
 			font-style: normal
 			background: #E2FEB9
-			padding: 0 2px  
+			padding: 0 2px
 	&__price
 		&:before
 			+s(rub-small)
@@ -106,45 +107,45 @@
 			+s(time)
 	&__more
 		text-align: center
-		font-size: 16px 
-		padding-bottom: 6px 
+		font-size: 16px
+		padding-bottom: 6px
 		a
 			text-decoration: none
 			border-bottom: 1px dashed
 			&:hover
 				text-decoration: none
-				border-color: #FFF 
-			
+				border-color: #FFF
+
 .js-link,.js-link:hover
 	text-decoration: none
-	border-bottom: 1px dotted 
+	border-bottom: 1px dotted
 .profeatures
-	margin-bottom: 16px 
-	background: #F4F4F0 
+	margin-bottom: 16px
+	background: #F4F4F0
 	border-radius: 10px
-	padding: 13px 14px 
+	padding: 13px 14px
 	list-style: none
 	li
-		margin-bottom: 24px 
+		margin-bottom: 24px
 		position: relative
-		font-size: 13px 
-		color: #56415E 
-		padding-left: 33px 
+		font-size: 13px
+		color: #56415E
+		padding-left: 33px
 		&:last-child
-			margin-bottom: 0 
+			margin-bottom: 0
 		&:before
 			position: absolute
-			top: -1px 
-			left: 0 
+			top: -1px
+			left: 0
 			content: ' '
-			+s(round-check-small) 
+			+s(round-check-small)
 .prosocials
-	font-size: 0 
+	font-size: 0
 	a
 		display: inline-block
-		margin-right: 16px 
+		margin-right: 16px
 		&:last-child
-			margin-right: 0 
+			margin-right: 0
 	@each $s in fb,tw,vk,ok,mail,print
 		&__#{$s}
 			+s(p-#{$s})
@@ -153,34 +154,34 @@
 .propic
 	border-radius: 18px
 	overflow: hidden
-	position: relative 
+	position: relative
 	img
 		display: block
 	.propic__badge
 		position: absolute
-		top: 8px 
+		top: 8px
 		right: 8px
 	.propic__actions
 		position: absolute
-		top: 12px  
-		left: 12px 
+		top: 12px
+		left: 12px
 		a
-			margin-right: 10px 
+			margin-right: 10px
 			display: inline-block
 			opacity: .6
 			cursor: pointer
 			&:hover
-				opacity: 1  
-	@each $s in fave,view,add 
+				opacity: 1
+	@each $s in fave,view,add
 		.propic__#{$s}
-			+s(pro-#{$s})  
+			+s(pro-#{$s})
 .prothumbnails
 	+clr
-	margin: 15px 0 17px 0 
+	margin: 15px 0 17px 0
 .prothumbnail
 	float: left
 	border-radius: 6px
-	margin-right: 20px  
+	margin-right: 20px
 	position: relative
 	cursor: pointer
 	overflow: hidden
@@ -200,11 +201,11 @@
 		cursor: pointer
 		border-radius: 6px
 		&:before
-			content: "" 
+			content: ""
 			position: absolute
 			+s(i-3d)
 			top: 12px
-			left: 12px  
+			left: 12px
 			cursor: pointer
 	&__video
 		position: absolute
@@ -212,68 +213,68 @@
 		left: 0
 		right: 0
 		bottom: 0
-		background: rgba(#E96372,.5) 
+		background: rgba(#E96372,.5)
 		cursor: pointer
 		border-radius: 6px
 		&:before
-			content: "" 
+			content: ""
 			position: absolute
 			+s(i-video)
 			top: 12px
-			left: 17px  
+			left: 17px
 			cursor: pointer
 .protitle
-	margin-bottom: 7px 
+	margin-bottom: 7px
 	margin-top: 0
 .prodescription
-	font-size: 13px  
-	color: #5B5047 
+	font-size: 13px
+	color: #5B5047
 	p
 		margin-bottom: 1em
 .prodesign
 	float: right
-	width: 230px 
+	width: 230px
 	&__label
-		font-size: 14px 
+		font-size: 14px
 		+semi
-		color: #7A7A7A 
-		margin-bottom: 7px 
+		color: #7A7A7A
+		margin-bottom: 7px
 .procolors
 	float: left
-	width: 230px 
-	margin-bottom: 20px 
+	width: 230px
+	margin-bottom: 20px
 	&__label
-		font-size: 14px 
+		font-size: 14px
 		+semi
-		color: #7A7A7A 
-		margin-bottom: 7px 
+		color: #7A7A7A
+		margin-bottom: 7px
 	&__color
-		width: 26px 
-		height: 26px 
-		border-radius: 50% 
+		width: 26px
+		height: 26px
+		border-radius: 50%
 		margin-right: 10px
 		display: inline-block
-		background-color: #fff 
-		cursor: pointer 
+		background-color: #fff
+		cursor: pointer
 		position: relative
 		&.is-active
 			i
 				content: ' '
 				position: absolute
 				+s(check-black)
-				top: 7px 
-				left: 5px 
+				top: 7px
+				left: 5px
 		&[style]
 			&.is-active
 				i
 					+s(check-white)
 .select_small
 	.ms-choice
-		height: 38px 
-		line-height: 38px 
-		padding-left: 14px 
+		height: 38px
+		line-height: 38px
+		padding-left: 14px
 	.ms-choice > span
-		font-size: 15px 
+		font-size: 15px
 		+asbold
 	.ms-drop ul > li label
 		padding-left: 33px
@@ -281,44 +282,44 @@
 	clear: both
 .proprice
 	float: left
-	width: 230px 
-	margin-bottom: 20px 
+	width: 230px
+	margin-bottom: 20px
 	.proprice__value
 		+var
-		color: #4A485A  
-		font-size: 30px 
+		color: #4A485A
+		font-size: 30px
 		display: inline-block
 		vertical-align: middle
 	&__multiply
-		color: #C9C9BF 
+		color: #C9C9BF
 		display: inline-block
 		vertical-align: middle
-		margin: 0 7px 
-		line-height: 1 
-		font-size: 30px 
+		margin: 0 7px
+		line-height: 1
+		font-size: 30px
 	&__number
-		width: 45px 
-		border: none 
+		width: 45px
+		border: none
 		border-radius: 8px
 		+var
-		font-size: 24px 
+		font-size: 24px
 		color: #CDCDCD
 		text-align: center
-		background: #F6F6F3 
+		background: #F6F6F3
 		padding: 0
-		vertical-align: middle 
+		vertical-align: middle
 		&:focus
-			color: #000 
+			color: #000
 .prometa
 	float: right
-	width: 230px 
-	padding-top: 5px 
+	width: 230px
+	padding-top: 5px
 .probonuses
-	font-size: 24px 
+	font-size: 24px
 	background: #FBF0A9
 	+asbold
 	border-radius: 8px
-	padding: 0 15px 0 8px 
+	padding: 0 15px 0 8px
 	display: inline-block
 	vertical-align: middle
 	strong
@@ -330,203 +331,203 @@
 	&__icon
 		+s(question)
 		display: inline-block
-		margin-left: 10px 
+		margin-left: 10px
 		vertical-align: middle
 .probuy
-	margin-bottom: 25px 
+	margin-bottom: 25px
 	button
-		margin-right: 14px 
+		margin-right: 14px
 		vertical-align: middle
 .prooneclick
 	display: inline-block
 	vertical-align: middle
 	+semi
-	font-size: 14px 
-	color: #7A7A7A 
+	font-size: 14px
+	color: #7A7A7A
 	text-decoration: underline
 	text-align: center
-				
+
 .protabs
-	padding-top: 23px 
-	border-top: 1px dashed #D9D9D3 
+	padding-top: 23px
+	border-top: 1px dashed #D9D9D3
 	&__tabs
-		font-size: 0 
+		font-size: 0
 		margin-bottom: 14px
 		+clr
 		a
 			display: inline-block
-			height: 46px 
+			height: 46px
 			line-height: 46px
-			background: #F2F2ED  
+			background: #F2F2ED
 			border-radius: 8px
-			font-size: 24px 
-			color: #48B1EC 
-			width: 152px 
-			margin-right: 7px 
+			font-size: 24px
+			color: #48B1EC
+			width: 152px
+			margin-right: 7px
 			+asblack
 			text-decoration: none
 			position: relative
 			text-align: center
 			b
 				position: absolute
-				right: 10px 
-				top: 6px 
-				color: #A8A8A4 
-				font-size: 14px 
-				line-height: 1 
+				right: 10px
+				top: 6px
+				color: #A8A8A4
+				font-size: 14px
+				line-height: 1
 			span
 				position: relative
 				&:before
 					position: absolute
-					bottom: 3px 
+					bottom: 3px
 					left: 0
-					width: 100%  
-					content: "" 
+					width: 100%
+					content: ""
 					border-top: 1px dashed #88C8ED
-					
+
 			&:last-child
-				margin-right: 0 
+				margin-right: 0
 			&:hover,&.is-active
-				background: #FFFFFF 
-				color: #4A485A 
+				background: #FFFFFF
+				color: #4A485A
 				span
 					&:before
-						display: none 
+						display: none
 	&__description
-		font-size: 13px 
-		color: #5C5047 
+		font-size: 13px
+		color: #5C5047
 		line-height: 1.3
-		padding-top: 10px 
+		padding-top: 10px
 		p
-			margin-bottom: 1em 
+			margin-bottom: 1em
 .addcommentplease
-	font-size: 17px 
-	margin-bottom: 15px 
+	font-size: 17px
+	margin-bottom: 15px
 	+asblack
 	.help
-		margin-left: 4px 
+		margin-left: 4px
 	strong
 		font-weight: normal
 		border-radius: 6px
-		background: #FBF0A9 
-		padding: 2px 6px 
+		background: #FBF0A9
+		padding: 2px 6px
 .addcomment
-	margin-bottom: 20px 
+	margin-bottom: 20px
 	textarea
-		border: 2px solid #D8D6D0 
-		height: 80px 
+		border: 2px solid #D8D6D0
+		height: 80px
 		padding: 10px 16px
 		box-sizing: border-box
-		margin-bottom: 10px 
-		width: 100% 
+		margin-bottom: 10px
+		width: 100%
 		+reg
-		font-size: 14px 
-		color: #5C5147 
+		font-size: 14px
+		color: #5C5147
 		resize: none
 .btn-addcomment
-	color: #fff 
-	height: 38px 
+	color: #fff
+	height: 38px
 	line-height: 38px
 	padding: 0 24px
-	border-radius: 6px 
-	font-size: 22px 
+	border-radius: 6px
+	font-size: 22px
 	+asblack
-	background: #89C867 
+	background: #89C867
 	cursor: pointer
 	&:hover
-		background: #58911B 
+		background: #58911B
 	&.is-inactive
-		color: #DFEED6 
+		color: #DFEED6
 		cursor: default
-		background: #B0D798 
+		background: #B0D798
 		&:hover
-			background: #B0D798 
+			background: #B0D798
 .comment
-	background: #FFF 
+	background: #FFF
 	border-radius: 16px
-	margin-bottom: 15px 
+	margin-bottom: 15px
 	padding: 14px 10px 1px 10px
 	&.is-blue
 		.comment__name
-			color: #ED90A6 
+			color: #ED90A6
 		.comment__av
-			background-color: #ED90A6 
+			background-color: #ED90A6
 	.comment__content
 		padding:  8px 6px 0 6px
-		font-size: 14px 
+		font-size: 14px
 		+reg
-		color: #5C5147 
-		border-top: 1px dashed #EDEDEC 
+		color: #5C5147
+		border-top: 1px dashed #EDEDEC
 		p
-			margin-bottom: 1em 
+			margin-bottom: 1em
 	.comment__top
-		padding-bottom: 10px 
+		padding-bottom: 10px
 		position: relative
 		+clr
 	.comment__av
 		float: left
 		border-radius: 50%
 		overflow: hidden
-		margin-right: 15px 
-		margin-left: 10px 
-		background-color: #BBDBEC 
+		margin-right: 15px
+		margin-left: 10px
+		background-color: #BBDBEC
 		img
 			display: block
 	.comment__name
 		text-decoration: none
-		color: #53B5ED 
+		color: #53B5ED
 		+asbold
-		font-size: 16px 
-		padding-top: 3px 
+		font-size: 16px
+		padding-top: 3px
 		display: inline-block
 	.comment__date
 		+reg
-		font-size: 12px 
-		color: #B1ADAD 
+		font-size: 12px
+		color: #B1ADAD
 	.comment__rating
 		position: absolute
-		top: 5px 
-		right: 10px 
-		font-size: 0 
+		top: 5px
+		right: 10px
+		font-size: 0
 		.comment__karma
 			+asblack
-			margin: 0 8px  
+			margin: 0 8px
 			vertical-align: middle
-			color: #5C5147 
+			color: #5C5147
 			font-size: 20px
 			display: inline-block
 			&.is-plus
-				color: #8BA94D  
+				color: #8BA94D
 			&.is-minus
-				color: #D88384 
+				color: #D88384
 		.comment__plus,.comment__minus
 			+asbold
-			font-size: 21px 
-			background: #E8EEDC 
-			width: 20px 
-			height: 20px 
+			font-size: 21px
+			background: #E8EEDC
+			width: 20px
+			height: 20px
 			line-height: 20px
 			border-radius: 20px
 			display: inline-block
-			vertical-align: middle 
+			vertical-align: middle
 			text-align: center
-			color: #7F9B46 
+			color: #7F9B46
 			cursor: pointer
 		.comment__minus
-			background: #EEE6DC 
+			background: #EEE6DC
 			color: #D88384
 	.comment__reply
-		padding-left: 38px 
+		padding-left: 38px
 		position: relative
 		&:before
-			content: " " 
+			content: " "
 			+s(reply)
-			position: absolute 
-			top: 8px 
-			left: 4px 
+			position: absolute
+			top: 8px
+			left: 4px
 		.comment__top
-			.comment__name 
-				color: #D03C2F 
+			.comment__name
+				color: #D03C2F
 		.comment__content
 			border-top: none
-			padding-left: 6px 
+			padding-left: 6px
