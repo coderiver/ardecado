@@ -11,5 +11,6 @@ head.load("js/lib/jquery.js",
 					"js/lib/swiper.jquery.min.js",
 					"js/ui.js",
 					"js/filters.js",
+					"js/profile.js",
 					"js/order.js",
 					"js/common.js");
