@@ -670,6 +670,7 @@ body
 	&__scroll
 		z-index: 2
 	&__shadow
+		display: none
 		height: 10px
 		position: absolute
 		bottom: 0
@@ -1708,6 +1709,16 @@ body
 .pages
 	text-align: center
 	font-size: 0
+	&_small
+		.pages
+			&__list a, &__btn
+				font-size: 16px
+				width: 45px
+				line-height: 43px
+				margin: 0 8px 
+			&__span
+				font-size: 16px
+				margin: 0 8px 
 	&__list, &__span, &__btn
 		display: inline-block
 		vertical-align: middle
@@ -2939,6 +2950,13 @@ body
 		margin: 0
 	&.no-pad
 		padding: 0
+	&.is-small
+		&.is-center
+			text-align: center
+		.social__btn
+			&.is-mail
+				&:before
+					display: block
 	&__box, &__web, &__number
 		display: inline-block
 		vertical-align: top
@@ -4201,6 +4219,7 @@ body
 	&__section
 		padding: 30px 0 35px 
 		border-bottom: 1px dashed #d8d8d2  
+		position: relative
 		p
 			font-size: 14px
 			+reg
@@ -4209,6 +4228,11 @@ body
 			a
 				color: #42b0ef
 				text-decoration: none
+	.i-back
+		position: absolute
+		top: 50%
+		margin-top: -28px
+		left: 17px
 	&__title, &__subtitle
 		display: block
 	&__title
@@ -4231,12 +4255,13 @@ body
 		border-radius: 9px
 		border: 3px solid #d7d7cf
 		width: 100%
+		border-collapse: separate  
+		overflow: hidden
+		background: #ecece4 
 		th, td
-			border: 1px solid #c9c9c2
-			border-top: none
-			border-bottom: none
+			border-right: 1px solid #c9c9c2
 			&:last-child
-				border-left: none
+				border-right: none
 		th
 			font-size: 18px
 			font-weight: normal
@@ -4394,4 +4419,82 @@ body
 		+reg
 	a
 		color: #42b0ef
+
+
+.i-back
+	+s(back)
+
+.feedback-page
+	.comment
+		margin-bottom: 30px
+
+.comment
+	&__av
+		width: 42px
+		height: 42px
+	&.is-pink
+		.comment__av
+			background: url(img/icons/profile-blue.png) no-repeat
+			+cover 
+	&.is-blue
+		.comment__av
+			background: url(img/icons/profile-pink.png) no-repeat
+			+cover 
+	&.is-disable
+		background-color: #f6f6f2
+		.comment
+			&__av
+				opacity: 0.6
+			&__content
+				p
+					opacity: 0.4
+					
+
+.comment__social
+	.social 
+		margin: 0
+		border: none 
+.comment__share
+	float: right
+	padding: 10px 130px 0 0 
+.btn-share
+	display: inline-block
+	vertical-align: top
+	background: none
+	color: #42b0ef
+	font-size: 14px
+	line-height: 20px
+	position: relative
+	padding: 0 0 0 25px 
+	&:before
+		content: "" 
+		position: absolute
+		top: 0
+		left: 0
+		+svg(settings-blue, 17, 17)
 		
+.btn-post
+	color: white
+	font-size: 30px
+	line-height: 40px
+	+asblack
+	background-color: #87ca62
+	padding: 5px 25px 4px 65px
+	border-radius: 5px
+	position: relative
+	&:hover
+		background-color: #C9E4BA
+	&:active
+		background-color: #58911B
+	&:before
+		position: absolute
+		content: "" 
+		+s(pencil-white)
+		top: 10px
+		left: 22px
+		
+.pages-bottom
+	text-align: center
+	padding: 10px 0 77px 
+	.btn-post
+		margin-bottom: 42px

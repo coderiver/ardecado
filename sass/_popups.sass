@@ -1,3 +1,6 @@
+.modal
+	background: rgba(#090911, 0.88) 
+
 .modal-dialog
 	margin: 30px auto 
 	width: 600px
@@ -389,4 +392,71 @@
 	cursor: pointer
 	+s(close-out)
 
-	
+.pop-tab
+	width: 755px
+	padding: 40px 0 
+	&__title
+		display: block
+		color: #807e8e
+		+asbold
+		font-size: 18px
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 20px
+	&__inner
+		box-shadow: 0 0 0 13px #fff
+		border-radius: 9px
+		position: relative
+		background: #fff 
+	.close-out
+		right: -50px
+		top: -8px
+.pop-address
+	width: 780px
+	background-color: white
+	border-radius: 6px
+	.map
+		width: 100%
+
+.pop-cities
+	font-size: 0
+	padding: 15px 60px 20px 
+	&__box
+		a
+			color: #4a485b
+			font-size: 14px
+			line-height: 18px
+			+reg
+			text-decoration: none
+			&:hover
+				text-decoration: underline
+	&__col
+		display: inline-block
+		vertical-align: top
+		width: 20%
+		ul
+			padding: 8px 0 
+	.text-field
+		float: right
+		width: 395px
+		margin: 0 0 0 20px 
+		position: relative
+		i
+			position: absolute
+			top: 50%
+			right: 14px
+			+s(i-search-gray)
+			margin-top: -8px
+		.autocomplete
+			padding-right: 40px
+			+placeholder
+				font-size: 18px
+				line-height: 1.4
+	h6
+		padding: 10px 0
+		overflow: hidden 
+		font-size: 26px
+	&__top
+		padding: 0 0 5px 
+.ui-autocomplete
+	z-index: 2000 
