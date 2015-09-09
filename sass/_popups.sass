@@ -709,3 +709,33 @@
 		left: -73px
 	.popup__title
 		color: #4a485b
+		
+//zoom
+.zoomLens
+	border: 1px solid #fff !important
+	opacity: 1 !important
+	cursor: none !important
+	background: none !important
+	border-radius: 13px
+	&:before, &:after
+		border-radius: 13px
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+	&:before
+		background: url(img/bgzoom.png) center center
+		opacity: 0.45
+	&:after		
+		border: 6px solid #fff
+
+.zoomWindowContainer
+	div
+		border: none !important 
+
+.propic__img
+	position: relative
+	width: 380px
+	height: 380px
