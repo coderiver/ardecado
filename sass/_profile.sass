@@ -614,7 +614,144 @@
         &.old
             font-size: 14px
             +var
-            text-decoration: line-through     
+            text-decoration: line-through
+
+.notify
+    .notify__nav
+        font-size: 0
+        padding-bottom: 20px
+        border-bottom: 1px dashed #dadad8 
+        margin-bottom: 20px 
+        li
+            display: inline-block
+            vertical-align: middle
+            margin-right: 58px
+    .notify__link
+        display: inline-block
+        padding: 0 5px
+        border-radius: 5px 
+        font-size: 20px
+        +asbold
+        color: #42b0ef
+        span
+            display: inline-block
+            border-bottom: 1px dotted 
+            line-height: 1
+        &.is-active
+            color: #4a485b
+            background: #f4fbdc
+            span
+                border-bottom: none
+    .notify__list
+        font-size: 0
+        margin-left: -3%
+    .notify__form
+        padding: 30px 0
+        background: #f9f9f9
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05) 
+        p
+            margin-bottom: 10px
+            +semi
+            font-size: 13px
+            color: #8e8e8e
+        .row
+            margin-bottom: 25px 
+        .notify__remember
+            margin-bottom: 0     
+        .ms-choice > span
+            font-size: 16px
+        .checkbox
+            margin-top: 0        
+    .notify__topper
+        text-align: center
+        padding-bottom: 10px
+        border-bottom: 1px dashed #dadad8 
+        margin-bottom: 20px        
+        .title-h5
+            white-space: nowrap         
+    .notify__bottom
+        text-align: center
+        .btn-order
+            width: auto
+    .notify__alert
+        +semi
+        font-size: 14px
+        color: #f4818a
+        margin-bottom: 25px 
+    .notify__delete
+        padding-top: 30px         
+.notification
+    position: relative
+    display: inline-block
+    vertical-align: top
+    width: 47%
+    margin-left: 3% 
+    margin-bottom: 3%
+    background: #f9f9f9
+    padding: 42px 20px
+    text-align: center
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05)
+    font-size: 14px
+    +asbold
+    &:before
+        content: ""
+        position: absolute
+        top: -25px
+        left: 50%
+        +s(remind-deco)
+        +rotate(15)
+        z-index: 3
+    &:hover
+        .notification__hover
+            visibility: visible
+            opacity: 1         
+    &.notification_left
+        &:before
+            +rotate(-30)    
+    .notification__event
+        font-size: 24px
+        color: #4a485b
+    .notification__date
+        +asblack
+        font-size: 48px
+        color: #4a485b
+    .notification__timeleft
+        font-size: 18px
+        color: #97be59 
+    .notification__hover
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background: rgba(#fff, 0.9)
+        +vertical
+        opacity: 0
+        visibility: hidden 
+        +tr(opacity 300ms)
+        z-index: 2
+    .notification__in
+        display: inline-block
+        vertical-align: middle    
+    .notification__edit
+        display: inline-block
+        vertical-align: middle
+        height: 30px
+        margin-bottom: 8px 
+        width: 114px
+        color: #42b0ef
+        background: #d0ebfb 
+        font-size: 14px
+        +asbold             
+    .notification__remove
+        display: inline-block
+        vertical-align: middle
+        height: 30px
+        width: 114px
+        background: #ffe6e8 
+        color: #f28294
+        font-size: 14px
+        +asbold                                       
 
 
 

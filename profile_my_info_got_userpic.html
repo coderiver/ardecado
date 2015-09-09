@@ -1257,7 +1257,7 @@
 					</div>
 					<div class="profile-box">
 						<!-- tab content 1 -->
-						<div class="js-tab-cont js-tab-1">
+						<div class="js-tab-cont js-tab-1" style="display: none;">
 							<div class="orders js-orders-group">
 								<div class="orders__nav row">
 									<div class="col-lg-9 col-xs-9">
@@ -2775,8 +2775,187 @@
 							</div>
 						</div>
 						<!-- tab content 5 -->
-						<div class="js-tab-cont js-tab-5" style="display: none;">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quaerat, amet reiciendis vel iste hic placeat provident ea unde illum architecto fugit? Quam, sint, velit. Fuga eveniet, dolor sapiente nam?
+						<div class="js-tab-cont js-tab-5">
+							<div class="notify js-orders-group">
+								<ul class="notify__nav">
+									<li>
+										<a href="js-notify-1" class="notify__link is-active js-orders-link"><span>Мои напоминания</span></a>
+									</li>
+									<li>
+										<a href="js-notify-2" class="notify__link js-orders-link"><span>Мои рассылки</span></a>
+									</li>
+								</ul>
+								<!-- notify__content 1 -->
+								<div class="js-orders-cont js-notify-1">
+									<div class="row">
+										<div class="col-lg-6 col-xs-6">
+											<div class="notify__list">
+												<div class="notification">
+													<div class="notification__hover">
+														<div class="notification__in">
+															<p><button type="button" class="notification__edit">Редактировать</button></p>
+															<p><button type="button" class="notification__remove">Удалить</button></p>
+														</div>
+													</div>
+													<div class="notification__event">Поздравить Бориса</div>
+													<div class="notification__date">25.09</div>
+													<div class="notification__timeleft">осталось 19 дней</div>
+												</div>
+												<div class="notification notification_left">
+													<div class="notification__hover">
+														<div class="notification__in">
+															<p><button type="button" class="notification__edit">Редактировать</button></p>
+															<p><button type="button" class="notification__remove">Удалить</button></p>
+														</div>
+													</div>
+													<div class="notification__event">Юбилей у родителей в 2 строчки</div>
+													<div class="notification__date">05.11</div>
+													<div class="notification__timeleft">осталось 74 дней</div>
+												</div>
+												<div class="notification">
+													<div class="notification__hover">
+														<div class="notification__in">
+															<p><button type="button" class="notification__edit">Редактировать</button></p>
+															<p><button type="button" class="notification__remove">Удалить</button></p>
+														</div>
+													</div>
+													<div class="notification__event">Поздравить Бориса</div>
+													<div class="notification__date">25.09</div>
+													<div class="notification__timeleft">осталось 19 дней</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-6 col-xs-6">
+											<div class="notify__form">
+												<div class="row">
+													<div class="col-lg-8 col-xs-8 col-lg-offset-2 col-xs-offset-2">
+														<div class="notify__topper">
+															<h5 class="title-h5">Создать новое напоминание</h5>
+															<p>Заполните форму ниже, и мы напомним вам о важном для вас событии, подберем интересные варианты подарков, которые обязательно понравятся вашим родным и близким!</p>
+														</div>
+														<div class="row">
+															<div class="col-lg-6 col-xs-6">
+																<p>Повод</p>
+																<select multiple="multiple" class="select">
+																	<option selected="" value="День рождения">День рождения</option>
+																	<option value="Рязань">Рязань</option>
+																	<option value="Рязань">Рязань</option>
+																</select>
+															</div>
+															<div class="col-lg-6 col-xs-6">
+																<p>Кому подарок</p>
+																<select multiple="multiple" class="select">
+																	<option selected="" value="Дочь">Дочь</option>
+																	<option value="Сын">Сын</option>
+																	<option value="Жена">Жена</option>
+																</select>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-12 col-xs-12">
+																<div class="text-field">
+																	<p>Название события и напоминания</p>
+																	<label class="text-field__block">
+																		<input type="text">
+																	</label>
+																	<span class="error__message">ошибка ввода</span>
+																</div>
+															</div>
+														</div>
+														<div class="row">
+															<div class="age col-lg-6 col-xs-6">
+																<p>Дата события</p>
+																<div class="row">
+																	<div class="col-lg-5 col-xs-5">
+																		<select multiple="multiple" class="select">
+																			<option selected="" value="25">25</option>
+																			<option value="26">26</option>
+																			<option value="27">27</option>
+																		</select>
+																	</div>
+																	<div class="col-lg-7 col-xs-7">
+																		<select multiple="multiple" class="select select_month">
+																			<option selected="" value="сентябрь">сентябрь</option>
+																			<option value="октябрь">октябрь</option>
+																			<option value="ноябрь">ноябрь</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+															<div class="col-lg-6 col-xs-6">
+																<p>Периодичность </p>
+																<select multiple="multiple" class="select">
+																	<option selected="" value="Дочь">Дочь</option>
+																	<option value="Сын">Сын</option>
+																	<option value="Жена">Жена</option>
+																</select>
+															</div>
+														</div>
+														<div class="row">
+															<div class="col-lg-12 col-xs-12">
+																<p>Напомнить</p>
+															</div>
+															<div class="notify__remember row">
+																<div class="col-lg-6 col-xs-6">
+																	<ul>
+																		<li>
+																			<label class="checkbox">
+																				<input type="checkbox">
+																				<span>за 3 дня</span>
+																			</label>
+																		</li>
+																		<li>
+																			<label class="checkbox">
+																				<input type="checkbox">
+																				<span>за неделю</span>
+																			</label>
+																		</li>
+																		<li>
+																			<label class="checkbox">
+																				<input type="checkbox">
+																				<span>за 2 недели</span>
+																			</label>
+																		</li>
+																		<li>
+																			<label class="checkbox">
+																				<input type="checkbox">
+																				<span>за месяц</span>
+																			</label>
+																		</li>
+																	</ul>
+																</div>
+																<div class="col-lg-6 col-xs-6">	
+																	<ul>
+																		<li>
+																			<label class="checkbox">
+																				<input type="checkbox">
+																				<span>по SMS</span>
+																			</label>
+																		</li>
+																		<li>
+																			<label class="checkbox">
+																				<input type="checkbox">
+																				<span>по e-mail</span>
+																			</label>
+																		</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="notify__bottom">
+															<div class="notify__alert">Все поля обязательны для заполнения</div>
+															<button type="submit" class="btn-order">Создать напоминание</button>
+															<div class="notify__delete">
+																<button type="button" class="btn-remove">Удалить</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
