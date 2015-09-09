@@ -2937,6 +2937,8 @@ body.is-search { overflow: hidden; }
 .notify .notify__form { padding: 30px 0; background: #f9f9f9; box-shadow: 0 0 5px rgba(0, 0, 0, 0.05); }
 .notify .notify__form p { margin-bottom: 10px; font-family: "ProximaNova Semibold", Arial, sans-serif; font-size: 13px; color: #8e8e8e; }
 .notify .notify__form .row { margin-bottom: 25px; }
+.notify .notify__form .row.center { text-align: center; }
+.notify .notify__form .row.center input { text-align: center; }
 .notify .notify__form .notify__remember { margin-bottom: 0; }
 .notify .notify__form .ms-choice > span { font-size: 16px; }
 .notify .notify__form .checkbox { margin-top: 0; }
