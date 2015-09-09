@@ -636,7 +636,7 @@ head.ready(function() {
 
 	$('.modal').on('shown.bs.modal', function(e) {
 		if ($('.js-popup-slider').length) {
-			$('.js-popup-slider').slick({
+			$(this).find('.js-popup-slider').slick({
 				slidesToShow: 1,
 				slidesToScroll: 1
 			});

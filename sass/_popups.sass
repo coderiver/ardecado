@@ -589,13 +589,27 @@
 .shipping
 	background: #f4f4f0
 	border-radius: 8px 
-	padding: 43px 50px 49px 
+	padding: 43px 50px 25px 
+	min-height: 511px 
 	.popup-close
 		top: 20px
 		right: 17px
+	&__title
+		color: #4a485b
+		font-size: 30px
+		+asblack
+		position: relative
+		display: inline-block
+		padding: 0 0 0 58px 
+		i
+			position: absolute
+			top: 50%
+			left: 0
+			margin-top: -20px
 	&__top
 		font-size: 0
 		margin: 0 -17px
+		text-align: center
 		.btn-tab-mod
 			margin: 0 17px
 	&__body
@@ -620,6 +634,7 @@
 		height: 247px
 		box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.14)
 		background: #fafafa 
+		margin-bottom: 24px
 		&-in
 			padding: 20px 25px 20px 
 		p, ul
@@ -630,6 +645,22 @@
 					background: rgba(#626071, 0.22) 
 	&__box
 		padding: 0 0 5px 
+	&__partners
+		font-size: 0
+		a
+			display: inline-block
+		li
+			display: inline-block
+			vertical-align: top
+			margin: 0 16px 20px 0 
+	&__pay
+		font-size: 0
+		a
+			display: inline-block
+		li
+			display: inline-block
+			vertical-align: middle
+			margin: 0 15px 10px 0 
 			
 .btn-tab-mod
 	color: #42b0ef
@@ -658,4 +689,10 @@
 		border-bottom: 1px dashed #42b0ef
 		display: inline-block
 		
-		
+.quick
+	.i
+		position: absolute
+		top: 16px
+		left: -73px
+	.popup__title
+		color: #4a485b

@@ -1671,8 +1671,7 @@
 			<li><a href="#" data-toggle="modal" data-target="#add-fav">ADD FAV SUCCESS</a></li>
 			<li><a href="#" data-toggle="modal" data-target="#mail-success">SEND MAIL SUCCESS</a></li>
 			<li><a href="#" data-toggle="modal" data-target="#self-shipping">SELF-SHIPPING POPUP</a></li>
-			<li><a href="#" data-toggle="modal" data-target="#shipping-second">SHIPPING-1-POPUP Copy</a></li>
-			<li><a href="#" data-toggle="modal" data-target="#shipping-first">SHIPPING-1-POPUP</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#shipping-copy">SHIPPING-1-POPUP Copy</a></li>
 			<li><a href="#" data-toggle="modal" data-target="#add-basket">ADD BASKET SUCCESS</a></li>
 			<li><a href="#" data-toggle="modal" data-target="#quick-buy">QUICK BUY</a></li>
 			<li><a href="#" data-toggle="modal" data-target="#send-success">SEND LINK SUCCESS</a></li>
@@ -1808,32 +1807,47 @@
 	</div>
 	<div class="modal fade" id="self-shipping" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
-			<div class="shipping">
+			<div class="shipping js-tab-group">
 				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
 				<div class="shipping__top">
-					<button class="btn-tab-mod"><i class="i i-delivery-small"></i><span>Доставка</span></button>
-					<button class="btn-tab-mod"><i class="i i-room-small"></i><span>Cамовывоз</span></button>
+					<a href="shopping-first" class="js-tab-link btn-tab-mod is-active"><i class="i i-delivery-small"></i><span>Доставка</span></a>
+					<a href="shopping-secont" class="js-tab-link btn-tab-mod"><i class="i i-room-small"></i><span>Cамовывоз</span></a>
 				</div>
-				<div class="shipping__body">
+				<div class="shipping__body js-tab-cont shopping-first">
 					<div class="shipping__text">
 						<p>Ближайшая доставка по городу Москва возможна сегодня 25 сентября с 10:00 до 20:00</p>
 						<p>Стоимость доставки — 350 <i class="rub">Р</i> (при заказе от 3 000 <i class="rub">Р</i>, доставка - 0 <i class="rub">Р</i>)</p>
 						<p>Доставка осуществляется транспортными компаниями:</p>
-						<ul>
+						<ul class="shipping__partners">
 							<li><a href="#"><img src="img/dhl.png" alt=""></a></li>
 							<li><a href="#"><img src="img/ems.png" alt=""></a></li>
 							<li><a href="#"><img src="img/lines.png" alt=""></a></li>
 							<li><a href="#"><img src="img/door.png" alt=""></a></li>
 							<li><a href="#"><img src="img/pek.png" alt=""></a></li>
 						</ul>
+						<p>Вы можете оплатить свой заказ следующими способами:</p>
+						<ul class="shipping__pay">
+							<li><a href="#"><img src="img/sbank.png" alt=""></a></li>
+							<li><a href="#"><img src="img/svisa.png" alt=""></a></li>
+							<li><a href="#"><img src="img/smc.png" alt=""></a></li>
+							<li><a href="#"><img src="img/syandex.png" alt=""></a></li>
+							<li><a href="#"><img src="img/swebmoney.png" alt=""></a></li>
+							<li><a href="#"><img src="img/sqiwi.png" alt=""></a></li>
+							<li><a href="#"><img src="img/seuro.png" alt=""></a></li>
+							<li><a href="#"><img src="img/salfa.png" alt=""></a></li>
+							<li><a href="#"><img src="img/scon.png" alt=""></a></li>
+							<li><a href="#"><img src="img/ssvyaz.png" alt=""></a></li>
+							<li><a href="#"><img src="img/smts.png" alt=""></a></li>
+							<li><a href="#"><img src="img/sbee.png" alt=""></a></li>
+						</ul>
 					</div>	
 				</div>
-				<div class="shipping__body">
+				<div class="shipping__body js-tab-cont shopping-secont" style="display: none;">
 					<div class="shipping__text">
 						<p>Ближайший самовывоз по городу Москва возможен в пятницу 25 сентября с 10:00 до 20:00</p>
 						<p>Ниже вы можете найти все 38 точек самовывоза:</p>
 					</div>					
-					<div class="shipping__address js-scroll">
+					<div class="shipping__address js-scroll-init">
 						<div class="shipping__address-in">
 							<div class="shipping__box">
 								<p>м. Братиславская</p>
@@ -1908,6 +1922,266 @@
 								<p><a href="#">Схема проезда</a></p>
 							</div>
 						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="shipping-copy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="shipping">
+				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+				<div class="shipping__top">
+					<span class="shipping__title"><i class="i i-r-del"></i>Доставка товара</span>
+				</div>
+				<div class="shipping__body js-tab-cont shopping-first">
+					<div class="shipping__text">
+						<p>Ближайшая доставка по городу Москва возможна сегодня 25 сентября с 10:00 до 20:00</p>
+						<p>Стоимость доставки — 350 <i class="rub">Р</i> (при заказе от 3 000 <i class="rub">Р</i>, доставка - 0 <i class="rub">Р</i>)</p>
+						<p>Доставка осуществляется нашим курьером</p>
+						<p>Вы можете оплатить свой заказ наличными и другими способами:</p>
+						<ul class="shipping__pay">
+							<li><a href="#"><img src="img/sbank.png" alt=""></a></li>
+							<li><a href="#"><img src="img/svisa.png" alt=""></a></li>
+							<li><a href="#"><img src="img/smc.png" alt=""></a></li>
+							<li><a href="#"><img src="img/syandex.png" alt=""></a></li>
+							<li><a href="#"><img src="img/swebmoney.png" alt=""></a></li>
+							<li><a href="#"><img src="img/sqiwi.png" alt=""></a></li>
+							<li><a href="#"><img src="img/seuro.png" alt=""></a></li>
+							<li><a href="#"><img src="img/salfa.png" alt=""></a></li>
+							<li><a href="#"><img src="img/scon.png" alt=""></a></li>
+							<li><a href="#"><img src="img/ssvyaz.png" alt=""></a></li>
+							<li><a href="#"><img src="img/smts.png" alt=""></a></li>
+							<li><a href="#"><img src="img/sbee.png" alt=""></a></li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="quick-buy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="popup quick">
+				<i class="i i-fire"></i>
+				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+				<span class="popup__title">Быстрая покупка<br>в 1 клик</span>
+				<span class="popup__text">Введите ваш номер телефона и мы оперативно перезвоним и оформим ваш заказ!</span>
+				<div class="m-form is-gray">
+					<form action="">
+						<div class="m-form__box">
+							<label class="m-form__label" for="pass-number">Ваш номер телефона:</label>
+							<div class="m-form__field m-form-group">
+								<span class="m-form__number">+7</span>
+								<i class="m-form__check"></i>
+								<input type="text" class="input input_gray" id="pass-number">
+								<div class="error-field">неправильный адрес</div>
+							</div>
+						</div>
+						<div class="m-form__btns">
+							<button class="b-btn b-btn_green" type="submit">Покупаю!</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="quick-product" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog_large" role="document">
+			<div class="popup popup-product">
+				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+				<div class="row">
+					<div class="col-lg-5 col-xs-5">
+						<div class="proslider js-popup-slider">
+							<img src="img/bigpic.jpg" alt="">
+							<img src="img/item-big.png" alt="">
+							<img src="img/item-golden.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-7 col-xs-7">
+						<div class="proinner">
+							<h2 class="protitle">Подушка раз овечка, два овечка, три овечка</h2>
+							<div class="prodescription">
+								<p>Емкость рынка искажает продукт. Рыночная ситуация однообразно поддерживает повседневный системный анализ. Отсюда естественно следует, что VIP-мероприятие нетривиально. Отсюда естественно следует, что партисипативное планирование.</p>
+							</div>
+							<div class="procolors">
+								<div class="procolors__label">Доступные цвета</div>
+								<div class="procolors__color" style="background-color: #72cee8"><i></i></div>
+								<div class="procolors__color is-active" style="background-color: #f595b0"><i></i></div>
+								<div class="procolors__color" style="background-color:#f7ebda"><i></i></div>
+								<div class="procolors__color is-active"><i></i></div>
+								<div class="procolors__color" style="background-color:#545454"><i></i></div>
+								<div class="procolors__color" style="background-color:#b4ce74"><i></i></div>
+							</div>
+							<div class="prodesign">
+								<div class="prodesign__label">Доступный дизайн</div>
+								<select class="select select_small" name="" id=""><option value="">Длинное название дизай...</option><option value="">Длинное</option></select>
+							</div>
+							<div class="proprice">
+								<div class="proprice__value">3 570 <span class="rub">P</span></div>
+								<div class="proprice__multiply">x</div>
+								<input type="text" value="1" class="proprice__number">
+							</div>
+							<div class="prometa">
+								<div class="probonuses"><strong>+ 30</strong> бонусов</div> <div class="help"><i class="help__icon"></i></div>
+							</div>
+							<div class="probuy">
+								<button class="btn-basket">В корзину</button>
+								<button class="btn-like"></button>
+								<a href="#" class="prooneclick">Быстрая покупка<br>в 1 клик</a>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="row is-border">
+					<div class="col-lg-3 col-xs-3">
+						<div class="prodelivery">
+							<h5><i class="i i-round-delivery"></i>Ближайшая доставка</h5>
+							<ul class="prodelivery__list">
+								<li class="prodelivery__location"><a class="js-link" href="#">Санкт-Петербург</a></li>
+								<li class="prodelivery__time">Сегодня, 20 сентября с 10:00 до 19:00</li>
+								<li class="prodelivery__price">от 350 Р</li>
+							</ul>
+							<div class="prodelivery__more">
+								<a href="#">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-xs-3">
+						<div class="prodelivery">
+							<h5><i class="i i-round-room"></i>Ближайший самовывоз</h5>
+							<ul class="prodelivery__list">
+								<li class="prodelivery__location"><a href="#">Пункты самовывоза</a></li>
+								<li class="prodelivery__time">Сегодня, 20 сентября с 10:00 до 19:00</li>
+								<li class="prodelivery__price">0 руб.</li>
+							</ul>
+							<div class="prodelivery__more">
+								<a href="#">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-xs-3">
+						<div class="prodelivery">
+							<h5><i class="i i-round-check"></i>Преимущества товара</h5>
+							<ul class="prodelivery__features">
+								<li>Эко-материалы</li>
+								<li>Уникальный дизайн или что-то еще в 2 строки</li>
+								<li>Гарантия 36 месяцев</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-xs-3">
+						<div class="proartikul">
+							<img src="img/artikul.png" alt="">
+							<span class="proartikul__text">Артикул: 2845</span>
+						</div>
+						<a href="#" class="prolink">
+							<i class="i i-print"></i>
+							<p>Распечатать<br> информацию о товаре</p>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-xs-12">
+						<div class="popup-product__link">
+							<a href="#">Больше информации о данном товаре</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="quick-product-min" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog_large" role="document">
+			<div class="popup popup-product">
+				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+				<div class="row">
+					<div class="col-lg-5 col-xs-5">
+						<div class="proslider js-popup-slider">
+							<img src="img/bigpic.jpg" alt="">
+							<img src="img/item-big.png" alt="">
+							<img src="img/item-golden.png" alt="">
+						</div>
+					</div>
+					<div class="col-lg-7 col-xs-7">
+						<div class="proinner">
+							<h2 class="protitle">Поющий кот «Хочун»</h2>
+							<div class="prodescription">
+								<ul class="prodescription__list">
+									<li><span>Материал:</span> полиэстер</li>
+									<li><span>Наполнитель:</span> полистирол</li>
+									<li><span>Размер:</span> 33х32х9 см.</li>
+									<li><span>Производство:</span> Россия</li>
+								</ul>
+							</div>
+							<div class="proprice">
+								<div class="proprice__value">3 570 <span class="rub">P</span></div>
+								<div class="proprice__multiply">x</div>
+								<input type="text" value="1" class="proprice__number">
+							</div>
+							<div class="prometa">
+								<div class="probonuses"><strong>+ 30</strong> бонусов</div> <div class="help"><i class="help__icon"></i></div>
+							</div>
+							<div class="probuy">
+								<button class="btn-basket">В корзину</button>
+								<button class="btn-like"></button>
+								<a href="#" class="prooneclick">Быстрая покупка<br>в 1 клик</a>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="row is-border">
+					<div class="col-lg-3 col-xs-3">
+						<div class="prodelivery">
+							<h5><i class="i i-round-delivery"></i>Ближайшая доставка</h5>
+							<ul class="prodelivery__list">
+								<li class="prodelivery__location"><a class="js-link" href="#">Санкт-Петербург</a></li>
+								<li class="prodelivery__time">Сегодня, 20 сентября с 10:00 до 19:00</li>
+								<li class="prodelivery__price">от 350 Р</li>
+							</ul>
+							<div class="prodelivery__more">
+								<a href="#">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-xs-3">
+						<div class="prodelivery">
+							<h5><i class="i i-round-room"></i>Ближайший самовывоз</h5>
+							<ul class="prodelivery__list">
+								<li class="prodelivery__location"><a href="#">Пункты самовывоза</a></li>
+								<li class="prodelivery__time">Сегодня, 20 сентября с 10:00 до 19:00</li>
+								<li class="prodelivery__price">0 руб.</li>
+							</ul>
+							<div class="prodelivery__more">
+								<a href="#">Подробнее</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-xs-3">
+						<div class="prodelivery">
+							<h5><i class="i i-round-check"></i>Преимущества товара</h5>
+							<ul class="prodelivery__features">
+								<li>Эко-материалы</li>
+								<li>Уникальный дизайн или что-то еще в 2 строки</li>
+								<li>Гарантия 36 месяцев</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 col-xs-3">
+						<div class="proartikul">
+							<img src="img/artikul.png" alt="">
+							<span class="proartikul__text">Артикул: 2845</span>
+						</div>
+						<a href="#" class="prolink">
+							<i class="i i-print"></i>
+							<p>Распечатать<br> информацию о товаре</p>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-xs-12">
+						<div class="popup-product__link">
+							<a href="#">Больше информации о данном товаре</a>
+						</div>
 					</div>
 				</div>
 			</div>
