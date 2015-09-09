@@ -8,6 +8,8 @@
 		width: 965px
 	&_big
 		width: 800px
+	&_bigger
+		width: 700px
 	&_small
 		width: 500px
 	&_signin
@@ -394,13 +396,25 @@
 		+s(success)
 		display: block
 		margin: 0 auto 35px
+	&__heart
+		+s(r-broken-heart)
+		display: block
+		margin: 0 auto 35px
+	&__heart-full
+		+s(r-heart)
+		display: block
+		margin: 0 auto 35px
 	&__title
 		color: #fdfefa
 		font-size: 48px
 		line-height: 1
 		+asblack
 		display: block
-
+	p
+		font-size: 36px
+		line-height: 1
+		color: #fdfefa
+		+asblack
 +keyframes(load)
 	0%
 		opacity: 1
@@ -571,3 +585,75 @@
 		padding: 0 0 5px
 .ui-autocomplete
 	z-index: 2000
+	
+.shipping
+	background: #f4f4f0
+	border-radius: 8px 
+	padding: 43px 50px 49px 
+	.popup-close
+		top: 20px
+		right: 17px
+	&__top
+		font-size: 0
+		margin: 0 -17px
+		.btn-tab-mod
+			margin: 0 17px
+	&__body
+		p, li
+			color: #4a485b
+			font-size: 14px
+			line-height: 1.2	
+			a
+				color: #42b0ef
+				text-decoration: none
+		p
+			+semi	
+		li
+			+reg
+			b
+				+semi
+	&__text
+		padding: 20px 0 0 
+		p
+			padding: 10px 0 15px 
+	&__address
+		height: 247px
+		box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.14)
+		background: #fafafa 
+		&-in
+			padding: 20px 25px 20px 
+		p, ul
+			margin-bottom: 10px
+		&.scrollable
+			.scroll-bar.vertical
+				.thumb:before
+					background: rgba(#626071, 0.22) 
+	&__box
+		padding: 0 0 5px 
+			
+.btn-tab-mod
+	color: #42b0ef
+	font-size: 28px
+	+asblack
+	background: rgba(#fff, 0.5)
+	padding: 13px 0 13px 52px
+	text-align: center
+	display: inline-block
+	vertical-align: top
+	width: 212px
+	position: relative
+	border-radius: 5px
+	line-height: 1
+	&.is-active
+		background: #fff
+		.i
+			opacity: 1
+	.i
+		position: absolute
+		top: 50%
+		left: 16px
+		opacity: 0.6 
+		margin-top: -13px
+	span
+		border-bottom: 1px dashed #42b0ef
+		display: inline-block

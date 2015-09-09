@@ -1665,6 +1665,21 @@
 		</div></div>
 		<!-- end basketbottom -->
 
+		<ul class="popup-links">
+			<li><a href="#" data-toggle="modal" data-target="#comment-success">ADD COMMENT SUCCESS</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#delete-fav">DELETE FAV SUCCESS</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#add-fav">ADD FAV SUCCESS</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#mail-success">SEND MAIL SUCCESS</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#self-shipping">SELF-SHIPPING POPUP</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#shipping-second">SHIPPING-1-POPUP Copy</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#shipping-first">SHIPPING-1-POPUP</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#add-basket">ADD BASKET SUCCESS</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#quick-buy">QUICK BUY</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#send-success">SEND LINK SUCCESS</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#quick-product-min">QUICK PRODUCT MIN</a></li>
+			<li><a href="#" data-toggle="modal" data-target="#quick-product">QUICK PRODUCT</a></li>
+		</ul>
+
 	</main>
 	<!-- end main -->
 
@@ -1759,7 +1774,139 @@
 		</div>
 	</footer>
 	<!-- end footer -->
-
+	<div class="modal fade" id="comment-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog_bigger" role="document">
+			<div class="success">
+				<i class="success__icon"></i>
+				<p>После подтверждения отзыва модератором он появится на странице и мы начислим вам баллы</p>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="delete-fav" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="success">
+				<i class="success__heart"></i>
+				<span class="success__title">Товар успешно удален из Любимых!</span>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="add-fav" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog_bigger" role="document">
+			<div class="success">
+				<i class="success__heart-full"></i>
+				<span class="success__title">Товар успешно добавлен<br>в Любимые!</span>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="mail-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog_bigger" role="document">
+			<div class="success">
+				<i class="success__icon"></i>
+				<span class="success__title">Ссылка успешно выслана!</span>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="self-shipping" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="shipping">
+				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+				<div class="shipping__top">
+					<button class="btn-tab-mod"><i class="i i-delivery-small"></i><span>Доставка</span></button>
+					<button class="btn-tab-mod"><i class="i i-room-small"></i><span>Cамовывоз</span></button>
+				</div>
+				<div class="shipping__body">
+					<div class="shipping__text">
+						<p>Ближайшая доставка по городу Москва возможна сегодня 25 сентября с 10:00 до 20:00</p>
+						<p>Стоимость доставки — 350 <i class="rub">Р</i> (при заказе от 3 000 <i class="rub">Р</i>, доставка - 0 <i class="rub">Р</i>)</p>
+						<p>Доставка осуществляется транспортными компаниями:</p>
+						ul>li*>a
+					</div>	
+				</div>
+				<div class="shipping__body">
+					<div class="shipping__text">
+						<p>Ближайший самовывоз по городу Москва возможен в пятницу 25 сентября с 10:00 до 20:00</p>
+						<p>Ниже вы можете найти все 38 точек самовывоза:</p>
+					</div>					
+					<div class="shipping__address js-scroll">
+						<div class="shipping__address-in">
+							<div class="shipping__box">
+								<p>м. Братиславская</p>
+								<ul>
+									<li><b>Адрес:</b> ул. Братиславская, дом 16, корп. 2 </li>
+									<li><b>Время работы:</b> ежедневно - 10:00-20:00</li>
+									<li><b>Способ оплаты:</b> наличные</li>
+								</ul>
+								<p><a href="#">Схема проезда</a></p>
+							</div>
+							<div class="shipping__box">
+								<p>м. ВДНХ</p>
+								<ul>
+									<li><b>Адрес:</b> ул. проспект Мира, д.176 </li>
+									<li><b>Время работы:</b> ежедневно - 10:00-20:00</li>
+									<li><b>Способ оплаты:</b> наличные</li>
+								</ul>
+								<p><a href="#">Схема проезда</a></p>
+							</div>
+							<div class="shipping__box">
+								<p>м. Братиславская</p>
+								<ul>
+									<li><b>Адрес:</b> ул. Братиславская, дом 16, корп. 2 </li>
+									<li><b>Время работы:</b> ежедневно - 10:00-20:00</li>
+									<li><b>Способ оплаты:</b> наличные</li>
+								</ul>
+								<p><a href="#">Схема проезда</a></p>
+							</div>
+							<div class="shipping__box">
+								<p>м. ВДНХ</p>
+								<ul>
+									<li><b>Адрес:</b> ул. проспект Мира, д.176 </li>
+									<li><b>Время работы:</b> ежедневно - 10:00-20:00</li>
+									<li><b>Способ оплаты:</b> наличные</li>
+								</ul>
+								<p><a href="#">Схема проезда</a></p>
+							</div>
+							<div class="shipping__box">
+								<p>м. Братиславская</p>
+								<ul>
+									<li><b>Адрес:</b> ул. Братиславская, дом 16, корп. 2 </li>
+									<li><b>Время работы:</b> ежедневно - 10:00-20:00</li>
+									<li><b>Способ оплаты:</b> наличные</li>
+								</ul>
+								<p><a href="#">Схема проезда</a></p>
+							</div>
+							<div class="shipping__box">
+								<p>м. ВДНХ</p>
+								<ul>
+									<li><b>Адрес:</b> ул. проспект Мира, д.176 </li>
+									<li><b>Время работы:</b> ежедневно - 10:00-20:00</li>
+									<li><b>Способ оплаты:</b> наличные</li>
+								</ul>
+								<p><a href="#">Схема проезда</a></p>
+							</div>
+							<div class="shipping__box">
+								<p>м. Братиславская</p>
+								<ul>
+									<li><b>Адрес:</b> ул. Братиславская, дом 16, корп. 2 </li>
+									<li><b>Время работы:</b> ежедневно - 10:00-20:00</li>
+									<li><b>Способ оплаты:</b> наличные</li>
+								</ul>
+								<p><a href="#">Схема проезда</a></p>
+							</div>
+							<div class="shipping__box">
+								<p>м. ВДНХ</p>
+								<ul>
+									<li><b>Адрес:</b> ул. проспект Мира, д.176 </li>
+									<li><b>Время работы:</b> ежедневно - 10:00-20:00</li>
+									<li><b>Способ оплаты:</b> наличные</li>
+								</ul>
+								<p><a href="#">Схема проезда</a></p>
+							</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
 			<div class="feedback">
