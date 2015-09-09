@@ -349,9 +349,9 @@ head.ready(function() {
 			var tab_cont = $(this).find('.js-tab-cont'),
 				tab_link = $(this).find('.js-tab-link');
 
-			//tab_link.first().addClass('is-active');
-			//tab_cont.hide();
-			//tab_cont.first().show();
+			tab_link.first().addClass('is-active');
+			tab_cont.hide();
+			tab_cont.first().show();
 
 			$('body').on('click', '.js-tab-link', function(){
 				var link = $(this).attr('href');
@@ -644,6 +644,13 @@ head.ready(function() {
 		if ($('.js-scroll').length) {
 			$('.js-scroll').customScrollbar();
 		}
+	});
+
+	$('.js-zoom').elevateZoom({
+		zoomWindowWidth:480, 
+		zoomWindowHeight:480,
+		zoomWindowPosition: 1,
+		zoomWindowOffetx: 20
 	});
 
 });
