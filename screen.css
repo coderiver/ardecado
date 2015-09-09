@@ -468,7 +468,7 @@ i { font-style: normal; }
 .popup-product .row.is-border { position: relative; padding: 22px 35px; }
 .popup-product .row.is-border:before { content: ""; display: block; position: absolute; top: 0; bottom: 0; left: 37px; right: 37px; border-top: 1px dashed #d8d8d2; border-bottom: 1px dashed #d8d8d2; }
 .popup-product .proslider { overflow: hidden; max-height: 372px; }
-.popup-product .proslider img { height: 100%; }
+.popup-product .proslider img { height: 100%; border-radius: 13px; }
 .popup-product .proinner { padding-left: 35px; }
 .popup-product .procolors { width: 235px; }
 .popup-product .prodelivery { margin-bottom: 0; padding: 0; background: none; }
@@ -487,6 +487,7 @@ i { font-style: normal; }
 .popup-product .prodescription__list { margin-bottom: 20px; font-size: 13px; color: #5b5047; font-family: "ProximaNova Regular", Arial, sans-serif; }
 .popup-product .prodescription__list li { margin-bottom: 0.2em; }
 .popup-product .prodescription__list li span { font-family: "ProximaNova Semibold", Arial, sans-serif; }
+.popup-product .protitle { color: #4a485b; font-size: 38px; line-height: 40px; margin-bottom: 10px; }
 .popup-product .popup-close { top: 20px; right: 20px; }
 .popup-product .slick-prev { margin-top: -10px; left: 25px; background: url('img/icons-s30615d1dda.png') 0 -11613px no-repeat; width: 13px; height: 20px; }
 .popup-product .slick-prev:before { content: ""; }
@@ -541,6 +542,8 @@ i { font-style: normal; }
 .success__heart-full { background: url('img/icons-s30615d1dda.png') 0 -9850px no-repeat; width: 81px; height: 81px; display: block; margin: 0 auto 35px; }
 .success__title { color: #fdfefa; font-size: 48px; line-height: 1; font-family: "ALSSchlangesans Black", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; display: block; }
 .success p { font-size: 36px; line-height: 1; color: #fdfefa; font-family: "ALSSchlangesans Black", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.success__btns { margin: 0 -23px; padding: 45px 0; font-size: 0; text-align: center; }
+.success__btns .btn-med, .success__btns .btn-check { margin: 0 23px; }
 
 @-moz-keyframes load { 0% { opacity: 1; -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); }
   50% { opacity: 0.3; -ms-transform: scale(0.5); -webkit-transform: scale(0.5); transform: scale(0.5); }
