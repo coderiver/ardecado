@@ -1,4 +1,4 @@
-head.ready(function() {
+$(document).ready(function() {
 
 	$('.js-togglehint').click(function(event) {
 		hint = $(this).data('hint');
