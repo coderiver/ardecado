@@ -38,9 +38,9 @@ head.ready(function() {
 
 		// filters tabs
 
-		$('.js-filters-link').on('click', function() {
-			return false;
+		$('.js-filters-link').on('click', function(event) {
 			event.stopPropagation();
+			return false;
 		});
 
 		$('.js-filters-link').hover(

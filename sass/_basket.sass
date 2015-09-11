@@ -11,7 +11,7 @@
 		font-size: 36px 
 		color: #4A485A 
 		margin: 20px 0 30px
-		+reg
+		+asblack
 .basketbottom
 	h3
 		text-align: center
@@ -110,6 +110,7 @@
 		font-size: 18px 
 		color: #48B1EC 
 		position: relative
+		display: inline-block
 		&:before
 			position: absolute
 			content: ""
@@ -316,9 +317,9 @@
 		position: relative
 		text-align: center
 		margin-bottom: 25px 
-		&:hover
-			.bitem__plus,.bitem__minus
-				opacity: 1  
+		// &:hover
+		// 	.bitem__plus,.bitem__minus
+		// 		opacity: 1  
 		input
 			background: #F6F6F3 
 			width: 50px 
@@ -337,7 +338,7 @@
 			vertical-align: middle
 		.bitem__plus,.bitem__minus
 			+var
-			opacity: 0 
+			// opacity: 0 
 			font-size: 20px 
 			color: #CDCDCD 
 			cursor: pointer

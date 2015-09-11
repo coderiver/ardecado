@@ -1293,58 +1293,391 @@
 	</footer>
 	<!-- end footer -->
 
-	<div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="feedback">
-				<i class="feedback__icon"></i>
-				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
-				<span class="feedback__logo">Ар де Кадо</span>
-				<span class="feedback__title">Обратный звонок</span>
-				<span class="feedback__schedule">Мы работаем с понедельника по субботу, с 9:00 до 19:00</span>
-				<div class="form is-gray">
-					<form action="">
-						<div class="form__box">
-							<label class="form__label" for="in-number">Ваш номер телефона:</label>
-							<div class="form__field form-group">
-								<span class="form__number">+7</span>
-								<i class="form__check"></i>
-								<input type="text" class="input input_gray" id="in-number" placeholder="(903) 123-45-67">
-							</div>
-						</div>
-						<div class="form__box js-field-parent">
-							<a href="#" class="link-dotted js-field-link" data-link="name">Указать свое имя</a>
-						</div>				
-						<p>Удобное время звонка:</p>
-						<div class="form__box">
-							<div class="form__field">
-								<div class="range js-range-parent">
-									<div class="range__time">
-										<span>с</span>
-										<span class="js-range-value" data-index="0" id="value-span">9:00</span>
-										<span>до</span>
-										<span class="js-range-value" data-index="1" id="value-input">19:00</span>
-									</div>
-									<div class="range__input js-range" id="js-range"></div>
-								</div>
-							</div>							
-						</div>						
-						<button class="b-btn b-btn_green" type="submit">Жду звонка!</button>
-					</form>
-				</div>				
-				<div class="form__field form-group is-hide js-field" data-field="name">
-					<i class="form__check"></i>
-					<input type="text" class="input input_gray" id="in-number" placeholder="Алина">
-				</div>	
+	<div class="fixed-br js-panel js-fixed">
+		<div class="f-panel js-panel-block">
+			<a href="#" class="f-panel__item is-calendar js-panel-btn js-tooltip js-panel-calendar" data-btn="panel-1" title="Календарь подарков"></a>
+			<a href="#" class="f-panel__item is-now js-panel-btn js-tooltip js-panel-view" data-btn="panel-2" title="Сейчас покупают"></a>
+			<a href="#" class="f-panel__item is-view js-panel-btn js-tooltip js-panel-view" data-btn="panel-3" title="Вы просмотрели"></a>
+			<a href="#" class="f-panel__item is-right js-panel-close"></a>
+		</div>
+		<button class="f-panel-open js-panel-open"><i></i></button>
+		<button class="btn-up js-btn-up"></button>
+	</div>
+
+	<div class="panel-calendar js-panel-box js-fixed-func" data-block="panel-1">
+		<div class="panel-calendar__inner js-panel-slider">
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>26</span>
+						<small>Янв</small>
+					</div>
+					<div class="panel-item__text">
+						<span>День <br>сантехника</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>26</span>
+						<small>Янв</small>
+					</div>
+					<div class="panel-item__text">
+						<span>День <br>сантехника</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>26</span>
+						<small>Янв</small>
+					</div>
+					<div class="panel-item__text">
+						<span>День <br>сантехника</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>3</span>
+						<small>Мар</small>
+					</div>
+					<div class="panel-item__text">
+						<span>Всемирный день гражданской обор</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>26</span>
+						<small>Янв</small>
+					</div>
+					<div class="panel-item__text">
+						<span>День <br>сантехника</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>26</span>
+						<small>Янв</small>
+					</div>
+					<div class="panel-item__text">
+						<span>День <br>сантехника</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>26</span>
+						<small>Янв</small>
+					</div>
+					<div class="panel-item__text">
+						<span>День <br>сантехника</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>3</span>
+						<small>Мар</small>
+					</div>
+					<div class="panel-item__text">
+						<span>Всемирный день гражданской обор</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>
-	<div class="modal fade" id="pass-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="success">
-				<i class="success__icon"></i>
-				<span class="success__title">Новый пароль выслан!</span>
+	<div class="panel-img js-panel-box js-fixed-func" data-block="panel-2">
+		<div class="panel-img__inner js-view-slider">
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
 			</div>
 		</div>
+	</div>
+	<div class="panel-img js-panel-box js-fixed-func" data-block="panel-3">
+		<div class="panel-img__inner js-view-slider">
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="js-search-block search-block">
+
+		<div class="container">
+
+			<i class="i i-close js-search-close"></i>
+
+			<div class="row">
+
+				<div class="col-lg-12 col-xs-12">
+
+					<span class="search-block__title">Супер-поиск Ар де Кадо</span>
+
+					<div class="search-block__input">
+						<i class="search-block__left"></i>
+						<i class="search-block__right"></i>
+						<input type="text">
+						<button></button>
+					</div>
+
+					<div class="search-block__btns">
+						<span class="search-block__label">Разделы каталога</span>
+						<button class="btn-gender">Для дома</button>
+						<button class="btn-gender">Предметы интерьера</button>
+						<button class="btn-gender">Текстиль</button>
+					</div>
+
+					<div class="search-block__text">
+						<p>Извините, но нам ничего не удалось найти по Вашему запросу.</p>
+						<p>Возможно, результаты поиска будут лучше, если вы введете менее точный запрос.</p>
+					</div>
+
+					<div class="search-block__categories">
+						<p>Посмотрите наши самые популярные категории</p>
+						<button class="btn-gender">Мужчинам (1200)</button>
+						<button class="btn-gender">Женщинам (1000)</button>
+						<button class="btn-gender">VIP-подарки (850)</button>
+						<button class="btn-gender">Шефу (799)</button>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row search-block__results">
+
+				<div class="col-lg-12 col-xs-12">
+					<span class="search-block__label">Показано <b>6</b> из <b>38 товаров</b></span>
+				</div>
+				<div class="search-block__items">
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">
+								</a>
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">
+								</a>
+								<div class="item__btns is-discount">
+									<div class="item__price">
+										<span>1 320 <i class="rub">Р</i></span>
+										<span class="is-discount">1 620 <i class="rub">Р</i></span>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">
+								</a>
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">
+								</a>
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">
+								</a>
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">
+								</a>
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="search-block__more">
+					<button class="b-btn b-btn_green">Показать еще!</button>
+					<p><a href="#">Все результаты на одной странице</a></p>
+				</div>
+			</div>
+
+		</div>
+
 	</div>
 
 <!-- load scripts -->
