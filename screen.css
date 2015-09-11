@@ -2361,7 +2361,7 @@ body.is-search { overflow: hidden; }
 .bitem .bitem__remove { background: url('img/icons-s30615d1dda.png') 0 -3256px no-repeat; width: 27px; height: 26px; display: inline-block; position: absolute; right: 0; top: 30px; cursor: pointer; }
 .bitem .bitem__remove:hover { background: url('img/icons-s30615d1dda.png') 0 -3220px no-repeat; width: 27px; height: 26px; }
 .bitem .bitem__plusminus { position: relative; text-align: center; margin-bottom: 25px; }
-.bitem .bitem__plusminus input { background: #f6f6f3; width: 50px; text-align: center; font-family: "Vagroundedtl Regular", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 24px; height: 35px; color: #cdcdcd; display: inline-block; padding: 2px 0 5px; border-radius: 10px; }
+.bitem .bitem__plusminus input { background: #f6f6f3; width: 50px; text-align: center; font-family: "Vagroundedtl Regular", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 24px; line-height: 1; color: #cdcdcd; display: inline-block; padding: 8px 0 4px; border-radius: 10px; }
 .bitem .bitem__plusminus input:focus, .bitem .bitem__plusminus input:hover { color: #cdcdcd; }
 .bitem .bitem__plusminus .bitem__amount { display: inline-block; width: 50px; vertical-align: middle; }
 .bitem .bitem__plusminus .bitem__plus, .bitem .bitem__plusminus .bitem__minus { font-family: "Vagroundedtl Regular", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 20px; color: #cdcdcd; cursor: pointer; padding: 10px; display: inline-block; vertical-align: middle; }
