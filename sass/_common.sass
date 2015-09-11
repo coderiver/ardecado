@@ -112,6 +112,9 @@ body
 	min-width: 1280px
 
 //res
+input
+	&::-ms-clear
+		display: none
 h1, h2, h3, h4, h5, h6, b, strong, label
 	font-weight: normal
 h1, h2, h3, h4, h5, h6, .title-h1, .title-h2, .title-h3, .title-h4, .title-h5, .title-h6
@@ -233,7 +236,7 @@ i
 			text-decoration: underline
 			&:hover
 				color: #1a83cd
-				text-decoration: none
+				// text-decoration: none
 			&:visited
 				color: #1a44cd
 				text-decoration: none
