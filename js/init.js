@@ -10,8 +10,4 @@ head.load("js/lib/jquery.js",
 					"js/lib/fancybox.min.js",
 					"js/lib/swiper.jquery.min.js",
 					"js/lib/jquery.elevateZoom-3.0.8.min.js",
-					"js/ui.js",
-					"js/filters.js",
-					"js/profile.js",
-					"js/order.js",
 					"js/common.js");
