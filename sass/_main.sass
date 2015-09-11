@@ -45,9 +45,11 @@ body
 		.header__right .link-dotted,
 		.header__right .header__schedule
 			color: #939392
+			&:hover
+				color: #fff
 		.vip-gifts__place
 			&:hover
-				color: #23527c
+				color: #fff
 	&__left
 		float: left
 		width: 940px
@@ -65,6 +67,8 @@ body
 			margin-bottom: 3px
 		.link-dotted
 			display: inline-block
+			&:hover
+				color: #fff
 	.search
 		width: 220px
 		margin: 13px 50px 0 0
@@ -262,6 +266,8 @@ body
 		+reg
 		font-size: 13px
 		text-decoration: none
+		&:hover
+			color: #fff
 	&__drop
 		position: absolute
 		top: 100%
@@ -371,6 +377,9 @@ body
 			+opacity(0.6)
 			+svg(gift-arr, 16, 11)
 			margin: 2px 5px 0
+		&:hover
+			color: #fff	
+			text-decoration: none
 	&__place
 		position: absolute
 		bottom: 100%
@@ -388,6 +397,9 @@ body
 			left: 15px
 			top: 1px
 			font-size: 17px
+		&:hover
+			color: #fff	
+			text-decoration: none
 
 .phone
 	font-size: 22px

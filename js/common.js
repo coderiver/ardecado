@@ -797,7 +797,7 @@ $(document).ready(function() {
 			$('.js-filter-dropdown').slideUp('fast');
 		});
 
-		$('.js-filter').on('click', function() {
+		$('.js-filter').on('click', function(event) {
 			event.stopPropagation();
 		});
 
