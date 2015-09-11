@@ -44,7 +44,7 @@
 						</ul>
 					</nav>
 					<div class="search">
-						<input type="text" class="search__input" placeholder="Поиск подарков">
+						<input type="text" class="search__input js-search-input" placeholder="Поиск подарков">
 						<button class="search__btn"></button>
 					</div>
 					<a href="#" class="gift-cards"><img src="img/gift-cards.png" alt=""></a>
@@ -59,1065 +59,1161 @@
 					</div>
 				</div>
 				<div class="header__right">
-					<div class="header__login">
+					<div class="header__login" hidden>
 						<button class="btn btn_blue">Войти</button>
 						<button class="btn btn_green">Получить бонус</button>
+					</div>
+					<div class="m-profile js-profile">
+						<a href="#" class="m-profile__img">
+							<i class="i i-profile-small"></i>
+							<span class="m-profile__bonus">1</span>
+						</a>
+						<div class="m-profile__info">
+							<a href="#" class="m-profile__link js-profile-link">Привет, Константин</a>
+							<small>Номер клиента: AWD-425-29</small>
+						</div>
+						<div class="m-profile-drop js-profile-drop">
+							<ul>
+								<li>
+									<a href="#">
+										<span>История заказов</span>
+										<small>пока нет заказов</small>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>Личная информация</span>
+										<small>заполнена на 60%</small>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>Мои бонусы <i class="is-amount">1</i></span>
+										<small class="is-price">236 <i class="rub">Р</i></small>
+										<small>(67 баллов)</small>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>Любимые товары</span>
+										<small>2 товара</small>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span>Напоминания и подписка</span>
+										<small>пока нет напоминаний</small>
+									</a>
+								</li>
+							</ul>
+							<button class="m-profile-drop__leave">Выход из магазина <i class="btn-close"></i></button>
+						</div>
 					</div>
 					<span class="phone">8 (495) 777-22-50</span>
 					<a href="#" class="link-dotted" data-toggle="modal" data-target="#feedback">Перезвонить?</a>
 					<span class="header__schedule">Пн-Пт: 9:00 — 19:00</span>
 				</div>
 			</div>
-			<div class="header__menu">
-				<div class="inner">
-					<ul class="menu">
-						<li class="menu__item is-drop is-he js-m-link">
-							<a href="#" class="menu__link is-he">Для него</a>
-							<div class="m-drop js-m-drop">
-								<ul class="m-drop__list">
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Кому</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">любимому</a></li>
-												<li><a href="#">мужу</a></li>
-												<li><a href="#">другу</a></li>
-												<li><a href="#">папе</a></li>
-												<li><a href="#">парню</a></li>
-												<li><a href="#">коллеге</a></li>
-												<li><a href="#">дедушке</a></li>
-												<li><a href="#">брату</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">тестю</a></li>
-												<li><a href="#">взрослому</a></li>
-												<li><a href="#">зятю</a></li>
-												<li><a href="#">богатому</a></li>
-												<li><a href="#">любовнику</a></li>
-												<li><a href="#">грузину</a></li>
-												<li><a href="#">дяде</a></li>
-												<li><a href="#">еврею</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">бывшему</a></li>
-												<li><a href="#">отцу</a></li>
-												<li><a href="#">лучшему другу</a></li>
-												<li><a href="#">иностранцу</a></li>
-												<li><a href="#">интроверту</a></li>
-												<li><a href="#">крестнику</a></li>
-												<li><a href="#">деловому партнеру</a></li>
-												<li><a href="#">шефу</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Повод</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">1любимому</a></li>
-												<li><a href="#">мужу</a></li>
-												<li><a href="#">другу</a></li>
-												<li><a href="#">папе</a></li>
-												<li><a href="#">парню</a></li>
-												<li><a href="#">коллеге</a></li>
-												<li><a href="#">дедушке</a></li>
-												<li><a href="#">брату</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">тестю</a></li>
-												<li><a href="#">взрослому</a></li>
-												<li><a href="#">зятю</a></li>
-												<li><a href="#">богатому</a></li>
-												<li><a href="#">любовнику</a></li>
-												<li><a href="#">грузину</a></li>
-												<li><a href="#">дяде</a></li>
-												<li><a href="#">еврею</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">бывшему</a></li>
-												<li><a href="#">отцу</a></li>
-												<li><a href="#">лучшему другу</a></li>
-												<li><a href="#">иностранцу</a></li>
-												<li><a href="#">интроверту</a></li>
-												<li><a href="#">крестнику</a></li>
-												<li><a href="#">деловому партнеру</a></li>
-												<li><a href="#">шефу</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Интересы</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">2любимому</a></li>
-												<li><a href="#">мужу</a></li>
-												<li><a href="#">другу</a></li>
-												<li><a href="#">папе</a></li>
-												<li><a href="#">парню</a></li>
-												<li><a href="#">коллеге</a></li>
-												<li><a href="#">дедушке</a></li>
-												<li><a href="#">брату</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">тестю</a></li>
-												<li><a href="#">взрослому</a></li>
-												<li><a href="#">зятю</a></li>
-												<li><a href="#">богатому</a></li>
-												<li><a href="#">любовнику</a></li>
-												<li><a href="#">грузину</a></li>
-												<li><a href="#">дяде</a></li>
-												<li><a href="#">еврею</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">бывшему</a></li>
-												<li><a href="#">отцу</a></li>
-												<li><a href="#">лучшему другу</a></li>
-												<li><a href="#">иностранцу</a></li>
-												<li><a href="#">интроверту</a></li>
-												<li><a href="#">крестнику</a></li>
-												<li><a href="#">деловому партнеру</a></li>
-												<li><a href="#">шефу</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Профессия</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">3любимому</a></li>
-												<li><a href="#">мужу</a></li>
-												<li><a href="#">другу</a></li>
-												<li><a href="#">папе</a></li>
-												<li><a href="#">парню</a></li>
-												<li><a href="#">коллеге</a></li>
-												<li><a href="#">дедушке</a></li>
-												<li><a href="#">брату</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">тестю</a></li>
-												<li><a href="#">взрослому</a></li>
-												<li><a href="#">зятю</a></li>
-												<li><a href="#">богатому</a></li>
-												<li><a href="#">любовнику</a></li>
-												<li><a href="#">грузину</a></li>
-												<li><a href="#">дяде</a></li>
-												<li><a href="#">еврею</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">бывшему</a></li>
-												<li><a href="#">отцу</a></li>
-												<li><a href="#">лучшему другу</a></li>
-												<li><a href="#">иностранцу</a></li>
-												<li><a href="#">интроверту</a></li>
-												<li><a href="#">крестнику</a></li>
-												<li><a href="#">деловому партнеру</a></li>
-												<li><a href="#">шефу</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Тип подарка</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">4любимому</a></li>
-												<li><a href="#">мужу</a></li>
-												<li><a href="#">другу</a></li>
-												<li><a href="#">папе</a></li>
-												<li><a href="#">парню</a></li>
-												<li><a href="#">коллеге</a></li>
-												<li><a href="#">дедушке</a></li>
-												<li><a href="#">брату</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">тестю</a></li>
-												<li><a href="#">взрослому</a></li>
-												<li><a href="#">зятю</a></li>
-												<li><a href="#">богатому</a></li>
-												<li><a href="#">любовнику</a></li>
-												<li><a href="#">грузину</a></li>
-												<li><a href="#">дяде</a></li>
-												<li><a href="#">еврею</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">бывшему</a></li>
-												<li><a href="#">отцу</a></li>
-												<li><a href="#">лучшему другу</a></li>
-												<li><a href="#">иностранцу</a></li>
-												<li><a href="#">интроверту</a></li>
-												<li><a href="#">крестнику</a></li>
-												<li><a href="#">деловому партнеру</a></li>
-												<li><a href="#">шефу</a></li>
-											</ul>
-										</div>
-									</li>
-								</ul>
+			<div class="js-menu header__menu-wrap">
+				<div class="header__menu js-menu-in js-fixed-func">
+					<div class="inner">
+						<a href="#" class="i i-home"></a>
+						<ul class="menu">
+							<li class="menu__item is-drop is-he js-m-link">
+								<a href="#" class="menu__link is-he">Для него</a>
+								<div class="m-drop js-m-drop">
+									<ul class="m-drop__list">
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Кому</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">любимому</a></li>
+													<li><a href="#">мужу</a></li>
+													<li><a href="#">другу</a></li>
+													<li><a href="#">папе</a></li>
+													<li><a href="#">парню</a></li>
+													<li><a href="#">коллеге</a></li>
+													<li><a href="#">дедушке</a></li>
+													<li><a href="#">брату</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">тестю</a></li>
+													<li><a href="#">взрослому</a></li>
+													<li><a href="#">зятю</a></li>
+													<li><a href="#">богатому</a></li>
+													<li><a href="#">любовнику</a></li>
+													<li><a href="#">грузину</a></li>
+													<li><a href="#">дяде</a></li>
+													<li><a href="#">еврею</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">бывшему</a></li>
+													<li><a href="#">отцу</a></li>
+													<li><a href="#">лучшему другу</a></li>
+													<li><a href="#">иностранцу</a></li>
+													<li><a href="#">интроверту</a></li>
+													<li><a href="#">крестнику</a></li>
+													<li><a href="#">деловому партнеру</a></li>
+													<li><a href="#">шефу</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Повод</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">1любимому</a></li>
+													<li><a href="#">мужу</a></li>
+													<li><a href="#">другу</a></li>
+													<li><a href="#">папе</a></li>
+													<li><a href="#">парню</a></li>
+													<li><a href="#">коллеге</a></li>
+													<li><a href="#">дедушке</a></li>
+													<li><a href="#">брату</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">тестю</a></li>
+													<li><a href="#">взрослому</a></li>
+													<li><a href="#">зятю</a></li>
+													<li><a href="#">богатому</a></li>
+													<li><a href="#">любовнику</a></li>
+													<li><a href="#">грузину</a></li>
+													<li><a href="#">дяде</a></li>
+													<li><a href="#">еврею</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">бывшему</a></li>
+													<li><a href="#">отцу</a></li>
+													<li><a href="#">лучшему другу</a></li>
+													<li><a href="#">иностранцу</a></li>
+													<li><a href="#">интроверту</a></li>
+													<li><a href="#">крестнику</a></li>
+													<li><a href="#">деловому партнеру</a></li>
+													<li><a href="#">шефу</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Интересы</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">2любимому</a></li>
+													<li><a href="#">мужу</a></li>
+													<li><a href="#">другу</a></li>
+													<li><a href="#">папе</a></li>
+													<li><a href="#">парню</a></li>
+													<li><a href="#">коллеге</a></li>
+													<li><a href="#">дедушке</a></li>
+													<li><a href="#">брату</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">тестю</a></li>
+													<li><a href="#">взрослому</a></li>
+													<li><a href="#">зятю</a></li>
+													<li><a href="#">богатому</a></li>
+													<li><a href="#">любовнику</a></li>
+													<li><a href="#">грузину</a></li>
+													<li><a href="#">дяде</a></li>
+													<li><a href="#">еврею</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">бывшему</a></li>
+													<li><a href="#">отцу</a></li>
+													<li><a href="#">лучшему другу</a></li>
+													<li><a href="#">иностранцу</a></li>
+													<li><a href="#">интроверту</a></li>
+													<li><a href="#">крестнику</a></li>
+													<li><a href="#">деловому партнеру</a></li>
+													<li><a href="#">шефу</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Профессия</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">3любимому</a></li>
+													<li><a href="#">мужу</a></li>
+													<li><a href="#">другу</a></li>
+													<li><a href="#">папе</a></li>
+													<li><a href="#">парню</a></li>
+													<li><a href="#">коллеге</a></li>
+													<li><a href="#">дедушке</a></li>
+													<li><a href="#">брату</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">тестю</a></li>
+													<li><a href="#">взрослому</a></li>
+													<li><a href="#">зятю</a></li>
+													<li><a href="#">богатому</a></li>
+													<li><a href="#">любовнику</a></li>
+													<li><a href="#">грузину</a></li>
+													<li><a href="#">дяде</a></li>
+													<li><a href="#">еврею</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">бывшему</a></li>
+													<li><a href="#">отцу</a></li>
+													<li><a href="#">лучшему другу</a></li>
+													<li><a href="#">иностранцу</a></li>
+													<li><a href="#">интроверту</a></li>
+													<li><a href="#">крестнику</a></li>
+													<li><a href="#">деловому партнеру</a></li>
+													<li><a href="#">шефу</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Тип подарка</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">4любимому</a></li>
+													<li><a href="#">мужу</a></li>
+													<li><a href="#">другу</a></li>
+													<li><a href="#">папе</a></li>
+													<li><a href="#">парню</a></li>
+													<li><a href="#">коллеге</a></li>
+													<li><a href="#">дедушке</a></li>
+													<li><a href="#">брату</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">тестю</a></li>
+													<li><a href="#">взрослому</a></li>
+													<li><a href="#">зятю</a></li>
+													<li><a href="#">богатому</a></li>
+													<li><a href="#">любовнику</a></li>
+													<li><a href="#">грузину</a></li>
+													<li><a href="#">дяде</a></li>
+													<li><a href="#">еврею</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">бывшему</a></li>
+													<li><a href="#">отцу</a></li>
+													<li><a href="#">лучшему другу</a></li>
+													<li><a href="#">иностранцу</a></li>
+													<li><a href="#">интроверту</a></li>
+													<li><a href="#">крестнику</a></li>
+													<li><a href="#">деловому партнеру</a></li>
+													<li><a href="#">шефу</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item is-drop is-she js-m-link">
+								<a href="#" class="menu__link is-she">Для нее</a>
+								<div class="m-drop js-m-drop">
+									<ul class="m-drop__list">
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Кому</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">девушке</a></li>
+													<li><a href="#">подруге</a></li>
+													<li><a href="#">жене</a></li>
+													<li><a href="#">маме</a></li>
+													<li><a href="#">бабушке</a></li>
+													<li><a href="#">любимой</a></li>
+													<li><a href="#">бывшей</a></li>
+													<li><a href="#">пожилому человеку</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">сестре</a></li>
+													<li><a href="#">свекрови</a></li>
+													<li><a href="#">любовнице</a></li>
+													<li><a href="#">коллеге</a></li>
+													<li><a href="#">дочке</a></li>
+													<li><a href="#">крестнице</a></li>
+													<li><a href="#">лучшей подруге</a></li>
+													<li><a href="#">теще</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">боссу</a></li>
+													<li><a href="#">взрослой женщине</a></li>
+													<li><a href="#">невесте</a></li>
+													<li><a href="#">шефу</a></li>
+													<li><a href="#">vip персоне</a></li>
+													<li><a href="#">невестке</a></li>
+													<li><a href="#">сестре мужа</a></li>
+													<li><a href="#">тете</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Повод</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">девушке</a></li>
+													<li><a href="#">подруге</a></li>
+													<li><a href="#">жене</a></li>
+													<li><a href="#">маме</a></li>
+													<li><a href="#">бабушке</a></li>
+													<li><a href="#">любимой</a></li>
+													<li><a href="#">бывшей</a></li>
+													<li><a href="#">пожилому человеку</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">сестре</a></li>
+													<li><a href="#">свекрови</a></li>
+													<li><a href="#">любовнице</a></li>
+													<li><a href="#">коллеге</a></li>
+													<li><a href="#">дочке</a></li>
+													<li><a href="#">крестнице</a></li>
+													<li><a href="#">лучшей подруге</a></li>
+													<li><a href="#">теще</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">боссу</a></li>
+													<li><a href="#">взрослой женщине</a></li>
+													<li><a href="#">невесте</a></li>
+													<li><a href="#">шефу</a></li>
+													<li><a href="#">vip персоне</a></li>
+													<li><a href="#">невестке</a></li>
+													<li><a href="#">сестре мужа</a></li>
+													<li><a href="#">тете</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Интересы</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">девушке</a></li>
+													<li><a href="#">подруге</a></li>
+													<li><a href="#">жене</a></li>
+													<li><a href="#">маме</a></li>
+													<li><a href="#">бабушке</a></li>
+													<li><a href="#">любимой</a></li>
+													<li><a href="#">бывшей</a></li>
+													<li><a href="#">пожилому человеку</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">сестре</a></li>
+													<li><a href="#">свекрови</a></li>
+													<li><a href="#">любовнице</a></li>
+													<li><a href="#">коллеге</a></li>
+													<li><a href="#">дочке</a></li>
+													<li><a href="#">крестнице</a></li>
+													<li><a href="#">лучшей подруге</a></li>
+													<li><a href="#">теще</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">боссу</a></li>
+													<li><a href="#">взрослой женщине</a></li>
+													<li><a href="#">невесте</a></li>
+													<li><a href="#">шефу</a></li>
+													<li><a href="#">vip персоне</a></li>
+													<li><a href="#">невестке</a></li>
+													<li><a href="#">сестре мужа</a></li>
+													<li><a href="#">тете</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Профессия</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">девушке</a></li>
+													<li><a href="#">подруге</a></li>
+													<li><a href="#">жене</a></li>
+													<li><a href="#">маме</a></li>
+													<li><a href="#">бабушке</a></li>
+													<li><a href="#">любимой</a></li>
+													<li><a href="#">бывшей</a></li>
+													<li><a href="#">пожилому человеку</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">сестре</a></li>
+													<li><a href="#">свекрови</a></li>
+													<li><a href="#">любовнице</a></li>
+													<li><a href="#">коллеге</a></li>
+													<li><a href="#">дочке</a></li>
+													<li><a href="#">крестнице</a></li>
+													<li><a href="#">лучшей подруге</a></li>
+													<li><a href="#">теще</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">боссу</a></li>
+													<li><a href="#">взрослой женщине</a></li>
+													<li><a href="#">невесте</a></li>
+													<li><a href="#">шефу</a></li>
+													<li><a href="#">vip персоне</a></li>
+													<li><a href="#">невестке</a></li>
+													<li><a href="#">сестре мужа</a></li>
+													<li><a href="#">тете</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Тип подарка</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">девушке</a></li>
+													<li><a href="#">подруге</a></li>
+													<li><a href="#">жене</a></li>
+													<li><a href="#">маме</a></li>
+													<li><a href="#">бабушке</a></li>
+													<li><a href="#">любимой</a></li>
+													<li><a href="#">бывшей</a></li>
+													<li><a href="#">пожилому человеку</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">сестре</a></li>
+													<li><a href="#">свекрови</a></li>
+													<li><a href="#">любовнице</a></li>
+													<li><a href="#">коллеге</a></li>
+													<li><a href="#">дочке</a></li>
+													<li><a href="#">крестнице</a></li>
+													<li><a href="#">лучшей подруге</a></li>
+													<li><a href="#">теще</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">боссу</a></li>
+													<li><a href="#">взрослой женщине</a></li>
+													<li><a href="#">невесте</a></li>
+													<li><a href="#">шефу</a></li>
+													<li><a href="#">vip персоне</a></li>
+													<li><a href="#">невестке</a></li>
+													<li><a href="#">сестре мужа</a></li>
+													<li><a href="#">тете</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item is-drop is-two js-m-link">
+								<a href="#" class="menu__link is-two">Паре</a>
+								<div class="m-drop js-m-drop">
+									<ul class="m-drop__list">
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Кому</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">близнецам</a></li>
+													<li><a href="#">крестным родителям</a></li>
+													<li><a href="#">молодоженам</a></li>
+													<li><a href="#">молодым родителям</a></li>
+													<li><a href="#">родителям</a></li>
+													<li><a href="#">влюбленным</a></li>
+													<li><a href="#">супружеской паре</a></li>
+													<li><a href="#">день рождения</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Повод</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">близнецам</a></li>
+													<li><a href="#">крестным родителям</a></li>
+													<li><a href="#">молодоженам</a></li>
+													<li><a href="#">молодым родителям</a></li>
+													<li><a href="#">родителям</a></li>
+													<li><a href="#">влюбленным</a></li>
+													<li><a href="#">супружеской паре</a></li>
+													<li><a href="#">день рождения</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Интересы</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">близнецам</a></li>
+													<li><a href="#">крестным родителям</a></li>
+													<li><a href="#">молодоженам</a></li>
+													<li><a href="#">молодым родителям</a></li>
+													<li><a href="#">родителям</a></li>
+													<li><a href="#">влюбленным</a></li>
+													<li><a href="#">супружеской паре</a></li>
+													<li><a href="#">день рождения</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Профессия</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">близнецам</a></li>
+													<li><a href="#">крестным родителям</a></li>
+													<li><a href="#">молодоженам</a></li>
+													<li><a href="#">молодым родителям</a></li>
+													<li><a href="#">родителям</a></li>
+													<li><a href="#">влюбленным</a></li>
+													<li><a href="#">супружеской паре</a></li>
+													<li><a href="#">день рождения</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Тип подарка</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">близнецам</a></li>
+													<li><a href="#">крестным родителям</a></li>
+													<li><a href="#">молодоженам</a></li>
+													<li><a href="#">молодым родителям</a></li>
+													<li><a href="#">родителям</a></li>
+													<li><a href="#">влюбленным</a></li>
+													<li><a href="#">супружеской паре</a></li>
+													<li><a href="#">день рождения</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item is-drop is-corporate js-m-link">
+								<a href="#" class="menu__link is-corporate">Корпоратив</a>
+								<div class="m-drop js-m-drop">
+									<ul class="m-drop__list">
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Кому</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">бизнес партнерам</a></li>
+													<li><a href="#">гостям</a></li>
+													<li><a href="#">друзьям</a></li>
+													<li><a href="#">клиентам</a></li>
+													<li><a href="#">компании</a></li>
+													<li><a href="#">партнерам</a></li>
+													<li><a href="#">родственникам</a></li>
+													<li><a href="#">сотрудникам</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">фирме</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Повод</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">бизнес партнерам</a></li>
+													<li><a href="#">гостям</a></li>
+													<li><a href="#">друзьям</a></li>
+													<li><a href="#">клиентам</a></li>
+													<li><a href="#">компании</a></li>
+													<li><a href="#">партнерам</a></li>
+													<li><a href="#">родственникам</a></li>
+													<li><a href="#">сотрудникам</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">фирме</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Интересы</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">бизнес партнерам</a></li>
+													<li><a href="#">гостям</a></li>
+													<li><a href="#">друзьям</a></li>
+													<li><a href="#">клиентам</a></li>
+													<li><a href="#">компании</a></li>
+													<li><a href="#">партнерам</a></li>
+													<li><a href="#">родственникам</a></li>
+													<li><a href="#">сотрудникам</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">фирме</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Профессия</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">бизнес партнерам</a></li>
+													<li><a href="#">гостям</a></li>
+													<li><a href="#">друзьям</a></li>
+													<li><a href="#">клиентам</a></li>
+													<li><a href="#">компании</a></li>
+													<li><a href="#">партнерам</a></li>
+													<li><a href="#">родственникам</a></li>
+													<li><a href="#">сотрудникам</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">фирме</a></li>
+												</ul>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Тип подарка</a>
+											<div class="m-drop__drop">
+												<ul>
+													<li><a href="#">бизнес партнерам</a></li>
+													<li><a href="#">гостям</a></li>
+													<li><a href="#">друзьям</a></li>
+													<li><a href="#">клиентам</a></li>
+													<li><a href="#">компании</a></li>
+													<li><a href="#">партнерам</a></li>
+													<li><a href="#">родственникам</a></li>
+													<li><a href="#">сотрудникам</a></li>
+												</ul>
+												<ul>
+													<li><a href="#">фирме</a></li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item is-drop is-reason js-m-link">
+								<a href="#" class="menu__link is-reason">Повод</a>
+								<div class="m-reason js-m-drop">
+									<ul>
+										<li><a href="#" class="is-tooth"><span>День зубного врача</span></a></li>
+										<li><a href="#" class="is-saint"><span>День Святого Валентина</span></a></li>
+										<li><a href="#" class="is-new-home"><span>Новоселье</span></a></li>
+										<li><a href="#" class="is-smile"><span>Именины</span></a></li>
+										<li><a href="#" class="is-memory"><span>На память</span></a></li>
+										<li><a href="#" class="is-anniversary"><span>Годовщина</span></a></li>
+									</ul>
+									<a href="#" class="m-reason__btn">Все варианты</a>
+								</div>
+							</li>
+							<li class="menu__item is-drop is-catalog js-m-link">
+								<a href="#" class="menu__link is-catalog">Каталог</a>
+								<div class="m-drop js-m-drop">
+									<ul class="m-drop__list">
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Категория 1 уровня</a>
+											<div class="m-drop__container">
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Категория 1 уровня</a>
+											<div class="m-drop__container">
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Категория 1 уровня</a>
+											<div class="m-drop__container">
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Категория 1 уровня</a>
+											<div class="m-drop__container">
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class="m-drop__item">
+											<a href="#" class="m-drop__link">Категория 1 уровня</a>
+											<div class="m-drop__container">
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+												<div class="m-drop__col">
+													<a href="#" class="m-drop__title">Женщине</a>
+													<ul>
+														<li><a href="#">человеку/людям</a></li>
+														<li><a href="#">мужчине</a></li>
+														<li><a href="#">жене</a></li>
+														<li><a href="#">девушке</a></li>
+													</ul>
+													<a href="#" class="m-drop__title">Руководителю</a>
+													<ul>
+														<li><a href="#">бизнес партнеру</a></li>
+														<li><a href="#">охотнику</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu__item is-new">
+								<a href="#" class="menu__link is-new">Новинки</a>
+							</li>
+						</ul>
+						<span class="menu-decor"><i></i></span>
+						<button class="btn btn_blue">Войти</button>
+						<div class="menu-profile is-active js-profile">
+							<a href="#" class="menu-profile__img">
+								<i class="i i-profile-small"></i>
+								<span class="menu-profile__bonus">1</span>
+							</a>
+							<div class="menu-profile__info">
+								<a href="#" class="menu-profile__link js-profile-link">Личный кабинет</a>
 							</div>
-						</li>
-						<li class="menu__item is-drop is-she js-m-link">
-							<a href="#" class="menu__link is-she">Для нее</a>
-							<div class="m-drop js-m-drop">
-								<ul class="m-drop__list">
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Кому</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">девушке</a></li>
-												<li><a href="#">подруге</a></li>
-												<li><a href="#">жене</a></li>
-												<li><a href="#">маме</a></li>
-												<li><a href="#">бабушке</a></li>
-												<li><a href="#">любимой</a></li>
-												<li><a href="#">бывшей</a></li>
-												<li><a href="#">пожилому человеку</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">сестре</a></li>
-												<li><a href="#">свекрови</a></li>
-												<li><a href="#">любовнице</a></li>
-												<li><a href="#">коллеге</a></li>
-												<li><a href="#">дочке</a></li>
-												<li><a href="#">крестнице</a></li>
-												<li><a href="#">лучшей подруге</a></li>
-												<li><a href="#">теще</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">боссу</a></li>
-												<li><a href="#">взрослой женщине</a></li>
-												<li><a href="#">невесте</a></li>
-												<li><a href="#">шефу</a></li>
-												<li><a href="#">vip персоне</a></li>
-												<li><a href="#">невестке</a></li>
-												<li><a href="#">сестре мужа</a></li>
-												<li><a href="#">тете</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Повод</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">девушке</a></li>
-												<li><a href="#">подруге</a></li>
-												<li><a href="#">жене</a></li>
-												<li><a href="#">маме</a></li>
-												<li><a href="#">бабушке</a></li>
-												<li><a href="#">любимой</a></li>
-												<li><a href="#">бывшей</a></li>
-												<li><a href="#">пожилому человеку</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">сестре</a></li>
-												<li><a href="#">свекрови</a></li>
-												<li><a href="#">любовнице</a></li>
-												<li><a href="#">коллеге</a></li>
-												<li><a href="#">дочке</a></li>
-												<li><a href="#">крестнице</a></li>
-												<li><a href="#">лучшей подруге</a></li>
-												<li><a href="#">теще</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">боссу</a></li>
-												<li><a href="#">взрослой женщине</a></li>
-												<li><a href="#">невесте</a></li>
-												<li><a href="#">шефу</a></li>
-												<li><a href="#">vip персоне</a></li>
-												<li><a href="#">невестке</a></li>
-												<li><a href="#">сестре мужа</a></li>
-												<li><a href="#">тете</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Интересы</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">девушке</a></li>
-												<li><a href="#">подруге</a></li>
-												<li><a href="#">жене</a></li>
-												<li><a href="#">маме</a></li>
-												<li><a href="#">бабушке</a></li>
-												<li><a href="#">любимой</a></li>
-												<li><a href="#">бывшей</a></li>
-												<li><a href="#">пожилому человеку</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">сестре</a></li>
-												<li><a href="#">свекрови</a></li>
-												<li><a href="#">любовнице</a></li>
-												<li><a href="#">коллеге</a></li>
-												<li><a href="#">дочке</a></li>
-												<li><a href="#">крестнице</a></li>
-												<li><a href="#">лучшей подруге</a></li>
-												<li><a href="#">теще</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">боссу</a></li>
-												<li><a href="#">взрослой женщине</a></li>
-												<li><a href="#">невесте</a></li>
-												<li><a href="#">шефу</a></li>
-												<li><a href="#">vip персоне</a></li>
-												<li><a href="#">невестке</a></li>
-												<li><a href="#">сестре мужа</a></li>
-												<li><a href="#">тете</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Профессия</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">девушке</a></li>
-												<li><a href="#">подруге</a></li>
-												<li><a href="#">жене</a></li>
-												<li><a href="#">маме</a></li>
-												<li><a href="#">бабушке</a></li>
-												<li><a href="#">любимой</a></li>
-												<li><a href="#">бывшей</a></li>
-												<li><a href="#">пожилому человеку</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">сестре</a></li>
-												<li><a href="#">свекрови</a></li>
-												<li><a href="#">любовнице</a></li>
-												<li><a href="#">коллеге</a></li>
-												<li><a href="#">дочке</a></li>
-												<li><a href="#">крестнице</a></li>
-												<li><a href="#">лучшей подруге</a></li>
-												<li><a href="#">теще</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">боссу</a></li>
-												<li><a href="#">взрослой женщине</a></li>
-												<li><a href="#">невесте</a></li>
-												<li><a href="#">шефу</a></li>
-												<li><a href="#">vip персоне</a></li>
-												<li><a href="#">невестке</a></li>
-												<li><a href="#">сестре мужа</a></li>
-												<li><a href="#">тете</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Тип подарка</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">девушке</a></li>
-												<li><a href="#">подруге</a></li>
-												<li><a href="#">жене</a></li>
-												<li><a href="#">маме</a></li>
-												<li><a href="#">бабушке</a></li>
-												<li><a href="#">любимой</a></li>
-												<li><a href="#">бывшей</a></li>
-												<li><a href="#">пожилому человеку</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">сестре</a></li>
-												<li><a href="#">свекрови</a></li>
-												<li><a href="#">любовнице</a></li>
-												<li><a href="#">коллеге</a></li>
-												<li><a href="#">дочке</a></li>
-												<li><a href="#">крестнице</a></li>
-												<li><a href="#">лучшей подруге</a></li>
-												<li><a href="#">теще</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">боссу</a></li>
-												<li><a href="#">взрослой женщине</a></li>
-												<li><a href="#">невесте</a></li>
-												<li><a href="#">шефу</a></li>
-												<li><a href="#">vip персоне</a></li>
-												<li><a href="#">невестке</a></li>
-												<li><a href="#">сестре мужа</a></li>
-												<li><a href="#">тете</a></li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="menu__item is-drop is-two js-m-link">
-							<a href="#" class="menu__link is-two">Паре</a>
-							<div class="m-drop js-m-drop">
-								<ul class="m-drop__list">
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Кому</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">близнецам</a></li>
-												<li><a href="#">крестным родителям</a></li>
-												<li><a href="#">молодоженам</a></li>
-												<li><a href="#">молодым родителям</a></li>
-												<li><a href="#">родителям</a></li>
-												<li><a href="#">влюбленным</a></li>
-												<li><a href="#">супружеской паре</a></li>
-												<li><a href="#">день рождения</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Повод</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">близнецам</a></li>
-												<li><a href="#">крестным родителям</a></li>
-												<li><a href="#">молодоженам</a></li>
-												<li><a href="#">молодым родителям</a></li>
-												<li><a href="#">родителям</a></li>
-												<li><a href="#">влюбленным</a></li>
-												<li><a href="#">супружеской паре</a></li>
-												<li><a href="#">день рождения</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Интересы</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">близнецам</a></li>
-												<li><a href="#">крестным родителям</a></li>
-												<li><a href="#">молодоженам</a></li>
-												<li><a href="#">молодым родителям</a></li>
-												<li><a href="#">родителям</a></li>
-												<li><a href="#">влюбленным</a></li>
-												<li><a href="#">супружеской паре</a></li>
-												<li><a href="#">день рождения</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Профессия</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">близнецам</a></li>
-												<li><a href="#">крестным родителям</a></li>
-												<li><a href="#">молодоженам</a></li>
-												<li><a href="#">молодым родителям</a></li>
-												<li><a href="#">родителям</a></li>
-												<li><a href="#">влюбленным</a></li>
-												<li><a href="#">супружеской паре</a></li>
-												<li><a href="#">день рождения</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Тип подарка</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">близнецам</a></li>
-												<li><a href="#">крестным родителям</a></li>
-												<li><a href="#">молодоженам</a></li>
-												<li><a href="#">молодым родителям</a></li>
-												<li><a href="#">родителям</a></li>
-												<li><a href="#">влюбленным</a></li>
-												<li><a href="#">супружеской паре</a></li>
-												<li><a href="#">день рождения</a></li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="menu__item is-drop is-corporate js-m-link">
-							<a href="#" class="menu__link is-corporate">Корпоратив</a>
-							<div class="m-drop js-m-drop">
-								<ul class="m-drop__list">
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Кому</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">бизнес партнерам</a></li>
-												<li><a href="#">гостям</a></li>
-												<li><a href="#">друзьям</a></li>
-												<li><a href="#">клиентам</a></li>
-												<li><a href="#">компании</a></li>
-												<li><a href="#">партнерам</a></li>
-												<li><a href="#">родственникам</a></li>
-												<li><a href="#">сотрудникам</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">фирме</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Повод</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">бизнес партнерам</a></li>
-												<li><a href="#">гостям</a></li>
-												<li><a href="#">друзьям</a></li>
-												<li><a href="#">клиентам</a></li>
-												<li><a href="#">компании</a></li>
-												<li><a href="#">партнерам</a></li>
-												<li><a href="#">родственникам</a></li>
-												<li><a href="#">сотрудникам</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">фирме</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Интересы</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">бизнес партнерам</a></li>
-												<li><a href="#">гостям</a></li>
-												<li><a href="#">друзьям</a></li>
-												<li><a href="#">клиентам</a></li>
-												<li><a href="#">компании</a></li>
-												<li><a href="#">партнерам</a></li>
-												<li><a href="#">родственникам</a></li>
-												<li><a href="#">сотрудникам</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">фирме</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Профессия</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">бизнес партнерам</a></li>
-												<li><a href="#">гостям</a></li>
-												<li><a href="#">друзьям</a></li>
-												<li><a href="#">клиентам</a></li>
-												<li><a href="#">компании</a></li>
-												<li><a href="#">партнерам</a></li>
-												<li><a href="#">родственникам</a></li>
-												<li><a href="#">сотрудникам</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">фирме</a></li>
-											</ul>
-										</div>
-									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Тип подарка</a>
-										<div class="m-drop__drop">
-											<ul>
-												<li><a href="#">бизнес партнерам</a></li>
-												<li><a href="#">гостям</a></li>
-												<li><a href="#">друзьям</a></li>
-												<li><a href="#">клиентам</a></li>
-												<li><a href="#">компании</a></li>
-												<li><a href="#">партнерам</a></li>
-												<li><a href="#">родственникам</a></li>
-												<li><a href="#">сотрудникам</a></li>
-											</ul>
-											<ul>
-												<li><a href="#">фирме</a></li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</li>
-						<li class="menu__item is-drop is-reason js-m-link">
-							<a href="#" class="menu__link is-reason">Повод</a>
-							<div class="m-reason js-m-drop">
+							<div class="profile-drop js-profile-drop">
 								<ul>
-									<li><a href="#" class="is-tooth"><span>День зубного врача</span></a></li>
-									<li><a href="#" class="is-saint"><span>День Святого Валентина</span></a></li>
-									<li><a href="#" class="is-new-home"><span>Новоселье</span></a></li>
-									<li><a href="#" class="is-smile"><span>Именины</span></a></li>
-									<li><a href="#" class="is-memory"><span>На память</span></a></li>
-									<li><a href="#" class="is-anniversary"><span>Годовщина</span></a></li>
-								</ul>
-								<a href="#" class="m-reason__btn">Все варианты</a>
-							</div>
-						</li>
-						<li class="menu__item is-drop is-catalog js-m-link">
-							<a href="#" class="menu__link is-catalog">Каталог</a>
-							<div class="m-drop js-m-drop">
-								<ul class="m-drop__list">
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Категория 1 уровня</a>
-										<div class="m-drop__container">
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-										</div>
+									<li>
+										<a href="#">
+											<span>История заказов</span>
+											<small>пока нет заказов</small>
+										</a>
 									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Категория 1 уровня</a>
-										<div class="m-drop__container">
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-										</div>
+									<li>
+										<a href="#">
+											<span>Личная информация</span>
+											<small>заполнена на 60%</small>
+										</a>
 									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Категория 1 уровня</a>
-										<div class="m-drop__container">
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-										</div>
+									<li>
+										<a href="#">
+											<span>Мои бонусы <i class="is-amount">1</i></span>
+											<small class="is-price">236 <i class="rub">Р</i></small>
+											<small>(67 баллов)</small>
+										</a>
 									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Категория 1 уровня</a>
-										<div class="m-drop__container">
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-										</div>
+									<li>
+										<a href="#">
+											<span>Любимые товары</span>
+											<small>2 товара</small>
+										</a>
 									</li>
-									<li class="m-drop__item">
-										<a href="#" class="m-drop__link">Категория 1 уровня</a>
-										<div class="m-drop__container">
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-											<div class="m-drop__col">
-												<a href="#" class="m-drop__title">Женщине</a>
-												<ul>
-													<li><a href="#">человеку/людям</a></li>
-													<li><a href="#">мужчине</a></li>
-													<li><a href="#">жене</a></li>
-													<li><a href="#">девушке</a></li>
-												</ul>
-												<a href="#" class="m-drop__title">Руководителю</a>
-												<ul>
-													<li><a href="#">бизнес партнеру</a></li>
-													<li><a href="#">охотнику</a></li>
-												</ul>
-											</div>
-										</div>
+									<li>
+										<a href="#">
+											<span>Напоминания и подписка</span>
+											<small>пока нет напоминаний</small>
+										</a>
 									</li>
 								</ul>
+								<button class="profile-drop__leave">Выход из магазина <i class="btn-close"></i></button>
 							</div>
-						</li>
-						<li class="menu__item is-new">
-							<a href="#" class="menu__link is-new">Новинки</a>
-						</li>
-					</ul>
-					<span class="menu-decor"><i></i></span>
-					<div class="basket js-basket">
-						<a href="#" class="basket__amount">
-							<span class="basket__icon">999</span>
-							<span class="is-items">шт.</span>
-						</a>
-						<div class="basket__money js-basket-link">
-							<span>227 650 <i>Р</i></span>
 						</div>
-						<div class="b-drop js-basket-drop">
-							<div class="b-drop__items js-scroll js-basket-wrap">
-								<div class="b-drop__scroll js-basket-items">
-									<div class="b-item">
-										<i class="b-item__delete"></i>
-										<div class="b-item__left">
-											<a href="#" class="b-item__img"><img src="img/b-item-img.png" alt=""></a>
-											<div class="b-item__info">
-												<a href="#" class="b-item__title">Валенки “От кутюр”</a>
-												<small class="b-item__small">Артикул: 953-293</small>
-											</div>
-										</div>
-										<div class="b-item__right">
-											<div class="b-item__amount">
-												<div class="d-number js-number" data-max-number="100">
-													<button class="d-number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="d-number__input js-input" value="9" disabled>
-													<span class="d-number__amount js-amount"></span>
-													<span class="d-number__title">шт</span>
-													<button class="d-number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
-											<div class="b-item__price">
-												<span>2 800 <i class="rub">Р</i></span>
-												<a href="#" class="b-item__small">+ 34 бонусов</a>
-											</div>
-										</div>
-									</div>
-									<div class="b-item">
-										<i class="b-item__delete"></i>
-										<div class="b-item__left">
-											<a href="#" class="b-item__img"><img src="img/b-item-img.png" alt=""></a>
-											<div class="b-item__info">
-												<a href="#" class="b-item__title">Валенки “От кутюр”</a>
-												<small class="b-item__small">Артикул: 953-293</small>
-											</div>
-										</div>
-										<div class="b-item__right">
-											<div class="b-item__amount">
-												<div class="d-number js-number" data-max-number="100">
-													<button class="d-number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="d-number__input js-input" value="9" disabled>
-													<span class="d-number__amount js-amount"></span>
-													<span class="d-number__title">шт</span>
-													<button class="d-number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
-											<div class="b-item__price">
-												<span>2 800 <i class="rub">Р</i></span>
-												<a href="#" class="b-item__small">+ 34 бонусов</a>
-											</div>
-										</div>
-									</div>
-									<div class="b-item">
-										<i class="b-item__delete"></i>
-										<div class="b-item__left">
-											<a href="#" class="b-item__img"><img src="img/b-item-img.png" alt=""></a>
-											<div class="b-item__info">
-												<a href="#" class="b-item__title">Валенки “От кутюр”</a>
-												<small class="b-item__small">Артикул: 953-293</small>
-											</div>
-										</div>
-										<div class="b-item__right">
-											<div class="b-item__amount">
-												<div class="d-number js-number" data-max-number="100">
-													<button class="d-number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="d-number__input js-input" value="9" disabled>
-													<span class="d-number__amount js-amount"></span>
-													<span class="d-number__title">шт</span>
-													<button class="d-number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
-											<div class="b-item__price">
-												<span>2 800 <i class="rub">Р</i></span>
-												<a href="#" class="b-item__small">+ 34 бонусов</a>
-											</div>
-										</div>
-									</div>
-									<div class="b-item">
-										<i class="b-item__delete"></i>
-										<div class="b-item__left">
-											<a href="#" class="b-item__img"><img src="img/b-item-img.png" alt=""></a>
-											<div class="b-item__info">
-												<a href="#" class="b-item__title">Валенки “От кутюр”</a>
-												<small class="b-item__small">Артикул: 953-293</small>
-											</div>
-										</div>
-										<div class="b-item__right">
-											<div class="b-item__amount">
-												<div class="d-number js-number" data-max-number="100">
-													<button class="d-number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="d-number__input js-input" value="9" disabled>
-													<span class="d-number__amount js-amount"></span>
-													<span class="d-number__title">шт</span>
-													<button class="d-number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
-											<div class="b-item__price">
-												<span>2 800 <i class="rub">Р</i></span>
-												<a href="#" class="b-item__small">+ 34 бонусов</a>
-											</div>
-										</div>
-									</div>
-									<div class="b-item">
-										<i class="b-item__delete"></i>
-										<div class="b-item__left">
-											<a href="#" class="b-item__img"><img src="img/b-item-img.png" alt=""></a>
-											<div class="b-item__info">
-												<a href="#" class="b-item__title">Валенки “От кутюр”</a>
-												<small class="b-item__small">Артикул: 953-293</small>
-											</div>
-										</div>
-										<div class="b-item__right">
-											<div class="b-item__amount">
-												<div class="d-number js-number" data-max-number="100">
-													<button class="d-number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="d-number__input js-input" value="9" disabled>
-													<span class="d-number__amount js-amount"></span>
-													<span class="d-number__title">шт</span>
-													<button class="d-number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
-											<div class="b-item__price">
-												<span>2 800 <i class="rub">Р</i></span>
-												<a href="#" class="b-item__small">+ 34 бонусов</a>
-											</div>
-										</div>
-									</div>
-									<div class="b-item">
-										<i class="b-item__delete"></i>
-										<div class="b-item__left">
-											<a href="#" class="b-item__img"><img src="img/b-item-img.png" alt=""></a>
-											<div class="b-item__info">
-												<a href="#" class="b-item__title">Валенки “От кутюр”</a>
-												<small class="b-item__small">Артикул: 953-293</small>
-											</div>
-										</div>
-										<div class="b-item__right">
-											<div class="b-item__amount">
-												<div class="d-number js-number" data-max-number="100">
-													<button class="d-number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="d-number__input js-input" value="9" disabled>
-													<span class="d-number__amount js-amount"></span>
-													<span class="d-number__title">шт</span>
-													<button class="d-number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
-											<div class="b-item__price">
-												<span>2 800 <i class="rub">Р</i></span>
-												<a href="#" class="b-item__small">+ 34 бонусов</a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="b-drop__shadow"></div>
+						<a href="#" class="header__search-btn"></a>
+						<div class="basket js-basket">
+							<a href="#" class="basket__amount">
+								<span class="basket__icon">999</span>
+								<span class="is-items">шт.</span>
+							</a>
+							<div class="basket__money js-basket-link">
+								<span>227 650 <i>Р</i></span>
 							</div>
-							<div class="b-drop__text">
-								<p>Добавьте товаров на <b>850 руб.</b> и мы доставим заказ бесплатно!</p>
-							</div>
-							<div class="b-drop__bottom">
-								<div class="b-drop__result">
-									<span>Итого: 34 800 <i class="rub">Р</i></span>
-									<small>+ 128 бонусов</small>
+							<div class="b-drop js-basket-drop">
+								<div class="b-drop__items js-scroll js-basket-wrap">
+									<div class="b-drop__scroll js-basket-items">
+										<div class="b-item">
+											<i class="b-item__delete"></i>
+											<div class="b-item__left">
+												<a href="#" class="b-item__img"><img src="img/b-item-img.png" alt=""></a>
+												<div class="b-item__info">
+													<a href="#" class="b-item__title">Валенки “От кутюр”</a>
+													<small class="b-item__small">Артикул: 953-293</small>
+												</div>
+											</div>
+											<div class="b-item__right">
+												<div class="b-item__amount">
+													<div class="d-number js-number" data-max-number="100">
+														<button class="d-number__minus js-minus-number" type="button">-</button>
+														<input type="text" class="d-number__input js-input" value="9" disabled>
+														<span class="d-number__amount js-amount"></span>
+														<span class="d-number__title">шт</span>
+														<button class="d-number__plus js-plus-number" type="button">+</button>
+													</div>
+												</div>
+												<div class="b-item__price">
+													<span>2 800 <i class="rub">Р</i></span>
+													<a href="#" class="b-item__small">+ 34 бонусов</a>
+												</div>
+											</div>
+										</div>
+										<div class="b-item">
+											<i class="b-item__delete"></i>
+											<div class="b-item__left">
+												<a href="#" class="b-item__img"><img src="img/b-item-img.png" alt=""></a>
+												<div class="b-item__info">
+													<a href="#" class="b-item__title">Валенки “От кутюр”</a>
+													<small class="b-item__small">Артикул: 953-293</small>
+												</div>
+											</div>
+											<div class="b-item__right">
+												<div class="b-item__amount">
+													<div class="d-number js-number" data-max-number="100">
+														<button class="d-number__minus js-minus-number" type="button">-</button>
+														<input type="text" class="d-number__input js-input" value="9" disabled>
+														<span class="d-number__amount js-amount"></span>
+														<span class="d-number__title">шт</span>
+														<button class="d-number__plus js-plus-number" type="button">+</button>
+													</div>
+												</div>
+												<div class="b-item__price">
+													<span>2 800 <i class="rub">Р</i></span>
+													<a href="#" class="b-item__small">+ 34 бонусов</a>
+												</div>
+											</div>
+										</div>
+										<div class="b-item">
+											<i class="b-item__delete"></i>
+											<div class="b-item__left">
+												<a href="#" class="b-item__img"><img src="img/b-item-img.png" alt=""></a>
+												<div class="b-item__info">
+													<a href="#" class="b-item__title">Валенки “От кутюр”</a>
+													<small class="b-item__small">Артикул: 953-293</small>
+												</div>
+											</div>
+											<div class="b-item__right">
+												<div class="b-item__amount">
+													<div class="d-number js-number" data-max-number="100">
+														<button class="d-number__minus js-minus-number" type="button">-</button>
+														<input type="text" class="d-number__input js-input" value="9" disabled>
+														<span class="d-number__amount js-amount"></span>
+														<span class="d-number__title">шт</span>
+														<button class="d-number__plus js-plus-number" type="button">+</button>
+													</div>
+												</div>
+												<div class="b-item__price">
+													<span>2 800 <i class="rub">Р</i></span>
+													<a href="#" class="b-item__small">+ 34 бонусов</a>
+												</div>
+											</div>
+										</div>
+										<div class="b-item">
+											<i class="b-item__delete"></i>
+											<div class="b-item__left">
+												<a href="#" class="b-item__img"><img src="img/b-item-img.png" alt=""></a>
+												<div class="b-item__info">
+													<a href="#" class="b-item__title">Валенки “От кутюр”</a>
+													<small class="b-item__small">Артикул: 953-293</small>
+												</div>
+											</div>
+											<div class="b-item__right">
+												<div class="b-item__amount">
+													<div class="d-number js-number" data-max-number="100">
+														<button class="d-number__minus js-minus-number" type="button">-</button>
+														<input type="text" class="d-number__input js-input" value="9" disabled>
+														<span class="d-number__amount js-amount"></span>
+														<span class="d-number__title">шт</span>
+														<button class="d-number__plus js-plus-number" type="button">+</button>
+													</div>
+												</div>
+												<div class="b-item__price">
+													<span>2 800 <i class="rub">Р</i></span>
+													<a href="#" class="b-item__small">+ 34 бонусов</a>
+												</div>
+											</div>
+										</div>
+										<div class="b-item">
+											<i class="b-item__delete"></i>
+											<div class="b-item__left">
+												<a href="#" class="b-item__img"><img src="img/b-item-img.png" alt=""></a>
+												<div class="b-item__info">
+													<a href="#" class="b-item__title">Валенки “От кутюр”</a>
+													<small class="b-item__small">Артикул: 953-293</small>
+												</div>
+											</div>
+											<div class="b-item__right">
+												<div class="b-item__amount">
+													<div class="d-number js-number" data-max-number="100">
+														<button class="d-number__minus js-minus-number" type="button">-</button>
+														<input type="text" class="d-number__input js-input" value="9" disabled>
+														<span class="d-number__amount js-amount"></span>
+														<span class="d-number__title">шт</span>
+														<button class="d-number__plus js-plus-number" type="button">+</button>
+													</div>
+												</div>
+												<div class="b-item__price">
+													<span>2 800 <i class="rub">Р</i></span>
+													<a href="#" class="b-item__small">+ 34 бонусов</a>
+												</div>
+											</div>
+										</div>
+										<div class="b-item">
+											<i class="b-item__delete"></i>
+											<div class="b-item__left">
+												<a href="#" class="b-item__img"><img src="img/b-item-img.png" alt=""></a>
+												<div class="b-item__info">
+													<a href="#" class="b-item__title">Валенки “От кутюр”</a>
+													<small class="b-item__small">Артикул: 953-293</small>
+												</div>
+											</div>
+											<div class="b-item__right">
+												<div class="b-item__amount">
+													<div class="d-number js-number" data-max-number="100">
+														<button class="d-number__minus js-minus-number" type="button">-</button>
+														<input type="text" class="d-number__input js-input" value="9" disabled>
+														<span class="d-number__amount js-amount"></span>
+														<span class="d-number__title">шт</span>
+														<button class="d-number__plus js-plus-number" type="button">+</button>
+													</div>
+												</div>
+												<div class="b-item__price">
+													<span>2 800 <i class="rub">Р</i></span>
+													<a href="#" class="b-item__small">+ 34 бонусов</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="b-drop__shadow"></div>
 								</div>
-								<button class="button button_check">Оформить</button>
+								<div class="b-drop__text">
+									<p>Добавьте товаров на <b>850 руб.</b> и мы доставим заказ бесплатно!</p>
+								</div>
+								<div class="b-drop__bottom">
+									<div class="b-drop__result">
+										<span>Итого: 34 800 <i class="rub">Р</i></span>
+										<small>+ 128 бонусов</small>
+									</div>
+									<button class="button button_check">Оформить</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1127,7 +1223,7 @@
 		<!-- end header -->
 
 		<div class="steps js-steps">
-			<i class="btn-close btn-close_big js-steps-close"></i>
+			<i class="btn-close btn-close_big js-steps-close js-tooltip" title="<small>Удобный личный кабинет, <br> отслеживание заказа по смс</small>"></i>
 			<div class="steps__text">Почему  уже <span>более 160 000</span> человек выбрали нас?<i class="i i-right-big"></i></div>
 			<ul class="steps__list">
 				<li>
@@ -1260,7 +1356,7 @@
 					<small class="footer__schedule">9:00 — 19:00</small>
 				</div>
 				<div class="search">
-					<input type="text" class="search__input" placeholder="Поиск подарков">
+					<input type="text" class="search__input js-search-input" placeholder="Поиск подарков">
 					<button class="search__btn"></button>
 				</div>
 			</div>
@@ -1395,6 +1491,392 @@
 		</div>
 	</div>
 	<!-- end modal -->
+	<div class="fixed-br js-panel js-fixed">
+		<div class="f-panel js-panel-block">
+			<a href="#" class="f-panel__item is-calendar js-panel-btn js-tooltip js-panel-calendar" data-btn="panel-1" title="Календарь подарков"></a>
+			<a href="#" class="f-panel__item is-now js-panel-btn js-tooltip js-panel-view" data-btn="panel-2" title="Сейчас покупают"></a>
+			<a href="#" class="f-panel__item is-view js-panel-btn js-tooltip js-panel-view" data-btn="panel-3" title="Вы просмотрели"></a>
+			<a href="#" class="f-panel__item is-right js-panel-close"></a>
+		</div>
+		<button class="f-panel-open js-panel-open"><i></i></button>
+		<button class="btn-up js-btn-up"></button>
+	</div>
+
+	<div class="panel-calendar js-panel-box js-fixed-func" data-block="panel-1">
+		<div class="panel-calendar__inner js-panel-slider">
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>26</span>
+						<small>Янв</small>
+					</div>
+					<div class="panel-item__text">
+						<span>День <br>сантехника</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>26</span>
+						<small>Янв</small>
+					</div>
+					<div class="panel-item__text">
+						<span>День <br>сантехника</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>26</span>
+						<small>Янв</small>
+					</div>
+					<div class="panel-item__text">
+						<span>День <br>сантехника</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>3</span>
+						<small>Мар</small>
+					</div>
+					<div class="panel-item__text">
+						<span>Всемирный день гражданской обор</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>26</span>
+						<small>Янв</small>
+					</div>
+					<div class="panel-item__text">
+						<span>День <br>сантехника</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>26</span>
+						<small>Янв</small>
+					</div>
+					<div class="panel-item__text">
+						<span>День <br>сантехника</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>26</span>
+						<small>Янв</small>
+					</div>
+					<div class="panel-item__text">
+						<span>День <br>сантехника</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner">
+					<div class="panel-item__date">
+						<span>3</span>
+						<small>Мар</small>
+					</div>
+					<div class="panel-item__text">
+						<span>Всемирный день гражданской обор</span>
+						<small>106 подарков</small>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="panel-img js-panel-box js-fixed-func" data-block="panel-2">
+		<div class="panel-img__inner js-view-slider">
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="panel-img js-panel-box js-fixed-func" data-block="panel-3">
+		<div class="panel-img__inner js-view-slider">
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+			<div class="panel-item">
+				<a href="#" class="panel-item__inner js-tooltip" title="<p>Постельное белье <br> «Воздухоплаватели» <b>950 <i class='rub'>Р</i></b></p>">
+					<img src="img/panel-item-img.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="js-search-block search-block">
+
+		<div class="container">
+
+			<i class="i i-close js-search-close"></i>
+
+			<div class="row">
+
+				<div class="col-lg-12 col-xs-12">
+
+					<span class="search-block__title">Супер-поиск Ар де Кадо</span>
+
+					<div class="search-block__input">
+						<i class="search-block__left"></i>
+						<i class="search-block__right"></i>
+						<input type="text">
+						<button></button>
+					</div>
+
+					<div class="search-block__btns">
+						<span class="search-block__label">Разделы каталога</span>
+						<button class="btn-gender">Для дома</button>
+						<button class="btn-gender">Предметы интерьера</button>
+						<button class="btn-gender">Текстиль</button>
+					</div>
+
+					<div class="search-block__text">
+						<p>Извините, но нам ничего не удалось найти по Вашему запросу.</p>
+						<p>Возможно, результаты поиска будут лучше, если вы введете менее точный запрос.</p>
+					</div>
+
+					<div class="search-block__categories">
+						<p>Посмотрите наши самые популярные категории</p>
+						<button class="btn-gender">Мужчинам (1200)</button>
+						<button class="btn-gender">Женщинам (1000)</button>
+						<button class="btn-gender">VIP-подарки (850)</button>
+						<button class="btn-gender">Шефу (799)</button>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row search-block__results">
+
+				<div class="col-lg-12 col-xs-12">
+					<span class="search-block__label">Показано <b>6</b> из <b>38 товаров</b></span>
+				</div>
+				<div class="search-block__items">
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">
+								</a>
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">
+								</a>
+								<div class="item__btns is-discount">
+									<div class="item__price">
+										<span>1 320 <i class="rub">Р</i></span>
+										<span class="is-discount">1 620 <i class="rub">Р</i></span>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">
+								</a>
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">
+								</a>
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">
+								</a>
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-xs-2">
+						<div class="item">
+							<div class="item__img">
+								<a href="#">
+									<img src="img/item-img.png" alt="">
+								</a>
+								<div class="item__btns">
+									<span class="item__price">1 320 <i class="rub">Р</i></span>
+								</div>
+							</div>
+							<a href="#" class="item__text">Цифровая фоторамка-шар 100 Кадров</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="search-block__more">
+					<button class="b-btn b-btn_green">Показать еще!</button>
+					<p><a href="#">Все результаты на одной странице</a></p>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
 
 <!-- load scripts -->
 <script src="js/lib/jquery.js"></script>
