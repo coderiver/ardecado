@@ -1286,7 +1286,7 @@
 							<div class="filters__title">Подберите идеальный подарок:</div>
 						</div>
 						<div class="col-lg-2 col-xs-2">
-							<div class="filters__title clear right">Очистить фильтр</div>
+							<div class="filters__title clear right js-filter-reset-global">Очистить фильтр</div>
 						</div>
 						<div class="col-lg-2 col-xs-2">
 							<div class="filters__title right">Сортировать по:</div>
@@ -2544,7 +2544,7 @@
 							<div class="filter js-filter js-filter-range">
 								<div class="filter__view js-filter-view">
 									<div class="filter__name">Стоимость</div>
-									<div class="filter__value js-filter-value">
+									<div class="filter__value js-range-value">
 										<span class="placeholder">Не уточнили</span>
 										<div class="filter__range js-filter-range-value" style="display: none;">
 											<span class="js-filter-from">0</span>
@@ -2553,7 +2553,7 @@
 											<span class="rub">P</span>
 										</div>
 									</div>
-									<button type="button" class="filter__reset js-filter-reset"><i class="i i-remove"></i></button>
+									<button type="button" class="filter__reset js-range-reset js-filter-reset"><i class="i i-remove"></i></button>
 								</div>
 								<div class="filter__dropdown is-range js-filter-dropdown" style="display: none;">
 									<div class="range">
@@ -2565,7 +2565,7 @@
 							</div>
 						</div>
 						<div class="col-lg-2 col-xs-2 is-right">
-							<button type="button" class="filter-reset">Скрыть параметры</button>
+							<button type="button" class="filter-reset js-filter-open"><span class="is-visible">Добавить параметры</span><span class="is-hidden">Скрыть параметры</span></button>
 						</div>
 						<div class="col-lg-2 col-xs-2">
 							<select multiple="multiple" class="select" placeholder="">
@@ -2575,7 +2575,7 @@
 							</select>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row js-filter-drop" style="display: none;">
 						<div class="col-lg-2 col-xs-2">
 							<div class="filter js-filter">
 								<div class="filter__view js-filter-view">
@@ -4737,65 +4737,6 @@
 		</div>
 	</div>
 	<!-- end pages panel -->
-
-	<!-- begin modal  -->
-	<div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="feedback">
-				<i class="feedback__icon"></i>
-				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
-				<span class="feedback__logo">Ар де Кадо</span>
-				<span class="feedback__title">Обратный звонок</span>
-				<span class="feedback__schedule">Мы работаем с понедельника по субботу, с 9:00 до 19:00</span>
-				<div class="m-form is-gray">
-					<form action="">
-						<div class="m-form__box">
-							<label class="m-form__label" for="in-number">Ваш номер телефона:</label>
-							<div class="m-form__field m-form-group">
-								<span class="m-form__number">+7</span>
-								<i class="m-form__check"></i>
-								<input type="text" class="input input_gray" id="in-number" placeholder="(903) 123-45-67">
-							</div>
-						</div>
-						<div class="m-form__box js-field-parent">
-							<a href="#" class="link-dotted js-field-link" data-link="name">Указать свое имя</a>
-						</div>
-						<p>Удобное время звонка:</p>
-						<div class="m-form__box">
-							<div class="m-form__field">
-								<div class="range js-range-parent">
-									<div class="range__time">
-										<span>с</span>
-										<span class="js-range-value" data-index="0" id="value-span">9:00</span>
-										<span>до</span>
-										<span class="js-range-value" data-index="1" id="value-input">19:00</span>
-									</div>
-									<div class="range__input js-range" id="js-range"></div>
-									<div class="js-range-slider"></div>
-								</div>
-							</div>
-						</div>
-						<button class="b-btn b-btn_green" type="submit">Жду звонка!</button>
-					</form>
-				</div>
-				<div class="m-form__field m-form-group is-hide js-field" data-field="name">
-					<i class="m-form__check"></i>
-					<input type="text" class="input input_gray" id="in-number" placeholder="Алина">
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- end modal -->
-	<!-- begin modal  -->
-	<div class="modal fade" id="pass-success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="success">
-				<i class="success__icon"></i>
-				<span class="success__title">Новый пароль выслан!</span>
-			</div>
-		</div>
-	</div>
-	<!-- end modal -->
 
 	<div class="fixed-br js-panel js-fixed">
 		<div class="f-panel js-panel-block">

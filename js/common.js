@@ -920,7 +920,8 @@ $(document).ready(function() {
 				}
 				else {
 					valueContainer.addClass('placeholder');
-					valueContainer.text('не выбрано');
+					valueContainer.text('Не выбрано');
+					reset.hide();
 				}
 
 
