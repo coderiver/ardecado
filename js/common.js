@@ -980,15 +980,20 @@ $(document).ready(function() {
 				slider.noUiSlider.on('update', function( values, handle ) {
 
 					var value = values[handle];
-					// $('.js-range-reset').show();
 
 					if ( handle ) {
-						$('span.js-filter-to').text(Math.round(values[handle]));
-						$('input.js-filter-to').val(Math.round(values[handle]));
+						var str = Math.round(values[handle]);
+						str = str.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+
+						$('span.js-filter-to').text(str);
+						$('input.js-filter-to').val(str);
 					}
 					else {
-						$('span.js-filter-from').text(Math.round(values[handle]));
-						$('input.js-filter-from').val(Math.round(values[handle]));
+						var str = Math.round(values[handle]);
+						str = str.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+						
+						$('span.js-filter-from').text(str);
+						$('input.js-filter-from').val(str);
 					}
 				});
 
@@ -1131,6 +1136,8 @@ $(document).ready(function() {
 	$('.js-remove-cancel').on('click', function() {
 		$('.bitem').removeClass('is-active');
 	});
+
+
 
 
 });
