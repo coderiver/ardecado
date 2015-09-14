@@ -1,8 +1,18 @@
 =grid($n)
 	width: $n*80px + 20px*($n - 1)
+.basketmain
+	position: relative
+	padding: 2px 0 0
+	&:before
+		position: absolute
+		left: 10px
+		right: 10px
+		top: 0
+		border-top: 2px dashed #D6D6D0 
+		content: "" 
 .emptybasket
 	text-align: center
-	border-top: 1px dashed #D6D6D0 
+	border-top: 2px dashed #D6D6D0 
 	padding: 40px 0 60px
 	&__icon
 		+s(basket-big)
@@ -33,6 +43,7 @@
 	text-align: center
 	box-shadow: 0 5px 5px -5px rgba(#000,.6)
 	+reg
+	margin: 30px 0 0 
 	&:before,&:after
 		position: absolute
 		top: -4px 
@@ -190,6 +201,8 @@
 	+clr
 	border-top: 2px dashed #D6D6D0 
 	padding: 30px 0 
+	&:first-child
+		border-top: none
 	.bitem__pic
 		+grid(2)
 		float: left 
