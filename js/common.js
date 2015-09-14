@@ -873,7 +873,8 @@ $(document).ready(function() {
    		$('.js-filter').each(function() {
    			var checkbox = $(this).find('.checkbox input'),
    				valuesArray = [],
-   				reset = $(this).find('.js-filter-reset');
+   				reset = $(this).find('.js-filter-reset'),
+   				globalReset = $('.js-filter-reset-global');
 
 			checkbox.on('click', function() {
 
@@ -937,9 +938,25 @@ $(document).ready(function() {
 					$(this).hide();
 
 					event.stopPropagation();
-				});
+				});				
 				
-				
+			});
+			globalReset.on('click', function(event) {
+
+				// remove value from view
+				$('.js-filter-value').addClass('placeholder');
+				$('.js-filter-value').text('Не выбрано');
+				$('.placeholder').show().text('Не выбрано');
+				$('.js-filter-range-value').hide();
+
+				// unckeck all checkboxes in current filter
+				$('.checkbox input').removeAttr('checked');
+
+				// hide reset buttons
+				reset.hide();
+				slider.noUiSlider.set([0, 200000]);	
+
+				// event.stopPropagation();
 			});
 
    		});
@@ -962,6 +979,7 @@ $(document).ready(function() {
 				slider.noUiSlider.on('update', function( values, handle ) {
 
 					var value = values[handle];
+					// $('.js-range-reset').show();
 
 					if ( handle ) {
 						$('span.js-filter-to').text(Math.round(values[handle]));
@@ -974,17 +992,27 @@ $(document).ready(function() {
 				});
 
 				$('input.js-filter-from').on('change', function(){
-					slider.noUiSlider.set([this.value, null]);
+					slider.noUiSlider.set([this.value, null]);					
+					$('.js-range-reset').show();
 				});
 				$('input.js-filter-to').on('change', function(){
-					slider.noUiSlider.set([null, this.value]);
+					slider.noUiSlider.set([null, this.value]);			
+					$('.js-range-reset').show();
 				});
 
 				slider.noUiSlider.on('slide', function( values, handle ) {
 
 					$('.js-filter-range .placeholder').hide();
-					$('.js-filter-range-value').show();
+					$('.js-filter-range-value').show();			
+					$('.js-range-reset').show();
 
+				});
+
+				$('.js-range-reset').click(function() {
+					$('.placeholder').show().text('Не выбрано');
+					$('.js-filter-range-value').hide();
+					slider.noUiSlider.set([0, 200000]);	
+					$(this).hide();					
 				});
 
 		};
@@ -1085,6 +1113,12 @@ $(document).ready(function() {
 			$(this).addClass('is-active');
 			input.attr('type', 'text');
 		}
+	});
+
+	//add filters
+	$('.js-filter-open').click(function() {
+		$(this).toggleClass('is-active');
+		$('.js-filter-drop').slideToggle(200);
 	});
 
 });

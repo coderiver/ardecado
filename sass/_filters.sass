@@ -31,12 +31,15 @@
 		color: #7c7c75
 		font-size: 16px
 		white-space: nowrap
+		cursor: pointer
+		+user-select(none)
 		&.clear
 			color: #a57878
 		&.right
 			text-align: right	
 .filter
 	position: relative
+	+user-select(none)
 	&.is-open
 		&:before
 			content: ""
@@ -210,17 +213,27 @@
 	font-size: 16px
 	color: #56544f 
 	&.is-active
+		&:after
+			display: none
 		span
 			&.is-visible
 				display: none
 			&.is-hidden
 				display: block
-	&:after
-		content: "-"  
+	&:before, &:after
+		content: ""  
 		position: absolute
 		top: 50%
-		right: 12px
 		+transform(translateY(-50%))
+		background: #56544f 
+	&:before
+		width: 14px
+		height: 2px
+		right: 12px
+	&:after
+		height: 14px
+		width: 2px
+		right: 18px
 	span
 		&.is-hidden
 			display: none
