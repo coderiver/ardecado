@@ -1887,19 +1887,6 @@ body
 				background: #fff
 				.item__price
 					color: #6C6161
-	&:after, &:before
-		position: absolute
-		content: ""
-		bottom: 9px
-		right: 0
-		height: 18px
-		width: 40px
-		box-shadow: 0 10px 3px 10px #ecece4
-		background-color: #ecece4
-		opacity: 0.8
-	&:before
-		width: 10px
-		opacity: 1
 	&.is-quarter
 		height: 293px
 		.item__img
@@ -1963,7 +1950,20 @@ body
 		&.is-mod
 			font-size: 18px
 			color: #4a485b
-			+asbold
+			+asbold		
+		&:after, &:before
+			position: absolute
+			content: ""
+			bottom: 9px
+			right: 0
+			height: 18px
+			width: 40px
+			box-shadow: 0 10px 3px 10px #ecece4
+			background-color: #ecece4
+			opacity: 0.8
+		&:before
+			width: 10px
+			opacity: 1
 	&-ico
 		position: absolute
 		top: 10px
