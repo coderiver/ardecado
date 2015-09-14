@@ -2399,6 +2399,12 @@ body.is-search { overflow: hidden; }
 .remove .remove__like .i { margin-right: 15px; }
 .remove .remove__like:hover { text-decoration: none; }
 
+.basketalert { padding: 26px 0 0; background: white; position: relative; margin: 0 -20px -30px; }
+.basketalert .alert { -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0; margin: 0; padding: 11px 20px 11px 63px; }
+.basketalert .alert:before { position: absolute; top: -4px; left: 0; right: 0; background: url(img/basketalert.png) repeat-x center top; height: 4px; width: 100%; }
+.basketalert .alert:after { top: 50%; margin-top: -16px; }
+.basketalert .alert span { font-size: 13px; font-family: "ProximaNova Semibold", Arial, sans-serif; }
+
 .catalog__divider { clear: both; }
 
 .productbottom { margin-bottom: 10px; text-align: center; clear: both; padding: 16px 0 30px; border-bottom: 1px dashed #d8d8d2; }
