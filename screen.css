@@ -2286,7 +2286,10 @@ body.is-search { overflow: hidden; }
 .filter .filter__more { padding-left: 28%; }
 
 .filter-reset { position: relative; display: inline-block; height: 50px; width: 160px; padding: 4px 28px 4px 40px; background: url(img/svg/drop-white.svg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; font-family: "ALSSchlangesans Black", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; line-height: 1.2; text-align: left; font-size: 16px; color: #56544f; }
+.filter-reset.is-active span.is-visible { display: none; }
+.filter-reset.is-active span.is-hidden { display: block; }
 .filter-reset:after { content: "-"; position: absolute; top: 50%; right: 12px; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.filter-reset span.is-hidden { display: none; }
 
 .placeholder { color: #b1b1b1; }
 
