@@ -1543,6 +1543,8 @@ body.is-search { overflow: hidden; }
 .item__btns.is-orange .item__price { color: white; }
 .item__btns ul { display: none; position: absolute; padding: 4px 0; }
 .item__btns li { display: inline-block; vertical-align: bottom; margin: 0 9px 0 0; }
+.item__btns a.i-heart:hover { background: url('img/icons-s30615d1dda.png') 0 -5140px no-repeat; width: 17px; height: 14px; }
+.item__btns a.i-basket-empty:hover { background: url('img/icons-s30615d1dda.png') 0 -1506px no-repeat; width: 20px; height: 17px; }
 .item__price { display: inline-block; font-size: 15px; color: #6c6161; font-family: "Vagroundedtl Regular", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; line-height: 25px; padding: 2px 0 0; }
 .item__text { color: #716d6d; font-size: 14px; font-family: "ProximaNova Semibold", Arial, sans-serif; line-height: 1.2; display: block; text-align: center; max-height: 32px; overflow: hidden; }
 .item__text.is-mod { font-size: 18px; color: #4a485b; font-family: "ALSSchlangesans Bold", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -2275,6 +2277,9 @@ body.is-search { overflow: hidden; }
 .filter .filter__content { overflow: hidden; font-size: 0; }
 .filter .filter__content.is-wide .filter__preview { padding: 0 7px; }
 .filter .filter__content.is-wide .filter__more { padding-left: 0; text-align: center; }
+.filter .filter__content.is-wide .filter__more .btn-all.is-active span.is-visible { display: none; }
+.filter .filter__content.is-wide .filter__more .btn-all.is-active span.is-hidden { display: block; }
+.filter .filter__content.is-wide .filter__more .btn-all span.is-hidden { display: none; }
 .filter .filter__content.is-wide .checkbox { display: inline-block; vertical-align: top; width: 25%; margin-top: 0; }
 .filter .filter__content .checkbox { display: inline-block; width: 33.3%; }
 .filter .filter__content .checkbox:hover span { text-decoration: underline; }

@@ -1931,6 +1931,13 @@ body
 			display: inline-block
 			vertical-align: bottom
 			margin: 0 9px 0 0
+		a
+			&.i-heart
+				&:hover
+					+s(heart-check)
+			&.i-basket-empty
+				&:hover
+					+s(basket-check)
 	&__price
 		display: inline-block
 		font-size: 15px

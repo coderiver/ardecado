@@ -846,8 +846,8 @@ $(document).ready(function() {
 
 		$('.js-filters-more').on('click', function() {
 			$(this).parents('.js-filters-content').find('.filter__preview')
-			.addClass('is-open');
-			$(this).hide();
+			.toggleClass('is-open');
+			$(this).toggleClass('is-active');
 		});
 
 
