@@ -647,8 +647,6 @@ $(document).ready(function() {
 		zoomWindowOffetx: 20
 	});
 
-	// ui scripts
-
 	// select
 
 	$('.select').each(function() {

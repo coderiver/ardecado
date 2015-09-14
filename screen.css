@@ -2350,7 +2350,7 @@ body.is-search { overflow: hidden; }
 .bitem .bitem__number { width: 180px; float: left; text-align: center; }
 .bitem .bitem__price { float: right; width: 180px; position: relative; }
 .bitem .bitem__artikul { font-size: 12px; color: #4a485a; font-family: "ProximaNova Semibold", Arial, sans-serif; margin-bottom: 10px; }
-.bitem .bitem__numberlabel { margin-bottom: 12px; font-size: 13px; color: #4a485a; }
+.bitem .bitem__numberlabel { margin-bottom: 9px; font-size: 13px; color: #4a485a; }
 .bitem .bitem__deliver { background: url('img/icons-s30615d1dda.png') 0 -5053px no-repeat; width: 181px; height: 47px; font-family: "ProximaNova Semibold", Arial, sans-serif; color: #2c5f1c; font-size: 12px; position: relative; }
 .bitem .bitem__deliver i { background: url('img/icons-s30615d1dda.png') 0 -3503px no-repeat; width: 34px; height: 19px; position: absolute; left: 13px; top: 14px; }
 .bitem .bitem__deliver span { position: absolute; left: 66px; top: 8px; text-align: left; }
@@ -2368,7 +2368,7 @@ body.is-search { overflow: hidden; }
 .bitem .bitem__edit { margin-left: 10px; }
 .bitem .bitem__remove { background: url('img/icons-s30615d1dda.png') 0 -3256px no-repeat; width: 27px; height: 26px; display: inline-block; position: absolute; right: 0; top: 30px; cursor: pointer; }
 .bitem .bitem__remove:hover { background: url('img/icons-s30615d1dda.png') 0 -3220px no-repeat; width: 27px; height: 26px; }
-.bitem .bitem__plusminus { position: relative; text-align: center; margin-bottom: 25px; }
+.bitem .bitem__plusminus { position: relative; text-align: center; margin-bottom: 25px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 .bitem .bitem__plusminus input { background: #f6f6f3; width: 50px; text-align: center; font-family: "Vagroundedtl Regular", Arial, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-size: 24px; line-height: 1; color: #cdcdcd; display: inline-block; padding: 8px 0 4px; border-radius: 10px; }
 .bitem .bitem__plusminus input:focus, .bitem .bitem__plusminus input:hover { color: #cdcdcd; }
 .bitem .bitem__plusminus .bitem__amount { display: inline-block; width: 50px; vertical-align: middle; }
