@@ -15,19 +15,20 @@
 				margin: 0 10px
 				vertical-align: middle
 				+s(arr-right-small)
+			a
+				display: inline-block
+				vertical-align: middle
+				color: #42b0ef
+				&:visited
+					color: #42b0ef	
 			&:last-child
 				&:after
 					display: none
 				a
 					color: #7a7a7a
+					pointer-events: none
 					&:hover
 						text-decoration: none
-		a
-			display: inline-block
-			vertical-align: middle
-			color: #42b0ef
-			&:visited
-				color: #42b0ef
 	&__more
 		+s(add-small)
 		vertical-align: middle
