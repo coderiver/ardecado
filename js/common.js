@@ -1121,5 +1121,16 @@ $(document).ready(function() {
 		$('.js-filter-drop').slideToggle(200);
 	});
 
+	$('.js-remove-btn').on('click', function() {
+		$(this).closest('.bitem').addClass('is-active');
+	});
+	$('.js-remove-item').on('click', function() {
+		$('.bitem.is-active').remove();
+	});
+	$('.js-remove-cancel').on('click', function() {
+		$('.bitem').removeClass('is-active');
+	});
+
+
 });
 
