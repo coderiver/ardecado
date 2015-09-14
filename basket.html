@@ -1319,7 +1319,7 @@
 								<div class="bitem__bonuses"><strong>+ 7</strong> бонусов</div>
 								
 							</div>
-							<div class="bitem__remove"  data-toggle="modal" data-target="#remove-item"></div>
+							<div class="bitem__remove js-remove-btn"  data-toggle="modal" data-target="#remove-item"></div>
 						</div>
 					</div>
 					<!-- end bitem -->
@@ -1342,10 +1342,12 @@
 							<div class="bitem__numberlabel">
 								Количество
 							</div>
-							<div class="bitem__plusminus">
-								<div class="bitem__minus">-</div>
-								<div class="bitem__amount"><input value="1" type="text" name="" id=""></div>
-								<div class="bitem__plus">+</div>
+							<div class="bitem__plusminus js-number" data-max-number="999">
+								<div class="bitem__minus js-minus-number">-</div>
+								<div class="bitem__amount">
+									<input value="1" type="text" name="" class="js-input">
+								</div>
+								<div class="bitem__plus js-plus-number">+</div>
 							</div>
 							<div class="bitem__deliver is-red">
 								<i></i><span>Дата отгрузки:<br>27 сентября 2015</span>
@@ -1358,7 +1360,7 @@
 								<div class="bitem__bonuses"><strong>+ 7</strong> бонусов</div>
 								
 							</div>
-							<div class="bitem__remove"></div>
+							<div class="bitem__remove js-remove-btn"  data-toggle="modal" data-target="#remove-item"></div>
 						</div>
 					</div>
 					<!-- end bitem -->
@@ -1382,10 +1384,12 @@
 							<div class="bitem__numberlabel">
 								Количество
 							</div>
-							<div class="bitem__plusminus">
-								<div class="bitem__minus">-</div>
-								<div class="bitem__amount"><input value="1" type="text" name="" id=""></div>
-								<div class="bitem__plus">+</div>
+							<div class="bitem__plusminus js-number" data-max-number="999">
+								<div class="bitem__minus js-minus-number">-</div>
+								<div class="bitem__amount">
+									<input value="1" type="text" name="" class="js-input">
+								</div>
+								<div class="bitem__plus js-plus-number">+</div>
 							</div>
 							<div class="bitem__deliver">
 								<i></i><span>Дата отгрузки:<br>27 сентября 2015</span>
@@ -1398,7 +1402,7 @@
 								<div class="bitem__oldprice">2 460 <span class="rub">P</span></div>
 								<div class="bitem__discount">5% скидка</div>
 							</div>
-							<div class="bitem__remove"></div>
+							<div class="bitem__remove js-remove-btn"  data-toggle="modal" data-target="#remove-item"></div>
 						</div>
 					</div>
 					<!-- end bitem -->
@@ -1421,10 +1425,12 @@
 							<div class="bitem__numberlabel">
 								Количество
 							</div>
-							<div class="bitem__plusminus">
-								<div class="bitem__minus">-</div>
-								<div class="bitem__amount"><input value="1" type="text" name="" id=""></div>
-								<div class="bitem__plus">+</div>
+							<div class="bitem__plusminus js-number" data-max-number="999">
+								<div class="bitem__minus js-minus-number">-</div>
+								<div class="bitem__amount">
+									<input value="1" type="text" name="" class="js-input">
+								</div>
+								<div class="bitem__plus js-plus-number">+</div>
 							</div>
 							<div class="bitem__deliver is-red">
 								<i></i><span>Дата отгрузки:<br>27 сентября 2015</span>
@@ -1436,7 +1442,7 @@
 								<div class="bitem__actual-price">690 <span class="rub">P</span></div>
 								<div class="bitem__bonuses"><strong>+ 520</strong> бонусов</div>
 							</div>
-							<div class="bitem__remove"></div>
+							<div class="bitem__remove js-remove-btn"  data-toggle="modal" data-target="#remove-item"></div>
 						</div>
 					</div>
 					<!-- end bitem -->
@@ -2172,11 +2178,19 @@
 
 	<div class="modal fade" id="remove-item" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 		<div class="modal-dialog" role="document">
-			<div class="popup">
-				<button type="button" class="popup-close icon icon-close" data-dismiss="modal" aria-label="Close"></button>
+			<div class="popup popup_remove">
 				<div class="row">
 					<div class="col-lg-12 col-xs-12">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatibus suscipit, ducimus iusto eligendi, necessitatibus dolor voluptatum iure, fugit excepturi veniam! Iusto, libero, optio? Excepturi consequatur ratione, necessitatibus eveniet repellat.
+						<div class="remove">
+							<div class="remove__title">Хотите удалить товар?</div>
+							<div class="remove__btns">
+								<button type="button" class="remove__submit js-remove-item">Да, удалить</button>
+								<button type="button" class="remove__cancel" data-dismiss="modal" aria-label="Close">Отмена</button>
+							</div>
+							<a href="#" class="remove__like">
+								<i class="i i-heart-check-big"></i> Добавить товар в Любимое при удалении
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
